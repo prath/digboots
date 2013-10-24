@@ -1,0 +1,210 @@
+//- 
+    =====================================================================
+    * Index Page
+    * 
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+
+extends inc/content-container
+
+//- title
+block title
+    title DigBoots - Premium Boostrap Theme
+
+//- content
+block content
+    // JUMBOTRON
+    article.jumbotron
+        .cover.overlay.lighter
+            .container
+                h1
+                    | Fun Work at <strong>Company.co</strong>
+                p
+                    | A playful and fun works done with <strong>Company.co</strong>&nbsp; along the summer.
+                p
+                    a(href='').btn.btn-primary.btn-lg.btn-cta
+                        | Learn more
+
+    // ABOUT US
+    article.content.about.narrow.centered
+        img(src='dummy-images/about/1.png')
+        h1 
+            | We Work and Play. We Love This Job.
+        p
+            | <strong>DigBoots</strong>&nbsp; is a fast-growing company, we started as a simple two-man team. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables. Drop in axle roll-in rail slide noseblunt. 
+        p
+            a(href='').btn.btn-link.btn-sm
+                | More About Us
+
+    // PORTFOLIO
+    section.portfolio.image
+        header
+            h2
+                a(href='') Recent Works
+        .image.thumbnail
+            a(href='')
+                img(src='dummy-images/portfolio/1.jpg', alt='portfolio 1')
+                span.caption
+                    | Cheers!
+                    span.separator
+                    span.client
+                        | Personal Project
+        .image.thumbnail
+            a(href='')
+                img(src='dummy-images/portfolio/2.jpg', alt='portfolio 1')
+                span.caption
+                    | Little Flash
+                    span.separator
+                    span.client
+                        | Personal Project
+        .image.thumbnail
+            a(href='')
+                img(src='dummy-images/portfolio/3.jpg', alt='portfolio 1')
+                span.caption
+                    | EXPOSÉ10 features on 'Cheers!'
+                    span.separator
+                    span.client
+                        | EXPOSÉ10
+        .image.thumbnail
+            a(href='')
+                img(src='dummy-images/portfolio/4.jpg', alt='portfolio 1')
+                span.caption
+                    | Paris Project
+                    span.separator
+                    span.client
+                        | Personal Project
+
+    // TESTIMONIAL and SERVICES
+    .section(style='background: url("dummy-images/service-bg.jpg") no-repeat center center; background-size: cover;')
+        .cover.overlay
+            // TESTIMONIAL
+            article.content.testimonial.narrow.shrunk-down
+                h4.section.heading What People Say About Us
+                blockquote 
+                    p
+                        | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
+                        cite.name
+                            | John William Smith - <strong>Company.co</strong> 
+                p
+                    | That's what some of our friends, colleagues and partners says about us. Come visit us to know more about us. in a meantime here are some works <strong>we can do for you</strong>&nbsp;, if you work with us: 
+
+            // SERVICES
+            section.cover.overlay
+                .container.content.services.wider.shrunk-up
+                    .row
+                        h4.section.heading Our Services
+                        article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+                            h6.allcaps Illustration
+                            p
+                                | We transform your wish into clear ideas and hand-sketched illustrations.
+                            a(href='').btn.btn-link.btn-sm
+                                | learn more
+                        article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+                            h6.allcaps Web Design
+                            p
+                                | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                            a(href='').btn.btn-link.btn-sm
+                                | learn more
+                        article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+                            h6.allcaps App Design
+                            p
+                                | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                            a(href='').btn.btn-link.btn-sm
+                                | learn more
+
+    // FEATURED BLOG POST
+    article.content.post.narrow.shrunk-down.centered
+        h4.section.heading Recent Posts
+        span.post.date
+            | 12 January 2013
+        h2 
+            a(href='')
+                | Drop in axle roll-in rail slide climb leg.
+        img(src='dummy-images/blog/1.jpg')
+        p
+            | European minnow priapumfish mosshead warbonnet shrimpfish bigscale. Cutlassfish priapumfish mosshead warbonnet. Efficiently unleash cross-media information without cross-media value european minnow priapumfish mosshead.
+        p
+            a(href='').btn.btn-link.btn-sm
+                | Read more
+    // BLOG POSTs
+    section.content.post.flatted-up.wider
+        .container
+            .row
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+                    h4 
+                        a(href='')
+                            | European minnow priapumfish
+                    span.post.date
+                        | 12 January 2013
+                    p
+                        | Efficiently unleash cross-media information without cross-media value.
+                    a(href='')
+                        | read more
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+                    h4 
+                        a(href='')
+                            | Mosshead warbonnet shrimpfish bigscale.
+                    span.post.date
+                        | 12 January 2013
+                    p
+                        | European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
+                    a(href='')
+                        | read more
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+                    h4 
+                        a(href='')
+                            | Climb leg rub face on everything.
+                    span.post.date
+                        | 12 January 2013
+                    p
+                        | Drop in axle roll-in rail slide noseblunt slide Steve Severin impossible.
+                    a(href='')
+                        | read more
+
+    // WORKPLACE GALLERY
+    section.workspace.image
+        header
+            h2
+                a(href='') our workspace
+        .image.thumbnail.small
+            a(href='')
+                img(src='dummy-images/workspace/1.jpg', alt='portfolio 1')
+                span.caption
+                    | Meeting Spot
+                    span.separator
+        .image.thumbnail.small
+            a(href='')
+                img(src='dummy-images/workspace/2.jpg', alt='portfolio 1')
+                span.caption
+                    | CEO Desk
+                    span.separator
+        .image.thumbnail.small
+            a(href='')
+                img(src='dummy-images/workspace/3.jpg', alt='portfolio 1')
+                span.caption
+                    | Outdoor Spot
+                    span.separator
+        .image.thumbnail.small
+            a(href='')
+                img(src='dummy-images/workspace/4.jpg', alt='portfolio 1')
+                span.caption
+                    | Jake's Favorite Spot
+                    span.separator
+        .image.thumbnail.small
+            a(href='')
+                img(src='dummy-images/workspace/5.jpg', alt='portfolio 1')
+                span.caption
+                    | John's Favorite Spot
+                    span.separator
+        .image.thumbnail.small
+            a(href='')
+                img(src='dummy-images/workspace/6.jpg', alt='portfolio 1')
+                span.caption
+                    | Our Lovely Office
+                    span.separator
+
+    section.content.bottom.centered.shrunk-down.shrunk-up
+        a.social.icon(href='')
+            i.fa.fa-facebook.fa-lg
+        a.social.icon(href='')
+            i.fa.fa-twitter.fa-lg

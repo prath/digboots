@@ -1,0 +1,124 @@
+// -----------------------------------------------------------------
+// * [Portfolio Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+img {
+    margin-bottom: 20px;
+}
+.image {
+    .clearfix();
+    background: @default-accent;
+
+    position: relative;
+
+    &.thumbnail {
+        background-color: @default-accent;
+        border: 0px;
+
+        float: left;
+
+        height: 340px;
+        width: 50%;
+        overflow: hidden;
+
+        padding: 0px;
+
+        border-radius: 0px;
+
+        &.small {
+            height: 220px;
+            width: 33.33333333%;
+            .caption {
+                line-height: 220px;
+                .separator {
+                    top: 20%;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+        a { 
+            display: block;
+            &:hover {
+                .caption {
+                    opacity: 1;
+                    transition: all ease 0.8s;
+                    .separator {
+                        width: 5%;
+                        transition: width ease 0.8s;
+                    }
+                    .client {
+                        top: 20%;
+                        transition: top ease-in 0.3s;
+                    }
+                }
+            }
+        }
+        .caption {
+            .absoluteCenter(absolute, 100%, 100%);
+
+            background-color: fade(@default-accent, 80%);
+            display: block;
+
+            padding: 0px;
+
+            color: @secondary-text;
+            line-height: 340px;
+            text-align: center; 
+
+            opacity: 0;
+            transition: all ease 0.8s;
+            .separator {
+                .absoluteCenter(absolute, 1px, 100%);
+                border-bottom: 1px solid @secondary-text;
+                display: block;
+
+                top: 10%;
+                transition: width ease 0.8s;
+            }
+            .client {
+                .absoluteCenter(absolute, 100%, 100%);
+                display: block;
+
+                top: 100%;
+
+                color: lighten(@default-accent, 30%);
+                font-size: @body-fz-sm;
+                font-style: italic;
+
+                transition: top ease-out 0.3s;
+            }
+        }
+    }
+    header {
+        .absoluteCenter(absolute, 60px, 50%);
+
+        z-index: 2;
+
+        text-align: center;
+
+        opacity: 0.8;
+
+        h2 {
+            color: @secondary-text;
+            a {
+                color: @secondary-text;
+                &:hover {
+                    color: @default-accent;
+                }
+            }
+        }
+    }
+}
+
+.featured.image {
+    background-color: transparent;
+    width: 100%;
+}

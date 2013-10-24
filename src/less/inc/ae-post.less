@@ -1,0 +1,43 @@
+// -----------------------------------------------------------------
+// * [Main Content Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+.post {
+	&.date {
+		.inlineDisplay();
+		margin-bottom: 20px;
+
+		color: @muted-text-color;
+		font-size: @body-fz-sm;
+	}
+	img {
+		width: 100%;
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		a {
+			color: @heading-color;
+			&:hover {
+				color: lighten(@heading-color, 15%);
+			}
+		}
+	}
+}
+
+article.small {
+    font-size: @body-fz-md;
+    line-height: @line-height-base;
+    a.btn {
+        margin-left: -10px;
+    }
+}

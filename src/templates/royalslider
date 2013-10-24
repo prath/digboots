@@ -1,0 +1,24 @@
+//- .rsContent.slide2
+                //-     .bContainer
+                //-         strong.rsABlock(data-move-effect='none') Transition Types
+                //-         span.rsABlock(data-move-effect='top') from top  ↓
+                //-         span.rsABlock(data-move-effect='bottom') from bottom ↑
+                //-         span.rsABlock(data-move-effect='left') from left →
+                //-         span.rsABlock(data-move-effect='right') from right ←
+                //-         span.rsABlock(data-move-effect='none') just fade
+                //- .rsContent.slide3
+                //-     .bContainer
+                //-         strong.rsABlock(data-move-effect='none', data-delay='0') Customizable Animation
+                //-         span.rsABlock(data-move-effect='left', data-delay='1000', data-move-offset='500', data-easing='easeOutBack', data-fade-effect='none') easing
+                //-         span.rsABlock(data-move-effect='left', data-delay='1500', data-move-offset='500', data-fade-effect='none') delay
+                //-         span.rsABlock(data-move-effect='left', data-delay='2000', data-move-offset='500', data-speed='1000', data-fade-effect='none') speed
+                //-         span.rsABlock(data-move-effect='left', data-delay='2500', data-move-offset='50', data-fade-effect='true') move offset
+                //- .rsContent.slide4
+                    
+                //-     .bContainer
+                //-         strong.rsABlock Block may have any HTML
+                //-         span.rsABlock(data-move-effect='none') and can be placed on any slide type
+                //-     img.rsABlock.palmImg(data-fade-effect='none', data-move-effect='bottom', data-opposite='true', data-move-offset='450', data-delay='350', data-speed='300', data-easing='easeOutBack', src='uploads/suave-ghost/sliders/2.png', data-rsw='707', data-rsh='471')
+                //-     .photoCopy
+                //-         | Photo by
+                //-         a(href='http://photo.aphecetche.fr/') Laurent Aphecetche

@@ -1,0 +1,85 @@
+// -----------------------------------------------------------------
+// * [LESS Variables]
+// * 
+// * @project digboots
+// * @version 1.0.0
+// *
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+@import 'skins/skin-default';
+
+// [Typography Variables]
+// ------------------------------------------------------------------
+@font-1                         : "Noto Sans", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+@font-2                         : "Voltaire", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+@font-3                         : "Roboto Slab", Georgia, 'Times New Roman';
+
+//-----[Body Font-sizes]-----//
+@body-fz-ul                     : 24px;
+@body-fz-vl                     : 20px;
+@body-fz-xl                     : 18px;
+@body-fz-lg                     : 16px;
+@body-fz-md                     : 14px;
+@body-fz-df                     : 13px;
+@body-fz-sm                     : 12px;
+@body-fz-xs                     : 11px;
+@body-fz-us                     : 10px;
+
+//-----[Heading Font-sizes]-----//
+@heading-hero-fz                : 55px;
+@heading-1-fz                   : 60px;
+@heading-2-fz                   : 48px;
+@heading-3-fz                   : 24px;
+@heading-4-fz                   : 18px;
+@heading-5-fz                   : 16px;
+@heading-6-fz                   : 14px;
+
+//-----[Letter Spacing sizes]-----//
+@ls-xn                          : -2.0px;
+@ls-nr                          : -1.0px;
+@ls-nm                          : 0px;
+@ls-wd                          : 1px;
+@ls-xw                          : 2px;
+@ls-uw                          : 5px;
+
+//-----[Line Height Sizes]-----//
+@line-height-xnarrow            : 10px;
+@line-height-narrow             : 15px;
+@line-height-base               : 20px;
+@line-height-med                : 25px;
+@line-height-wide               : 36px;
+@line-height-xwide              : 54px;
+@line-height-uwide              : 100px;
+
+// [Others]
+// ------------------------------------------------------------------
+@base-radius                    : 3px;
+
+// [Bootstrap Extended Variables]
+// ------------------------------------------------------------------
+
+//-----[Media queries breakpoints]-----//
+
+// Larger small screen / larger phone
+@screen-sl:                  600px;
+@screen-lg-phone:            @screen-sl;
+// Larger screen / wider desktop
+@screen-xl:                  1400px;
+@screen-xl-desktop:          @screen-xl;
+// Largest screen / widest desktop
+@screen-ul:                  1900px;
+@screen-ul-desktop:          @screen-ul;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-sl-max:              (@screen-sl - 1);
+@screen-md-max:              (@screen-xl - 1);
+@screen-md-max:              (@screen-ul - 1);
+
+//-----[Container sizes]-----//
+
+// Large screen / extra wide desktop
+@container-xl-desktop:        ((1340px + @grid-gutter-width));
+// Large screen / ultra wide desktop
+@container-ul-desktop:        ((1840px + @grid-gutter-width));

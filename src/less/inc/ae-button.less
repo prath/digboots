@@ -1,0 +1,53 @@
+// -----------------------------------------------------------------
+// * [Button Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Booststrap (Extended)]
+------------------------------------------------------------------*/
+/*-----[Common Styles]-----*/
+
+.btn {
+    border: 0px;
+
+    font-family: @font-1;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    border-radius: @base-radius;
+    transition: all .8s ease;
+}
+
+/*-----[Link Buttons]-----*/
+.btn-link {
+    color: @link-color;
+    &:hover {
+        color: @link-hover-color;
+        text-decoration: none;
+    }
+}
+
+/*-----[Button Sizes]-----*/
+.btn-lg {
+    // line-height: ensure even-numbered height of button next to large input
+    .button-size(20px; 50px; @body-fz-lg; @line-height-med; @base-radius);
+}
+
+/* [Custom Styles]
+------------------------------------------------------------------*/
+
+.btn-cta {
+    background-color: @secondary-text;
+
+    color: @heading-color;
+
+    &:hover {
+        background-color: @default-background;
+        color: @heading-color;
+    }
+}

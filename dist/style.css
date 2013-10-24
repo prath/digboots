@@ -1,0 +1,1310 @@
+/*
+Project Name: Aestik
+Theme URI: http://aestik.com/
+Author: Aestik
+Author URI: http://aestik.com/
+Version: 1.0.0
+*/
+
+/*------------------------------------------------------------------
+ [Table of contents]
+--------------------------------------------------------------------
+ 1. Base
+ 2. Grid
+ 3. Typography
+ 4. Button
+ 5. Image
+ 6. Masthead
+ 7. Main Global
+ 8. Post
+ 9. Footer
+------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+ [1. Base Styles]
+------------------------------------------------------------------*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f8f6f4;
+  color: #565656;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  color: #0d93d9;
+  text-decoration: none;
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+#wrapper {
+  *zoom: 1;
+}
+
+#wrapper:before,
+#wrapper:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+#wrapper:after {
+  clear: both;
+}
+
+#wrapper:before,
+#wrapper:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+#wrapper:after {
+  clear: both;
+}
+
+#left {
+  background-color: #0f232d;
+}
+
+@media (min-width: 992px) {
+  #left {
+    bottom: 0px;
+    left: 0px;
+    position: fixed;
+    right: 80%;
+    top: 0px;
+  }
+}
+
+#right {
+  margin-left: 0px;
+}
+
+@media (min-width: 992px) {
+  #right {
+    margin-left: 20%;
+  }
+}
+
+.cover.overlay {
+  background-color: rgba(13, 147, 217, 0.7);
+  height: 100%;
+  width: auto;
+}
+
+.cover.overlay.lighter {
+  background-color: rgba(13, 147, 217, 0.3);
+}
+
+.cover.overlay h1,
+.cover.overlay h2,
+.cover.overlay h3,
+.cover.overlay h4,
+.cover.overlay h5,
+.cover.overlay h6,
+.cover.overlay a.btn {
+  color: #9fdaf9;
+}
+
+.cover.overlay p,
+.cover.overlay cite {
+  color: #ffffff;
+}
+
+.cover.overlay blockquote {
+  border-left-color: #87d1f8;
+}
+
+.container.full {
+  max-width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+/*------------------------------------------------------------------
+ [2. Boostrap Extended Grid]
+------------------------------------------------------------------*/
+
+/* [Booststrap (Extended) Styles -- Used in Big Screen]
+------------------------------------------------------------------*/
+
+/*-----[Common Styles]-----*/
+
+.col-xl-1,
+.col-xl-2,
+.col-xl-3,
+.col-xl-4,
+.col-xl-5,
+.col-xl-6,
+.col-xl-7,
+.col-xl-8,
+.col-xl-9,
+.col-xl-10,
+.col-xl-11,
+.col-xl-12,
+.col-ul-1,
+.col-ul-2,
+.col-ul-3,
+.col-ul-4,
+.col-ul-5,
+.col-ul-6,
+.col-ul-7,
+.col-ul-8,
+.col-ul-9,
+.col-ul-10,
+.col-ul-11,
+.col-ul-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*-----[Wider Desktop Screen]-----*/
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1370px;
+  }
+
+  .col-xl-1,
+  .col-xl-2,
+  .col-xl-3,
+  .col-xl-4,
+  .col-xl-5,
+  .col-xl-6,
+  .col-xl-7,
+  .col-xl-8,
+  .col-xl-9,
+  .col-xl-10,
+  .col-xl-11 {
+    float: left;
+  }
+
+  .col-xl-1 {
+    width: 8.333333333333332%;
+  }
+
+  .col-xl-2 {
+    width: 16.666666666666664%;
+  }
+
+  .col-xl-3 {
+    width: 25%;
+  }
+
+  .col-xl-4 {
+    width: 33.33333333333333%;
+  }
+
+  .col-xl-5 {
+    width: 41.66666666666667%;
+  }
+
+  .col-xl-6 {
+    width: 50%;
+  }
+
+  .col-xl-7 {
+    width: 58.333333333333336%;
+  }
+
+  .col-xl-8 {
+    width: 66.66666666666666%;
+  }
+
+  .col-xl-9 {
+    width: 75%;
+  }
+
+  .col-xl-10 {
+    width: 83.33333333333334%;
+  }
+
+  .col-xl-11 {
+    width: 91.66666666666666%;
+  }
+
+  .col-xl-12 {
+    width: 100%;
+  }
+
+  .col-xl-push-0 {
+    left: auto;
+  }
+
+  .col-xl-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  .col-xl-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  .col-xl-push-3 {
+    left: 25%;
+  }
+
+  .col-xl-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  .col-xl-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  .col-xl-push-6 {
+    left: 50%;
+  }
+
+  .col-xl-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  .col-xl-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  .col-xl-push-9 {
+    left: 75%;
+  }
+
+  .col-xl-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  .col-xl-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  .col-xl-pull-0 {
+    right: auto;
+  }
+
+  .col-xl-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  .col-xl-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  .col-xl-pull-3 {
+    right: 25%;
+  }
+
+  .col-xl-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  .col-xl-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  .col-xl-pull-6 {
+    right: 50%;
+  }
+
+  .col-xl-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  .col-xl-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  .col-xl-pull-9 {
+    right: 75%;
+  }
+
+  .col-xl-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  .col-xl-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  .col-xl-offset-0 {
+    margin-left: 0;
+  }
+
+  .col-xl-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  .col-xl-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  .col-xl-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-xl-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  .col-xl-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  .col-xl-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-xl-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  .col-xl-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  .col-xl-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-xl-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  .col-xl-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+}
+
+/*-----[Widest Desktop Screen]-----*/
+
+@media (min-width: 1900px) {
+  .container {
+    max-width: 1870px;
+  }
+
+  .col-ul-1,
+  .col-ul-2,
+  .col-ul-3,
+  .col-ul-4,
+  .col-ul-5,
+  .col-ul-6,
+  .col-ul-7,
+  .col-ul-8,
+  .col-ul-9,
+  .col-ul-10,
+  .col-ul-11 {
+    float: left;
+  }
+
+  .col-ul-1 {
+    width: 8.333333333333332%;
+  }
+
+  .col-ul-2 {
+    width: 16.666666666666664%;
+  }
+
+  .col-ul-3 {
+    width: 25%;
+  }
+
+  .col-ul-4 {
+    width: 33.33333333333333%;
+  }
+
+  .col-ul-5 {
+    width: 41.66666666666667%;
+  }
+
+  .col-ul-6 {
+    width: 50%;
+  }
+
+  .col-ul-7 {
+    width: 58.333333333333336%;
+  }
+
+  .col-ul-8 {
+    width: 66.66666666666666%;
+  }
+
+  .col-ul-9 {
+    width: 75%;
+  }
+
+  .col-ul-10 {
+    width: 83.33333333333334%;
+  }
+
+  .col-ul-11 {
+    width: 91.66666666666666%;
+  }
+
+  .col-ul-12 {
+    width: 100%;
+  }
+
+  .col-ul-push-0 {
+    left: auto;
+  }
+
+  .col-ul-push-1 {
+    left: 8.333333333333332%;
+  }
+
+  .col-ul-push-2 {
+    left: 16.666666666666664%;
+  }
+
+  .col-ul-push-3 {
+    left: 25%;
+  }
+
+  .col-ul-push-4 {
+    left: 33.33333333333333%;
+  }
+
+  .col-ul-push-5 {
+    left: 41.66666666666667%;
+  }
+
+  .col-ul-push-6 {
+    left: 50%;
+  }
+
+  .col-ul-push-7 {
+    left: 58.333333333333336%;
+  }
+
+  .col-ul-push-8 {
+    left: 66.66666666666666%;
+  }
+
+  .col-ul-push-9 {
+    left: 75%;
+  }
+
+  .col-ul-push-10 {
+    left: 83.33333333333334%;
+  }
+
+  .col-ul-push-11 {
+    left: 91.66666666666666%;
+  }
+
+  .col-ul-pull-0 {
+    right: auto;
+  }
+
+  .col-ul-pull-1 {
+    right: 8.333333333333332%;
+  }
+
+  .col-ul-pull-2 {
+    right: 16.666666666666664%;
+  }
+
+  .col-ul-pull-3 {
+    right: 25%;
+  }
+
+  .col-ul-pull-4 {
+    right: 33.33333333333333%;
+  }
+
+  .col-ul-pull-5 {
+    right: 41.66666666666667%;
+  }
+
+  .col-ul-pull-6 {
+    right: 50%;
+  }
+
+  .col-ul-pull-7 {
+    right: 58.333333333333336%;
+  }
+
+  .col-ul-pull-8 {
+    right: 66.66666666666666%;
+  }
+
+  .col-ul-pull-9 {
+    right: 75%;
+  }
+
+  .col-ul-pull-10 {
+    right: 83.33333333333334%;
+  }
+
+  .col-ul-pull-11 {
+    right: 91.66666666666666%;
+  }
+
+  .col-ul-offset-0 {
+    margin-left: 0;
+  }
+
+  .col-ul-offset-1 {
+    margin-left: 8.333333333333332%;
+  }
+
+  .col-ul-offset-2 {
+    margin-left: 16.666666666666664%;
+  }
+
+  .col-ul-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-ul-offset-4 {
+    margin-left: 33.33333333333333%;
+  }
+
+  .col-ul-offset-5 {
+    margin-left: 41.66666666666667%;
+  }
+
+  .col-ul-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-ul-offset-7 {
+    margin-left: 58.333333333333336%;
+  }
+
+  .col-ul-offset-8 {
+    margin-left: 66.66666666666666%;
+  }
+
+  .col-ul-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-ul-offset-10 {
+    margin-left: 83.33333333333334%;
+  }
+
+  .col-ul-offset-11 {
+    margin-left: 91.66666666666666%;
+  }
+}
+
+/*------------------------------------------------------------------
+ [3. Typography]
+------------------------------------------------------------------*/
+
+/* [Booststrap (Extended)]
+------------------------------------------------------------------*/
+
+/*-----[Headings]-----*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #444444;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 48px;
+  letter-spacing: 0px;
+}
+
+h3 {
+  font-size: 24px;
+  letter-spacing: 0px;
+}
+
+h4 {
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+
+h5 {
+  font-size: 16px;
+  letter-spacing: 0px;
+}
+
+h6 {
+  font-size: 14px;
+  letter-spacing: 0px;
+}
+
+h1 {
+  letter-spacing: -5px;
+}
+
+h2 {
+  letter-spacing: -3px;
+}
+
+h1,
+h2 {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+h3 {
+  margin-bottom: 30px;
+}
+
+/*-----[Blockquote]-----*/
+
+blockquote {
+  border-left: 1px solid #0d93d9;
+  padding-left: 50px;
+}
+
+blockquote p {
+  color: #565656;
+  font-family: "Roboto Slab", Georgia, 'Times New Roman';
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+  text-align: left;
+  font-weight: 100;
+}
+
+blockquote p span,
+blockquote p cite {
+  display: block;
+  margin-top: 10px;
+  color: #565656;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* [Custom Styles]
+------------------------------------------------------------------*/
+
+.heading.inverted {
+  color: #ffffff;
+}
+
+.allcaps {
+  text-transform: uppercase;
+}
+
+.section.heading {
+  margin-bottom: 50px;
+  margin-left: 10px;
+  font-size: 11px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*------------------------------------------------------------------
+ [4. Button]
+------------------------------------------------------------------*/
+
+/* [Booststrap (Extended)]
+------------------------------------------------------------------*/
+
+/*-----[Common Styles]-----*/
+
+.btn {
+  border: 0px;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+}
+
+/*-----[Link Buttons]-----*/
+
+.btn-link {
+  color: #0d93d9;
+}
+
+.btn-link:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
+/*-----[Button Sizes]-----*/
+
+.btn-lg {
+  padding: 20px 50px;
+  font-size: 16px;
+  line-height: 25px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* [Custom Styles]
+------------------------------------------------------------------*/
+
+.btn-cta {
+  background-color: #ffffff;
+  color: #444444;
+}
+
+.btn-cta:hover {
+  background-color: #f8f6f4;
+  color: #444444;
+}
+
+/*------------------------------------------------------------------
+ [5. Image]
+------------------------------------------------------------------*/
+
+img {
+  margin-bottom: 20px;
+}
+
+.image {
+  *zoom: 1;
+  background: #0d93d9;
+  position: relative;
+}
+
+.image:before,
+.image:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.image:after {
+  clear: both;
+}
+
+.image:before,
+.image:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+.image:after {
+  clear: both;
+}
+
+.image.thumbnail {
+  background-color: #0d93d9;
+  border: 0px;
+  float: left;
+  height: 340px;
+  width: 50%;
+  overflow: hidden;
+  padding: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+
+.image.thumbnail.small {
+  height: 220px;
+  width: 33.33333333%;
+}
+
+.image.thumbnail.small .caption {
+  line-height: 220px;
+}
+
+.image.thumbnail.small .caption .separator {
+  top: 20%;
+}
+
+.image.thumbnail img {
+  width: 100%;
+}
+
+.image.thumbnail a {
+  display: block;
+}
+
+.image.thumbnail a:hover .caption {
+  opacity: 1;
+  -webkit-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.image.thumbnail a:hover .caption .separator {
+  width: 5%;
+  -webkit-transition: width ease 0.8s;
+  -o-transition: width ease 0.8s;
+  transition: width ease 0.8s;
+}
+
+.image.thumbnail a:hover .caption .client {
+  top: 20%;
+  -webkit-transition: top ease-in 0.3s;
+  -o-transition: top ease-in 0.3s;
+  transition: top ease-in 0.3s;
+}
+
+.image.thumbnail .caption {
+  height: 100%;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: auto;
+  background-color: rgba(13, 147, 217, 0.8);
+  display: block;
+  padding: 0px;
+  color: #ffffff;
+  line-height: 340px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+
+.image.thumbnail .caption .separator {
+  height: 1px;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+  display: block;
+  top: 10%;
+  -webkit-transition: width ease 0.8s;
+  -o-transition: width ease 0.8s;
+  transition: width ease 0.8s;
+}
+
+.image.thumbnail .caption .client {
+  height: 100%;
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  top: 100%;
+  color: #87d1f8;
+  font-size: 12px;
+  font-style: italic;
+  -webkit-transition: top ease-out 0.3s;
+  -o-transition: top ease-out 0.3s;
+  transition: top ease-out 0.3s;
+}
+
+.image header {
+  height: 60px;
+  width: 50%;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: auto;
+  z-index: 2;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.image header h2 {
+  color: #ffffff;
+}
+
+.image header h2 a {
+  color: #ffffff;
+}
+
+.image header h2 a:hover {
+  color: #0d93d9;
+}
+
+.featured.image {
+  background-color: transparent;
+  width: 100%;
+}
+
+/*------------------------------------------------------------------
+ [6. Masthead]
+------------------------------------------------------------------*/
+
+.masthead {
+  background: #fff;
+  height: 100%;
+  width: auto;
+  margin: 0px;
+}
+
+.masthead .content {
+  height: 100%;
+  width: 80%;
+  margin: 0px auto;
+  padding: 50px 0px;
+}
+
+@media (min-width: 600px) {
+  .masthead .content {
+    width: 70%;
+  }
+}
+
+.masthead header {
+  margin-bottom: 100px;
+  text-align: left;
+}
+
+.masthead header img {
+  margin-bottom: 0px;
+}
+
+.masthead p {
+  font-size: 13px;
+  font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  line-height: 20px;
+}
+
+.masthead .lead {
+  font-family: "Voltaire", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+  letter-spacing: -2px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.masthead .lead strong {
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .masthead .lead {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead .lead {
+    font-size: 60px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .masthead .lead {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+.masthead .tagline {
+  display: block;
+  color: #898989;
+  font-size: 10px;
+}
+
+/*------------------------------------------------------------------
+ [7. Main Content]
+------------------------------------------------------------------*/
+
+/* [Booststrap (Extended)]
+------------------------------------------------------------------*/
+
+/*-----[Jumbotron]-----*/
+
+.jumbotron {
+  background: url('dummy-images/hero-image.jpg') center center;
+  background-color: transparent;
+  background-size: cover;
+  border: 0px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.jumbotron .container {
+  width: 80%;
+  height: 50%;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: auto;
+}
+
+.jumbotron h1 {
+  font-size: 80px;
+  letter-spacing: -8px;
+}
+
+.jumbotron p {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.jumbotron .cover.overlay h1 {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.jumbotron .cover.overlay a {
+  color: #565656;
+}
+
+/* [Custom Styles]
+------------------------------------------------------------------*/
+
+/*-----[Global Content Styles]-----*/
+
+.content {
+  *zoom: 1;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.content:before,
+.content:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.content:after {
+  clear: both;
+}
+
+.content:before,
+.content:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+.content:after {
+  clear: both;
+}
+
+.content.wider {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content.narrow {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content.narrow h1 {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 65px;
+}
+
+.content.narrow p {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content.narrow p:last-child {
+  margin-bottom: 0px;
+}
+
+.content.centered {
+  text-align: center;
+}
+
+.content.shrunk-down {
+  padding-bottom: 50px;
+}
+
+.content.shrunk-up {
+  padding-top: 50px;
+}
+
+.content.flatted-down {
+  padding-bottom: 0px;
+}
+
+.content.flatted-up {
+  padding-top: 0px;
+}
+
+/*-----[Iconic]-----*/
+
+.iconic {
+  margin-bottom: 50px;
+}
+
+.iconic.shrunk-down {
+  margin-bottom: 20px;
+}
+
+.iconic.shrunk-up {
+  margin-top: 20px;
+}
+
+/*-----[Bottom Section]-----*/
+
+.bottom {
+  *zoom: 1;
+  background-color: #0f232d;
+}
+
+.bottom:before,
+.bottom:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.bottom:after {
+  clear: both;
+}
+
+.bottom:before,
+.bottom:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+.bottom:after {
+  clear: both;
+}
+
+.bottom a {
+  color: #ffffff;
+}
+
+.bottom a:hover {
+  color: #0d93d9;
+}
+
+.bottom a.social.icon {
+  margin-right: 40px;
+}
+
+.bottom a.social.icon:last-child {
+  margin-right: 0px;
+}
+
+/*------------------------------------------------------------------
+ [8. Main Content]
+------------------------------------------------------------------*/
+
+.post.date {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  /* Fix for IE7 */
+  vertical-align: top;
+  margin-bottom: 20px;
+  color: #898989;
+  font-size: 12px;
+}
+
+.post img {
+  width: 100%;
+}
+
+.post h1 a,
+.post h2 a,
+.post h3 a,
+.post h4 a,
+.post h5 a,
+.post h6 a {
+  color: #444444;
+}
+
+.post h1 a:hover,
+.post h2 a:hover,
+.post h3 a:hover,
+.post h4 a:hover,
+.post h5 a:hover,
+.post h6 a:hover {
+  color: #6a6a6a;
+}
+
+article.small {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+article.small a.btn {
+  margin-left: -10px;
+}
+
+/*------------------------------------------------------------------
+ [9. Footer]
+------------------------------------------------------------------*/
+
+footer {
+  width: 20%;
+  bottom: 30px;
+  position: fixed;
+  margin-bottom: 30px;
+  font-size: 11px;
+  line-height: 15px;
+}
+
+footer .watermark {
+  width: 70%;
+  margin: 0px auto;
+}

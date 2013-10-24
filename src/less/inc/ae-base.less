@@ -1,0 +1,95 @@
+// -----------------------------------------------------------------
+// * [Base Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+*,
+*:before,
+*:after {
+  .box-sizing(border-box);
+}
+
+body{
+    background-color: @default-background;
+
+    color: @body-text-color;
+    font-family: @font-1;
+    font-size: @body-fz-lg;
+    font-weight: 400;
+    line-height: 30px;
+    text-rendering: optimizeLegibility;
+}
+
+a{
+    color: @link-color;
+    text-decoration: none;
+    transition: all .8s ease;
+    &:hover{
+        color: @link-hover-color;
+        text-decoration: none;
+    }
+}
+
+#wrapper {
+    .clearfix();
+}
+
+#left {
+    background-color: @secondary-background;
+    // border-right: 2px solid darken(@default-accent, 20%);
+
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-desktop) {
+        bottom: 0px;
+        left:0px;
+        position: fixed;
+        right: 80%;
+        top:0px;
+    }
+}
+
+#right {
+    margin-left: 0px;
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-desktop) {
+        margin-left: 20%;
+    }
+}
+
+.cover.overlay {
+    background-color: rgba(13,147,217,0.7);
+
+    height: 100%;
+    width: auto;
+    &.lighter {
+        background-color: rgba(13,147,217,0.3);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5, 
+    h6,
+    a.btn {
+        color: lighten(@default-accent, 35%);
+    }
+    p,
+    cite {
+        color: @secondary-text;
+    }
+    blockquote {
+        border-left-color: lighten(@default-accent, 30%);
+    }
+}
+
+.container {
+    &.full {
+        max-width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

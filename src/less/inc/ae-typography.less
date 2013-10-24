@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------
+// * [Text & Typography Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Booststrap (Extended)]
+------------------------------------------------------------------*/
+/*-----[Headings]-----*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: @heading-color;
+    font-family: @font-1;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: @heading-1-fz;
+    letter-spacing: @ls-nr;
+}
+h2 {
+    font-size: @heading-2-fz;
+    letter-spacing: @ls-nm;
+}
+h3 {
+    font-size: @heading-3-fz;
+    letter-spacing: @ls-nm;
+}
+h4 {
+    font-size: @heading-4-fz;
+    letter-spacing: @ls-nm;
+}
+
+h5 {
+    font-size: @heading-5-fz;
+    letter-spacing: @ls-nm;
+}
+h6 {
+    font-size: @heading-6-fz;
+    letter-spacing: @ls-nm;
+}
+
+h1 {
+    letter-spacing: -5.0px;
+}
+
+h2 {
+    letter-spacing: -3.0px;
+}
+
+h1,
+h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    transform: translate3d(0, 0, 0);
+    transition: all .8s ease;
+}
+
+h3 {
+    margin-bottom: 30px;
+}
+
+/*-----[Blockquote]-----*/
+blockquote {
+    border-left: 1px solid @default-accent;
+    padding-left: 50px;
+    p {
+        .quotes(@default-text, @default-text, @font-3, @font-1, @heading-3-fz, @body-fz-df, 36px, @line-height-base, @body-fz-us, italic);
+        font-weight: 100;
+    }
+}
+
+/* [Custom Styles]
+------------------------------------------------------------------*/
+.heading.inverted {
+    color: @secondary-text;
+}
+
+.allcaps {
+    text-transform: uppercase;
+}
+
+.section.heading {
+    margin-bottom: 50px;
+    margin-left: 10px;
+
+    font-size: @body-fz-xs;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}

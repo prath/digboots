@@ -1,0 +1,79 @@
+// -----------------------------------------------------------------
+// * [Masthead Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+.masthead {
+    background: #fff;
+
+    height: 100%;
+    width: auto;
+
+    margin: 0px;
+
+    .content {
+        height: 100%;
+        width: 80%;
+
+        margin: 0px auto;
+        padding: 50px 0px;
+
+        @media (min-width: @screen-lg-phone) {
+            width: 70%;
+        }
+    }
+
+    header {
+        margin-bottom: 100px;
+
+        text-align: left;
+        img {
+            margin-bottom: 0px;
+        }
+    }
+
+    p {
+        font-size: @body-fz-df;
+        font-family: @font-1;
+        line-height: @line-height-base;
+    }
+
+    .lead {
+        font-family: @font-2;
+        font-size: 30px;
+        font-weight: 100;
+        letter-spacing: -2.0px;
+        line-height: 40px;
+        text-transform: uppercase;
+        strong {
+            font-weight: 300;
+        }
+
+        @media (min-width: @screen-tablet) {
+            font-size: @heading-1-fz;
+            line-height: @heading-1-fz;
+        }
+
+        @media (min-width: @screen-desktop) {
+            font-size: 60px;
+            line-height: 50px;
+        }
+
+        @media (min-width: @screen-lg-desktop) {
+            font-size: 40px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+    }
+    .tagline {
+        display: block;
+
+        color: @muted-text-color;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,143 @@
+// -----------------------------------------------------------------
+// * [Main Content Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Booststrap (Extended)]
+------------------------------------------------------------------*/
+/*-----[Jumbotron]-----*/
+.jumbotron {
+    background: url('dummy-images/hero-image.jpg') center center;
+    background-color: transparent;
+    background-size: cover;
+    border: 0px;
+
+    overflow: hidden;
+    width: 100%;
+
+    position: relative;
+
+    margin: 0px;
+    padding: 0px;
+
+    color: @secondary-text;
+    text-align: center;
+
+    .container {
+        width: 80%;
+        height: 50%;
+
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 80px;
+        letter-spacing: -8.0px;
+    }
+
+    p {
+        width: 60%;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .cover.overlay {
+        h1 {
+            color: @secondary-text;
+            font-weight: 400;
+        }
+        a {
+            color: @body-text-color;
+        }
+    }
+}
+
+/* [Custom Styles]
+------------------------------------------------------------------*/
+
+/*-----[Global Content Styles]-----*/
+.content {
+    .clearfix();
+    padding-top: 150px;
+    padding-bottom: 150px;
+    &.wider {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &.narrow {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        h1 {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 65px;
+        }
+        p {
+            margin-bottom: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    &.centered {
+        text-align: center;
+    }
+    &.shrunk-down {
+        padding-bottom: 50px;
+    }
+    &.shrunk-up {
+        padding-top: 50px;
+    }
+    &.flatted-down {
+        padding-bottom: 0px;
+    }
+    &.flatted-up {
+        padding-top: 0px;
+    }
+}
+
+/*-----[Iconic]-----*/
+.iconic {
+    margin-bottom: 50px;
+    &.shrunk-down {
+        margin-bottom: 20px;
+    }
+    &.shrunk-up {
+        margin-top: 20px;
+    }
+}
+
+/*-----[Bottom Section]-----*/
+.bottom {
+    .clearfix();
+    background-color: @secondary-background;
+    a {
+        color: @secondary-text;
+        &:hover {
+            color: @default-accent;
+        }
+        &.social.icon {
+            margin-right: 40px;
+            &:last-child {
+                margin-right: 0px;
+            }
+        }
+    }
+}
