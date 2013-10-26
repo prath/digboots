@@ -48,7 +48,7 @@ module.exports = function(grunt) {
             con: {
                 options: {
                     port: 3001,
-                    base: 'dist/'
+                    base: './'
                 }
             }
         },
@@ -60,7 +60,7 @@ module.exports = function(grunt) {
          */
         open: {
             dev: {
-                path: 'http://0.0.0.0:3001'
+                path: 'http://0.0.0.0:3001/dist'
             }
         },
         /**
@@ -69,8 +69,12 @@ module.exports = function(grunt) {
         less: {
             compile: {
                 options: {
-                    paths: ['src/less', 'src/less/inc', 'src/less/bootstrap-less', 'src/less/bootstrap-theme'],
-                    dumpLineNumbers: true
+                    paths: ['src/less', 'src/less/inc', 'src/less/bootstrap-less'],
+                    ieCompat: true,
+                    dumpLineNumbers: true,
+                    sourceMap: true,
+                    // sourceMapFilename: 'sourceMap.css.map',
+                    sourceMapRootpath: 'http://0.0.0.0:3001/'
                 },
                 files: [{
                     expand: true,

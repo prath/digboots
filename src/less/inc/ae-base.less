@@ -7,12 +7,6 @@
 // * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
-*,
-*:before,
-*:after {
-  .box-sizing(border-box);
-}
-
 body{
     background-color: @default-background;
 
@@ -22,6 +16,7 @@ body{
     font-weight: 400;
     line-height: 30px;
     text-rendering: optimizeLegibility;
+
 }
 
 a{
@@ -31,6 +26,7 @@ a{
     &:hover{
         color: @link-hover-color;
         text-decoration: none;
+
     }
 }
 
@@ -83,6 +79,11 @@ a{
     }
     blockquote {
         border-left-color: lighten(@default-accent, 30%);
+    }
+    a.btn-cta {
+        &:hover {
+            color: @secondary-text;
+        }
     }
 }
 

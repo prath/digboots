@@ -1,0 +1,179 @@
+// -----------------------------------------------------------------
+// * [Navbar Styles]
+// * 
+// * @project Suave Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
+// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// -----------------------------------------------------------------
+
+/* [Booststrap (Extended)]
+------------------------------------------------------------------*/
+
+/*-----[Navbar]-----*/
+.navbar {
+    border-radius: 0px;
+
+    transition: all .2s ease;
+}
+
+.navbar-default {
+    background-color: @secondary-text;
+    border: 0px;
+
+    font-size: @body-fz-xs;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    .navbar-nav {
+        > li {
+            > a {
+                transition: all .4s ease;
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: @secondary-text;
+                    color: @default-accent;
+                }
+            }
+        }
+        > .active {
+            > a {
+                background-color: @secondary-text;
+                color: @default-accent;
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: @secondary-text;
+                    color: @default-accent;
+                }
+            }
+        } 
+        > .open > a {
+            &,
+            &:hover,
+            &:focus {
+                background-color: @secondary-text;
+                color: @default-accent;
+            }
+        }
+    }
+}
+
+.navbar-collapse {
+    width: 100%;
+
+    margin: auto;
+    padding: 0px;
+}
+
+/*-----[Dropdown Menu]-----*/
+.dropdown-menu {
+    padding: 0px;
+    margin: 0px 0 20px; // override default ul
+    font-size: @body-fz-us;
+    background-color: @secondary-text;
+    border: 0px;
+    border-bottom: 1px solid @default-accent;
+    border-top: 1px solid @default-accent;
+    border-radius: 0px;
+    box-shadow: none;
+    z-index: 5;
+    transition: all .4s ease;
+    > li > a {
+        padding: 10px 20%;
+
+        font-weight: 700;
+
+        transition: all .5s ease;
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            border-left: 1px solid lighten(@default-accent, 10%);
+            color: @default-accent;
+        }
+    }
+}
+
+/*-----[Right Fixed Positioned Navbar]-----*/
+.right.positioned {
+    &.navbar {
+        height: 100%;
+        width: 15%;
+
+        position: fixed;
+        right: -15%;
+        overflow-y: auto;
+
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    &.navbar-default {
+        .navbar-nav {
+            > li {
+                > a {
+                    padding-left: 20%;
+                    padding-right:10%;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        border-left: 1px solid @default-accent;
+                    }
+                }
+            }
+            > .active {
+                > a {
+                    border-left: 1px solid @default-accent;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        border-left: 1px solid @default-accent;
+                    }
+                }
+            } 
+            > .open > a {
+                &,
+                &:hover,
+                &:focus {
+                    border-left: 1px solid @default-accent;
+                }
+            }
+        }
+    }
+}
+
+.right.positioned .navbar-nav {
+    float: none;
+    > li {
+        float: none;
+    }
+} 
+
+
+/*-----[Dropdown Menu]-----*/
+.right.positioned .dropdown-menu {
+    position: relative;
+    float: none;
+    width: 100%;
+}
+
+
+/* [Custom Styles]
+------------------------------------------------------------------*/
+.nav.toggle.button {
+    background-color: rgba(13,147,217,0.3);
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+
+    padding: 10px;
+
+    line-height: 0px;
+    img {
+        margin-bottom: 0px;
+    }
+}
