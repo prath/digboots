@@ -29,13 +29,19 @@
     }
 
     header {
-        // background-color: @default-accent;
+        background-color: @secondary-text;
         margin-bottom: 100px;
-        // padding: 20px;
+
+        position: relative;
 
         text-align: left;
+        transition: all ease 0.8s;
         img {
+            height: 30px;
+            width: auto;
+
             margin-bottom: 0px;
+            transition: all ease 0.8s;
         }
     }
 
@@ -78,5 +84,46 @@
 
         color: @muted-text-color;
         font-size: 10px;
+    }
+
+    .toggle {
+        &.iconic {
+            background-color: transparent;
+
+            position: fixed;
+            right: 80%;
+            top: 0;
+
+            margin-bottom: 0px;
+            margin-right: 20px;
+            transition: all ease 0.8s; 
+        }
+    }
+}
+
+.mastshown {
+    .toggle {
+        &.iconic {
+            background-color: transparent;
+
+            position: fixed;
+            right: 100%;
+            top: 10px;
+
+            margin-right: -20px;
+            z-index: 9999;
+        }
+    }     
+    header {
+        position: fixed;
+        left: 0;
+        z-index: 9998;
+        top: 0;
+        width: 15%;
+        padding: 10px 0px;
+        text-align: center;
+        img {
+            height: 20px;
+        }
     }
 }

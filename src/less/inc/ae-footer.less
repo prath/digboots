@@ -9,18 +9,31 @@
 // -----------------------------------------------------------------
 
 footer {
-    width: 20%;
-
-    bottom: 30px;
-    position: fixed;
-
-    margin-bottom: 30px;
-
-    font-size: @body-fz-xs;
     line-height: @line-height-narrow ;
+    &.bottom {
+        .clearfix();
+        background-color: @secondary-background;
+        a {
+            color: @secondary-text;
+            &:hover {
+                color: @default-accent;
+            }
+            &.social.icon {
+                margin-right: 40px;
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
     .watermark {
         width: 70%;
 
         margin: 0px auto;
+
+        font-size: @body-fz-xs;
+    }
+    .social.icons {
+        margin-bottom: 20px;
     }
 }

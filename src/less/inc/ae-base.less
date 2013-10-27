@@ -36,7 +36,7 @@ a{
 
 #left {
     background-color: @secondary-background;
-    // border-right: 2px solid darken(@default-accent, 20%);
+    z-index: 2;
 
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-desktop) {
@@ -46,10 +46,15 @@ a{
         right: 80%;
         top:0px;
     }
+    &.mastshown {
+        left: -20%;
+        right: 100%
+    }
 }
 
 #right {
     margin-left: 0px;
+    z-index: 1;
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-desktop) {
         margin-left: 20%;
