@@ -23,21 +23,51 @@ img {
 
         float: left;
 
-        height: 340px;
-        width: 50%;
+        height: 390px;
+        width: 100%;
         overflow: hidden;
 
         padding: 0px;
 
         border-radius: 0px;
 
+        //*-----[Responsive 600++]-----*/
+        @media (min-width: @screen-lg-phone) {
+            width: 50%;
+        }
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            height: 340px;
+            width: 50%;
+        }
+
         &.small {
-            height: 220px;
-            width: 33.33333333%;
+            height: 240px;
+            width: 50%;
+
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-lg-phone) {
+                height: 220px;
+                width: 33.33333333%;
+            }
+
             .caption {
-                line-height: 220px;
+                font-size: @body-fz-xs;
+                line-height: @line-height-base;
+
+                //*-----[Responsive 600++]-----*/
+                @media (min-width: @screen-lg-phone) {
+                    font-size: @body-fz-lg;
+                    line-height: 220px;
+                }
                 .separator {
                     top: 20%;
+
+                    //*-----[Responsive 600++]-----*/
+                    @media (min-width: @screen-lg-phone) {
+                        
+                    }
                 }
             }
         }
@@ -65,52 +95,88 @@ img {
         }
 
         .caption {
-            .absoluteCenter(absolute, 100%, 100%);
-
-            background-color: fade(@default-accent, 80%);
+            background-color: @default-accent;
             display: block;
 
-            padding: 0px;
+            bottom: 0;
+            position: absolute;
+            top: auto;
+
+            height: 90px;
+            width: 100%;
+
+            padding: 20px;
 
             color: @secondary-text;
-            line-height: 340px;
+            line-height: @line-height-base;
             text-align: center; 
 
-            opacity: 0;
-            transition: all ease 0.8s;
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-lg-phone) {
+                .absoluteCenter(absolute, 100%, 100%);
+
+                background-color: fade(@default-accent, 80%);
+                display: block;
+
+                padding: 0px;
+
+                color: @secondary-text;
+                line-height: 340px;
+
+                opacity: 0;
+                transition: all ease 0.8s;
+            }
 
             .separator {
-                .absoluteCenter(absolute, 1px, 100%);
                 border-bottom: 1px solid @secondary-text;
                 display: block;
 
-                top: 10%;
-                transition: width ease 0.8s;
+                width: 100%;
+
+                margin: 5px auto;
+
+                box-sizing: border-box;
+
+                //*-----[Responsive 600++]-----*/
+                @media (min-width: @screen-lg-phone) {
+                    .absoluteCenter(absolute, 1px, 100%);
+                    border-bottom: 1px solid @secondary-text;
+                    display: block;
+
+                    top: 10%;
+                    transition: width ease 0.8s;
+                }
             }
 
             .client {
-                .absoluteCenter(absolute, 100%, 100%);
                 display: block;
-
-                top: 100%;
-
                 color: lighten(@default-accent, 30%);
                 font-size: @body-fz-sm;
-                font-style: italic;
+                //*-----[Responsive 600++]-----*/
+                @media (min-width: @screen-lg-phone) {
+                    .absoluteCenter(absolute, 100%, 100%);
+                    display: block;
 
-                transition: top ease-out 0.3s;
+                    top: 100%;
+
+                    transition: top ease-out 0.3s;
+                }
             }
         }
     }
     
     header {
-        .absoluteCenter(absolute, 60px, 50%);
-
-        z-index: 1;
-
+        margin-top: 30px;
         text-align: center;
 
-        opacity: 0.8;
+        //*-----[Responsive 600++]-----*/
+        @media (min-width: @screen-lg-phone) {
+            .absoluteCenter(absolute, 60px, 50%);
+
+            z-index: 1;
+
+            opacity: 0.8;
+        }
 
         h2 {
             color: @secondary-text;

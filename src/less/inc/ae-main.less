@@ -14,22 +14,32 @@
 .jumbotron {
     background: url('dummy-images/hero-image.jpg') center center;
     background-color: transparent;
+    background-repeat: no-repeat;
     background-size: cover;
     border: 0px;
 
-    overflow: hidden;
     width: 100%;
+    height: 100%;
 
     position: relative;
+    overflow: hidden;
 
     margin: 0px;
     padding: 0px;
 
     color: @secondary-text;
+    font-size: @body-fz-xl;
     text-align: center;
 
+    -webkit-overflow-scrolling: touch;
+
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        font-size: 21px;
+    }
+
     .container {
-        width: 60%;
+        width: 80%;
         height: 50%;
 
         bottom: 0px;
@@ -39,30 +49,56 @@
         top: 0px;
 
         margin: auto;
+
+        //*-----[Responsive 600++]-----*/
+        @media (min-width: @screen-lg-phone) {
+            height: 80%;
+            width: 90%;
+        }
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            height: 50%;
+            width: 60%;
+        }
     }
 
     h1 {
+        margin-bottom: 20px;
+
         font-family: @font-4;
-        font-size: 90px;
+        font-size: 48px;
         font-weight: 400;
-        letter-spacing: -7.0px;
-        line-height: 90px;
+        letter-spacing: -3.0px;
+        line-height: 40px;
+        strong {
+            font-weight: 800;
+        }
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            margin-bottom: 50px;
+
+            font-size: 90px;
+            letter-spacing: -7.0px;
+            line-height: 90px;
+        }
     }
 
     p {
-        width: 60%;
+        width: 80%;
 
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            width: 60%;
+        }
     }
     .cover.overlay {
         h1 {
             color: @secondary-text;
-            font-weight: 400;
-            strong {
-                font-weight: 800;
-            }
         }
         a {
             color: @body-text-color;
@@ -76,29 +112,49 @@
 /*-----[Global Content Styles]-----*/
 .content {
     .clearfix();
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
     &.wider {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
     &.narrow {
-        width: 50%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
         h1 {
-            width: 80%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
+            //*-----[Responsive 768++]-----*/
+            @media (min-width: @screen-tablet) {
+                width: 80%;
+            }
         }
         p {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             margin-left: auto;
             margin-right: auto;
             &:last-child {
                 margin-bottom: 0px;
             }
+            //*-----[Responsive 768++]-----*/
+            @media (min-width: @screen-tablet) {
+                margin-bottom: 50px;
+            }
+        }
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            width: 50%;
         }
     }
     &.centered {

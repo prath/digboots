@@ -178,34 +178,57 @@
 
 /*-----[Top Nav]-----*/
 .top.nav {
-    background-color: rgba(13,147,217,0.3);
-    padding: 10px 20px;
+    background-color: rgba(13,147,217,1.0);
+
+    width: 100%;
+
+    padding: 10px 10px;
 
     color: @secondary-text;
     font-size: @body-fz-us;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: right;
+    text-align: center;
     vertical-align: middle;
+    white-space: nowrap;
 
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        background-color: rgba(13,147,217,0.3);
+
+        width: auto;
+
+        padding: 10px 20px;
+
+        text-align: right;
+    }
     .item {
-        margin-right: 20px;
+        margin-right: 10px;
         &:last-child {
             margin-right: 0px;
+        }
+        //*-----[Responsive 600++]-----*/
+        @media (min-width: @screen-lg-phone) {
+            margin-right: 20px;
         }
     }
 
     a {
         .inlineDisplay();
 
-        margin-right: 20px;
+        margin-right: 10px;
 
         color: @secondary-text;
+
         &:last-child {
             margin-right: 0px;
         }
         &:hover {
             color: @default-accent;
+        }
+        //*-----[Responsive 600++]-----*/
+        @media (min-width: @screen-lg-phone) {
+            margin-right: 20px;
         }
     }
     .iconic {
@@ -216,7 +239,14 @@
         line-height: 0px;
 
         img {
+            width: 20px;
+            height: auto;
+
             margin-bottom: 0px; 
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-lg-phone) {
+                width: 24px;
+            }
         }
         &:hover {
             opacity: 0.3;
@@ -243,14 +273,23 @@
         background-color: rgba(13,147,217,0.9);
         display: none;
 
-        left: 20%;
+        left: 0%;
         position: fixed;
         right: 0;
         z-index: 2;
 
-        padding: 100px;
+        margin-top: 50px;
+        padding: 20px;
 
         color: @secondary-text;
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            left: 20%;
+
+            margin-top: 0px;
+            padding: 100px;
+        }
     }
     form {
         .clearfix();
@@ -268,10 +307,18 @@
 
         color: @secondary-text;
         font-family: @font-1;
-        font-size: 48px;
-        font-weight: 700;
-        line-height: 48px;
+        font-size: @body-fz-lg;
+        font-weight: 400;
+        line-height: @body-fz-lg;
         vertical-align: bottom;
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+        }
+
         &:focus {
            outline: 0px;
            border-bottom: 1px solid lighten(@default-accent, 20%);
@@ -281,8 +328,8 @@
         background-color: transparent;
         border: 0px;
 
-        height: 67px;
-        width: 67px;
+        height: 24px;
+        width: 24px;
 
         position: absolute;
         right: 0;
@@ -291,9 +338,19 @@
         text-align: center;
         vertical-align: middle;
 
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            height: 67px;
+            width: 67px;
+        }
+
         i {
             color: @secondary-text;
-            font-size: 48px;
+            font-size: @body-fz-lg;
+            //*-----[Responsive 768++]-----*/
+            @media (min-width: @screen-tablet) {
+                font-size: 48px;
+            }
         }
     }
 }

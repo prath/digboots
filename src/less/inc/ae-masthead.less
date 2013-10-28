@@ -11,10 +11,15 @@
 .masthead {
     background: #fff;
 
-    height: 100%;
+    height: auto;
     width: auto;
 
     margin: 0px;
+
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        height: 100%;
+    }
 
     .content {
         height: 100%;
@@ -30,12 +35,20 @@
 
     header {
         background-color: @secondary-text;
-        margin-bottom: 100px;
+        margin-bottom: 30px;
 
         position: relative;
 
-        text-align: left;
+        text-align: center;
         transition: all ease 0.8s;
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            margin-bottom: 100px;
+
+            text-align: left;
+        }
+
         img {
             height: 30px;
             width: auto;
@@ -49,15 +62,32 @@
         font-size: @body-fz-df;
         font-family: @font-1;
         line-height: @line-height-base;
+        text-align: center;
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            text-align: left;
+        }
     }
 
     .lead {
-        font-family: @font-4;
+        margin-bottom: 10px;
+
+        font-family: @font-2;
         font-size: 30px;
         font-weight: 100;
         letter-spacing: -2.0px;
         line-height: 40px;
+        text-align: center;
         text-transform: uppercase;
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            margin-bottom: 20px;
+
+            text-align: left;
+        }
+
         strong {
             font-weight: 300;
         }
@@ -73,8 +103,8 @@
         }
 
         @media (min-width: @screen-lg-desktop) {
-            font-size: 30px;
-            line-height: 30px;
+            font-size: 40px;
+            line-height: 40px;
             margin-bottom: 30px;
         }
     }
@@ -89,6 +119,7 @@
     .toggle {
         &.iconic {
             background-color: transparent;
+            display: none;
 
             position: fixed;
             right: 80%;
@@ -97,6 +128,10 @@
             margin-bottom: 0px;
             margin-right: 20px;
             transition: all ease 0.8s; 
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-lg-phone) {
+                display: block;
+            }
         }
     }
 }

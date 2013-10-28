@@ -10,13 +10,14 @@
 body{
     background-color: @default-background;
 
+    margin: 0px;
+
     color: @body-text-color;
     font-family: @font-1;
     font-size: @body-fz-lg;
     font-weight: 400;
     line-height: 30px;
     text-rendering: optimizeLegibility;
-
 }
 
 a{
@@ -45,15 +46,20 @@ p {
 
 #left {
     background-color: @secondary-background;
+    
     z-index: 2;
 
+    margin-top: 50px;
+
     //*-----[Responsive 768++]-----*/
-    @media (min-width: @screen-desktop) {
+    @media (min-width: @screen-tablet) {
         bottom: 0px;
         left:0px;
         position: fixed;
         right: 80%;
         top:0px;
+
+        margin-top: 0px;
     }
     &.mastshown {
         left: -20%;

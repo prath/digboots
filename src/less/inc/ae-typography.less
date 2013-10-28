@@ -27,12 +27,20 @@ h6 {
 }
 
 h1 {
-    font-size: @heading-1-fz;
+    font-size: @heading-1-fz/1.5;
     letter-spacing: @ls-nr;
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        font-size: @heading-1-fz;
+    }
 }
 h2 {
-    font-size: @heading-2-fz;
+    font-size: @heading-2-fz/1.5;
     letter-spacing: @ls-nm;
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        font-size: @heading-2-fz;
+    }
 }
 h3 {
     font-size: @heading-3-fz;
@@ -63,10 +71,14 @@ h2 {
 h1,
 h2 {
     margin-top: 0px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     transform: translate3d(0, 0, 0);
     transition: all .8s ease;
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        margin-bottom: 50px;
+    }
 }
 
 h3 {
@@ -94,11 +106,17 @@ blockquote {
 }
 
 .section.heading {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-left: 10px;
 
     font-size: @body-fz-xs;
     letter-spacing: 10px;
+    line-height: @line-height-med;
     text-transform: uppercase;
     text-align: center;
+
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        margin-bottom: 50px;
+    }
 }
