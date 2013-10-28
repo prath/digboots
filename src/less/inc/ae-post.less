@@ -36,8 +36,15 @@
 }
 
 article.small {
+	margin-bottom: 30px;
+
     font-size: @body-fz-md;
     line-height: @line-height-base;
+
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        margin-bottom: 0px;
+    }
     a.btn {
         margin-left: -10px;
     }

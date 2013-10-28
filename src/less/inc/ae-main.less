@@ -59,7 +59,7 @@
         //*-----[Responsive 768++]-----*/
         @media (min-width: @screen-tablet) {
             height: 50%;
-            width: 60%;
+            width: 80%;
         }
     }
 
@@ -68,17 +68,17 @@
 
         font-family: @font-4;
         font-size: 48px;
-        font-weight: 400;
+        font-weight: 100;
         letter-spacing: -3.0px;
         line-height: 40px;
         strong {
-            font-weight: 800;
+            font-weight: 600;
         }
         //*-----[Responsive 768++]-----*/
         @media (min-width: @screen-tablet) {
             margin-bottom: 50px;
 
-            font-size: 90px;
+            font-size: 100px;
             letter-spacing: -7.0px;
             line-height: 90px;
         }
@@ -89,13 +89,24 @@
 
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+
+        letter-spacing: 10px;
 
         //*-----[Responsive 768++]-----*/
         @media (min-width: @screen-tablet) {
             width: 60%;
         }
     }
+
+    a {
+        letter-spacing: 0px;
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            letter-spacing: 10px;
+        }
+    }
+
     .cover.overlay {
         h1 {
             color: @secondary-text;
@@ -148,13 +159,15 @@
             }
             //*-----[Responsive 768++]-----*/
             @media (min-width: @screen-tablet) {
+                width: 90%;
+
                 margin-bottom: 50px;
             }
         }
 
         //*-----[Responsive 768++]-----*/
         @media (min-width: @screen-tablet) {
-            width: 50%;
+            width: 60%;
         }
     }
     &.centered {
