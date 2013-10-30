@@ -17,58 +17,32 @@ h3,
 h4,
 h5,
 h6 {
-    
     color: @heading-color;
     font-family: @font-4;
-    font-weight: 200;
     a {
         border-bottom: 0px;
     }
 }
 
-h1 {
+/*-----[Heading 1 and all h1-h6 faetured-type headings]-----*/
+h1,
+.featured.title {
     font-size: @heading-1-fz/1.5;
-    letter-spacing: @ls-nr;
+    letter-spacing: @ls-xn;
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
+        margin-bottom: 50px;
+
         font-size: @heading-1-fz;
     }
 }
 h2 {
     font-size: @heading-2-fz/1.5;
-    letter-spacing: @ls-nm;
+    letter-spacing: @ls-nr;
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
         font-size: @heading-2-fz;
     }
-}
-h3 {
-    font-size: @heading-3-fz;
-    letter-spacing: @ls-nm;
-}
-h4 {
-    font-size: @heading-4-fz;
-    font-weight: 400;
-    letter-spacing: @ls-nm;
-}
-
-h5 {
-    font-size: @heading-5-fz;
-    font-weight: 600;
-    letter-spacing: @ls-nm;
-}
-h6 {
-    font-size: @heading-6-fz;
-    font-weight: 600;
-    letter-spacing: @ls-nm;
-}
-
-h1 {
-    letter-spacing: -2.0px;
-}
-
-h2 {
-    letter-spacing: -1.0px;
 }
 
 h1,
@@ -76,16 +50,35 @@ h2 {
     margin-top: 0px;
     margin-bottom: 30px;
 
+    font-weight: 200;
+
     transform: translate3d(0, 0, 0);
     transition: all .8s ease;
-    //*-----[Responsive 768++]-----*/
-    @media (min-width: @screen-tablet) {
-        margin-bottom: 50px;
-    }
 }
 
 h3 {
+    font-size: @heading-3-fz;
+    font-weight: 200;
+    letter-spacing: @ls-nm;
+
     margin-bottom: 30px;
+}
+h4 {
+    font-size: @heading-4-fz;
+    font-weight: 500;
+    letter-spacing: @ls-nm;
+}
+
+h5 {
+    font-size: @heading-5-fz;
+    font-weight: 700;
+    letter-spacing: @ls-nm;
+}
+h6 {
+    font-size: @heading-6-fz;
+    font-weight: 500;
+    letter-spacing: @ls-nm;
+    text-transform: uppercase;
 }
 
 /*-----[Blockquote]-----*/
@@ -99,10 +92,12 @@ blockquote {
     }
 }
 
+/*-----[Paragraph]-----*/
 p {
     margin-bottom: 30px;
 }
 
+/*-----[Lead Paragraph]-----*/
 .lead {
     font-family: @font-4;
     font-size: 24px;
@@ -114,17 +109,12 @@ p {
 
 /* [Custom Styles]
 ------------------------------------------------------------------*/
-.heading.inverted {
-    color: @secondary-text;
-}
 
-.allcaps {
-    text-transform: uppercase;
-}
-
+/*-----[Section Heading]-----*/
 .section.heading {
     margin-bottom: 30px;
     margin-left: 10px;
+    margin-top: 10px;
 
     font-family: @font-4;
     font-size: @body-fz-xs;
@@ -152,10 +142,54 @@ p {
     }
 }
 
+/*-----[Images Post Title - used in portfolio and gallery]-----*/
+.image.post.title {
+    background-color: transparent;
+
+    color: @secondary-text;
+    font-size: 48px;
+    a {
+        color: @secondary-text;
+        &:hover {
+            color: @default-accent;
+        }
+    }
+}
+
+/*-----[Related Content Title and Meta Title]-----*/
+.related.title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: @line-height-med;
+    letter-spacing: 0px;
+}
+
+/*-----[Comment Title, mainly used for commentor name]-----*/
+.comment.title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0px;
+}
+
+/*-----[Helpers]-----*/
 .centered {
     text-align: center;
 }
 
 .left-aligned {
     text-align: left;
+}
+
+.heading.inverted {
+    color: @secondary-text;
+}
+
+.allcaps {
+    text-transform: uppercase;
 }

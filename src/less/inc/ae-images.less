@@ -7,10 +7,15 @@
 // * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
+
+/* [Custom Styles]
+------------------------------------------------------------------*/
+/*-----[Global Image]-----*/
 img {
     margin-bottom: 20px;
 }
 
+/*-----[Image Post Styles - used in portfolio and gallery]-----*/
 .image {
     .clearfix();
     background: @default-accent;
@@ -179,24 +184,16 @@ img {
 
             opacity: 0.8;
         }
-
-        h2 {
-            color: @secondary-text;
-            a {
-                color: @secondary-text;
-                &:hover {
-                    color: @default-accent;
-                }
-            }
-        }
     }
 }
 
+/*-----[Featured Image]-----*/
 .featured.image {
     background-color: transparent;
     width: 100%;
 }
 
+/*-----[Avatar]-----*/
 .avatar {
     float: left;
 

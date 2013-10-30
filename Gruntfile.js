@@ -331,13 +331,19 @@ module.exports = function(grunt) {
          */
         prettify: {
             options: {
-                indent_size: 4,
-                brace_style: 'expand',
-                unformatted: ['sub', 'sup', 'b', 'i', 'u']
+                indent: 4,
+                condense: true,
+                brace_style: "expand",
+                padcomments: true,
+                indent_scripts: 'separate',
+                preserve_newlines: true,
+                unformatted: [
+                    "pre"
+                ]
             },
             all: {
                 expand: true, 
-                cwd: './', 
+                cwd: 'dist/', 
                 ext: '.html',
                 src: ['*.html'],
                 dest: 'dist/'

@@ -44,6 +44,7 @@
 
 /* [Custom Styles]
 ------------------------------------------------------------------*/
+/*-----[Post Classes]-----*/
 .post {
     img {
         max-width: 100%;
@@ -117,14 +118,11 @@
         }
 
         a {
-            margin-right: 10px;
-
             white-space: nowrap;
             &:after {
                 content: ',';
             }
             &:last-child {
-                margin-right: 0px;
                 &:after {
                     content: '';
                 }
@@ -169,6 +167,7 @@
     }
 }
 
+/*-----[Smaller size article in term of line height and font sizes]-----*/
 article.small,
 article .small {
     margin-bottom: 30px;
@@ -185,6 +184,7 @@ article .small {
     }
 }
 
+/*-----[Content Separator]-----*/
 .separator {
     border-bottom: 3px solid @muted-text-color;
     display: block;
