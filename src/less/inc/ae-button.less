@@ -16,11 +16,18 @@
     border: 0px;
 
     font-family: @font-1;
-    font-weight: 700;
+    font-size: @body-fz-xs;
+    font-weight: 400;
     text-transform: uppercase;
 
     border-radius: @base-radius;
     transition: all .8s ease;
+}
+
+/*-----[Alternate buttons]-----*/
+
+.btn-primary {
+  .button-variant(@secondary-text; @default-accent; @default-accent);
 }
 
 /*-----[Link Buttons]-----*/
@@ -30,12 +37,14 @@
         color: @link-hover-color;
         text-decoration: none;
     }
+    font-weight: 700;
 }
 
 /*-----[Button Sizes]-----*/
 .btn-lg {
     // line-height: ensure even-numbered height of button next to large input
     .button-size(20px; 50px; @body-fz-lg; @line-height-med; @base-radius);
+    font-weight: 700;
 }
 
 /* [Custom Styles]

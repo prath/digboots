@@ -54,12 +54,12 @@ h4 {
 
 h5 {
     font-size: @heading-5-fz;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: @ls-nm;
 }
 h6 {
     font-size: @heading-6-fz;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: @ls-nm;
 }
 
@@ -91,10 +91,24 @@ h3 {
 /*-----[Blockquote]-----*/
 blockquote {
     border-left: 1px solid @default-accent;
-    padding-left: 50px;
+    padding: 20px 20px 20px 50px;
+    margin: 0 0 30px;
     p {
-        .quotes(@default-text, @default-text, @font-3, @font-1, @heading-3-fz, @body-fz-df, 36px, @line-height-base, @body-fz-us, italic);
+        .quotes(@default-text, @default-text, @font-3, @font-1, @heading-3-fz, @body-fz-df, 48px, @line-height-base, @body-fz-us, italic);
         font-weight: 100;
+    }
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.lead {
+    font-family: @font-4;
+    font-size: 24px;
+    line-height: 42px;
+    strong {
+        font-weight: 500;
     }
 }
 
@@ -124,4 +138,24 @@ blockquote {
     @media (min-width: @screen-tablet) {
         margin-bottom: 50px;
     }
+    &.left-aligned {
+        margin-left: 0px;
+        text-align: left;
+    }
+    &.narrow {
+        width: 100%;
+        margin-bottom: 20px;
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.centered {
+    text-align: center;
+}
+
+.left-aligned {
+    text-align: left;
 }

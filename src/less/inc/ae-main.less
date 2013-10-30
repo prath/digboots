@@ -4,8 +4,8 @@
 // * @project Suave Wordpress Theme
 // * @version 1.0.0
 // * 
-// * @author Dwi A. Hambali <dwi.asharialdy@gmail.com>
-// * @author Pratama H. Salahudin <pratama@hasriyan.com>
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
 /* [Booststrap (Extended)]
@@ -132,12 +132,20 @@
         padding-bottom: 150px;
     }
 
-    &.wider {
+    &.wide,
+    .wide {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
     }
-    &.narrow {
+    &.medium,
+    .medium {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &.narrow,
+    .narrow {
         width: 80%;
         margin-left: auto;
         margin-right: auto;
@@ -170,8 +178,10 @@
             width: 60%;
         }
     }
-    &.centered {
-        text-align: center;
+    &.covered,
+    .covered {
+        background-color: fade(@secondary-text, 50%);
+        padding: 30px;
     }
     &.shrunk-down {
         padding-bottom: 50px;

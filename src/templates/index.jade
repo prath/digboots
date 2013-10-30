@@ -27,7 +27,7 @@ block content
                         | Learn more
 
     // ABOUT US
-    article.content.about.narrow.centered
+    article.content.post.about.featured.narrow
         img(src='dummy-images/about/1.png')
         h1 
             | We Work and Play. We Love This Job.
@@ -87,11 +87,11 @@ block content
                         cite.name
                             | John William Smith - <strong>Company.co</strong> 
                 p
-                    | That's what some of our friends, colleagues and partners says about us. Come visit us to know more about us. in a meantime here are some works <strong>we can do for you</strong>&nbsp;, if you work with us: 
+                    | That's what some of our friends, colleagues and partners says about us. Come visit us to know more about us. in a meantime here are some works <strong>we can do for you</strong> : 
 
             // SERVICES
             section.cover.overlay
-                .container.content.services.wider.shrunk-up
+                .container.content.services.wide.shrunk-up
                     .row
                         h4.section.heading Our Services
                         article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
@@ -114,10 +114,11 @@ block content
                                 | learn more
 
     // FEATURED BLOG POST
-    article.content.post.narrow.shrunk-down.centered
+    article.content.post.featured.narrow.shrunk-down
         h4.section.heading Recent Posts
-        span.post.date
-            | 12 January 2013
+        .post.meta
+            span.post.date
+                | 12 January 2013
         h2 
             a(href='')
                 | Drop in axle roll-in rail slide climb leg.
@@ -128,38 +129,41 @@ block content
             a(href='').btn.btn-link.btn-sm
                 | Read more
     // BLOG POSTs
-    section.content.post.flatted-up.wider
+    section.content.post.flatted-up.wide
         .container
             .row
                 article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
                     h4 
                         a(href='')
                             | European minnow priapumfish
-                    span.post.date
-                        | 12 January 2013
+                    .post.meta
+                        span.post.date
+                            | 12 January 2013
                     p
                         | Efficiently unleash cross-media information without cross-media value.
-                    a(href='')
+                    a(href='').btn.btn-link.btn-sm
                         | read more
                 article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
                     h4 
                         a(href='')
                             | Mosshead warbonnet shrimpfish bigscale.
-                    span.post.date
-                        | 12 January 2013
+                    .post.meta
+                        span.post.date
+                            | 12 January 2013
                     p
                         | European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
-                    a(href='')
+                    a(href='').btn.btn-link.btn-sm
                         | read more
                 article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
                     h4 
                         a(href='')
                             | Climb leg rub face on everything.
-                    span.post.date
-                        | 12 January 2013
+                    .post.meta
+                        span.post.date
+                            | 12 January 2013
                     p
                         | Drop in axle roll-in rail slide noseblunt slide Steve Severin impossible.
-                    a(href='')
+                    a(href='').btn.btn-link.btn-sm
                         | read more
 
     // WORKPLACE GALLERY
@@ -204,7 +208,7 @@ block content
                     | Our Lovely Office
                     span.separator
 
-    footer.content.bottom.centered.shrunk-down.shrunk-up
+    footer.content.bottom.shrunk-down.shrunk-up
         .social.icons
             a.social.icon(href='')
                 i.fa.fa-facebook.fa-lg

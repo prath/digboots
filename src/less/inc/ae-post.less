@@ -8,38 +8,173 @@
 // * @author Pratama H. Salahudin <pratama@hasriyan.com>
 // -----------------------------------------------------------------
 
-.post {
-	&.date {
-		.inlineDisplay();
-		margin-bottom: 20px;
+/* [Booststrap (Extended)]
+------------------------------------------------------------------*/
+/*-----[Breadcrumbs]-----*/
+.breadcrumb {
+    background-color: transparent;
 
-		color: @muted-text-color;
-		font-size: @body-fz-sm;
-		white-space: nowrap;
-	}
-	img {
-		width: 100%;
-	}
-	h1,
-	h2,
-	h3,
-	h4,
-	h5,
-	h6 {
-		a {
-			color: @heading-color;
-			&:hover {
-				color: lighten(@heading-color, 15%);
-			}
-		}
-	}
+    padding: 0px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+
+    font-size: @body-fz-sm;
+    text-align: center;
+    
+    border-radius: 0px;
+    > li {
+        display: inline-block;
+        &+li:before {
+            content: "/\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+            padding: 0 5px;
+            color: @breadcrumb-color;
+        }
+    }
+    > .active {
+        color: @muted-text-color;
+        a,
+        a:hover,
+        a:focus,
+        a:visited,
+        a:active, {
+             color: @muted-text-color;
+        }
+    }
 }
 
-article.small {
-	margin-bottom: 30px;
+/* [Custom Styles]
+------------------------------------------------------------------*/
+.post {
+    img {
+        max-width: 100%;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        a {
+            color: @heading-color;
+            &:hover {
+                color: lighten(@heading-color, 15%);
+            }
+        }
+    }
+
+    blockquote {
+        background-color: fade(@secondary-text, 50%);
+        margin-left: -50px;
+        p {
+            color: @heading-color;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 36px;
+        }
+    }
+
+    .avatar {
+        margin-top: 5px;
+    }
+
+    &.date {
+        .inlineDisplay();
+        white-space: nowrap;
+    }
+
+    &.featured {
+        text-align: center;
+    }
+
+    &.meta {
+        margin-bottom: 20px;
+
+        color: @muted-text-color;
+        font-size: @body-fz-sm;
+        a {
+            font-weight: 700;
+        }
+    }
+
+    &.author {
+        &.descriptive {
+            font-size: @body-fz-df;
+            line-height: @line-height-med;
+            p {
+                margin-left: 60px;
+            }
+        }
+    }
+    &.taxonomy {
+        i {
+            float: left;
+
+            width: 20px;
+            margin-top: 10px;
+        }
+        .items {
+            margin-left: 20px;
+        }
+
+        a {
+            margin-right: 10px;
+
+            white-space: nowrap;
+            &:after {
+                content: ',';
+            }
+            &:last-child {
+                margin-right: 0px;
+                &:after {
+                    content: '';
+                }
+            }
+        }
+    }
+    &.categories,
+    &.tags {
+        .clearfix();
+    }
+
+    &.comment {
+        .clearfix();
+
+        font-size: @body-fz-df;
+        line-height: @line-height-med;
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .avatar {
+            margin-top: 10px;
+        }
+
+        &.content {
+            margin-left: 60px;
+            padding: 0px;
+        }
+        &.replied {
+            margin-left: 60px;
+        }
+    }
+    .caption {
+        .inlineDisplay();
+
+        margin-bottom: 20px;
+
+        color: @muted-text-color;
+        font-size: @body-fz-xs;
+        font-style: italic;
+    }
+}
+
+article.small,
+article .small {
+    margin-bottom: 30px;
 
     font-size: @body-fz-md;
-    line-height: @line-height-base;
+    line-height: @line-height-med;
 
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
@@ -48,4 +183,14 @@ article.small {
     a.btn {
         margin-left: -10px;
     }
+}
+
+.separator {
+    border-bottom: 3px solid @muted-text-color;
+    display: block;
+
+    height: 3px;
+    width: 30px;
+
+    margin: 30px 0px;
 }

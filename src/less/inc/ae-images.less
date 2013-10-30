@@ -79,6 +79,7 @@ img {
 
         a { 
             display: block;
+            transition: all ease 0.5s;
             &:hover {
                 .caption {
                     opacity: 1;
@@ -194,4 +195,16 @@ img {
 .featured.image {
     background-color: transparent;
     width: 100%;
+}
+
+.avatar {
+    float: left;
+
+    &.small {
+        height: 40px;
+        width: 40px;
+        
+        margin-bottom: 10px;
+        margin-right: 20px;
+    }
 }
