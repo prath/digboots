@@ -92,6 +92,7 @@
 
         color: @muted-text-color;
         font-size: @body-fz-sm;
+        line-height: @line-height-base;
         a {
             font-weight: 700;
         }
@@ -177,10 +178,14 @@ article .small {
 
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
-        margin-bottom: 0px;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
     a.btn {
         margin-left: -10px;
+    }
+    p {
+        margin-bottom: 20px;
     }
 }
 
