@@ -58,7 +58,7 @@
         a {
             color: @heading-color;
             &:hover {
-                color: lighten(@heading-color, 15%);
+                color: lighten(@heading-color, 35%);
             }
         }
     }
@@ -166,6 +166,42 @@
         font-size: @body-fz-xs;
         font-style: italic;
     }
+    &.format {
+        border-right: 1px solid lighten(@muted-text-color, 30%);
+        display: block;
+
+        height: 30px;
+
+        left: -50px;
+        position: absolute;
+        top: 0;
+
+        padding-right: 20px;
+
+        i {
+            line-height: 30px;
+        }
+        &.centered {
+            .clearfix();
+            border-bottom: 1px solid @default-accent;
+            border-right: 0px;
+
+            width: 30px;
+            height: auto;
+
+            left: auto;
+            position: relative;
+            top: auto;
+
+            margin: 0px auto 30px;
+            padding-bottom: 10px;
+            padding-right: 0px;
+            i {
+                display: block;
+                font-size: 25px;
+            }
+        }
+    }
 }
 
 /*-----[Smaller size article in term of line height and font sizes]-----*/
@@ -186,6 +222,9 @@ article .small {
     }
     p {
         margin-bottom: 20px;
+    }
+    hgroup {
+        position: relative;
     }
 }
 

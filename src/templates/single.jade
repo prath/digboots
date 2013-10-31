@@ -15,16 +15,19 @@ block title
 block content
     // BLOG POST
     article.content.flatted-down.shrunk-up
+        // BREADCRUMBS
+        ol.breadcrumb
+            li 
+                a(href='') Home
+            li 
+                a(href='') Blog
+            li.active 
+                a(href='') European minnow priapumfish
+        
+        // THE POST
         .post.medium
-            // BREADCRUMBS
-            ol.breadcrumb
-                li 
-                    a(href='') Home
-                li 
-                    a(href='') Blog
-                li.active 
-                    a(href='') European minnow priapumfish
-
+            .post.format.centered
+                i.fa.fa-bookmark-o
             h1.centered European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
             aside.post.meta.centered
                 | By&nbsp;

@@ -14,7 +14,7 @@ block title
 //- content
 block content
     // BLOG POST
-    article.content.flatted-down.shrunk-up
+    article.content.shrunk-up.shrunk-down
         // BREADCRUMBS
         ol.breadcrumb
             li 
@@ -22,7 +22,10 @@ block content
             li.active 
                 a(href='') Blog
         .post.medium
-            h1.centered The new chapter.
+            .post.format.centered
+                i.fa.fa-bookmark-o
+            h1.centered 
+                a(href='') The new chapter, a new Beginning.
             aside.post.meta.centered
                 | By&nbsp;
                 a(href='').post.author
@@ -43,10 +46,13 @@ block content
     section.container.content.post.medium.flatted-up
         h2.section.heading.narrow.left-aligned All Posts
         article.small
-            //- img(src='dummy-images/blog/3.jpg')
-            h3.blog.list.title
-                a(href='')
-                    | European minnow priapumfish Drop in axle minnow.
+            img(src='dummy-images/blog/3.jpg')
+            hgroup
+                h3
+                    a(href='')
+                        | European minnow priapumfish Drop in axle minnow.
+                .post.format
+                    i.fa.fa-picture-o
             p 
                 | Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet. European minnow priapumfish mosshead warbonnet shrimpfish bigscale efficiently unleash cross-media information without cross-media value. 
             aside.post.meta
@@ -59,9 +65,12 @@ block content
         .separator
         article.small
             //- img(src='dummy-images/blog/4.jpg')
-            h3.blog.list.title
-                a(href='')
-                    | Lorem Ipsum is simply dummy text.
+            hgroup
+                h3
+                    a(href='')
+                        | Lorem Ipsum is simply dummy text.
+                .post.format
+                    i.fa.fa-file-o
             p 
                 | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
             aside.post.meta
@@ -75,9 +84,12 @@ block content
         .separator
         article.small
             //- img(src='dummy-images/blog/3.jpg')
-            h3.blog.list.title 
-                a(href='')
-                    | Established fact that a reader will be distracted.
+            hgroup
+                h3 
+                    a(href='')
+                        | Established fact that a reader will be distracted.
+                .post.format
+                    i.fa.fa-quote-right
             p 
                 | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
             aside.post.meta
@@ -90,9 +102,12 @@ block content
         .separator
         article.small
             //- img(src='dummy-images/blog/4.jpg')
-            h3.blog.list.title
-                a(href='')
-                    | Injected humour.
+            hgroup
+                h3
+                    a(href='')
+                        | Injected humour.
+                .post.format
+                    i.fa.fa-music
             p 
                 | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. 
             aside.post.meta
@@ -105,9 +120,12 @@ block content
         .separator
         article.small
             //- img(src='dummy-images/blog/3.jpg')
-            h3.blog.list.title
-                a(href='')
-                    | Richard McClintock, a Latin professor.
+            hgroup
+                h3
+                    a(href='')
+                        | Richard McClintock, a Latin professor.
+                .post.format
+                    i.fa.fa-video-camera
             p 
                 | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words. 
             aside.post.meta
@@ -120,9 +138,66 @@ block content
         .separator
         article.small
             //- img(src='dummy-images/blog/4.jpg')
-            h3.blog.list.title
-                a(href='')
-                    | De Finibus Bonorum et Malorum.
+            hgroup
+                h3
+                    a(href='')
+                        | De Finibus Bonorum et Malorum.
+                .post.format
+                    i.fa.fa-link
+            p 
+                | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
+            aside.post.meta
+                | By&nbsp;
+                a(href='').post.author
+                    | John William Doe&nbsp;
+                | on&nbsp;
+                span.post.date
+                    | 12 January 2013
+        .separator
+        article.small
+            //- img(src='dummy-images/blog/4.jpg')
+            hgroup
+                h3
+                    a(href='')
+                        | De Finibus Bonorum et Malorum.
+                .post.format
+                    i.fa.fa-pencil
+            p 
+                | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
+            aside.post.meta
+                | By&nbsp;
+                a(href='').post.author
+                    | John William Doe&nbsp;
+                | on&nbsp;
+                span.post.date
+                    | 12 January 2013
+        .separator
+        article.small
+            //- img(src='dummy-images/blog/4.jpg')
+            hgroup
+                h3
+                    a(href='')
+                        | De Finibus Bonorum et Malorum.
+                .post.format
+                    i.fa.fa-camera
+            p 
+                | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
+            aside.post.meta
+                | By&nbsp;
+                a(href='').post.author
+                    | John William Doe&nbsp;
+                | on&nbsp;
+                span.post.date
+                    | 12 January 2013
+        .separator
+        article.small
+            //- img(src='dummy-images/blog/4.jpg')
+            hgroup
+                h3
+                    a(href='')
+                        | De Finibus Bonorum et Malorum.
+                .post.format
+                    i.fa.fa-list
             p 
                 | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
             aside.post.meta
