@@ -21,6 +21,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-prettify');
     grunt.loadNpmTasks('grunt-devtools');
+    grunt.loadNpmTasks('grunt-indent');
 
     grunt.initConfig({
 
@@ -91,6 +92,7 @@ module.exports = function(grunt) {
                 }]
             },
         },
+
         /**
          * minimize css files into *.min.css
          *
@@ -386,7 +388,7 @@ module.exports = function(grunt) {
                 files: [
                     'src/templates/**/*'],
                 tasks: [
-                    'clean:template', 'less', 'jade', 'prettify', 'copy:js']
+                    'clean:template', 'less', 'jade', 'prettify', 'copy:js', 'autoprefixer']
             }
         }
     });
