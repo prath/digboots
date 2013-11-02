@@ -155,7 +155,7 @@
             margin-right: auto;
             //*-----[Responsive 768++]-----*/
             @media (min-width: @screen-tablet) {
-                width: 80%;
+                width: 100%;
             }
         }
         p {
@@ -167,8 +167,6 @@
             }
             //*-----[Responsive 768++]-----*/
             @media (min-width: @screen-tablet) {
-                width: 90%;
-
                 margin-bottom: 50px;
             }
         }
@@ -195,6 +193,10 @@
     &.flatted-up {
         padding-top: 0px;
     }
+    .vertically.widen {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
 }
 
 /*-----[Iconic]-----*/
@@ -205,5 +207,19 @@
     }
     &.shrunk-up {
         margin-top: 20px;
+    }
+}
+
+/*-----[Social Icons]-----*/
+.social.icons {
+    margin-bottom: 20px;
+}
+
+&.social.icon {
+    color: @muted-text-color;
+
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0px;
     }
 }

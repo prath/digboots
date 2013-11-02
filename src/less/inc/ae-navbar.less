@@ -181,15 +181,18 @@
 
 /*-----[Top Nav]-----*/
 .top.nav {
-    background-color: rgba(13,147,217,1.0);
+    .clearfix();
+    
+    background-color: @default-accent;
 
     width: 100%;
 
-    padding: 10px 10px;
+    padding: 0px;
 
     color: @secondary-text;
     font-size: @body-fz-us;
     font-weight: 700;
+    line-height: 23px;
     text-transform: uppercase;
     text-align: center;
     vertical-align: middle;
@@ -197,29 +200,29 @@
 
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
-        background-color: rgba(13,147,217,0.3);
-
+        background-color: fade(@default-accent, 30%);
         width: auto;
 
-        padding: 10px 20px;
+        padding-left: 10px;
 
         text-align: right;
     }
     .item {
-        margin-right: 10px;
+        float: left;
+        padding: 10px;
         &:last-child {
             margin-right: 0px;
         }
         //*-----[Responsive 600++]-----*/
         @media (min-width: @screen-lg-phone) {
-            margin-right: 20px;
         }
     }
 
     a {
-        .inlineDisplay();
+        // .inlineDisplay();
+        float: left;
 
-        margin-right: 10px;
+        padding: 10px;
 
         color: @secondary-text;
 
@@ -231,7 +234,15 @@
         }
         //*-----[Responsive 600++]-----*/
         @media (min-width: @screen-lg-phone) {
-            margin-right: 20px;
+        }
+        &.cart {
+            background-color: fade(lighten(@secondary-accent, 20%), 80%);
+        }
+        &.search {
+            background-color: fade(lighten(@secondary-accent, 10%), 80%);
+        }
+        &.nav {
+            background-color: fade(@secondary-accent, 80%);
         }
     }
     .iconic {

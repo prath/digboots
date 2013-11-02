@@ -170,16 +170,16 @@
         border-right: 1px solid lighten(@muted-text-color, 30%);
         display: block;
 
-        height: 30px;
+        height: 50px;
 
-        left: -50px;
+        left: -60px;
         position: absolute;
         top: 0;
 
         padding-right: 20px;
 
         i {
-            line-height: 30px;
+            line-height: 60px;
         }
         &.centered {
             .clearfix();
@@ -199,6 +199,16 @@
             i {
                 display: block;
                 font-size: 25px;
+                line-height: 30px;
+            }
+        }
+        &.blog.list {
+            width: 20px;
+            height: 20px;
+            i {
+                line-height: 0px;
+                display: block;
+                font-size: 18px;
             }
         }
     }
@@ -214,16 +224,13 @@ article .small {
 
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
     }
     a.btn {
         margin-left: -10px;
     }
     p {
         margin-bottom: 20px;
-    }
-    hgroup {
-        position: relative;
     }
 }
 
@@ -238,5 +245,9 @@ article .small {
     margin: 30px 0px;
     &.centered {
         margin: 30px auto;
+    }
+    &.in-post {
+        border-bottom: 1px solid @default-accent;
+        height: 1px;
     }
 }
