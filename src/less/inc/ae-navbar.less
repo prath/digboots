@@ -30,6 +30,9 @@
     .navbar-nav {
         > li {
             > a {
+                font-size: @body-fz-us;
+                font-weight: 700;
+                letter-spacing: @ls-xw;
                 transition: all .4s ease;
                 &:hover,
                 &:active,
@@ -84,7 +87,9 @@
     > li > a {
         padding: 10px 20%;
 
+        font-size: 9px;
         font-weight: 700;
+        letter-spacing: @ls-wd;
 
         transition: all .5s ease;
         &:hover,
@@ -192,6 +197,7 @@
     color: @secondary-text;
     font-size: @body-fz-us;
     font-weight: 700;
+    letter-spacing: @ls-xw;
     line-height: 23px;
     text-transform: uppercase;
     text-align: center;
@@ -242,7 +248,7 @@
             background-color: fade(@default-accent, 30%);
         }
         &.nav {
-            background-color: fade(@secondary-accent, 80%);
+            background-color: fade(darken(@default-accent, 30%), 60%);
         }
     }
     .iconic {

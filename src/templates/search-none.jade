@@ -1,0 +1,49 @@
+//- 
+    =====================================================================
+    * Blog Page
+    * 
+    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    =====================================================================
+
+extends inc/content-container
+
+//- title
+block title
+    title Search Page - Premium Boostrap Theme
+
+//- content
+block content
+    // BLOG POST
+    section.content.post.narrow.shrunk-up.shrunk-down
+        // BREADCRUMBS
+        ol.breadcrumb
+            li 
+                a(href='') Home
+            li.active 
+                a(href='') Blog
+        hgroup
+            h1.section.heading Nothing Found For: 
+                span sticky
+
+        article
+            p 
+                | Sorry, but nothing matched your search criteria. Please try again with some different keywords.
+            form(action='', role='form')
+                .row 
+                    .col-ul-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        .form-group
+                            label.sr-only(for='searchquery')
+                            input.form-control(type='text', id='searchquery', placeholder='keywords')
+                .row 
+                    .col-ul-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                        button.btn.btn-primary.pull-right
+                            | Search
+
+    footer.content.bottom.centered.shrunk-down.shrunk-up
+        .social.icons
+            a.social.icon(href='')
+                i.fa.fa-facebook.fa-lg
+            a.social.icon(href='')
+                i.fa.fa-twitter.fa-lg
+        .watermark
+            | Copyright <strong>DigBoots</strong>&nbsp;&copy; 2013. 
