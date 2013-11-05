@@ -2,31 +2,41 @@
     =====================================================================
     * Index Page
     * 
-    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    * @author Pratama H. Salahudin <pratama@aestik.com>
     =====================================================================
 
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 extends inc/content-container
 
-//- title
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ TITLE - used to define html <title> ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 block title
     title DigBoots - Premium Boostrap Theme
 
-//- content
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ CONTENT ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 block content
-    // JUMBOTRON
+
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ JUMBOTRON ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     article.jumbotron
         .cover.overlay.lighter
             .container
                 p Case Study
                 h1
                     | Fun Work at <strong>Company.co</strong>
-                //- p
-                    | A playful and fun works done with <strong>Company.co</strong>&nbsp; along the summer.
                 p
                     a(href='').btn.btn-primary.btn-lg.btn-cta
                         | Learn more
 
-    // ABOUT US
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ ABOUT US ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     article.content.post.about.featured.narrow
         img(src='dummy-images/about/1.png')
         h2.featured.title 
@@ -38,11 +48,17 @@ block content
             a(href='').btn.btn-link.btn-sm
                 | More About Us
 
-    // PORTFOLIO
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ PORTFOLIO ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     section.portfolio.image
         header
             h2.image.post.title
                 a(href='') Recent Works
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ PORTFOLIO ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail
             a(href='')
                 img(src='dummy-images/portfolio/1.jpg', alt='portfolio 1')
@@ -51,6 +67,10 @@ block content
                     span.separator
                     span.client
                         | Personal Project
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ PORTFOLIO ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail
             a(href='')
                 img(src='dummy-images/portfolio/2.jpg', alt='portfolio 1')
@@ -59,6 +79,10 @@ block content
                     span.separator
                     span.client
                         | Personal Project
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ PORTFOLIO ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail
             a(href='')
                 img(src='dummy-images/portfolio/3.jpg', alt='portfolio 1')
@@ -67,6 +91,10 @@ block content
                     span.separator
                     span.client
                         | EXPOSÉ10
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ PORTFOLIO ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail
             a(href='')
                 img(src='dummy-images/portfolio/4.jpg', alt='portfolio 1')
@@ -76,10 +104,15 @@ block content
                     span.client
                         | Personal Project
 
-    // TESTIMONIAL and SERVICES
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ TESTIMONIAL & SERVICES ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     .section(style='background: url("dummy-images/service-bg.jpg") no-repeat center center; background-size: cover;')
         .cover.overlay
-            // TESTIMONIAL
+            
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ TESTIMONIAL ]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             article.content.testimonial.narrow.shrunk-down
                 h2.section.heading What People Say About Us
                 blockquote 
@@ -90,23 +123,37 @@ block content
                 p
                     | That's what some of our friends, colleagues and partners says about us. Come visit us to know more about us. in a meantime here are some works <strong>we can do for you</strong> : 
 
-            // SERVICES
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ SERVICES ]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             section.cover.overlay
                 .container.content.services.medium.shrunk-up
                     .row
                         h2.section.heading Our Services
+
+                        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        // [ SERVICES ITEM ]
+                        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                         article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
                             h3.related.title Illustration
                             p
                                 | We transform your wish into clear ideas and hand-sketched illustrations.
                             a(href='').btn.btn-link.btn-sm
                                 | learn more
+
+                        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        // [ SERVICES ITEM ]
+                        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                         article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
                             h3.related.title Web Design
                             p
                                 | High quality pixel-perfect hand-coded web page design will be delivered to you.
                             a(href='').btn.btn-link.btn-sm
                                 | learn more
+
+                        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        // [ SERVICES ITEM ]
+                        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                         article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
                             h3.related.title App Design
                             p
@@ -114,7 +161,9 @@ block content
                             a(href='').btn.btn-link.btn-sm
                                 | learn more
 
-    // FEATURED BLOG POST
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ FEATURED BLOG POST ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     article.content.post.featured.narrow.shrunk-down
         h2.section.heading Recent Posts
         aside.post.meta
@@ -130,10 +179,17 @@ block content
         p
             a(href='').btn.btn-link.btn-sm
                 | Read more
-    // BLOG POSTs
+
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ OTHER BLOG POSTS ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     aside.content.post.flatted-up.medium
         .container
             .row
+
+                //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ POST ITEM ]
+                //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
                     h4.related.title
                         a(href='')
@@ -145,6 +201,10 @@ block content
                         | Efficiently unleash cross-media information without cross-media value.
                     a(href='').btn.btn-link.btn-sm
                         | read more
+
+                //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ POST ITEM ]
+                //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
                     h4.related.title
                         a(href='')
@@ -156,6 +216,10 @@ block content
                         | European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
                     a(href='').btn.btn-link.btn-sm
                         | read more
+
+                //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ POST ITEM ]
+                //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
                     h4.related.title
                         a(href='')
@@ -168,41 +232,67 @@ block content
                     a(href='').btn.btn-link.btn-sm
                         | read more
 
-    // WORKPLACE GALLERY
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ WORKPLACE GALLERY ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     section.workspace.image
         header
             h2.image.post.title
                 a(href='') our workspace
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail.small
             a(href='')
                 img(src='dummy-images/workspace/1.jpg', alt='portfolio 1')
                 span.caption
                     | Meeting Spot
                     span.separator
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail.small
             a(href='')
                 img(src='dummy-images/workspace/2.jpg', alt='portfolio 1')
                 span.caption
                     | CEO Desk
                     span.separator
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail.small
             a(href='')
                 img(src='dummy-images/workspace/3.jpg', alt='portfolio 1')
                 span.caption
                     | Outdoor Spot
                     span.separator
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail.small
             a(href='')
                 img(src='dummy-images/workspace/4.jpg', alt='portfolio 1')
                 span.caption
                     | Jake's Favorite Spot
                     span.separator
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail.small
             a(href='')
                 img(src='dummy-images/workspace/5.jpg', alt='portfolio 1')
                 span.caption
                     | John's Favorite Spot
                     span.separator
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .image.thumbnail.small
             a(href='')
                 img(src='dummy-images/workspace/6.jpg', alt='portfolio 1')
@@ -210,11 +300,7 @@ block content
                     | Our Lovely Office
                     span.separator
 
-    footer.content.bottom.shrunk-down.shrunk-up
-        .social.icons
-            a.social.icon(href='')
-                i.fa.fa-facebook.fa-lg
-            a.social.icon(href='')
-                i.fa.fa-twitter.fa-lg
-        .watermark
-            | Copyright <strong>DigBoots</strong>&nbsp;&copy; 2013. 
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // FOOTER
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    include inc/footer

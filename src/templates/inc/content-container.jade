@@ -4,22 +4,31 @@
     * Extends Master
     * Extended by Content Page. i.e. Index page
     * 
-    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    * @author Pratama H. Salahudin <pratama@aestik.com>
     =====================================================================
 
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING MASTER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 extends master
 
-//- content
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ HERE IS THE CONTENT WILL BE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 block page
-    // NAVIGATION
+    
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ NAVIGATION ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     include nav
 
-    // LEAD and LOGO
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ LEAD AND LOGO ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     include masthead
     
-    // MAIN CONTENT       
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ MAIN CONTENT ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     main#right(role="main")
         block content
-
-    // FOOTER
-    include footer

@@ -1,85 +1,113 @@
 //- 
     =====================================================================
-    * Blog Page
+    * Author Page
     * 
-    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    * @author Pratama H. Salahudin <pratama@aestik.com>
     =====================================================================
 
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 extends inc/content-container
 
-//- title
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ TITLE - used to define html <title> ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 block title
     title Author Page - Premium Boostrap Theme
 
-//- content
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ CONTENT ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 block content
-    // BLOG POST
-    section.content.post.narrow.shrunk-up.shrunk-down
-        // BREADCRUMBS
-        ol.breadcrumb
-            li 
-                a(href='') Home
-            li.active 
-                a(href='') Blog
-        hgroup
-            h1.section.heading Author Archives: 
-                span John William Doe
-            div.author-description
-                .avatar.small
-                    img(src='dummy-images/blog/avatar.jpg')
-                p
-                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+    
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ BLOG POST ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.shrunk-up.shrunk-down
 
-        article
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ BREADCRUMBS & HEADING ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .post.narrow
+        
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ BREADCRUMBS ]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            ol.breadcrumb
+                li 
+                    a(href='') Home
+                li.active 
+                    a(href='') Blog
+
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ SECTION/PAGE HEADING ]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             hgroup
-                .post.format
-                    i.fa.fa-picture-o
-                h2.blog.list.title
-                    a(href='')
-                        | European minnow priapumfish Drop.
-            aside.post.meta
-                        | By&nbsp;
-                        a(href='').post.author
-                            | John William Doe&nbsp;
-                        | on&nbsp;
-                        span.post.date
-                            | 12 January 2013
-            .separator.in-post
-            img(src='dummy-images/blog/4.jpg')        
-            p 
-                | Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet. European minnow priapumfish mosshead warbonnet shrimpfish bigscale efficiently unleash cross-media information without cross-media value.
-            p.centered
-                a(href='').btn.btn-link.btn-sm
-                    | Read more
-        .separator.vertically.widen
+                h1.section.heading Author Archives: 
+                    span John William Doe
+                div.author-description
+                    .avatar.small
+                        img(src='dummy-images/blog/avatar.jpg')
+                    p
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
 
-        article
-            hgroup
-                .post.format
-                    i.fa.fa-file-o
-                h2.blog.list.title
-                    a(href='')
-                        | Lorem Ipsum is dummy text.
-            aside.post.meta
-                | By&nbsp;
-                a(href='').post.author
-                    | John William Doe&nbsp;
-                | on&nbsp;
-                span.post.date
-                    | 12 January 2013
-            .separator.in-post
-            p 
-                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
-            p.centered
-                a(href='').btn.btn-link.btn-sm
-                    | Read more
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ POSTS ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .post.narrow
 
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ POST ITEM ]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article
+                hgroup
+                    .post.format
+                        i.fa.fa-picture-o
+                    h2.blog.list.title
+                        a(href='')
+                            | European minnow priapumfish Drop.
+                aside.post.meta
+                            | By&nbsp;
+                            a(href='').post.author
+                                | John William Doe&nbsp;
+                            | on&nbsp;
+                            span.post.date
+                                | 12 January 2013
+                .separator.in-post
+                img(src='dummy-images/blog/4.jpg')        
+                p 
+                    | Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet. European minnow priapumfish mosshead warbonnet shrimpfish bigscale efficiently unleash cross-media information without cross-media value.
+                p.centered
+                    a(href='').btn.btn-link.btn-sm
+                        | Read more
+            .separator.vertically.widen
 
-    footer.content.bottom.centered.shrunk-down.shrunk-up
-        .social.icons
-            a.social.icon(href='')
-                i.fa.fa-facebook.fa-lg
-            a.social.icon(href='')
-                i.fa.fa-twitter.fa-lg
-        .watermark
-            | Copyright <strong>DigBoots</strong>&nbsp;&copy; 2013. 
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ POST ITEM ]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article
+                hgroup
+                    .post.format
+                        i.fa.fa-file-o
+                    h2.blog.list.title
+                        a(href='')
+                            | Lorem Ipsum is dummy text.
+                aside.post.meta
+                    | By&nbsp;
+                    a(href='').post.author
+                        | John William Doe&nbsp;
+                    | on&nbsp;
+                    span.post.date
+                        | 12 January 2013
+                .separator.in-post
+                p 
+                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                p.centered
+                    a(href='').btn.btn-link.btn-sm
+                        | Read more
+
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ FOOTER ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    include inc/footer

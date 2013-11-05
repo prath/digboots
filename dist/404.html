@@ -8,22 +8,22 @@
         <meta name="description" content="DigBoots Business Bootstrap Theme">
         <meta name="author" content="">
 
-        <!-- FONTS-->
+        <!-- [ FONTS ]-->
         <link href="http://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Voltaire" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700&amp;subset=latin,cyrillic" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900" rel="stylesheet">
 
-        <!-- BOOTSTRAP STYLES-->
+        <!-- [ BOOTSTRAP STYLES ]-->
         <link href="assets/css/bootstrap.css" rel="stylesheet">
 
-        <!-- FONTAWESOME-->
+        <!-- [ FONTAWESOME ]-->
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
 
-        <!-- CUSTOM STYLES-->
+        <!-- [ DIGBOOTS STYLES ]-->
         <link href="style.css" rel="stylesheet">
 
-        <!-- HEADER SCRIPTS-->
+        <!-- [ IE SCRIPTS ]-->
         <!--[if lt IE 9]>
     <script src="assets/js/vendor/html5shiv.js"></script>
     <script src="assets/js/vendor/respond.min.js"></script>
@@ -31,10 +31,10 @@
     </head>
     <body>
 
-        <!-- NAVIGATION-->
+        <!-- [ NAVIGATION ]-->
         <div class="top container">
 
-            <!-- TOP STICKY NAV-->
+            <!-- [ TOP STICKY NAV ]-->
             <div class="top sticky nav">
                 <span class="item">My account</span>
                 <a href="">Sign in</a>
@@ -51,7 +51,7 @@
                 </a>
             </div>
 
-            <!-- COLLAPSIBLE NAVBAR-->
+            <!-- [ COLLAPSIBLE NAVBAR ]-->
             <nav role="navigation" class="right positioned navbar navbar-default">
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
@@ -161,7 +161,7 @@
                 </div>
             </nav>
 
-            <!-- COLLAPSIBLE SEARCH-->
+            <!-- [ COLLAPSIBLE SEARCH BOX ]-->
             <div class="search box">
                 <form action="" method="">
                     <label for="#searchinput" class="sr-only">Email address</label>
@@ -172,7 +172,7 @@
                 </form>
             </div>
 
-            <!-- COLLAPSIBLE CART-->
+            <!-- [ COLLAPSIBLE CART ]-->
             <div class="right positioned cartbar">
                 <div class="cart content">
                     test
@@ -180,7 +180,7 @@
             </div>
         </div>
 
-        <!-- LEAD and LOGO-->
+        <!-- [ LEAD AND LOGO ]-->
         <section id="left">
             <div class="masthead">
                 <div class="content">
@@ -200,49 +200,63 @@
             </div>
         </section>
 
-        <!-- MAIN CONTENT       -->
+        <!-- [ MAIN CONTENT ]-->
         <main id="right" role="main">
 
-            <!-- BLOG POST-->
-            <section class="content post narrow shrunk-up shrunk-down">
+            <!-- [ BLOG POST ]-->
+            <section class="content shrunk-up shrunk-down">
 
-                <!-- BREADCRUMBS-->
-                <ol class="breadcrumb">
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li class="active">
-                        <a href="">Blog</a>
-                    </li>
-                </ol>
-                <hgroup>
-                    <h1 class="section heading">Ooops!
-                        <span>
-                            404
-                            <br>That page can’t be found.</span>
-                    </h1>
-                </hgroup>
-                <article>
-                    <p>
-                        It looks like nothing was found at this location. Maybe try one of the links below or a search?
-                    </p>
-                    <form action="" role="form">
-                        <div class="row">
-                            <div class="col-ul-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="form-group">
-                                    <label for="searchquery" class="sr-only"></label>
-                                    <input type="text" id="searchquery" placeholder="keywords" class="form-control">
+                <!-- [ BREADCRUMBS & HEADING ]-->
+                <div class="post narrow">
+
+                    <!-- [ BREADCRUMBS ]-->
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="">Blog</a>
+                        </li>
+                    </ol>
+
+                    <!-- [ SECTION/PAGE HEADING ]-->
+                    <hgroup>
+                        <h1 class="section heading">Ooops!
+                            <span>
+                                404
+                                <br>That page can’t be found.</span>
+                        </h1>
+                    </hgroup>
+                </div>
+
+                <!-- [ POSTS ]-->
+                <div class="post narrow">
+
+                    <!-- [ 404 MSG & SEARCH FORM ]-->
+                    <article>
+                        <p>
+                            It looks like nothing was found at this location. Maybe try one of the links below or a search?
+                        </p>
+                        <form action="" role="form">
+                            <div class="row">
+                                <div class="col-ul-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <div class="form-group">
+                                        <label for="searchquery" class="sr-only"></label>
+                                        <input type="text" id="searchquery" placeholder="keywords" class="form-control">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-ul-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <button class="btn btn-primary pull-right">Search</button>
+                            <div class="row">
+                                <div class="col-ul-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                    <button class="btn btn-primary pull-right">Search</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
-                </article>
+                        </form>
+                    </article>
+                </div>
             </section>
+
+            <!-- [ FOOTER ]-->
             <footer class="content bottom centered shrunk-down shrunk-up">
                 <div class="social icons">
                     <a href="" class="social icon">
@@ -257,24 +271,20 @@
             </footer>
         </main>
 
-        <!-- FOOTER-->
-
-        <!-- JQUERY-->
+        <!-- [ JQUERY ]-->
         <script src="assets/js/vendor/jquery-1.10.1.min.js"></script>
 
-        <!-- JQUERY EASING-->
+        <!-- [ JQUERY EASING ]-->
         <script src="assets/js/vendor/jquery.easing.js"></script>
 
-        <!-- BOOTSTRAP-->
+        <!-- [ BOOTSTRAP SCRIPT ]-->
         <script src="assets/js/vendor/bootstrap.js"></script>
 
-        <!-- RETINA-->
+        <!-- [ RETINA JS ]-->
         <script src="assets/js/vendor/retina.min.js"></script>
 
-        <!-- SCRIPTS-->
+        <!-- [ DIGBOOTS SCRIPT ]-->
         <script src="assets/js/script.js"></script>
-
-        <!-- LIVERELOAD, REMOVED IT LATER -->
         <script src="http://localhost:35729/livereload.js"></script>
     </body>
 </html>

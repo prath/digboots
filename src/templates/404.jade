@@ -1,52 +1,78 @@
 //- 
     =====================================================================
-    * Blog Page
+    * 404 Page
     * 
-    * @author Pratama H. Salahudin <pratama@hasriyan.com>
+    * @author Pratama H. Salahudin <pratama@aestik.com>
     =====================================================================
 
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 extends inc/content-container
 
-//- title
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ TITLE - used to define html <title> ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 block title
     title 404 - Premium Boostrap Theme
 
-//- content
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ CONTENT ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 block content
-    // BLOG POST
-    section.content.post.narrow.shrunk-up.shrunk-down
-        // BREADCRUMBS
-        ol.breadcrumb
-            li 
-                a(href='') Home
-            li.active 
-                a(href='') Blog
-        hgroup
-            h1.section.heading Ooops! 
-                span 
-                    | 404
-                    br 
-                    | That page can’t be found.
 
-        article
-            p 
-                | It looks like nothing was found at this location. Maybe try one of the links below or a search?
-            form(action='', role='form')
-                .row 
-                    .col-ul-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                        .form-group
-                            label.sr-only(for='searchquery')
-                            input.form-control(type='text', id='searchquery', placeholder='keywords')
-                .row 
-                    .col-ul-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                        button.btn.btn-primary.pull-right
-                            | Search
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ BLOG POST ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.shrunk-up.shrunk-down
 
-    footer.content.bottom.centered.shrunk-down.shrunk-up
-        .social.icons
-            a.social.icon(href='')
-                i.fa.fa-facebook.fa-lg
-            a.social.icon(href='')
-                i.fa.fa-twitter.fa-lg
-        .watermark
-            | Copyright <strong>DigBoots</strong>&nbsp;&copy; 2013. 
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ BREADCRUMBS & HEADING ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .post.narrow
+
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ BREADCRUMBS ]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            ol.breadcrumb
+                li 
+                    a(href='') Home
+                li.active 
+                    a(href='') Blog
+
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ SECTION/PAGE HEADING ]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            hgroup
+                h1.section.heading Ooops! 
+                    span 
+                        | 404
+                        br 
+                        | That page can’t be found.
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ POSTS ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .post.narrow
+
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ 404 MSG & SEARCH FORM ]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article
+                p 
+                    | It looks like nothing was found at this location. Maybe try one of the links below or a search?
+                form(action='', role='form')
+                    .row 
+                        .col-ul-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                            .form-group
+                                label.sr-only(for='searchquery')
+                                input.form-control(type='text', id='searchquery', placeholder='keywords')
+                    .row 
+                        .col-ul-12.col-xl-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                            button.btn.btn-primary.pull-right
+                                | Search 
+
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ FOOTER ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    include inc/footer
