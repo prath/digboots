@@ -11,15 +11,14 @@
     // [ TOP STICKY NAV ]
     //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     .top.sticky.nav
-        span.item My account
-        a(href='') Sign in
-        a(href='') Sign up
-        a(href='').toggle.cart.iconic
+        a(href='', data-content='cartbar', data-toggle='tooltip', data-placement="bottom", title='Toggle Shopping Cart').toggle.cart.iconic
             img(src='assets/images/cart.png', alt='nav')
             span.badge 12
-        a(href='').toggle.search.iconic
+        a(href='', data-content='search', data-toggle='tooltip', data-placement="bottom", title='Toggle Search').toggle.search.iconic
             img(src='assets/images/search.png', alt='nav')
-        a(href='').toggle.nav.iconic
+        a(href='', data-content='sidebar', data-toggle='tooltip', data-placement="bottom", title='Toggle Sidebar').toggle.widget.iconic
+            img(src='assets/images/sidebar.png', alt='nav')
+        a(href='', data-content='menu', data-toggle='tooltip', data-placement="bottom", title='Toggle Menu').toggle.nav.iconic
             img(src='assets/images/nav.png', alt='nav')
 
     //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -113,4 +112,11 @@
     //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     .right.positioned.cartbar
         .cart.content 
+            | test
+
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ COLLAPSIBLE SIDEBAR ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    .right.positioned.sidebar
+        .widget.content 
             | test

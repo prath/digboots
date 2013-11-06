@@ -62,6 +62,8 @@
     }
 
     p {
+        margin-bottom: 30px;
+
         font-size: @body-fz-df;
         font-family: @font-1;
         line-height: @line-height-base;
@@ -69,6 +71,8 @@
 
         //*-----[Responsive 768++]-----*/
         @media (min-width: @screen-tablet) {
+            margin-bottom: 50px;
+
             text-align: left;
         }
     }
@@ -136,6 +140,28 @@
                 display: block;
             }
         }
+    }
+    .nav {
+        border-top: 1px solid lighten(@muted-text-color, 30%);
+
+        padding: 20px 0px;
+
+        font-family: @font-4;
+        font-size: @body-fz-us;
+        font-weight: 700;
+        letter-spacing: @ls-wd; 
+        text-transform: uppercase;
+        .item {
+            display: block;
+            border-bottom: 1px solid lighten(@muted-text-color, 40%);
+        }
+        a {
+            color: @body-text-color;
+            &:hover {
+                color: @default-accent;
+            }
+        }
+
     }
 }
 

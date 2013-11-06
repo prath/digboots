@@ -36,17 +36,17 @@
 
             <!-- [ TOP STICKY NAV ]-->
             <div class="top sticky nav">
-                <span class="item">My account</span>
-                <a href="">Sign in</a>
-                <a href="">Sign up</a>
-                <a href="" class="toggle cart iconic">
+                <a href="" data-content="cartbar" data-toggle="tooltip" data-placement="bottom" title="Toggle Shopping Cart" class="toggle cart iconic">
                     <img src="assets/images/cart.png" alt="nav">
                     <span class="badge">12</span>
                 </a>
-                <a href="" class="toggle search iconic">
+                <a href="" data-content="search" data-toggle="tooltip" data-placement="bottom" title="Toggle Search" class="toggle search iconic">
                     <img src="assets/images/search.png" alt="nav">
                 </a>
-                <a href="" class="toggle nav iconic">
+                <a href="" data-content="sidebar" data-toggle="tooltip" data-placement="bottom" title="Toggle Sidebar" class="toggle widget iconic">
+                    <img src="assets/images/sidebar.png" alt="nav">
+                </a>
+                <a href="" data-content="menu" data-toggle="tooltip" data-placement="bottom" title="Toggle Menu" class="toggle nav iconic">
                     <img src="assets/images/nav.png" alt="nav">
                 </a>
             </div>
@@ -178,6 +178,13 @@
                     test
                 </div>
             </div>
+
+            <!-- [ COLLAPSIBLE SIDEBAR ]-->
+            <div class="right positioned sidebar">
+                <div class="widget content">
+                    test
+                </div>
+            </div>
         </div>
 
         <!-- [ LEAD AND LOGO ]-->
@@ -196,6 +203,11 @@
                         <strong>simplicity</strong>&nbsp;and
                         <strong>curiousity</strong>.
                     </p>
+                    <div class="nav">
+                        <span class="item">My account</span>
+                        <a href="" class="item">Sign in</a>
+                        <a href="" class="item">Sign up</a>
+                    </div>
                 </div>
             </div>
         </section>

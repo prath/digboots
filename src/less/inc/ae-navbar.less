@@ -23,16 +23,18 @@
     background-color: @secondary-text;
     border: 0px;
     
-    font-size: @body-fz-xs;
+    font-family: @font-4;
+    font-size: @body-fz-us;
     font-weight: 700;
+    letter-spacing: @ls-wd; 
     text-transform: uppercase;
 
     .navbar-nav {
         > li {
             > a {
-                font-size: @body-fz-us;
-                font-weight: 700;
-                letter-spacing: @ls-xw;
+                border-bottom: 1px solid lighten(@muted-text-color, 40%);
+                padding: 10px 0px;
+
                 transition: all .4s ease;
                 &:hover,
                 &:active,
@@ -76,7 +78,7 @@
 /*-----[Dropdown Menu]-----*/
 .dropdown-menu {
     padding: 0px;
-    margin: 0px 0 20px; // override default ul
+    margin: 0px; // override default ul
     font-size: @body-fz-us;
     background-color: @secondary-text;
     border: 0px;
@@ -85,7 +87,7 @@
     z-index: 5;
     transition: all .4s ease;
     > li > a {
-        padding: 10px 20%;
+        padding: 10px 0px;
 
         font-size: 9px;
         font-weight: 700;
@@ -95,7 +97,6 @@
         &:hover,
         &:focus {
             background-color: transparent;
-            border-left: 1px solid lighten(@default-accent, 10%);
             color: @default-accent;
         }
     }
@@ -121,56 +122,107 @@
     &.cartbar {
         width: 20%;
         right: -20%;
+
+        transition: all .2s ease;
     }
 
-    &.navbar-default {
-        .navbar-nav {
-            > li {
-                > a {
-                    padding-left: 20%;
-                    padding-right:10%;
-                    &:hover,
-                    &:active,
-                    &:focus {
-                        border-left: 1px solid @default-accent;
-                    }
-                }
-            }
-            > .active {
-                > a {
-                    border-left: 1px solid @default-accent;
-                    &:hover,
-                    &:active,
-                    &:focus {
-                        border-left: 1px solid @default-accent;
-                    }
-                }
-            } 
-            > .open > a {
-                &,
-                &:hover,
-                &:focus {
-                    border-left: 1px solid @default-accent;
-                }
-            }
+    &.sidebar {
+        width: 25%;
+        right: -25%;
+
+        transition: all .2s ease;
+    }
+}
+
+/*-----[Collapsible content styles]-----*/
+.togglecartbar {
+    .right.positioned {
+        &.cartbar {
+            right: 0%;
+            z-index: 1000;
         }
+    }
+    .top.nav {
+        right: 20%;
+        .cart.iconic {
+            opacity: 0.3;
+        }
+    }
+}
+
+.togglesidebar {
+    .right.positioned {
+        &.sidebar {
+            right: 0%;
+            z-index: 1000;
+        }
+    }
+    .top.nav {
+        right: 25%;
+        .widget.iconic {
+            opacity: 0.3;
+        }
+    }
+}
+
+.togglemenu {
+    .right.positioned {
+        &.navbar {
+            right: 0%;
+        }
+    }
+    .top.nav {
+        right: 15%;
+        .nav.iconic {
+            opacity: 0.3;
+        }
+    }
+}
+
+.togglesearch {
+    .search {
+        &.box {
+            opacity: 1;
+            top: 0%;
+        }
+    }
+    .top.nav {
+        .search.iconic {
+            opacity: 0.3;
+        }
+    }
+}
+
+body {
+    &.togglecartbar,
+    &.togglemenu,
+    &.togglesidebar {
+        height: 100%;
+        overflow: hidden;
     }
 }
 
 /*-----[Right Fixed Positioned Navbar Nav]-----*/
 .right.positioned .navbar-nav {
     float: none;
+    padding-left: 20%;
+    padding-right: 20%;
     > li {
         float: none;
     }
-} 
+}
 
 
 /*-----[Dropdown Menu]-----*/
 .right.positioned .dropdown-menu {
-    position: relative;
     float: none;
-    width: 100%;
+
+    position: relative;
+
+    min-width: 100%;
+
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 
@@ -204,12 +256,12 @@
     vertical-align: middle;
     white-space: nowrap;
 
+    transition: .2s all ease;
+
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
         background-color: fade(@default-accent, 30%);
         width: auto;
-
-        padding-left: 10px;
 
         text-align: right;
     }
@@ -249,6 +301,9 @@
         }
         &.nav {
             background-color: fade(darken(@default-accent, 30%), 60%);
+        }
+        &.widget {
+            background-color: fade(darken(@default-accent, 30%), 40%);
         }
     }
     .iconic {
@@ -291,11 +346,12 @@
 .search {
     &.box {
         background-color: rgba(13,147,217,0.9);
-        display: none;
+        opacity: 0;
 
         left: 0%;
         position: fixed;
         right: 0;
+        top: -100%;
         z-index: 2;
 
         margin-top: 50px;
@@ -303,12 +359,16 @@
 
         color: @secondary-text;
 
+        transition: all .2s ease;
+
         //*-----[Responsive 768++]-----*/
         @media (min-width: @screen-tablet) {
             left: 20%;
 
             margin-top: 0px;
             padding: 100px;
+
+            transition: all .2s ease;
         }
     }
     form {
@@ -375,11 +435,16 @@
     }
 }
 
-/*-----[Cart Content]-----*/
-.cart {
+/*-----[Cart & Sidebar Content]-----*/
+.cart,
+.widget {
     &.content {
         padding: 0px 15%;
 
         font-size: @body-fz-xs;
     }
 }
+
+
+
+
