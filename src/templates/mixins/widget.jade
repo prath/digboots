@@ -11,8 +11,8 @@
 mixin widget-archive
     section.panel.panel-default.widget.widget_archive
         header.panel-heading
-            i.fa.fa-folder-open-alt.icon-widget-heading
-            h2.widget-heading Archive
+            i.fa.fa-folder-open-o.icon-widget-heading
+            h3.widget.heading Archive
         .panel-body
             ul
                 li
@@ -37,8 +37,8 @@ mixin widget-archive
 mixin widget-archive-dropdown
     section.panel.panel-default.widget
         header.panel-heading
-            i.fa.fa-folder-close-alt.icon-widget-heading
-            h2.widget-heading Archive Dropdown
+            i.fa.fa-folder-o.icon-widget-heading
+            h3.widget.heading Archive Dropdown
         .panel-body
             select(name="archive-dropdown")
                 option(value="") Select Month
@@ -55,7 +55,7 @@ mixin widget-categories
     section.panel.panel-default.widget.widget_categories
         header.panel-heading
             i.fa.fa-list.icon-widget-heading
-            h2.widget-heading Categories
+            h3.widget.heading Categories
         .panel-body
             ul
                 li
@@ -65,11 +65,11 @@ mixin widget-categories
                     span.count 5
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Technology
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Science &amp; Fiction
                 li
                     a(href='#') 
@@ -77,23 +77,23 @@ mixin widget-categories
                         | Development
                 li 
                     a(href='#') 
-                        i.fa.fa-double-angle-up
+                        i.fa.fa-angle-double-up
                         | Web Development
                 li 
                     a(href='#') 
-                        i.fa.fa-screenshot
+                        i.fa.fa-html5
                         | App Development
                 li
                     a(href='#') 
-                        i.fa.fa-file-text-alt
+                        i.fa.fa-file-text-o
                         | Augmented Reality
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Interface Design
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Artificial Intelligent
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -102,8 +102,8 @@ mixin widget-categories
 mixin widget-categories-dropdown
     section.panel.panel-default.widget
         header.panel-heading
-            i.fa.fa-folder-close-alt.icon-widget-heading
-            h2.widget-heading Categories Dropdown
+            i.fa.fa-folder-o.icon-widget-heading
+            h3.widget.heading Categories Dropdown
         .panel-body
             select(name="archive-dropdown")
                 option(value="") Select Categories
@@ -120,7 +120,7 @@ mixin widget-link
     section.panel.panel-default.widget.widget_nav_menu
         header.panel-heading
             i.fa.fa-link.icon-widget-heading
-            h2.widget-heading Link
+            h3.widget.heading Link
         .panel-body
             ul
                 li
@@ -149,33 +149,33 @@ mixin widget-link-icons
     section.panel.panel-default.widget.widget_nav_menu
         header.panel-heading
             i.fa.fa-external-link.icon-widget-heading
-            h2.widget-heading Link
+            h3.widget.heading Link
         .panel-body
             ul
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Web Design
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Development
                     ul.children 
                         li 
                             a(href='#') 
-                                i.fa.fa-circle-blank
+                                i.fa.fa-circle-o
                                 | Web Development
                         li 
                             a(href='#') 
-                                i.fa.fa-circle-blank
+                                i.fa.fa-circle-o
                                 | App Development
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Technology
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Science &amp; Fiction
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,8 +184,8 @@ mixin widget-link-icons
 mixin widget-pages
     section.panel.panel-default.widget.widget_pages
         header.panel-heading
-            i.fa.fa-file-alt.icon-widget-heading
-            h2.widget-heading Pages
+            i.fa.fa-file-o.icon-widget-heading
+            h3.widget.heading Pages
         .panel-body
             ul
                 li
@@ -211,7 +211,7 @@ mixin widget-search
     section.panel.panel-default.widget
         header.panel-heading
             i.fa.fa-search.icon-widget-heading
-            h2.widget-heading Search
+            h3.widget.heading Search
         .panel-body
             form.form-inline(id="", method="", action="", role="form")
                 .form-group
@@ -226,7 +226,7 @@ mixin widget-tags
     section.panel.panel-default.widget
         header.panel-heading
             i.fa.fa-tag.icon-widget-heading
-            h2.widget-heading Tags
+            h3.widget.heading Tags
         .panel-body
             a(href="", target="_blank").btn.btn-xs.btn-primary html
             a(href="", target="_blank").btn.btn-xs.btn-primary css
@@ -249,36 +249,36 @@ mixin widget-popular-post
     section.panel.panel-default.widget
         header.panel-heading
             i.fa.fa-pencil.icon-widget-heading
-            h2.widget-heading Popular Post
+            h3.widget.heading Popular Post
         .panel-body
             ul  
                 li
                     article.widget-post
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         .widget-post-content
                             a(href="http://", target="_blank") Veggies sunt bona vobis, proinde vos postulo
                             span.post-date January 1st, 2013
                 li
                     article.widget-post
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         .widget-post-content
                             a(href="http://", target="_blank") Turnip greens napa cabbage
                             span.post-date January 1st, 2013
                 li
                     article.widget-post
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         .widget-post-content
                             a(href="http://", target="_blank") Tomato summer purslane beetroot
                             span.post-date January 1st, 2013
                 li
                     article.widget-post
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         .widget-post-content
                             a(href="http://", target="_blank") Prairie turnip dulse winter purslane napa
                             span.post-date January 1st, 2013
                 li
                     article.widget-post
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         .widget-post-content
                             a(href="http://", target="_blank") Soybean broccoli maize lotus root
                             span.post-date January 1st, 2013
@@ -290,7 +290,7 @@ mixin widget-recent-post
     section.panel.panel-default.widget
         header.panel-heading
             i.fa.fa-pencil.icon-widget-heading
-            h2.widget-heading Recent Posts
+            h3.widget.heading Recent Posts
         .panel-body
             ul
                 li
@@ -320,7 +320,7 @@ mixin widget-about
     section.panel.panel-default.widget
         header.panel-heading
             i.fa.fa-info.icon-widget-heading
-            h2.widget-heading About Us
+            h3.widget.heading About Us
         .panel-body
             p
                 | Suave is a Minimalist Business Theme for Bootstrap.
@@ -346,8 +346,8 @@ mixin widget-about
 mixin widget-newsletter
     section.panel.panel-default.widget
         header.panel-heading
-            i.fa.fa-envelope-alt.icon-widget-heading
-            h2.widget-heading Join Our Newsletter
+            i.fa.fa-envelope-o.icon-widget-heading
+            h3.widget.heading Join Our Newsletter
         .panel-body
             p
                 | Get our monthly newsletter, Latest news &amp; buzz.
@@ -364,8 +364,8 @@ mixin widget-newsletter
 mixin widget-meta
     section.panel.panel-default.widget.widget_meta
         header.panel-heading
-            i.fa.fa-circle-blank.icon-widget-heading
-            h2.widget-heading Meta
+            i.fa.fa-circle-o.icon-widget-heading
+            h3.widget.heading Meta
         .panel-body
             ul
                 li
@@ -387,8 +387,8 @@ mixin widget-meta
 mixin widget-recent-comments
     section.panel.panel-default.widget
         header.panel-heading
-            i.fa.fa-comment-alt.icon-widget-heading
-            h2.widget-heading Recent Comments
+            i.fa.fa-comment-o.icon-widget-heading
+            h3.widget.heading Recent Comments
         .panel-body
             ul
                 li 
@@ -415,8 +415,8 @@ mixin widget-rss
         header.panel-heading
             a(href="http://") 
                 i.fa.fa-rss.icon-widget-heading
-            a(href="http://")
-                h2.widget-heading RSS
+            h3.widget.heading 
+                a(href="http://") RSS
         .panel-body
             ul
                 li
@@ -456,15 +456,15 @@ mixin widget-rss
 mixin widget-text
     section.panel.panel-default.widget.widget_text
         header.panel-heading
-            i.fa.fa-file-text-alt.icon-widget-heading
-            h2.widget-heading text
+            i.fa.fa-file-text-o.icon-widget-heading
+            h3.widget.heading text
         .panel-body.textwidget
             p
                 strong Large image: linked in a caption
                 br
             .wp-caption.alignnone
                 a(href="")
-                    img(src="assets/images/porto3.jpg", alt="")
+                    img(src="dummy-images/widget/porto3.jpg", alt="")
                 p.wp-caption-text
                     | This image is 960 by 720 pixels.
             p 
@@ -492,13 +492,13 @@ mixin widget-text
 mixin widget-woo-best-sellers
     section.panel.panel-default.widget.woocommerce.widget_best_sellers
         header.panel-heading
-            i.fa.fa-star-empty.icon-widget-heading
-            h2.widget-heading Woo Best Sellers
+            i.fa.fa-star-o.icon-widget-heading
+            h3.widget.heading Woo Best Sellers
         .panel-body
             ul.product_list_widget
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Logo
                     del 
                         span.amount $2000
@@ -506,7 +506,7 @@ mixin widget-woo-best-sellers
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Premium Quality
                     del 
                         span.amount $2000
@@ -514,7 +514,7 @@ mixin widget-woo-best-sellers
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Ship Your Idea
                     del 
                         span.amount $2000
@@ -522,7 +522,7 @@ mixin widget-woo-best-sellers
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | The sticky post
                     del 
                         span.amount $2000
@@ -530,7 +530,7 @@ mixin widget-woo-best-sellers
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo T-Shirt
                     del 
                         span.amount $2000
@@ -544,12 +544,12 @@ mixin widget-woo-onsale
     section.panel.panel-default.widget.woocommerce.widget_onsale
         header.panel-heading
             i.fa.fa-money.icon-widget-heading
-            h2.widget-heading Woo On Sale
+            h3.widget.heading Woo On Sale
         .panel-body
             ul.product_list_widget
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Logo
                     del 
                         span.amount $2000
@@ -557,7 +557,7 @@ mixin widget-woo-onsale
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Premium Quality
                     span.from From : 
                     del 
@@ -566,7 +566,7 @@ mixin widget-woo-onsale
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Ship Your Idea
                     del 
                         span.amount $2000
@@ -574,12 +574,12 @@ mixin widget-woo-onsale
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | The sticky post
                     span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo T-Shirt
                     del 
                         span.amount $2000
@@ -593,12 +593,12 @@ mixin widget-woo-random-products
     section.panel.panel-default.widget.woocommerce.widget_random_products
         header.panel-heading
             i.fa.fa-inbox.icon-widget-heading
-            h2.widget-heading Woo Random Products
+            h3.widget.heading Woo Random Products
         .panel-body
             ul.product_list_widget
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Logo
                     del 
                         span.amount $2000
@@ -606,7 +606,7 @@ mixin widget-woo-random-products
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Premium Quality
                     span.from From : 
                     del 
@@ -615,7 +615,7 @@ mixin widget-woo-random-products
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Ship Your Idea
                     del 
                         span.amount $2000
@@ -623,12 +623,12 @@ mixin widget-woo-random-products
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | The sticky post
                     span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo T-Shirt
                     del 
                         span.amount $2000
@@ -641,13 +641,13 @@ mixin widget-woo-random-products
 mixin widget-woo-new-products
     section.panel.panel-default.widget.woocommerce.widget_recent_products
         header.panel-heading
-            i.fa.fa-circle-blank.icon-widget-heading
-            h2.widget-heading Woo New Products
+            i.fa.fa-circle-o.icon-widget-heading
+            h3.widget.heading Woo New Products
         .panel-body
             ul.product_list_widget
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Logo
                     del 
                         span.amount $2000
@@ -655,7 +655,7 @@ mixin widget-woo-new-products
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Premium Quality
                     span.from From : 
                     del 
@@ -664,7 +664,7 @@ mixin widget-woo-new-products
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Ship Your Idea
                     del 
                         span.amount $2000
@@ -672,12 +672,12 @@ mixin widget-woo-new-products
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | The sticky post
                     span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo T-Shirt
                     del 
                         span.amount $2000
@@ -690,29 +690,29 @@ mixin widget-woo-new-products
 mixin widget-woo-product-categories
     section.panel.panel-default.widget.woocommerce.widget_product_categories
         header.panel-heading
-            i.fa.fa-circle-blank.icon-widget-heading
-            h2.widget-heading Woo Product Categories
+            i.fa.fa-circle-o.icon-widget-heading
+            h3.widget.heading Woo Product Categories
         .panel-body
             ul
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Albums
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Clothing
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Hoodies
                 li
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Music
                 li 
                     a(href='#') 
-                        i.fa.fa-circle-blank
+                        i.fa.fa-circle-o
                         | Posters
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -722,12 +722,12 @@ mixin widget-woo-featured-products
     section.panel.panel-default.widget.woocommerce.widget_featured_products
         header.panel-heading
             i.fa.fa-star.icon-widget-heading
-            h2.widget-heading Woo Featured Products
+            h3.widget.heading Woo Featured Products
         .panel-body
             ul.product_list_widget
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Logo
                     del 
                         span.amount $2000
@@ -735,7 +735,7 @@ mixin widget-woo-featured-products
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Premium Quality
                     span.from From : 
                     del 
@@ -750,7 +750,7 @@ mixin widget-woo-product-search
     section.panel.panel-default.widget.woocommerce.widget_product_search
         header.panel-heading
             i.fa.fa-search.icon-widget-heading
-            h2.widget-heading Woo Search Product
+            h3.widget.heading Woo Search Product
         .panel-body
             form.form-inline(id="", method="", action="", role="form")
                 .form-group
@@ -766,7 +766,7 @@ mixin widget-woo-tags
     section.panel.panel-default.widget.woocommerce.widget_product_tag_cloud
         header.panel-heading
             i.fa.fa-tag.icon-widget-heading
-            h2.widget-heading Woo Tags
+            h3.widget.heading Woo Tags
         .panel-body
             a(href="", target="_blank").btn.btn-xs.btn-primary shirt
             a(href="", target="_blank").btn.btn-xs.btn-primary jacket
@@ -782,13 +782,13 @@ mixin widget-woo-tags
 mixin widget-woo-recently-viewed
     section.panel.panel-default.widget.woocommerce.widget_recently_viewed_products
         header.panel-heading
-            i.fa.fa-eye-open.icon-widget-heading
-            h2.widget-heading Woo Recently Viewed
+            i.fa.fa-eye.icon-widget-heading
+            h3.widget.heading Woo Recently Viewed
         .panel-body
             ul.product_list_widget
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Logo
                     del 
                         span.amount $2000
@@ -796,7 +796,7 @@ mixin widget-woo-recently-viewed
                         span.amount $18
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Premium Quality
                     span.from From : 
                     del 
@@ -810,35 +810,35 @@ mixin widget-woo-recently-viewed
 mixin widget-woo-recent-reviews
     section.panel.panel-default.widget.woocommerce.widget_recent_reviews
         header.panel-heading
-            i.fa.fa-eye-open.icon-widget-heading
-            h2.widget-heading Woo Recent Reviews
+            i.fa.fa-eye.icon-widget-heading
+            h3.widget.heading Woo Recent Reviews
         .panel-body
             ul.product_list_widget
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Logo
                     .star-rating(title="Rated 5.00 out of 5")
                         span(style="width:100%")
-                            strong.rating 5
+                            strong.rating 5&nbsp;
                             | out of 5
                     | by John Maria
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Ninja Silhouette
                     .star-rating(title="Rated 3.00 out of 5")
                         span(style="width:60%")
-                            strong.rating 3
+                            strong.rating 3&nbsp;
                             | out of 5
                     | by John Doe
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Patient Ninja
                     .star-rating(title="Rated 2.00 out of 5")
                         span(style="width:40%")
-                            strong.rating 2
+                            strong.rating 2&nbsp;
                             | out of 5
                     | by John Smith
 
@@ -848,35 +848,35 @@ mixin widget-woo-recent-reviews
 mixin widget-woo-top-rated
     section.panel.panel-default.widget.woocommerce.widget_top_rated_products
         header.panel-heading
-            i.fa.fa-eye-open.icon-widget-heading
-            h2.widget-heading Woo Top Rated
+            i.fa.fa-eye.icon-widget-heading
+            h3.widget.heading Woo Top Rated
         .panel-body
             ul.product_list_widget
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Logo
                     .star-rating(title="Rated 5.00 out of 5")
                         span(style="width:100%")
-                            strong.rating 5
+                            strong.rating 5&nbsp;
                             | out of 5
                     | by John Maria
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Ninja Silhouette
                     .star-rating(title="Rated 3.00 out of 5")
                         span(style="width:60%")
-                            strong.rating 3
+                            strong.rating 3&nbsp;
                             | out of 5
                     | by John Doe
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Patient Ninja
                     .star-rating(title="Rated 2.00 out of 5")
                         span(style="width:40%")
-                            strong.rating 2
+                            strong.rating 2&nbsp;
                             | out of 5
                     | by John Smith
 
@@ -886,13 +886,13 @@ mixin widget-woo-top-rated
 mixin widget-woo-cart
     section.panel.panel-default.widget.woocommerce.widget_shopping_cart
         header.panel-heading
-            i.fa.fa-star.icon-widget-heading
-            h2.widget-heading Woo Cart
+            i.fa.fa-shopping-cart.icon-widget-heading
+            h3.widget.heading Woo Cart
         .panel-body.widget_shopping_cart_content
             ul.product_list_widget.cart_list
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Logo
                     dl.variation
                         dt Color : 
@@ -902,7 +902,7 @@ mixin widget-woo-cart
                         span.amount $20
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Ship Your Idea
                     dl.variation
                         dt Color : 
@@ -912,7 +912,7 @@ mixin widget-woo-cart
                         span.amount $24
                 li
                     a(href="http://") 
-                        img(src="assets/images/porto3-thumb.jpg", alt="")
+                        img(src="dummy-images/widget/porto3-thumb.jpg", alt="")
                         | Woo Album #4
                     dl.variation
                         dt Color : 
@@ -933,8 +933,8 @@ mixin widget-woo-cart
 mixin widget-woo-layered-nav
     section.panel.panel-default.widget.woocommerce.widget_layered_nav
         header.panel-heading
-            i.fa.fa-circle-blank.icon-widget-heading
-            h2.widget-heading Woo Layered Nav
+            i.fa.fa-circle-o.icon-widget-heading
+            h3.widget.heading Woo Layered Nav
         .panel-body
             ul
                 li.chosen
@@ -956,8 +956,8 @@ mixin widget-woo-layered-nav
 mixin widget-woo-layered-nav-dropdown
     section.panel.panel-default.widget.widget_layered_nav
         header.panel-heading
-            i.fa.fa-circle-blank.icon-widget-heading
-            h2.widget-heading Woo Layered Nav Dropdown
+            i.fa.fa-circle-o.icon-widget-heading
+            h3.widget.heading Woo Layered Nav Dropdown
         .panel-body
             select(id="dropdown_layered_nav_color")
                 option(value="") Any Colors
@@ -971,8 +971,8 @@ mixin widget-woo-layered-nav-dropdown
 mixin widget-woo-layered-nav-filters
     section.panel.panel-default.widget.woocommerce.widget_layered_nav_filters
         header.panel-heading
-            i.fa.fa-circle-blank.icon-widget-heading
-            h2.widget-heading Woo Layered Nav Filters
+            i.fa.fa-circle-o.icon-widget-heading
+            h3.widget.heading Woo Layered Nav Filters
         .panel-body
             ul
                 li.chosen
@@ -988,8 +988,8 @@ mixin widget-woo-layered-nav-filters
 mixin widget-woo-price-filter
     section.panel.panel-default.widget.woocommerce.widget_price_filter
         header.panel-heading
-            i.fa.fa-circle-blank.icon-widget-heading
-            h2.widget-heading Woo Price Filter
+            i.fa.fa-circle-o.icon-widget-heading
+            h3.widget.heading Woo Price Filter
         .panel-body
             form(method='get', action='')
                 .price_slider_wrapper
