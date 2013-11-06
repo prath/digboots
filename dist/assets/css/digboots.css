@@ -1705,7 +1705,7 @@ body.togglesidebar {
 
 .top.nav .badge {
   background-color: #8d71af;
-  margin-left: 5px;
+  margin-left: 0px;
   font-size: 10px;
   vertical-align: top;
   -webkit-border-radius: 3px;
