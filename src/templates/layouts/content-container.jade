@@ -32,3 +32,15 @@ block page
     //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     main#right(role="main")
         block content
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ COLLAPSIBLE SIDEBAR ]
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        aside.right.positioned.sidebar
+            .widget.content 
+                include ../inc/widget
+
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // FOOTER
+        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        include ../inc/footer
