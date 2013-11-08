@@ -13,6 +13,7 @@
 
 /*-----[Panel]-----*/
 .panel {
+    background-color: transparent;
     border: 0px;
 
     margin-bottom: 30px;
@@ -193,8 +194,6 @@
 
     .form-control {
         border: 1px solid lighten(@muted-text-color, 25%);
-
-        margin-bottom: 10px;
     }
 
     .wp-caption-text {
@@ -336,6 +335,7 @@
     }
 }
 
+/*-----[Icon Widget Heading]-----*/
 .icon-widget-heading {
     left: -30px;
     position: absolute;
@@ -343,5 +343,23 @@
 
     color: @muted-text-color;
     font-size: 14px;
+}
+
+/*-----[Footer Widget]-----*/
+.footer.widget {
+    .panel-heading {
+        > h1,
+        > h2,
+        > h3,
+        > h4,
+        > h5,
+        > h6,
+        > .widget.heading {
+            margin-left: 20px;
+        }
+    }
+    .icon-widget-heading {
+        left: 0px;
+    }
 }
 

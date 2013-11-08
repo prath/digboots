@@ -151,7 +151,7 @@ block content
                 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 // [ POST COMMENTS SECTION ]
                 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                section.container.post.covered
+                section.container.comments.post.covered
                     h2.section.heading.narrow
                         | 12 comments on this post
                     .wide 
@@ -297,3 +297,30 @@ block content
                         .post.meta
                             span.post.date
                                 | 12 January 2013
+
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ FOOTER WIDGETS ]
+    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.shrunk-up.shrunk-down.covered
+        .footer.widget.wide
+            .row
+                .col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+
+                    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    // [ WIDGET ABOUT ]
+                    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    mixin widget-about
+
+                .col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+
+                    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    // [ WIDGET NAV ]
+                    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    mixin widget-link
+
+                .col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+                    
+                    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    // [ WIDGET NEWSLETTER ]       
+                    //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    mixin widget-newsletter

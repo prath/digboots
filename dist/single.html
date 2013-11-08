@@ -36,17 +36,17 @@
 
             <!-- [ TOP STICKY NAV ]-->
             <div class="top sticky nav">
-                <a href="" data-content="search" data-toggle="tooltip" data-placement="bottom" title="Toggle Search" class="toggle search iconic">
+                <a href="" data-content="search" data-toggle="tooltip" data-placement="bottom" title="Search" class="toggle search iconic">
                     <img src="assets/images/search.png" alt="nav">
                 </a>
-                <a href="" data-content="cartbar" data-toggle="tooltip" data-placement="bottom" title="Toggle Shopping Cart" class="toggle cart iconic">
+                <a href="" data-content="cartbar" data-toggle="tooltip" data-placement="bottom" title="Shopping Cart" class="toggle cart iconic">
                     <img src="assets/images/cart.png" alt="nav">
                     <span class="badge">12</span>
                 </a>
-                <a href="" data-content="sidebar" data-toggle="tooltip" data-placement="bottom" title="Toggle Sidebar" class="toggle widget iconic">
+                <a href="" data-content="sidebar" data-toggle="tooltip" data-placement="bottom" title="Sidebar" class="toggle widget iconic">
                     <img src="assets/images/sidebar.png" alt="nav">
                 </a>
-                <a href="" data-content="menu" data-toggle="tooltip" data-placement="bottom" title="Toggle Menu" class="toggle nav iconic">
+                <a href="" data-content="menu" data-toggle="tooltip" data-placement="bottom" title="Menu" class="toggle nav iconic">
                     <img src="assets/images/nav.png" alt="nav">
                 </a>
             </div>
@@ -252,6 +252,7 @@
                         <span class="item">My account</span>
                         <a href="" class="item">Sign in</a>
                         <a href="" class="item">Sign up</a>
+                        <a href="" class="item">Sign up</a>
                     </div>
                 </div>
             </div>
@@ -370,7 +371,7 @@
                         <div class="separator"></div>
 
                         <!-- [ POST COMMENTS SECTION ]-->
-                        <section class="container post covered">
+                        <section class="container comments post covered">
                             <h2 class="section heading narrow">12 comments on this post</h2>
                             <div class="wide">
 
@@ -527,6 +528,100 @@
                             </article>
                         </div>
                     </section>
+                </div>
+            </section>
+
+            <!-- [ FOOTER WIDGETS ]-->
+            <section class="content shrunk-up shrunk-down covered">
+                <div class="footer widget wide">
+                    <div class="row">
+                        <div class="col-ul-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                            <!-- [ WIDGET ABOUT ]-->
+                            <section class="panel panel-default widget">
+                                <header class="panel-heading">
+                                    <i class="fa fa-info icon-widget-heading"></i>
+                                    <h3 class="widget heading">About Us</h3>
+                                </header>
+                                <div class="panel-body">
+                                    <p>
+                                        Suave is a Minimalist Business Theme for Bootstrap. Built with simplicity and flexibility in mind. Perfect for various business needs.
+                                    </p>
+                                    <address>
+                                        <strong>Twitter, Inc.</strong>
+                                        <br/>795 Folsom Ave, Suite 600
+                                        <br/>San Francisco, CA 94107
+                                        <br/>
+                                        <abbr title="Phone">Ph:</abbr>
+                                        <a href="tel:123-4567890">123-4567890</a>
+                                    </address>
+                                    <address>
+                                        <strong>Full Name</strong>
+                                        <br/>
+                                        <a href="mailto:#">first.last@example.com</a>
+                                    </address>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-ul-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                            <!-- [ WIDGET NAV ]-->
+                            <section class="panel panel-default widget widget_nav_menu">
+                                <header class="panel-heading">
+                                    <i class="fa fa-link icon-widget-heading"></i>
+                                    <h3 class="widget heading">Link</h3>
+                                </header>
+                                <div class="panel-body">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                Web Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Technology</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Science &amp; Fiction</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                Web Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                App Development</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="col-ul-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+
+                            <!-- [ WIDGET NEWSLETTER ]       -->
+                            <section class="panel panel-default widget">
+                                <header class="panel-heading">
+                                    <i class="fa fa-envelope-o icon-widget-heading"></i>
+                                    <h3 class="widget heading">Join Our Newsletter</h3>
+                                </header>
+                                <div class="panel-body">
+                                    <p>Get our monthly newsletter, Latest news &amp; buzz.</p>
+                                    <form id="" method="" action="" role="form">
+                                        <div class="form-group">
+                                            <label for="subscribe-form" class="sr-only">Email Address</label>
+                                            <input type="email" placeholder="Type your email here" id="subscribe-form" class="form-control input-sm" />
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -771,7 +866,7 @@
                             <h3 class="widget heading">Search</h3>
                         </header>
                         <div class="panel-body">
-                            <form id="" method="" action="" role="form" class="form-inline">
+                            <form id="" method="" action="" role="form">
                                 <div class="form-group">
                                     <label for="search-query" class="sr-only">Search</label>
                                     <input type="text" id="search-query" placeholder="search" class="form-control input-sm" />
@@ -936,15 +1031,13 @@
                         </header>
                         <div class="panel-body">
                             <p>Get our monthly newsletter, Latest news &amp; buzz.</p>
-                            <p>
-                                <form id="" method="" action="" role="form" class="form-inline">
-                                    <div class="form-group">
-                                        <label for="subscribe-form" class="sr-only">Email Address</label>
-                                        <input type="email" placeholder="Type your email here" id="subscribe-form" class="form-control input-sm" />
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-                                </form>
-                            </p>
+                            <form id="" method="" action="" role="form">
+                                <div class="form-group">
+                                    <label for="subscribe-form" class="sr-only">Email Address</label>
+                                    <input type="email" placeholder="Type your email here" id="subscribe-form" class="form-control input-sm" />
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+                            </form>
                         </div>
                     </section>
                     <div class="separator"></div>
@@ -1405,7 +1498,7 @@
                             <h3 class="widget heading">Woo Search Product</h3>
                         </header>
                         <div class="panel-body">
-                            <form id="" method="" action="" role="form" class="form-inline">
+                            <form id="" method="" action="" role="form">
                                 <div class="form-group">
                                     <label for="search-query" class="sr-only">Search</label>
                                     <input type="text" id="search-query" placeholder="search for product" class="form-control input-sm" />

@@ -213,7 +213,7 @@ mixin widget-search
             i.fa.fa-search.icon-widget-heading
             h3.widget.heading Search
         .panel-body
-            form.form-inline(id="", method="", action="", role="form")
+            form(id="", method="", action="", role="form")
                 .form-group
                     label.sr-only(for="search-query") Search
                     input.form-control.input-sm(type="text", id="search-query", placeholder="search")
@@ -351,12 +351,11 @@ mixin widget-newsletter
         .panel-body
             p
                 | Get our monthly newsletter, Latest news &amp; buzz.
-            p
-                form.form-inline(id="", method="", action="", role="form")
-                    .form-group
-                        label.sr-only(for="subscribe-form") Email Address
-                        input.form-control.input-sm(type="email", placeholder="Type your email here", id="subscribe-form")
-                    button.btn.btn-primary.btn-sm(type="submit") Submit
+            form(id="", method="", action="", role="form")
+                .form-group
+                    label.sr-only(for="subscribe-form") Email Address
+                    input.form-control.input-sm(type="email", placeholder="Type your email here", id="subscribe-form")
+                button.btn.btn-primary.btn-sm(type="submit") Submit
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ WIDGET META ]
@@ -752,7 +751,7 @@ mixin widget-woo-product-search
             i.fa.fa-search.icon-widget-heading
             h3.widget.heading Woo Search Product
         .panel-body
-            form.form-inline(id="", method="", action="", role="form")
+            form(id="", method="", action="", role="form")
                 .form-group
                     label.sr-only(for="search-query") Search
                     input.form-control.input-sm(type="text", id="search-query", placeholder="search for product")

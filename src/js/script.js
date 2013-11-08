@@ -31,7 +31,7 @@ $(document).ready(function () {
     /**
      * collapse all collapsible content
      */
-    $('#left, #right').on('click', function (e) {
+    $('#left, #right').children(':not(".sidebar")').on('click', function (e) {
         $('body').removeAttr('class');
     });
 
