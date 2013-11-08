@@ -7,11 +7,14 @@
 // * @author Dwi A. Hambali <dwi@aestik.com>
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
+
 body{
     background-color: @default-background;
     float: left;
 
     position: relative;
+
+    width: 100%;
 
     margin: 0px;
 
@@ -21,6 +24,9 @@ body{
     font-weight: 400;
     line-height: 30px;
     text-rendering: optimizeLegibility;
+    @media (min-height: 500px) {
+        float: none;
+    }
 }
 
 a{
@@ -86,10 +92,12 @@ p {
 
 /*-----[Main Content Area]-----*/
 #right {
+    width: 100%;
     margin-left: 0px;
     z-index: 1;
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-desktop) {
+        width: 80%;
         margin-left: 20%;
     }
 }
