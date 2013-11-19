@@ -48,7 +48,7 @@ img {
             .absoluteCenter(absolute, 100%, 100%);
 
             background-color: fade(@default-accent, 80%);
-            display: block;
+            z-index: 1;
 
             padding: 0px;
 
@@ -56,15 +56,23 @@ img {
             line-height: @line-height-base;
 
             opacity: 0;
-            transition: opacity ease 1s;
+            transition: all ease 1s;
 
             .title {
                 .absoluteCenter(absolute, 20px, 100%);
                 top: -200%;
+
                 color: @secondary-text;
+                font-size: @body-fz-lg;
+                font-weight: 400;
+                letter-spacing: 0px;
 
                 opacity: 0;
                 transition: .2s opacity ease, .2s top ease;
+
+                a {
+                    color: @secondary-text;
+                }
             }
 
             .separator {
@@ -88,6 +96,19 @@ img {
                 opacity: 0;
                 transition: opacity ease 0.5s, top ease 0.5s;
             }
+        }
+
+        .goto {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            opacity: 0;
+            transition: opacity .2s ease;
+            .fa {
+                color: @secondary-text;
+                font-size: 18px;
+            }  
         }
 
         &.one-half {
@@ -122,25 +143,34 @@ img {
         }
 
         a { 
+            display: block;
             &:hover {
-                img {
-                    transform: scale(1.2);
-                }
-                .caption{
+                
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.2);
+            }
+            .caption {
+                opacity: 1;
+                .title {
+                    top: -15%;
                     opacity: 1;
-                    .title {
-                        top: -15%;
-                        opacity: 1;
-                    }
-                    .separator {
-                        width: 20px;
-                        opacity: 1;
-                    }
-                    .client {
-                        top: 15%;
-                        opacity: 1;
-                    }
                 }
+                .separator {
+                    width: 20px;
+                    opacity: 1;
+                }
+                .client {
+                    top: 15%;
+                    opacity: 1;
+                }
+            }
+            .goto {
+                z-index: 3;
+                opacity: 1;
             }
         }
     }
@@ -153,7 +183,7 @@ img {
         @media (min-width: @screen-tablet) {
             .absoluteCenter(absolute, 50px, 50%);
 
-            z-index: 1;
+            z-index: 2;
 
             opacity: 0.8;
         }
