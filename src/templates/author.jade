@@ -43,7 +43,7 @@ block content
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ SECTION/PAGE HEADING ]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            hgroup
+            header
                 h1.section.heading Author Archives: 
                     span John William Doe
                 div.author-description
@@ -61,19 +61,19 @@ block content
             // [ POST ITEM ]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             article
-                hgroup
+                header
                     .post.format
                         i.fa.fa-picture-o
                     h2.blog.list.title
                         a(href='')
                             | European minnow priapumfish Drop.
-                aside.post.meta
-                            | By&nbsp;
-                            a(href='').post.author
-                                | John William Doe&nbsp;
-                            | on&nbsp;
-                            span.post.date
-                                | 12 January 2013
+                .post.meta
+                    | By&nbsp;
+                    a(href='').post.author
+                        | John William Doe&nbsp;
+                    | on&nbsp;
+                    span.post.date
+                        | 12 January 2013
                 .separator.in-post
                 img(src='dummy-images/blog/4.jpg')        
                 p 
@@ -87,13 +87,13 @@ block content
             // [ POST ITEM ]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             article
-                hgroup
+                header
                     .post.format
                         i.fa.fa-file-o
                     h2.blog.list.title
                         a(href='')
                             | Lorem Ipsum is dummy text.
-                aside.post.meta
+                .post.meta
                     | By&nbsp;
                     a(href='').post.author
                         | John William Doe&nbsp;

@@ -85,7 +85,7 @@ nav.right.positioned.navbar.navbar-default(role="navigation")
 // [ COLLAPSIBLE SEARCH BOX ]
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .search.box
-    form(action='', method='')
+    form(action='', method='', role='form')
         label.sr-only(for='#searchinput') Email address
         input#searchinput.searchinput(type='search', placeholder='Type Query Here...')
         button(type='submit').searchsubmit
@@ -94,7 +94,7 @@ nav.right.positioned.navbar.navbar-default(role="navigation")
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // [ COLLAPSIBLE CART ]
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.right.positioned.cartbar
+aside.right.positioned.cartbar
     .cart.content 
     
         //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

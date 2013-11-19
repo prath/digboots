@@ -35,7 +35,7 @@
         <div class="top container">
 
             <!-- [ TOP STICKY NAV ]-->
-            <div class="top sticky nav">
+            <nav class="top sticky nav">
                 <a href="" data-content="search" data-toggle="tooltip" data-placement="bottom" title="Search" class="toggle search iconic">
                     <img src="assets/images/search.png" alt="nav">
                 </a>
@@ -49,7 +49,7 @@
                 <a href="" data-content="menu" data-toggle="tooltip" data-placement="bottom" title="Menu" class="toggle nav iconic">
                     <img src="assets/images/nav.png" alt="nav">
                 </a>
-            </div>
+            </nav>
 
             <!-- [ COLLAPSIBLE NAVBAR ]-->
             <nav role="navigation" class="right positioned navbar navbar-default">
@@ -163,7 +163,7 @@
 
             <!-- [ COLLAPSIBLE SEARCH BOX ]-->
             <div class="search box">
-                <form action="" method="">
+                <form action="" method="" role="form">
                     <label for="#searchinput" class="sr-only">Email address</label>
                     <input id="searchinput" type="search" placeholder="Type Query Here..." class="searchinput">
                     <button type="submit" class="searchsubmit">
@@ -173,7 +173,7 @@
             </div>
 
             <!-- [ COLLAPSIBLE CART ]-->
-            <div class="right positioned cartbar">
+            <aside class="right positioned cartbar">
                 <div class="cart content">
 
                     <!-- [ WIDGET SHOPPING CART ]-->
@@ -229,18 +229,19 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </aside>
         </div>
 
         <!-- [ LEAD AND LOGO ]-->
-        <section id="left">
+        <header id="left">
             <div class="masthead">
                 <div class="content">
-                    <header>
+                    <h1 class="sr-only">Digboots</h1>
+                    <div class="logo">
                         <a href="">
                             <img src="dummy-images/logo.png" alt="">
                         </a>
-                    </header>
+                    </div>
                     <p class="lead">Clarity, Simplicity and Curiousity.</p>
                     <p>
                         We define every job as
@@ -252,17 +253,16 @@
                         <span class="item">My account</span>
                         <a href="" class="item">Sign in</a>
                         <a href="" class="item">Sign up</a>
-                        <a href="" class="item">Sign up</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
 
         <!-- [ MAIN CONTENT ]-->
         <main id="right" role="main">
 
             <!-- [ JUMBOTRON ]-->
-            <article class="jumbotron">
+            <section class="jumbotron">
                 <div class="cover overlay lighter">
                     <div class="container">
                         <p>Case Study</p>
@@ -274,7 +274,7 @@
                         </p>
                     </div>
                 </div>
-            </article>
+            </section>
 
             <!-- [ ABOUT US ]-->
             <article class="content post about featured narrow">
@@ -397,67 +397,70 @@
                     </section>
                 </div>
             </div>
-
-            <!-- [ FEATURED BLOG POST ]-->
-            <article class="content post featured narrow shrunk-down">
+            <section class="content">
                 <h2 class="section heading">Recent Posts</h2>
-                <aside class="post meta">
-                    <span class="post date">12 January 2013</span>
-                </aside>
-                <h3 class="featured title">
-                    <a href="">Drop in axle roll-in rail slide climb leg.</a>
-                </h3>
-                <div class="separator in-post centered"></div>
-                <img src="dummy-images/blog/1.jpg">
-                <p>European minnow priapumfish mosshead warbonnet shrimpfish bigscale. Cutlassfish priapumfish mosshead warbonnet. Efficiently unleash cross-media information without cross-media value european minnow priapumfish mosshead.</p>
-                <p>
-                    <a href="" class="btn btn-link btn-sm">Read more</a>
-                </p>
-            </article>
 
-            <!-- [ OTHER BLOG POSTS ]-->
-            <aside class="content post flatted-up medium">
-                <div class="container">
-                    <div class="row">
+                <!-- [ FEATURED BLOG POST ]-->
+                <article class="post featured narrow">
+                    <div class="post meta">
+                        <span class="post date">12 January 2013</span>
+                    </div>
+                    <h3 class="featured title">
+                        <a href="">Drop in axle roll-in rail slide climb leg.</a>
+                    </h3>
+                    <div class="separator in-post centered"></div>
+                    <img src="dummy-images/blog/1.jpg">
+                    <p>European minnow priapumfish mosshead warbonnet shrimpfish bigscale. Cutlassfish priapumfish mosshead warbonnet. Efficiently unleash cross-media information without cross-media value european minnow priapumfish mosshead.</p>
+                    <p>
+                        <a href="" class="btn btn-link btn-sm">Read more</a>
+                    </p>
+                    <div class="separator vertically widen centered"></div>
+                </article>
 
-                        <!-- [ POST ITEM ]-->
-                        <article class="small col-ul-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <h4 class="related title">
-                                <a href="">European minnow priapumfish cross-media.</a>
-                            </h4>
-                            <aside class="post meta">
-                                <span class="post date">12 January 2013</span>
-                            </aside>
-                            <p>Efficiently unleash cross-media information without cross-media value.</p>
-                            <a href="" class="btn btn-link btn-sm">read more</a>
-                        </article>
+                <!-- [ OTHER BLOG POSTS ]-->
+                <div class="post medium">
+                    <div class="container">
+                        <div class="row">
 
-                        <!-- [ POST ITEM ]-->
-                        <article class="small col-ul-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <h4 class="related title">
-                                <a href="">Mosshead warbonnet shrimpfish bigscale.</a>
-                            </h4>
-                            <aside class="post meta">
-                                <span class="post date">12 January 2013</span>
-                            </aside>
-                            <p>European minnow priapumfish mosshead warbonnet shrimpfish bigscale.</p>
-                            <a href="" class="btn btn-link btn-sm">read more</a>
-                        </article>
+                            <!-- [ POST ITEM ]-->
+                            <article class="small col-ul-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h4 class="related title">
+                                    <a href="">European minnow priapumfish cross-media.</a>
+                                </h4>
+                                <div class="post meta">
+                                    <span class="post date">12 January 2013</span>
+                                </div>
+                                <p>Efficiently unleash cross-media information without cross-media value.</p>
+                                <a href="" class="btn btn-link btn-sm">read more</a>
+                            </article>
 
-                        <!-- [ POST ITEM ]-->
-                        <article class="small col-ul-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                            <h4 class="related title">
-                                <a href="">Climb leg rub face on everything.</a>
-                            </h4>
-                            <aside class="post meta">
-                                <span class="post date">12 January 2013</span>
-                            </aside>
-                            <p>Drop in axle roll-in rail slide noseblunt slide Steve Severin impossible.</p>
-                            <a href="" class="btn btn-link btn-sm">read more</a>
-                        </article>
+                            <!-- [ POST ITEM ]-->
+                            <article class="small col-ul-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h4 class="related title">
+                                    <a href="">Mosshead warbonnet shrimpfish bigscale.</a>
+                                </h4>
+                                <div class="post meta">
+                                    <span class="post date">12 January 2013</span>
+                                </div>
+                                <p>European minnow priapumfish mosshead warbonnet shrimpfish bigscale.</p>
+                                <a href="" class="btn btn-link btn-sm">read more</a>
+                            </article>
+
+                            <!-- [ POST ITEM ]-->
+                            <article class="small col-ul-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                <h4 class="related title">
+                                    <a href="">Climb leg rub face on everything.</a>
+                                </h4>
+                                <div class="post meta">
+                                    <span class="post date">12 January 2013</span>
+                                </div>
+                                <p>Drop in axle roll-in rail slide noseblunt slide Steve Severin impossible.</p>
+                                <a href="" class="btn btn-link btn-sm">read more</a>
+                            </article>
+                        </div>
                     </div>
                 </div>
-            </aside>
+            </section>
 
             <!-- [ WORKPLACE GALLERY ]-->
             <section class="workspace image">
@@ -1726,6 +1729,9 @@
 
         <!-- [ RETINA JS ]-->
         <script src="assets/js/vendor/retina.min.js"></script>
+
+        <!-- [ FitVids JS ]-->
+        <script src="assets/js/vendor/jquery.fitvids.js"></script>
 
         <!-- [ DIGBOOTS SCRIPT ]-->
         <script src="assets/js/script.js"></script>

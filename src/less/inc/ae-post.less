@@ -239,7 +239,40 @@ article .small {
         margin-bottom: 20px;
     }
 }
+/*-----[Post Formats]-----*/
+.format-link {
+    .entry-content {
+        a {
+            display: block;
+            margin-bottom: 30px;
+            font-size: @body-fz-ul;
+        }
+    }
+}
 
+.format-aside {
+    .entry-content {
+        background-color: fade(@secondary-text, 50%);
+        border-left: 1px solid @default-accent;
+        padding: 20px 20px 20px 50px;
+        margin: 0 0 30px;
+    }
+}
+
+.format-chat {
+    .entry-content {
+        p {
+            margin-bottom: 0px;
+            padding: 10px 20px;
+            &:nth-child(odd) {
+                background-color: fade(@secondary-text, 50%);
+            }
+            &:nth-child(even) {
+                background-color: fade(@secondary-text, 30%);
+            }
+        }
+    }
+}
 /*-----[Content Separator]-----*/
 .separator {
     clear: both;

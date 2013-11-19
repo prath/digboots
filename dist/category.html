@@ -35,7 +35,7 @@
         <div class="top container">
 
             <!-- [ TOP STICKY NAV ]-->
-            <div class="top sticky nav">
+            <nav class="top sticky nav">
                 <a href="" data-content="search" data-toggle="tooltip" data-placement="bottom" title="Search" class="toggle search iconic">
                     <img src="assets/images/search.png" alt="nav">
                 </a>
@@ -49,7 +49,7 @@
                 <a href="" data-content="menu" data-toggle="tooltip" data-placement="bottom" title="Menu" class="toggle nav iconic">
                     <img src="assets/images/nav.png" alt="nav">
                 </a>
-            </div>
+            </nav>
 
             <!-- [ COLLAPSIBLE NAVBAR ]-->
             <nav role="navigation" class="right positioned navbar navbar-default">
@@ -163,7 +163,7 @@
 
             <!-- [ COLLAPSIBLE SEARCH BOX ]-->
             <div class="search box">
-                <form action="" method="">
+                <form action="" method="" role="form">
                     <label for="#searchinput" class="sr-only">Email address</label>
                     <input id="searchinput" type="search" placeholder="Type Query Here..." class="searchinput">
                     <button type="submit" class="searchsubmit">
@@ -173,7 +173,7 @@
             </div>
 
             <!-- [ COLLAPSIBLE CART ]-->
-            <div class="right positioned cartbar">
+            <aside class="right positioned cartbar">
                 <div class="cart content">
 
                     <!-- [ WIDGET SHOPPING CART ]-->
@@ -229,18 +229,19 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </aside>
         </div>
 
         <!-- [ LEAD AND LOGO ]-->
-        <section id="left">
+        <header id="left">
             <div class="masthead">
                 <div class="content">
-                    <header>
+                    <h1 class="sr-only">Digboots</h1>
+                    <div class="logo">
                         <a href="">
                             <img src="dummy-images/logo.png" alt="">
                         </a>
-                    </header>
+                    </div>
                     <p class="lead">Clarity, Simplicity and Curiousity.</p>
                     <p>
                         We define every job as
@@ -252,11 +253,10 @@
                         <span class="item">My account</span>
                         <a href="" class="item">Sign in</a>
                         <a href="" class="item">Sign up</a>
-                        <a href="" class="item">Sign up</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
 
         <!-- [ MAIN CONTENT ]-->
         <main id="right" role="main">
@@ -278,12 +278,12 @@
                     </ol>
 
                     <!-- [ SECTION/PAGE HEADING ]-->
-                    <hgroup>
+                    <header>
                         <h1 class="section heading">CATEGORY ARCHIVES:
                             <span>uncategorized</span>
                         </h1>
                         <p class="heading-description">Completely synergize resource sucking relationships via premier niche markets.</p>
-                    </hgroup>
+                    </header>
                 </div>
 
                 <!-- [ POSTS ]-->
@@ -291,18 +291,18 @@
 
                     <!-- [ POST ITEM ]-->
                     <article>
-                        <hgroup>
+                        <header>
                             <div class="post format">
                                 <i class="fa fa-picture-o"></i>
                             </div>
                             <h2 class="blog list title">
                                 <a href="">European minnow priapumfish Drop.</a>
                             </h2>
-                        </hgroup>
-                        <aside class="post meta">By&nbsp;
+                        </header>
+                        <div class="post meta">By&nbsp;
                             <a href="" class="post author">John William Doe&nbsp;</a>on&nbsp;
                             <span class="post date">12 January 2013</span>
-                        </aside>
+                        </div>
                         <div class="separator in-post"></div>
                         <img src="dummy-images/blog/4.jpg">
                         <p>
@@ -316,18 +316,18 @@
 
                     <!-- [ POST ITEM ]-->
                     <article>
-                        <hgroup>
+                        <header>
                             <div class="post format">
                                 <i class="fa fa-file-o"></i>
                             </div>
                             <h2 class="blog list title">
                                 <a href="">Lorem Ipsum is dummy text.</a>
                             </h2>
-                        </hgroup>
-                        <aside class="post meta">By&nbsp;
+                        </header>
+                        <div class="post meta">By&nbsp;
                             <a href="" class="post author">John William Doe&nbsp;</a>on&nbsp;
                             <span class="post date">12 January 2013</span>
-                        </aside>
+                        </div>
                         <div class="separator in-post"></div>
                         <p>
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
@@ -340,18 +340,18 @@
 
                     <!-- [ POST ITEM ]-->
                     <article>
-                        <hgroup>
+                        <header>
                             <div class="post format">
                                 <i class="fa fa-quote-right"></i>
                             </div>
                             <h2 class="blog list title">
                                 <a href="">Established fact that a reader distracted.</a>
                             </h2>
-                        </hgroup>
-                        <aside class="post meta">By&nbsp;
+                        </header>
+                        <div class="post meta">By&nbsp;
                             <a href="" class="post author">John William Doe&nbsp;</a>on&nbsp;
                             <span class="post date">12 January 2013</span>
-                        </aside>
+                        </div>
                         <div class="separator in-post"></div>
                         <p>
                             It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
@@ -364,18 +364,18 @@
 
                     <!-- [ POST ITEM ]-->
                     <article>
-                        <hgroup>
+                        <header>
                             <div class="post format">
                                 <i class="fa fa-music"></i>
                             </div>
                             <h2 class="blog list title">
                                 <a href="">Injected humour.</a>
                             </h2>
-                        </hgroup>
-                        <aside class="post meta">By&nbsp;
+                        </header>
+                        <div class="post meta">By&nbsp;
                             <a href="" class="post author">John William Doe&nbsp;</a>on&nbsp;
                             <span class="post date">12 January 2013</span>
-                        </aside>
+                        </div>
                         <div class="separator in-post"></div>
                         <p>
                             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.
@@ -388,18 +388,18 @@
 
                     <!-- [ POST ITEM ]-->
                     <article>
-                        <hgroup>
+                        <header>
                             <div class="post format">
                                 <i class="fa fa-video-camera"></i>
                             </div>
                             <h2 class="blog list title">
                                 <a href="">Richard McClintock, a Latin professor.</a>
                             </h2>
-                        </hgroup>
-                        <aside class="post meta">By&nbsp;
+                        </header>
+                        <div class="post meta">By&nbsp;
                             <a href="" class="post author">John William Doe&nbsp;</a>on&nbsp;
                             <span class="post date">12 January 2013</span>
-                        </aside>
+                        </div>
                         <div class="separator in-post"></div>
                         <p>
                             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words.
@@ -412,18 +412,18 @@
 
                     <!-- [ POST ITEM ]-->
                     <article>
-                        <hgroup>
+                        <header>
                             <div class="post format">
                                 <i class="fa fa-link"></i>
                             </div>
                             <h2 class="blog list title">
                                 <a href="">De Finibus Bonorum.</a>
                             </h2>
-                        </hgroup>
-                        <aside class="post meta">By&nbsp;
+                        </header>
+                        <div class="post meta">By&nbsp;
                             <a href="" class="post author">John William Doe&nbsp;</a>on&nbsp;
                             <span class="post date">12 January 2013</span>
-                        </aside>
+                        </div>
                         <div class="separator in-post"></div>
                         <p>
                             The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
@@ -436,18 +436,18 @@
 
                     <!-- [ POST ITEM ]-->
                     <article>
-                        <hgroup>
+                        <header>
                             <div class="post format">
                                 <i class="fa fa-pencil"></i>
                             </div>
                             <h2 class="blog list title">
                                 <a href="">The standard chunk of Lorem Ipsum.</a>
                             </h2>
-                        </hgroup>
-                        <aside class="post meta">By&nbsp;
+                        </header>
+                        <div class="post meta">By&nbsp;
                             <a href="" class="post author">John William Doe&nbsp;</a>on&nbsp;
                             <span class="post date">12 January 2013</span>
-                        </aside>
+                        </div>
                         <div class="separator in-post"></div>
                         <p>
                             The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
@@ -460,18 +460,18 @@
 
                     <!-- [ POST ITEM ]-->
                     <article>
-                        <hgroup>
+                        <header>
                             <div class="post format">
                                 <i class="fa fa-camera"></i>
                             </div>
                             <h2 class="blog list title">
                                 <a href="">Sections 1.10.32.</a>
                             </h2>
-                        </hgroup>
-                        <aside class="post meta">By&nbsp;
+                        </header>
+                        <div class="post meta">By&nbsp;
                             <a href="" class="post author">John William Doe&nbsp;</a>on&nbsp;
                             <span class="post date">12 January 2013</span>
-                        </aside>
+                        </div>
                         <div class="separator in-post"></div>
                         <p>
                             The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
@@ -484,18 +484,18 @@
 
                     <!-- [ POST ITEM ]-->
                     <article>
-                        <hgroup>
+                        <header>
                             <div class="post format">
                                 <i class="fa fa-list"></i>
                             </div>
                             <h2 class="blog list title">
                                 <a href="">Cicero are also reproduced in their exact original form.</a>
                             </h2>
-                        </hgroup>
-                        <aside class="post meta">By&nbsp;
+                        </header>
+                        <div class="post meta">By&nbsp;
                             <a href="" class="post author">John William Doe&nbsp;</a>on&nbsp;
                             <span class="post date">12 January 2013</span>
-                        </aside>
+                        </div>
                         <div class="separator in-post"></div>
                         <p>
                             The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
@@ -1699,6 +1699,9 @@
 
         <!-- [ RETINA JS ]-->
         <script src="assets/js/vendor/retina.min.js"></script>
+
+        <!-- [ FitVids JS ]-->
+        <script src="assets/js/vendor/jquery.fitvids.js"></script>
 
         <!-- [ DIGBOOTS SCRIPT ]-->
         <script src="assets/js/script.js"></script>

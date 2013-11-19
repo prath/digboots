@@ -35,7 +35,7 @@
         <div class="top container">
 
             <!-- [ TOP STICKY NAV ]-->
-            <div class="top sticky nav">
+            <nav class="top sticky nav">
                 <a href="" data-content="search" data-toggle="tooltip" data-placement="bottom" title="Search" class="toggle search iconic">
                     <img src="assets/images/search.png" alt="nav">
                 </a>
@@ -49,7 +49,7 @@
                 <a href="" data-content="menu" data-toggle="tooltip" data-placement="bottom" title="Menu" class="toggle nav iconic">
                     <img src="assets/images/nav.png" alt="nav">
                 </a>
-            </div>
+            </nav>
 
             <!-- [ COLLAPSIBLE NAVBAR ]-->
             <nav role="navigation" class="right positioned navbar navbar-default">
@@ -163,7 +163,7 @@
 
             <!-- [ COLLAPSIBLE SEARCH BOX ]-->
             <div class="search box">
-                <form action="" method="">
+                <form action="" method="" role="form">
                     <label for="#searchinput" class="sr-only">Email address</label>
                     <input id="searchinput" type="search" placeholder="Type Query Here..." class="searchinput">
                     <button type="submit" class="searchsubmit">
@@ -173,7 +173,7 @@
             </div>
 
             <!-- [ COLLAPSIBLE CART ]-->
-            <div class="right positioned cartbar">
+            <aside class="right positioned cartbar">
                 <div class="cart content">
 
                     <!-- [ WIDGET SHOPPING CART ]-->
@@ -229,18 +229,19 @@
                         </div>
                     </section>
                 </div>
-            </div>
+            </aside>
         </div>
 
         <!-- [ LEAD AND LOGO ]-->
-        <section id="left">
+        <header id="left">
             <div class="masthead">
                 <div class="content">
-                    <header>
+                    <h1 class="sr-only">Digboots</h1>
+                    <div class="logo">
                         <a href="">
                             <img src="dummy-images/logo.png" alt="">
                         </a>
-                    </header>
+                    </div>
                     <p class="lead">Clarity, Simplicity and Curiousity.</p>
                     <p>
                         We define every job as
@@ -252,29 +253,28 @@
                         <span class="item">My account</span>
                         <a href="" class="item">Sign in</a>
                         <a href="" class="item">Sign up</a>
-                        <a href="" class="item">Sign up</a>
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
 
         <!-- [ MAIN CONTENT ]-->
         <main id="right" role="main">
 
             <!-- [ PORTFOLIO FILTER]-->
-            <section class="image filter">
+            <nav class="image filter">
                 <a href="">All</a>
                 <a href="">Web Design</a>
                 <a href="">Illustration</a>
                 <a href="">UI Design</a>
-            </section>
+            </nav>
 
             <!-- [ PORTFOLIO ]-->
             <section class="portfolio image">
                 <header>
-                    <h2 class="image post title">
-                        <a href="">Recent Works</a>
-                    </h2>
+                    <h1 class="image post title">
+                        <a href="">All Works</a>
+                    </h1>
                 </header>
 
                 <!-- [ PORTFOLIO ITEM ]-->
@@ -1614,6 +1614,9 @@
 
         <!-- [ RETINA JS ]-->
         <script src="assets/js/vendor/retina.min.js"></script>
+
+        <!-- [ FitVids JS ]-->
+        <script src="assets/js/vendor/jquery.fitvids.js"></script>
 
         <!-- [ DIGBOOTS SCRIPT ]-->
         <script src="assets/js/script.js"></script>

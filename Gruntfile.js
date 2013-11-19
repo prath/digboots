@@ -383,13 +383,14 @@ module.exports = function(grunt) {
                 files: [
                     'src/dummy-images/**'],
                 tasks: ['clean:dummy', 'copy:dummyimg']
-            },
-            templates: {
-                files: [
-                    'src/templates/**/*'],
-                tasks: [
-                    'clean:template', 'less', 'jade', 'prettify', 'copy:js', 'autoprefixer']
             }
+            // ,
+            // templates: {
+            //     files: [
+            //         'src/templates/**/*'],
+            //     tasks: [
+            //         'clean:template', 'less', 'jade', 'prettify', 'copy:js', 'autoprefixer']
+            // }
         }
     });
 

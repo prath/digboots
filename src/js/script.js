@@ -43,4 +43,9 @@ $(document).ready(function () {
         selector: "[data-toggle=tooltip]",
         container: "body"
     });
+
+    /**
+     * FitVids
+     */
+    $(".fitvids").fitVids();
 });

@@ -56,7 +56,7 @@ img {
             line-height: @line-height-base;
 
             opacity: 0;
-            transition: all ease 1s;
+            transition: opacity ease 1s;
 
             .title {
                 .absoluteCenter(absolute, 20px, 100%);
@@ -64,7 +64,7 @@ img {
                 color: @secondary-text;
 
                 opacity: 0;
-                transition: .2s all ease;
+                transition: .2s opacity ease, .2s top ease;
             }
 
             .separator {
@@ -76,7 +76,7 @@ img {
                 top: 0;
                 opacity: 0;
 
-                transition: all ease 0.5s;
+                transition: opacity ease 0.5s, width ease 0.5s;
             }
             .client {
                 .absoluteCenter(absolute, 20px, 100%);
@@ -86,7 +86,7 @@ img {
                 font-size: @body-fz-sm;
 
                 opacity: 0;
-                transition: all ease 0.5s;
+                transition: opacity ease 0.5s, top ease 0.5s;
             }
         }
 

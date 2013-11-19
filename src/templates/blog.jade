@@ -43,7 +43,7 @@ block content
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ SECTION/PAGE HEADING ]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            hgroup
+            header
                 h1.section.heading Blog
 
         //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -54,13 +54,13 @@ block content
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ POST ITEM - FEATURED/STICKY POST ]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
+            article.format-standard
+                header
                     .post.format.centered
                         i.fa.fa-bookmark-o
                     h2.featured.title.centered 
                         a(href='') The new chapter, a new Beginning.
-                aside.post.meta.centered
+                .post.meta.centered
                     | By&nbsp;
                     a(href='').post.author
                         | John William Doe&nbsp;
@@ -68,9 +68,10 @@ block content
                     span.post.date
                         | 12 January 2013
                 .separator.in-post.centered
-                img(src='dummy-images/blog/7.jpg')
-                p
-                    | European minnow priapumfish mosshead warbonnet shrimpfish bigscale. Cutlassfish priapumfish mosshead warbonnet. Efficiently unleash cross-media information without cross-media value european <a href=''>minnow priapumfish</a>.
+                .entry-content
+                    img(src='dummy-images/blog/7.jpg')
+                    p
+                        | European minnow priapumfish mosshead warbonnet shrimpfish bigscale. Cutlassfish priapumfish mosshead warbonnet. Efficiently unleash cross-media information without cross-media value european <a href=''>minnow priapumfish</a>.
                 p.centered
                     a(href='').btn.btn-link.btn-sm
                         | Read more
@@ -78,42 +79,39 @@ block content
             .separator.vertically.widen.centered
 
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ POST ITEM ]
+            // [ POST ITEM IMAGE]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
+            article.format-image
+                header
                     .post.format
                         i.fa.fa-picture-o
-                    h2.blog.list.title
-                        a(href='')
-                            | European minnow priapumfish Drop.
-                aside.post.meta
-                            | By&nbsp;
-                            a(href='').post.author
-                                | John William Doe&nbsp;
-                            | on&nbsp;
-                            span.post.date
-                                | 12 January 2013
+                .post.meta
+                    | By&nbsp;
+                    a(href='').post.author
+                        | John William Doe&nbsp;
+                    | on&nbsp;
+                    span.post.date
+                        | 12 January 2013
                 .separator.in-post
-                img(src='dummy-images/blog/4.jpg')        
-                p 
-                    | Climb leg rub face on everything give attitude nap all day for under the bed. Chase mice attack feet. European minnow priapumfish mosshead warbonnet shrimpfish bigscale efficiently unleash cross-media information without cross-media value.
+                .entry-content
+                    img(src='dummy-images/blog/4.jpg')
+                    span.caption Climb leg rub face on everything give attitude nap all day
                 p.centered
                     a(href='').btn.btn-link.btn-sm
                         | Read more
             .separator.vertically.widen
 
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ POST ITEM ]
+            // [ POST ITEM STANDARD]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
+            article.format-standard
+                header
                     .post.format
                         i.fa.fa-file-o
                     h2.blog.list.title
                         a(href='')
-                            | Lorem Ipsum is dummy text.
-                aside.post.meta
+                            | Post Standard Lorem Ipsum is dummy text.
+                .post.meta
                     | By&nbsp;
                     a(href='').post.author
                         | John William Doe&nbsp;
@@ -121,8 +119,9 @@ block content
                     span.post.date
                         | 12 January 2013
                 .separator.in-post
-                p 
-                    | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
+                .entry-content
+                    p 
+                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.
                 p.centered
                     a(href='').btn.btn-link.btn-sm
                         | Read more
@@ -130,17 +129,14 @@ block content
             .separator.vertically.widen
 
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ POST ITEM ]
+            // [ POST ITEM QUOTE]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
+            article.format-quote
+                header
                     .post.format
                         i.fa.fa-quote-right
-                    h2.blog.list.title 
-                        a(href='')
-                            | Established fact that a reader distracted.
                     
-                aside.post.meta
+                .post.meta
                     | By&nbsp;
                     a(href='').post.author
                         | John William Doe&nbsp;
@@ -148,25 +144,29 @@ block content
                     span.post.date
                         | 12 January 2013
                 .separator.in-post
-                p 
-                    | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+                .entry-content
+                    blockquote 
+                        p
+                            | "Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains."
+                            cite.name
+                                | John William Smith - <strong>Company.co</strong> 
                 p.centered
                     a(href='').btn.btn-link.btn-sm
                         | Read more
             .separator.vertically.widen
 
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ POST ITEM ]
+            // [ POST ITEM AUDIO]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
+            article.format-audio
+                header
                     .post.format
                         i.fa.fa-music
                     h2.blog.list.title
                         a(href='')
-                            | Injected humour.
+                            | No Use For A Name: Feels Like Home.
                     
-                aside.post.meta
+                .post.meta
                     | By&nbsp;
                     a(href='').post.author
                         | John William Doe&nbsp;
@@ -174,25 +174,25 @@ block content
                     span.post.date
                         | 12 January 2013
                 .separator.in-post
-                p 
-                    | There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. 
+                .entry-content
+                    iframe(width="100%",height="166", scrolling="no", frameborder="no", src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/55092730") 
                 p.centered
                     a(href='').btn.btn-link.btn-sm
                         | Read more
             .separator.vertically.widen
 
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ POST ITEM ]
+            // [ POST ITEM VIDEO]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
+            article.format-video
+                header
                     .post.format
                         i.fa.fa-video-camera
                     h2.blog.list.title
                         a(href='')
-                            | Richard McClintock, a Latin professor.
+                            | Mac 'n' Cheese
                     
-                aside.post.meta
+                .post.meta
                     | By&nbsp;
                     a(href='').post.author
                         | John William Doe&nbsp;
@@ -200,25 +200,25 @@ block content
                     span.post.date
                         | 12 January 2013
                 .separator.in-post
-                p 
-                    | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words. 
+                .entry-content
+                    p.fitvids
+                        iframe(src="//player.vimeo.com/video/27127177", width="500", height="281", frameborder="0",webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+                        p
+                            a(href="http://vimeo.com/27127177")
+                                | Mac 'n' Cheese</a> from <a href="http://vimeo.com/macncheese">Mac &#039;N&#039; Cheese</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
                 p.centered
                     a(href='').btn.btn-link.btn-sm
                         | Read more
             .separator.vertically.widen
 
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ POST ITEM ]
+            // [ POST ITEM LINK]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
+            article.format-link
+                header
                     .post.format
                         i.fa.fa-link
-                    h2.blog.list.title
-                        a(href='')
-                            | De Finibus Bonorum.
-                    
-                aside.post.meta
+                .post.meta
                     | By&nbsp;
                     a(href='').post.author
                         | John William Doe&nbsp;
@@ -226,51 +226,25 @@ block content
                     span.post.date
                         | 12 January 2013
                 .separator.in-post
-                p 
-                    | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
+                .entry-content
+                    a(href="") 
+                        | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
                 p.centered
                     a(href='').btn.btn-link.btn-sm
                         | Read more
             .separator.vertically.widen
 
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ POST ITEM ]
+            // [ POST ITEM GALLERY]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
-                    .post.format
-                        i.fa.fa-pencil
-                    h2.blog.list.title
-                        a(href='')
-                            | The standard chunk of Lorem Ipsum.
-                    
-                aside.post.meta
-                    | By&nbsp;
-                    a(href='').post.author
-                        | John William Doe&nbsp;
-                    | on&nbsp;
-                    span.post.date
-                        | 12 January 2013
-                .separator.in-post
-                p 
-                    | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
-                p.centered
-                    a(href='').btn.btn-link.btn-sm
-                        | Read more
-            .separator.vertically.widen
-
-            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ POST ITEM ]
-            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
+            article.format-gallery
+                header
                     .post.format
                         i.fa.fa-camera
                     h2.blog.list.title
                         a(href='')
-                            | Sections 1.10.32.
-                    
-                aside.post.meta
+                            | Post Gallery Sections 1.10.32.
+                .post.meta
                     | By&nbsp;
                     a(href='').post.author
                         | John William Doe&nbsp;
@@ -278,25 +252,23 @@ block content
                     span.post.date
                         | 12 January 2013
                 .separator.in-post
-                p 
-                    | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
+                .entry-content
+                    img(src='dummy-images/blog/7.jpg')
+                    p 
+                        | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
                 p.centered
                     a(href='').btn.btn-link.btn-sm
                         | Read more
             .separator.vertically.widen
 
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ POST ITEM ]
+            // [ POST ITEM STATUS]
             //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                hgroup
+            article.format-status
+                header
                     .post.format
-                        i.fa.fa-list
-                    h2.blog.list.title
-                        a(href='')
-                            | Cicero are also reproduced in their exact original form.
-                    
-                aside.post.meta
+                        i.fa.fa-pencil
+                .post.meta
                     | By&nbsp;
                     a(href='').post.author
                         | John William Doe&nbsp;
@@ -304,8 +276,66 @@ block content
                     span.post.date
                         | 12 January 2013
                 .separator.in-post
-                p 
-                    | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
+                .entry-content
+                    p 
+                        | Status format post of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form.
+                p.centered
+                    a(href='').btn.btn-link.btn-sm
+                        | Read more
+            .separator.vertically.widen
+
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ POST ITEM ASIDE]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.format-aside
+                header
+                    .post.format
+                        i.fa.fa-list
+                    h2.blog.list.title
+                        a(href='')
+                            | Post Aside Cicero are also reproduced in their exact original form.
+                .post.meta
+                    | By&nbsp;
+                    a(href='').post.author
+                        | John William Doe&nbsp;
+                    | on&nbsp;
+                    span.post.date
+                        | 12 January 2013
+                .separator.in-post
+                .entry-content
+                    p 
+                        | The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. 
+                p.centered
+                    a(href='').btn.btn-link.btn-sm
+                        | Read more
+            .separator.vertically.widen
+
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ POST ITEM CHAT]
+            //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.format-chat
+                header
+                    .post.format
+                        i.fa.fa-comments
+                    h2.blog.list.title
+                        a(href='')
+                            | Post Format Chat.
+                .post.meta
+                    | By&nbsp;
+                    a(href='').post.author
+                        | John William Doe&nbsp;
+                    | on&nbsp;
+                    span.post.date
+                        | 12 January 2013
+                .separator.in-post
+                .entry-content
+                    p Abbott: Strange as it may seem, they give ball players nowadays very peculiar names.
+                    p Costello: Funny names?
+                    p Abbott: Nicknames, nicknames. Now, on the St. Louis team we have Who’s on first, What’s on second, I Don’t Know is on third–
+                    p Costello: That’s what I want to find out. I want you to tell me the names of the fellows on the St. Louis team.
+                    p Abbott: I’m telling you. Who’s on first, What’s on second, I Don’t Know is on third–
+                    p Costello: You know the fellows’ names?
+                    p Abbott: Yes.
                 p.centered
                     a(href='').btn.btn-link.btn-sm
                         | Read more
