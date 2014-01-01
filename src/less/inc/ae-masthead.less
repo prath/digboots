@@ -8,16 +8,17 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
-/* [Custom Styles]
-------------------------------------------------------------------*/
-/*-----[Masthead - reside in left side of the page]-----*/
+/* [Masthead]
+ -
+ * everything inside the left side container
+============================================================*/
 .masthead {
     background: #fff;
 
     height: auto;
     width: auto;
 
-    margin: 0px;
+    margin: 0;
 
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
@@ -28,8 +29,8 @@
         height: 100%;
         width: 80%;
 
-        margin: 0px auto;
-        padding: 50px 0px;
+        margin: 0 auto;
+        padding: 50px 0;
 
         @media (min-width: @screen-lg-phone) {
             width: 70%;
@@ -56,7 +57,7 @@
             height: 30px;
             width: auto;
 
-            margin-bottom: 0px;
+            margin-bottom: 0;
             transition: all ease 0.8s;
         }
     }
@@ -132,7 +133,7 @@
             right: 80%;
             top: 0;
 
-            margin-bottom: 0px;
+            margin-bottom: 0;
             margin-right: 20px;
             transition: all ease 0.8s; 
             //*-----[Responsive 600++]-----*/
@@ -147,7 +148,7 @@
         max-height: 134px;
         overflow: auto;
 
-        padding: 20px 0px;
+        padding: 20px 0;
 
         font-family: @font-4;
         font-size: @body-fz-us;
@@ -165,33 +166,5 @@
             }
         }
 
-    }
-}
-
-/*-----[Class shown-triggered by javascript]-----*/
-.mastshown {
-    .toggle {
-        &.iconic {
-            background-color: transparent;
-
-            position: fixed;
-            right: 100%;
-            top: 10px;
-
-            margin-right: -20px;
-            z-index: 9999;
-        }
-    }     
-    header {
-        position: fixed;
-        left: 0;
-        z-index: 9998;
-        top: 0;
-        width: 15%;
-        padding: 10px 0px;
-        text-align: center;
-        img {
-            height: 20px;
-        }
     }
 }

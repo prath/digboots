@@ -8,9 +8,23 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
-/* [Custom Styles]
-------------------------------------------------------------------*/
-/*-----[Footer]-----*/
+/* [Social Icons]
+============================================================*/
+.social.icons {
+    margin-bottom: 20px;
+}
+
+&.social.icon {
+    color: @muted-text-color;
+
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+/* [Footer and Watermark]
+============================================================*/
 footer {
     line-height: @line-height-narrow ;
     &.bottom {
@@ -24,7 +38,7 @@ footer {
             &.social.icon {
                 margin-right: 40px;
                 &:last-child {
-                    margin-right: 0px;
+                    margin-right: 0;
                 }
             }
         }
@@ -32,7 +46,7 @@ footer {
     .watermark {
         width: 70%;
 
-        margin: 0px auto;
+        margin: 0 auto;
 
         font-size: @body-fz-xs;
         text-align: center;

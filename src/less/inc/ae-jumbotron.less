@@ -1,0 +1,119 @@
+// -----------------------------------------------------------------
+// * [Main Content Styles]
+// * 
+// * @project Digboots Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// -----------------------------------------------------------------
+
+/* [Jumbotron]
+ -
+ * slider, hero and marketing copy
+============================================================*/
+.jumbotron {
+    background: url('../../dummy-images/hero-image.jpg') center center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+
+    color: @secondary-text;
+    font-size: @body-fz-xl;
+    text-align: center;
+
+    -webkit-overflow-scrolling: touch;
+
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        font-size: 21px;
+    }
+
+    .container {
+        width: 80%;
+        height: 50%;
+
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        margin: auto;
+
+        //*-----[Responsive 600++]-----*/
+        @media (min-width: @screen-lg-phone) {
+            height: 80%;
+            width: 90%;
+        }
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            height: 50%;
+            width: 80%;
+        }
+    }
+
+    h1 {
+        margin-bottom: 20px;
+
+        font-family: @font-4;
+        font-size: 48px;
+        font-weight: 100;
+        letter-spacing: -3.0px;
+        line-height: 40px;
+        strong {
+            font-weight: 600;
+        }
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            margin-bottom: 50px;
+
+            font-size: 100px;
+            letter-spacing: -7.0px;
+            line-height: 90px;
+        }
+    }
+
+    p {
+        width: 80%;
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+
+        letter-spacing: 10px;
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            width: 60%;
+        }
+    }
+
+    a {
+        letter-spacing: 0;
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            letter-spacing: 10px;
+        }
+    }
+
+    .cover.overlay {
+        h1 {
+            color: @secondary-text;
+        }
+        a {
+            color: @body-text-color;
+        }
+    }
+}

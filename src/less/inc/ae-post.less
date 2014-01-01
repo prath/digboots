@@ -8,20 +8,19 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
-/* [Booststrap (Extended)]
-------------------------------------------------------------------*/
-/*-----[Breadcrumbs]-----*/
+/* [Booststrap (Extended) - Breadcrumbs]
+============================================================*/
 .breadcrumb {
     background-color: transparent;
 
-    padding: 0px;
+    padding: 0;
     margin-bottom: 30px;
     margin-top: 10px;
 
     font-size: @body-fz-sm;
     text-align: center;
     
-    border-radius: 0px;
+    border-radius: 0;
     > li {
         display: inline-block;
         &+li:before {
@@ -42,9 +41,8 @@
     }
 }
 
-/* [Custom Styles]
-------------------------------------------------------------------*/
-/*-----[Post Classes]-----*/
+/* [Post Classes]
+============================================================*/
 .post {
     img {
         max-width: 100%;
@@ -150,7 +148,7 @@
 
         &.content {
             margin-left: 60px;
-            padding: 0px;
+            padding: 0;
         }
         &.replied {
             margin-left: 60px;
@@ -184,7 +182,7 @@
         &.centered {
             .clearfix();
             border-bottom: 1px solid @default-accent;
-            border-right: 0px;
+            border-right: 0;
 
             width: 30px;
             height: auto;
@@ -193,9 +191,9 @@
             position: relative;
             top: auto;
 
-            margin: 0px auto 30px;
+            margin: 0 auto 30px;
             padding-bottom: 10px;
-            padding-right: 0px;
+            padding-right: 0;
             i {
                 display: block;
                 font-size: 25px;
@@ -206,7 +204,7 @@
             width: 20px;
             height: 20px;
             i {
-                line-height: 0px;
+                line-height: 0;
                 display: block;
                 font-size: 18px;
             }
@@ -214,13 +212,18 @@
     }
 }
 
-/*-----[Comment]-----*/
+/* [Comments]
+============================================================*/
 .comments {
     padding-bottom: 30px;
     padding-top: 30px;
 }
 
-/*-----[Smaller size article in term of line height and font sizes]-----*/
+/* [Article Small]
+ - 
+ * Smaller sizes article type
+ * in term of line-height and font size
+============================================================*/
 article.small,
 article .small {
     margin-bottom: 30px;
@@ -239,7 +242,10 @@ article .small {
         margin-bottom: 20px;
     }
 }
-/*-----[Post Formats]-----*/
+
+/* [Post Formats]
+============================================================*/
+/*-----[Post Format Link]-----*/
 .format-link {
     .entry-content {
         a {
@@ -250,6 +256,7 @@ article .small {
     }
 }
 
+/*-----[Post Format aside]-----*/
 .format-aside {
     .entry-content {
         background-color: fade(@secondary-text, 50%);
@@ -259,10 +266,11 @@ article .small {
     }
 }
 
+/*-----[Post Format chat]-----*/
 .format-chat {
     .entry-content {
         p {
-            margin-bottom: 0px;
+            margin-bottom: 0;
             padding: 10px 20px;
             &:nth-child(odd) {
                 background-color: fade(@secondary-text, 50%);
@@ -273,7 +281,9 @@ article .small {
         }
     }
 }
-/*-----[Content Separator]-----*/
+
+/* [Separator]
+============================================================*/
 .separator {
     clear: both;
     border-bottom: 3px solid @muted-text-color;
@@ -282,7 +292,7 @@ article .small {
     height: 3px;
     width: 30px;
 
-    margin: 30px 0px;
+    margin: 30px 0;
     &.centered {
         margin: 30px auto;
     }

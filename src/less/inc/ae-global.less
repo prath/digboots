@@ -1,0 +1,273 @@
+// ------------------------------------------------------------------------------
+// * [Global Styles]
+// * 
+// * @project Digboots Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// ------------------------------------------------------------------------------
+
+/* [Border Box on every element]
+============================================================*/
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: border-box;
+    }
+}
+
+/* [Body Styles]
+============================================================*/
+body{
+    background-color: @default-background;
+    float: left;
+
+    position: relative;
+
+    width: 100%;
+
+    margin: 0;
+
+    color: @body-text-color;
+    font-family: @font-1;
+    font-size: @body-fz-lg;
+    font-weight: 400;
+    line-height: 30px;
+    text-rendering: optimizeLegibility;
+    @media (min-height: 500px) {
+        float: none;
+    }
+}
+
+/* [Link Styles]
+============================================================*/
+a{
+    color: @link-color;
+    text-decoration: none;
+    transition: all .8s ease;
+    &:hover{
+        color: @link-hover-color;
+        text-decoration: none;
+
+    }
+}
+
+/*-----[Link Inside Paragraph]-----*/
+p {
+    a {
+        border-bottom: 1px solid @default-accent;
+    }
+}
+
+/* [Global Wrapper]
+============================================================*/
+#wrapper {
+    .clearfix();
+}
+
+/* [Global Container]
+============================================================*/
+.container {
+    &.full {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &.post {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* [Left Side Container]
+============================================================*/
+
+#left {
+    background-color: @secondary-background;
+    
+    z-index: 2;
+
+    margin-top: 50px;
+
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        height: 100%;
+        width: 260px;
+
+        bottom: 0;
+        left:0;
+        position: absolute;
+        right: 80%;
+        top: 0;
+
+        margin-top: 0;
+    }
+
+    @media (min-width: @screen-tablet) and (min-height: 500px) {
+        bottom: 0;
+        left:0;
+        position: fixed;
+        right: 80%;
+        top:0;
+
+        margin-top: 0;
+    }
+}
+
+/* [Right Side Container]
+============================================================*/
+#right {
+    width: 100%;
+    margin-left: 0;
+    z-index: 1;
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-desktop) {
+        width: auto;
+        margin-left: 260px;
+
+        box-sizing: border-box;
+    }
+}
+
+/* [Blue-ish Cover Overlay]
+ -
+ * used for covering images/content with 
+ * transparent blue cover
+============================================================*/
+.cover.overlay {
+    background-color: rgba(13,147,217,0.7);
+
+    height: 100%;
+    width: auto;
+    &.lighter {
+        background-color: rgba(13,147,217,0.3);
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5, 
+    h6,
+    .btn {
+        color: lighten(@default-accent, 35%);
+    }
+    p,
+    cite {
+        color: @secondary-text;
+    }
+    blockquote {
+        border-left-color: lighten(@default-accent, 30%);
+    }
+    .btn-cta {
+        &:hover {
+            color: @secondary-text;
+        }
+    }
+}
+
+/* [Global Content Styles]
+============================================================*/
+.content {
+    .clearfix();
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+
+    &.wide,
+    .wide {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &.medium,
+    .medium {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &.narrow,
+    .narrow {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        .featured.title {
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            //*-----[Responsive 768++]-----*/
+            @media (min-width: @screen-tablet) {
+                width: 80%;
+            }
+        }
+        p {
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            //*-----[Responsive 768++]-----*/
+            @media (min-width: @screen-tablet) {
+                margin-bottom: 50px;
+            }
+        }
+
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-tablet) {
+            width: 60%;
+        }
+    }
+    &.covered,
+    .covered {
+        background-color: fade(@secondary-text, 50%);
+    }
+}
+
+
+/* [Iconic type of button or anchor]
+ - 
+ * used for every type of button and anchor 
+ * that uses icons
+============================================================*/
+.iconic {
+    margin-bottom: 50px;
+    &.shrunk-down {
+        margin-bottom: 20px;
+    }
+    &.shrunk-up {
+        margin-top: 20px;
+    }
+}
+
+/* [Helper Classes]
+============================================================*/
+
+/*-----[override bottom padding to 50px]-----*/
+.shrunk-down {
+    padding-bottom: 50px;
+}
+/*-----[override top padding to 50px]-----*/
+.shrunk-up {
+    padding-top: 50px;
+}
+/*-----[override bottom padding to 0px]-----*/
+.flatted-down {
+    padding-bottom: 0;
+}
+/*-----[override top padding to 0px]-----*/
+.flatted-up {
+    padding-top: 0;
+}
+/*-----[override bottom & top margin to 50px]-----*/
+.vertically.widen {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+

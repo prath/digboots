@@ -1,3 +1,4 @@
+include ../mixins/widget
 //- 
     =====================================================================
     * Collapsible Contents Partials
@@ -5,15 +6,14 @@
     * @author Pratama H. Salahudin <pratama@aestik.com>
     =====================================================================
 
-//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // [ COLLAPSIBLE NAVBAR ]
-//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 nav.right.positioned.navbar.navbar-default(role="navigation")
     .collapse.navbar-collapse
         ul.nav.navbar-nav
             li.dropdown
-                a.dropdown-toggle(href='single-post-i.html', data-toggle='dropdown', role="button")
-                    | Home Pages
+                a.dropdown-toggle(href='single-post-i.html', data-toggle='dropdown', role="button") Home Pages
                     i.icon-angle-down
                 ul.dropdown-menu(role="menu")
                     li(role="presentation")
@@ -42,8 +42,7 @@ nav.right.positioned.navbar.navbar-default(role="navigation")
                     li
                         a(href='#', role="menuitem") Home Page 10
             li.dropdown
-                a.dropdown-toggle(href='#', data-toggle='dropdown', role="button")
-                    | Sample Pages
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role="button") Sample Pages
                     i.icon-angle-down
                 ul.dropdown-menu(role="menu")
                     li(role="presentation")
@@ -81,9 +80,9 @@ nav.right.positioned.navbar.navbar-default(role="navigation")
             li 
                 a(href='index.html') Contact
 
-//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // [ COLLAPSIBLE SEARCH BOX ]
-//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .search.box
     form(action='', method='', role='form')
         label.sr-only(for='#searchinput') Email address
@@ -91,14 +90,14 @@ nav.right.positioned.navbar.navbar-default(role="navigation")
         button(type='submit').searchsubmit
             i.fa.fa-search
 
-//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // [ COLLAPSIBLE CART ]
-//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 aside.right.positioned.cartbar
     .cart.content 
     
-        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ WIDGET SHOPPING CART ]
-        //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        mixin widget-woo-cart
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        +widget-woo-cart()
     

@@ -8,12 +8,10 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
-/* [Booststrap (Extended)]
-------------------------------------------------------------------*/
-/*-----[Common Styles]-----*/
-
+/* [Booststrap (Extended) - Global Button Style]
+==================================================*/
 .btn {
-    border: 0px;
+    border: 0;
 
     font-family: @font-1;
     font-size: @body-fz-xs;
@@ -24,13 +22,14 @@
     transition: all .8s ease;
 }
 
-/*-----[Alternate buttons]-----*/
-
+/* [Booststrap (Extended) - Primary Button]
+==================================================*/
 .btn-primary {
   .button-variant(@secondary-text; @default-accent; @default-accent);
 }
 
-/*-----[Link Buttons]-----*/
+/* [Booststrap (Extended) - Link Button]
+==================================================*/
 .btn-link {
     color: @link-color;
     &:hover {
@@ -40,20 +39,22 @@
     font-weight: 700;
 }
 
-/*-----[Button Sizes]-----*/
+/* [Booststrap (Extended) - Button Sizes]
+==================================================*
+/*-----[Button Large]-----*/
 .btn-lg {
     // line-height: ensure even-numbered height of button next to large input
     .button-size(20px; 50px; @body-fz-lg; @line-height-med; @base-radius);
     font-weight: 700;
 }
 
+/*-----[Button Extra Small]-----*/
 .btn-xs {
     font-size: @body-fz-us;
 }
 
-/* [Custom Styles]
-------------------------------------------------------------------*/
-/*-----[Button CTA]-----*/
+/* [Button CTA]
+==================================================*/
 .btn-cta {
     background-color: @secondary-text;
 

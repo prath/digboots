@@ -8,17 +8,17 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
-/* [Booststrap (Extended)]
-------------------------------------------------------------------*/
-
-/*-----[Panel]-----*/
+/* [Booststrap (Extended) - Panel]
+ -
+ * use as widget container
+============================================================*/
 .panel {
     background-color: transparent;
-    border: 0px;
+    border: 0;
 
     margin-bottom: 30px;
 
-    border-radius: 0px;
+    border-radius: 0;
     box-shadow: none;
     h1,
     h2,
@@ -31,27 +31,29 @@
 
         font-size: @body-fz-md;
         font-weight: 600;
-        letter-spacing: 0px;
+        letter-spacing: 0;
         line-height: @line-height-med;
     }
 }
-
+/*-----[Panel Default]-----*/
 .panel-default {
     > .panel-heading {
         background-color: transparent;
     }
 }
 
+/*-----[Panel Body]-----*/
 .panel-body {
-    padding: 0px;
+    padding: 0;
 }
 
+/*-----[Panel Heading - used as widget heading]-----*/
 .panel-heading {
-    border: 0px;
+    border: 0;
 
-    padding: 0px;
+    padding: 0;
 
-    border-radius: 0px;
+    border-radius: 0;
     > h1,
     > h2,
     > h3,
@@ -71,17 +73,15 @@
     }
 }
 
-/* [Custom Styles]
-------------------------------------------------------------------*/
-
-/*-----[Widget]-----*/
+/* [Widget]
+============================================================*/
 .widget {
     position: relative;
     font-size: @body-fz-sm;
     line-height: @line-height-base;
     
     &.content {
-        padding: 0px 50px 0px 60px;
+        padding: 0 50px 0 60px;
 
         font-size: @body-fz-xs;
     }
@@ -104,8 +104,8 @@
     }
 
     ul {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         list-style: none;
 
         li {
@@ -117,9 +117,9 @@
             padding-top: 10px;
 
             &:first-child {
-                padding-top: 0px;
+                padding-top: 0;
                 .count {
-                    top: 0px;
+                    top: 0;
                 }
             }
             > .children {
@@ -133,9 +133,9 @@
                         padding-top: 10px;
                     }
                     &:last-child {
-                        border-bottom: 0px;
+                        border-bottom: 0;
 
-                        padding-bottom: 0px;
+                        padding-bottom: 0;
                     }
                 } 
             }
@@ -167,7 +167,7 @@
     }
 
     &.item {
-        border-left: 0px;
+        border-left: 0;
         margin-bottom: 40px; 
     }
 
@@ -209,7 +209,7 @@
 
             position: relative;
 
-            padding-left: 0px;
+            padding-left: 0;
             img {
                 left: -40px;
             }
@@ -259,8 +259,8 @@
             }
         }
         dl {
-            margin-bottom: 0px;
-            margin-top: 0px;
+            margin-bottom: 0;
+            margin-top: 0;
             dd,
             dt {
                 .inlineDisplay();
@@ -320,7 +320,7 @@
     .chosen {
         a {
             padding: 2px 5px;
-            margin: 0px;
+            margin: 0;
 
             color: @default-accent;
 
@@ -329,7 +329,7 @@
                 content: "\f00d";
                 color: @default-accent;
                 font-family: 'FontAwesome';
-                margin-right: 0px;
+                margin-right: 0;
             }
         }
     }
@@ -345,7 +345,8 @@
     font-size: 14px;
 }
 
-/*-----[Footer Widget]-----*/
+/* [Footer Widget]
+============================================================*/
 .footer.widget {
     .panel-heading {
         > h1,
@@ -359,7 +360,7 @@
         }
     }
     .icon-widget-heading {
-        left: 0px;
+        left: 0;
     }
 }
 

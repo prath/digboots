@@ -8,20 +8,19 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
-/* [Booststrap (Extended)]
-------------------------------------------------------------------*/
-
-/*-----[Navbar]-----*/
+/* [Booststrap (Extended) - Navbar]
+==================================================*/
 .navbar {
-    border-radius: 0px;
+    border-radius: 0;
 
     transition: all .2s ease;
 }
 
-/*-----[Navbar Default]-----*/
+/* [Booststrap (Extended) - Navbar Default]
+==================================================*/
 .navbar-default {
     background-color: @secondary-text;
-    border: 0px;
+    border: 0;
     
     font-family: @font-4;
     font-size: @body-fz-us;
@@ -33,7 +32,7 @@
         > li {
             > a {
                 border-bottom: 1px solid lighten(@muted-text-color, 40%);
-                padding: 10px 0px;
+                padding: 10px 0;
 
                 transition: all .2s ease;
                 &:hover,
@@ -67,27 +66,29 @@
     }
 }
 
-/*-----[Navbar Collapse]-----*/
+/* [Booststrap (Extended) - Navbar Collapse]
+==================================================*/
 .navbar-collapse {
     width: 100%;
 
     margin: auto;
-    padding: 0px;
+    padding: 0;
 }
 
-/*-----[Dropdown Menu]-----*/
+/* [Booststrap (Extended) - Dropdown Menu]
+==================================================*/
 .dropdown-menu {
-    padding: 0px;
-    margin: 0px; // override default ul
+    padding: 0;
+    margin: 0; // override default ul
     font-size: @body-fz-us;
     background-color: @secondary-text;
-    border: 0px;
-    border-radius: 0px;
+    border: 0;
+    border-radius: 0;
     box-shadow: none;
     z-index: 5;
     transition: all .2s ease;
     > li > a {
-        padding: 10px 0px;
+        padding: 10px 0;
 
         font-size: 9px;
         font-weight: 700;
@@ -102,7 +103,8 @@
     }
 }
 
-/*-----[Right Fixed Positioned Navbar]-----*/
+/* [Right Positioned navbar]
+==================================================*/
 .right.positioned {
     background-color: @secondary-text;
 
@@ -135,75 +137,7 @@
     }
 }
 
-/*-----[Collapsible content styles]-----*/
-.togglecartbar {
-    .right.positioned {
-        &.cartbar {
-            right: 0%;
-            z-index: 1000;
-        }
-    }
-    .top.nav {
-        right: 25%;
-        .cart.iconic {
-            opacity: 0.3;
-        }
-    }
-}
-
-.togglesidebar {
-    .right.positioned {
-        &.sidebar {
-            right: 0%;
-            z-index: 1000;
-        }
-    }
-    .top.nav {
-        right: 25%;
-        .widget.iconic {
-            opacity: 0.3;
-        }
-    }
-}
-
-.togglemenu {
-    .right.positioned {
-        &.navbar {
-            right: 0%;
-        }
-    }
-    .top.nav {
-        right: 25%;
-        .nav.iconic {
-            opacity: 0.3;
-        }
-    }
-}
-
-.togglesearch {
-    .search {
-        &.box {
-            opacity: 1;
-            top: 0%;
-        }
-    }
-    .top.nav {
-        .search.iconic {
-            opacity: 0.3;
-        }
-    }
-}
-
-body {
-    &.togglecartbar,
-    &.togglemenu,
-    &.togglesidebar {
-        height: 100%;
-        overflow: hidden;
-    }
-}
-
-/*-----[Right Fixed Positioned Navbar Nav]-----*/
+/*-----[Right Positioned navbar nav]-----*/
 .right.positioned .navbar-nav {
     float: none;
     padding-left: 60px;
@@ -214,7 +148,7 @@ body {
 }
 
 
-/*-----[Dropdown Menu]-----*/
+/*-----[Right Positioned Dropdown Menu]-----*/
 .right.positioned .dropdown-menu {
     float: none;
 
@@ -226,10 +160,87 @@ body {
     padding-top: 20px;
 }
 
+/* [Expand-Collapse Buttons trigger]
+ - 
+ * used with javascript to toggle collapsible
+ * content. such as widgets, search, cart and
+ * sidebar nav
+==================================================*/
 
-/* [Custom Styles]
-------------------------------------------------------------------*/
-/*-----[Sticky Nav]-----*/
+/*-----[Toggle Shopping Cart]-----*/
+.togglecartbar {
+    .right.positioned {
+        &.cartbar {
+            right: 0;
+            z-index: 1000;
+        }
+    }
+    .top.nav {
+        right: 25%;
+        .cart.iconic {
+            opacity: 0.3;
+        }
+    }
+}
+
+/*-----[Toggle Sidebar Widget]-----*/
+.togglesidebar {
+    .right.positioned {
+        &.sidebar {
+            right: 0;
+            z-index: 1000;
+        }
+    }
+    .top.nav {
+        right: 25%;
+        .widget.iconic {
+            opacity: 0.3;
+        }
+    }
+}
+
+/*-----[Toggle Hidden Menu]-----*/
+.togglemenu {
+    .right.positioned {
+        &.navbar {
+            right: 0;
+        }
+    }
+    .top.nav {
+        right: 25%;
+        .nav.iconic {
+            opacity: 0.3;
+        }
+    }
+}
+
+/*-----[Toggle Search Form]-----*/
+.togglesearch {
+    .search {
+        &.box {
+            opacity: 1;
+            top: 0;
+        }
+    }
+    .top.nav {
+        .search.iconic {
+            opacity: 0.3;
+        }
+    }
+}
+
+/*-----[Inject Toggle Class into Body to be used in js]-----*/
+body {
+    &.togglecartbar,
+    &.togglemenu,
+    &.togglesidebar {
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+/* [Sticky Nav]
+==================================================*/
 .sticky.nav {
     position: fixed;
     right: 0;
@@ -237,7 +248,8 @@ body {
     z-index: 9999;
 }
 
-/*-----[Top Nav]-----*/
+/* [Top Nav]
+==================================================*/
 .top.nav {
     .clearfix();
 
@@ -246,7 +258,7 @@ body {
     height: 43px;
     width: 100%;
 
-    padding: 0px;
+    padding: 0;
 
     color: @secondary-text;
     font-size: @body-fz-us;
@@ -271,7 +283,7 @@ body {
         float: left;
         padding: 10px;
         &:last-child {
-            margin-right: 0px;
+            margin-right: 0;
         }
         //*-----[Responsive 600++]-----*/
         @media (min-width: @screen-lg-phone) {
@@ -287,7 +299,7 @@ body {
         color: @secondary-text;
 
         &:last-child {
-            margin-right: 0px;
+            margin-right: 0;
         }
         &:hover {
             color: @default-accent;
@@ -311,15 +323,15 @@ body {
     .iconic {
         position: relative;
 
-        margin-bottom: 0px;
+        margin-bottom: 0;
 
-        line-height: 0px;
+        line-height: 0;
 
         img {
             width: 20px;
             height: auto;
 
-            margin-bottom: 0px; 
+            margin-bottom: 0; 
 
             transition: .2s all ease;
             //*-----[Responsive 600++]-----*/
@@ -340,7 +352,7 @@ body {
     .badge {
         background-color: @secondary-accent;
 
-        margin-left: 0px;
+        margin-left: 0;
 
         font-size: @body-fz-us;
         vertical-align: top;
@@ -349,13 +361,14 @@ body {
     }
 }
 
-/*-----[Search Box]-----*/
+/* [Search Box]
+==================================================*/
 .search {
     &.box {
         background-color: rgba(13,147,217,0.9);
         opacity: 0;
 
-        left: 0%;
+        left: 0;
         position: fixed;
         right: 0;
         top: -100%;
@@ -372,7 +385,7 @@ body {
         @media (min-width: @screen-tablet) {
             left: 20%;
 
-            margin-top: 0px;
+            margin-top: 0;
             padding: 100px;
 
             transition: all .2s ease;
@@ -388,7 +401,7 @@ body {
         .placeholder(lighten(@default-accent, 20%));
 
         background-color: transparent;
-        border: 0px;
+        border: 0;
 
         width: 100%;
 
@@ -407,13 +420,13 @@ body {
         }
 
         &:focus {
-           outline: 0px;
+           outline: 0;
            border-bottom: 1px solid lighten(@default-accent, 20%);
         }
     }
     .searchsubmit {
         background-color: transparent;
-        border: 0px;
+        border: 0;
 
         height: 24px;
         width: 24px;
@@ -442,10 +455,11 @@ body {
     }
 }
 
-/*-----[Cart & Sidebar Content]-----*/
+/* [Cart Sidebar Content]
+==================================================*/
 .cart {
     &.content {
-        padding: 0px 50px 0px 60px;
+        padding: 0 50px 0 60px;
 
         font-size: @body-fz-xs;
     }

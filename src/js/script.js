@@ -5,10 +5,12 @@
  */
 $(document).ready(function () {
     'use strict';
+
+    var $wh = $(window).outerHeight();
+
     /**
      * Resize Jumbotron when window resizes
      */
-    var $wh = $(window).outerHeight();
     $('.jumbotron').css('height', $wh);
     $(window).on('resize', function () {
         var $wh = $(window).outerHeight();
