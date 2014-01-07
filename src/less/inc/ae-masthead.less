@@ -142,29 +142,25 @@
             }
         }
     }
-    .nav {
-        border-top: 1px solid lighten(@muted-text-color, 30%);
 
-        max-height: 134px;
-        overflow: auto;
-
-        padding: 20px 0;
-
-        font-family: @font-4;
-        font-size: @body-fz-us;
-        font-weight: 700;
-        letter-spacing: @ls-wd; 
-        text-transform: uppercase;
-        .item {
-            display: block;
-            border-bottom: 1px solid lighten(@muted-text-color, 40%);
+    .widget_social {
+        @media (min-width: @screen-tablet) and (min-height: 500px) {
+            bottom: 0;
+            position: fixed;
         }
-        a {
-            color: @body-text-color;
-            &:hover {
-                color: @default-accent;
-            }
-        }
+    }
 
+    .social.icons {
+        margin-bottom: 20px;
+    }
+
+    .social.icon {
+        .inlineDisplay();
+        .clearfix();
+
+        color: @default-text;
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }

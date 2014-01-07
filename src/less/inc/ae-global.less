@@ -251,30 +251,63 @@ p {
 ============================================================*/
 .diamond.icon {
     background-color: transparent;
-    border: 3px solid darken(@secondary-text, 10%);
+    border: 2px solid @default-text;
+    display: block;
+    // float: left;
 
     position: relative;
 
-    height: 40px;
-    width: 40px;
+    height: 25px;
+    width: 25px;
 
-    margin: 0 auto 40px;
-    
+    margin-bottom: 0;
+
     text-align: center;
 
     transform: rotate(-45deg);
     i {
         display: block;
-
         height: 100%;
         width: 100%;
 
-        color: #FFF;
-        font-size: 18px;
-        line-height: 35px;
+        color: @default-text;
+        font-size: 12px;
+        line-height: 22px;
         text-align: center;
 
         transform: rotate(45deg);
+    }
+    &.white {
+        border-color: darken(@secondary-text, 10%);
+        i {
+            color: @secondary-text;
+        }
+    }
+    &.med {
+        border: 3px solid darken(@secondary-text, 10%);
+
+        height: 40px;
+        width: 40px;
+
+        margin-bottom: 40px;
+        i {
+            font-size: 18px;
+            line-height: 35px;
+        }
+    }
+    &.centered {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &.blocked {
+        float: none;
+    }
+    &:hover {
+        border-color: @default-accent;
+        i {
+            color: @default-accent;
+        }
     }
 }
 
@@ -294,6 +327,19 @@ p {
     }
 }
 
+/* [Home Client List]
+============================================================*/
+.client.list {
+    a {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        opacity: .7;
+        &:hover {
+            opacity: .2;
+        }
+    }
+}
 
 /* [Helper Classes]
 ============================================================*/
