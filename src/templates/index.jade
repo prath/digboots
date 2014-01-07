@@ -25,14 +25,14 @@ block content
     // [ JUMBOTRON ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     section.jumbotron
-        .cover.overlay.lighter
-            .container
-                p Case Study
-                h1
-                    | Fun Work at <strong>Company.co</strong>
-                p
-                    a(href='').btn.btn-primary.btn-lg.btn-cta
-                        | Learn more
+        //- .cover.overlay.lighter
+        .container
+            p Case Study
+            h1
+                | Fun Work at <strong>Company.co</strong>
+            p
+                a(href='').btn.btn-primary.btn-lg.btn-cta
+                    | Learn more
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ ABOUT US ]
@@ -65,7 +65,7 @@ block content
                     a(href="") Cheers!
                 span.separator
                 span.client Personal Project
-            img(src='dummy-images/portfolio/1.jpg', alt='portfolio 1')
+            img(src='dummy-images/portfolio/20.jpg', alt='portfolio 1')
             a(href="").goto 
                 i.fa.fa-link
 
@@ -78,7 +78,7 @@ block content
                     a(href="") Little Flash
                 span.separator
                 span.client Personal Project
-            img(src='dummy-images/portfolio/2.jpg', alt='portfolio 1')
+            img(src='dummy-images/portfolio/17.jpg', alt='portfolio 1')
             a(href="").goto 
                 i.fa.fa-link
 
@@ -91,7 +91,7 @@ block content
                     a(href="") EXPOSÉ10 features on 'Cheers!'
                 span.separator
                 span.client EXPOSÉ10
-            img(src='dummy-images/portfolio/3.jpg', alt='portfolio 1')
+            img(src='dummy-images/portfolio/19.jpg', alt='portfolio 1')
             a(href="").goto 
                 i.fa.fa-link
 
@@ -101,10 +101,10 @@ block content
         article.gallery.item.one-half
             header.caption
                 h3.title
-                    a(href="") Paris Project
+                    a(href="") Mercado Negro
                 span.separator
-                span.client Personal Project
-            img(src='dummy-images/portfolio/4.jpg', alt='portfolio 1')
+                span.client Branding &amp; Identity
+            img(src='dummy-images/portfolio/21.jpg', alt='portfolio 1')
             a(href="").goto 
                 i.fa.fa-link
 
@@ -112,58 +112,64 @@ block content
     // [ TESTIMONIAL & SERVICES ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     .section(style='background: url("dummy-images/service-bg.jpg") no-repeat center center; background-size: cover;')
-        .cover.overlay
+        //- .cover.overlay
             
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ TESTIMONIAL ]
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.content.testimonial.narrow.shrunk-down
-                h2.section.heading What People Say About Us
-                blockquote 
-                    p
-                        | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
-                        cite.name
-                            | John William Smith - <strong>Company.co</strong> 
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ TESTIMONIAL ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.content.testimonial.narrow.shrunk-down
+            h2.section.heading What People Say About Us
+            blockquote 
                 p
-                    | That's what some of our friends, colleagues and partners says about us. Come visit us to know more about us. in a meantime here are some works <strong>we can do for you</strong> : 
+                    | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
+                    cite.name
+                        | John William Smith - <strong>Company.co</strong> 
+            //- p
+                | That's what some of our friends, colleagues and partners says about us. Come visit us to know more about us. in a meantime here are some works <strong>we can do for you</strong> : 
 
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ SERVICES ]
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            section.cover.overlay
-                .container.content.services.medium.shrunk-up
-                    .row
-                        h2.section.heading Our Services
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ SERVICES ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        section.cover.overlay
+            .container.content.services.wide.shrunk-up
+                .row
+                    h2.section.heading Our Services
 
-                        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        // [ SERVICES ITEM ]
-                        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
-                            h3.related.title Illustration
-                            p
-                                | We transform your wish into clear ideas and hand-sketched illustrations.
-                            a(href='').btn.btn-link.btn-sm
-                                | learn more
+                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    // [ SERVICES ITEM ]
+                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered
+                        .diamond.icon
+                            i.fa.fa-file-o
+                        h3.related.title.centered Illustration
+                        p
+                            | We transform your wish into clear ideas and hand-sketched illustrations.
+                        a(href='').btn.btn-link.btn-sm
+                            | learn more
 
-                        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        // [ SERVICES ITEM ]
-                        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
-                            h3.related.title Web Design
-                            p
-                                | High quality pixel-perfect hand-coded web page design will be delivered to you.
-                            a(href='').btn.btn-link.btn-sm
-                                | learn more
+                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    // [ SERVICES ITEM ]
+                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered
+                        .diamond.icon
+                            i.fa.fa-html5
+                        h3.related.title.centered Web Design
+                        p
+                            | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                        a(href='').btn.btn-link.btn-sm
+                            | learn more
 
-                        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        // [ SERVICES ITEM ]
-                        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                        article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
-                            h3.related.title App Design
-                            p
-                                | Pixel-perfect app design is one of our obsession, we always keep that in mind.
-                            a(href='').btn.btn-link.btn-sm
-                                | learn more
+                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    // [ SERVICES ITEM ]
+                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered
+                        .diamond.icon
+                            i.fa.fa-mobile
+                        h3.related.title.centered App Design
+                        p
+                            | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                        a(href='').btn.btn-link.btn-sm
+                            | learn more
 
     section.content
         h2.section.heading Recent Posts
@@ -220,7 +226,7 @@ block content
                             span.post.date
                                 | 12 January 2013
                         p
-                            | European minnow priapumfish mosshead warbonnet shrimpfish bigscale.
+                            | European minnow priapumfish mosshead warbonnet shrimpfish.
                         a(href='').btn.btn-link.btn-sm
                             | read more
 

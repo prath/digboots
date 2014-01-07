@@ -137,7 +137,8 @@ p {
  * transparent blue cover
 ============================================================*/
 .cover.overlay {
-    background-color: rgba(13,147,217,0.7);
+    // background-color: rgba(13,147,217,0.7);
+    background-color: rgba(0,0,0,0.4);
 
     height: 100%;
     width: auto;
@@ -151,7 +152,7 @@ p {
     h5, 
     h6,
     .btn {
-        color: lighten(@default-accent, 35%);
+        color: darken(@secondary-text, 20%);
     }
     p,
     cite {
@@ -245,6 +246,54 @@ p {
         margin-top: 20px;
     }
 }
+
+/* [Diamond Style Icon]
+============================================================*/
+.diamond.icon {
+    background-color: transparent;
+    border: 3px solid darken(@secondary-text, 10%);
+
+    position: relative;
+
+    height: 40px;
+    width: 40px;
+
+    margin: 0 auto 40px;
+    
+    text-align: center;
+
+    transform: rotate(-45deg);
+    i {
+        display: block;
+
+        height: 100%;
+        width: 100%;
+
+        color: #FFF;
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+
+        transform: rotate(45deg);
+    }
+}
+
+/* [Home Testimonial Styles]
+============================================================*/
+.testimonial {
+    &,
+    .section.heading,
+    blockquote p,
+    cite,
+    p {
+        color: @secondary-text;
+    }
+
+    blockquote {
+        border-left-color: darken(@secondary-text, 20%);
+    }
+}
+
 
 /* [Helper Classes]
 ============================================================*/
