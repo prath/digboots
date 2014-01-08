@@ -284,7 +284,7 @@ p {
         }
     }
     &.med {
-        border: 3px solid darken(@secondary-text, 10%);
+        border-width: 3px;
 
         height: 40px;
         width: 40px;
@@ -313,17 +313,39 @@ p {
 
 /* [Home Testimonial Styles]
 ============================================================*/
-.testimonial {
+.w-background{
     &,
     .section.heading,
     blockquote p,
     cite,
-    p {
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
         color: @secondary-text;
+    }
+    .post {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a {
+            color: @secondary-text;
+        }
     }
 
     blockquote {
         border-left-color: darken(@secondary-text, 20%);
+    }
+    .separator.in-post,
+    .separator {
+        border-color: @secondary-text;
     }
 }
 

@@ -111,13 +111,13 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TESTIMONIAL & SERVICES ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    .section(style='background: url("dummy-images/service-bg.jpg") no-repeat center center; background-size: cover;')
+    .section(style='background: url("dummy-images/bgs/service-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
         //- .cover.overlay
             
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ TESTIMONIAL ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        article.content.testimonial.narrow.shrunk-down
+        article.content.w-background.narrow.shrunk-down.shrunk-up
             h2.section.heading What People Say About Us
             blockquote 
                 p
@@ -131,7 +131,7 @@ block content
         // [ SERVICES ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         section.cover.overlay
-            .container.content.services.wide.shrunk-up
+            .container.services.content.wide.shrunk-down.shrunk-up
                 .row
                     h2.section.heading Our Services
 
@@ -171,6 +171,9 @@ block content
                         a(href='').btn.btn-link.btn-sm
                             | learn more
 
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ LATEST POSTS ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     section.content
         h2.section.heading Recent Posts
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -245,6 +248,73 @@ block content
                             | Drop in axle roll-in rail slide noseblunt slide Steve Severin impossible.
                         a(href='').btn.btn-link.btn-sm
                             | read more
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ VIDEO ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    .section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/bgs/video-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+        h2.section.heading Watch Our Creative Process
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ VIDEO POST ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.post.featured.medium
+            .fitvids.video
+                iframe(src='//player.vimeo.com/video/8362481?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff', width='500', height='281', frameborder='0', webkitallowfullscreen, mozallowfullscreen, allowfullscreen)
+            h3.featured.title
+                a(href='')
+                    | Creative Process.
+            .separator.in-post.centered
+            p
+                | European minnow priapumfish mosshead warbonnet shrimpfish bigscale. Cutlassfish priapumfish mosshead warbonnet. Efficiently unleash cross-media information without cross-media value european minnow priapumfish mosshead.
+            p
+                a(href='').btn.btn-link.btn-sm
+                    | Read more
+    
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ MORE ABOUT DIGBOOTS ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    //- section.content.wide
+        h2.section.heading More About Digboots
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ SERVICES ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .container
+            .row
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered
+                    .diamond.icon.med.centered
+                        i.fa.fa-file-o
+                    h3.related.title.centered Illustration
+                    p
+                        | We transform your wish into clear ideas and hand-sketched illustrations.
+                    a(href='').btn.btn-link.btn-sm
+                        | learn more
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered
+                    .diamond.icon.med.centered
+                        i.fa.fa-html5
+                    h3.related.title.centered Web Design
+                    p
+                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                    a(href='').btn.btn-link.btn-sm
+                        | learn more
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered
+                    .diamond.icon.med.centered
+                        i.fa.fa-mobile
+                    h3.related.title.centered App Design
+                    p
+                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                    a(href='').btn.btn-link.btn-sm
+                        | learn more
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ WORKPLACE GALLERY ]
@@ -325,10 +395,11 @@ block content
             img(src='dummy-images/workspace/6.jpg', alt='portfolio 1')
             a(href="").goto 
                 i.fa.fa-link
+
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ ClIENTS ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.shrunk-up.shrunk-down
+    section.content.shrunk-up.flatted-down
         h2.section.heading Our Clients
         .client.list.centered
             a(href="")
@@ -345,3 +416,16 @@ block content
                 img(src="dummy-images/clients/6.png", alt="")
             a(href="")
                 img(src="dummy-images/clients/7.png", alt="")
+    .separator-2
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ EMAIL SUBSCRIPTION ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.narrow.flatted-up.shrunk-down
+        h2.section.heading email newsletter
+        p.small-text.centered 
+            | Sign up to receive our monthly email newsletter below. We will not spam your email account, ever. 
+        .form-group
+            label.sr-only(for='searchquery')
+            input.form-control(type='text', id='searchquery', placeholder='Your Email Address')
+        button.btn.btn-primary.pull-right
+                    | Subscribe 
