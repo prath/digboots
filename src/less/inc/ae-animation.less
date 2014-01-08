@@ -1,0 +1,102 @@
+// ------------------------------------------------------------------------------
+// * [Global Styles]
+// * 
+// * @project Digboots Wordpress Theme
+// * @version 1.0.0
+// * 
+// * @author Dwi A. Hambali <dwi@aestik.com>
+// * @author Pratama H. Salahudin <pratama@aestik.com>
+// ------------------------------------------------------------------------------
+
+/* [Animate on Appear]
+============================================================*/
+.appear {
+    opacity: 0;
+}
+/*-----[Fade in on appear]-----*/
+.fade-in {
+    transition: all 1s ease;
+    &.animate {
+        opacity: 1;
+    }
+}
+
+/*-----[move to right on appear]-----*/
+.move-right {
+    &.animate {
+        transform: translateX(-200px);
+        animation: moveRight 0.65s ease forwards;
+    }
+}
+
+@-webkit-keyframes moveRight {
+    to { -webkit-transform: translateX(0); opacity: 1; }
+}
+
+@-moz-keyframes moveRight {
+    to { -moz-transform: translateX(0); opacity: 1; }
+}
+
+@keyframes moveRight {
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/*-----[move to left on appear]-----*/
+.move-left {
+    &.animate {
+        transform: translateX(200px);
+        animation: moveLeft 0.65s ease forwards;
+    }
+}
+
+@-webkit-keyframes moveLeft {
+    to { -webkit-transform: translateX(0); opacity: 1; }
+}
+
+@-moz-keyframes moveLeft {
+    to { -moz-transform: translateX(0); opacity: 1; }
+}
+
+@keyframes moveLeft {
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/*-----[move to bottom on appear]-----*/
+.move-bottom {
+    &.animate {
+        transform: translateY(-200px);
+        animation: moveBottom 0.65s ease forwards;
+    }
+}
+
+@-webkit-keyframes moveBottom {
+    to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes moveBottom {
+    to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveBottom {
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/*-----[move to bottom on appear]-----*/
+.move-top {
+    &.animate {
+        transform: translateY(200px);
+        animation: moveTop 0.65s ease forwards;
+    }
+}
+
+@-webkit-keyframes moveTop {
+    to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes moveTop {
+    to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveTop {
+    to { transform: translateY(0); opacity: 1; }
+}
