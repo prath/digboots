@@ -11,13 +11,13 @@
 /* [Animate on Appear]
 ============================================================*/
 .appear {
-    opacity: 0;
+    .opacity(0, 0);
 }
 /*-----[Fade in on appear]-----*/
 .fade-in {
     transition: all 1s ease;
     &.animate {
-        opacity: 1;
+        .opacity(1, 100);
     }
 }
 
@@ -30,15 +30,24 @@
 }
 
 @-webkit-keyframes moveRight {
-    to { -webkit-transform: translateX(0); opacity: 1; }
+    to { 
+        -webkit-transform: translateX(0); 
+        .opacity(1, 100);
+    }
 }
 
 @-moz-keyframes moveRight {
-    to { -moz-transform: translateX(0); opacity: 1; }
+    to { 
+        -moz-transform: translateX(0); 
+        .opacity(1, 100);
+    }
 }
 
 @keyframes moveRight {
-    to { transform: translateX(0); opacity: 1; }
+    to { 
+        transform: translateX(0); 
+        .opacity(1, 100);
+    }
 }
 
 /*-----[move to left on appear]-----*/
@@ -50,15 +59,24 @@
 }
 
 @-webkit-keyframes moveLeft {
-    to { -webkit-transform: translateX(0); opacity: 1; }
+    to { 
+        -webkit-transform: translateX(0); 
+        .opacity(1, 100);
+    }
 }
 
 @-moz-keyframes moveLeft {
-    to { -moz-transform: translateX(0); opacity: 1; }
+    to { 
+        -moz-transform: translateX(0); 
+        .opacity(1, 100);
+    }
 }
 
 @keyframes moveLeft {
-    to { transform: translateX(0); opacity: 1; }
+    to { 
+        transform: translateX(0); 
+        .opacity(1, 100);
+    }
 }
 
 /*-----[move to bottom on appear]-----*/
@@ -70,15 +88,24 @@
 }
 
 @-webkit-keyframes moveBottom {
-    to { -webkit-transform: translateY(0); opacity: 1; }
+    to { 
+        -webkit-transform: translateY(0); 
+        .opacity(1, 100);
+    }
 }
 
 @-moz-keyframes moveBottom {
-    to { -moz-transform: translateY(0); opacity: 1; }
+    to { 
+        -moz-transform: translateY(0); 
+        .opacity(1, 100);
+    }
 }
 
 @keyframes moveBottom {
-    to { transform: translateY(0); opacity: 1; }
+    to { 
+        transform: translateY(0); 
+        .opacity(1, 100);
+    }
 }
 
 /*-----[move to bottom on appear]-----*/
@@ -90,13 +117,22 @@
 }
 
 @-webkit-keyframes moveTop {
-    to { -webkit-transform: translateY(0); opacity: 1; }
+    to { 
+        -webkit-transform: translateY(0); 
+        .opacity(1, 100);
+    }
 }
 
 @-moz-keyframes moveTop {
-    to { -moz-transform: translateY(0); opacity: 1; }
+    to { 
+        -moz-transform: translateY(0); 
+        .opacity(1, 100);
+    }
 }
 
 @keyframes moveTop {
-    to { transform: translateY(0); opacity: 1; }
+    to { 
+        transform: translateY(0); 
+        .opacity(1, 100);
+    }
 }

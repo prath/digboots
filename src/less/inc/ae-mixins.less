@@ -243,3 +243,19 @@
 
     text-align: center;
 }
+
+// [Vertical Align]
+// ------------------------------------------------------------------
+.verticalAlign(@pos, @top) {
+    top: @top;
+    position: @pos;
+    transform: translateY(-(@top));
+}
+
+// [Opacity]
+// ------------------------------------------------------------------
+.opacity(@opa, @msop) {
+    filter: alpha(opacity=@msop);
+    opacity: @opa;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=@{msop})";
+}

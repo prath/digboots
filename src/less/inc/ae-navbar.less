@@ -178,7 +178,7 @@
     .top.nav {
         right: 25%;
         .cart.iconic {
-            opacity: 0.3;
+            .opacity(0.3, 30);
         }
     }
 }
@@ -194,7 +194,7 @@
     .top.nav {
         right: 25%;
         .widget.iconic {
-            opacity: 0.3;
+            .opacity(0.3, 30);
         }
     }
 }
@@ -209,7 +209,7 @@
     .top.nav {
         right: 25%;
         .nav.iconic {
-            opacity: 0.3;
+            .opacity(0.3, 30);
         }
     }
 }
@@ -218,13 +218,13 @@
 .togglesearch {
     .search {
         &.box {
-            opacity: 1;
+            .opacity(1, 100);
             top: 0;
         }
     }
     .top.nav {
         .search.iconic {
-            opacity: 0.3;
+            .opacity(0.3, 30);
         }
     }
 }
@@ -340,13 +340,13 @@ body {
             }
         }
         &:hover {
-            opacity: 0.3;
+            .opacity(0.3, 30);
             img {
                 transform: rotate(360deg);
             }
         }
         &.active {
-            opacity: 0.5;
+            .opacity(0.5, 50);
         }
     }
     .badge {
@@ -366,7 +366,7 @@ body {
 .search {
     &.box {
         background-color: rgba(13,147,217,0.9);
-        opacity: 0;
+        .opacity(0, 3);
 
         left: 0;
         position: fixed;
