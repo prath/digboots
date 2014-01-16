@@ -65,4 +65,20 @@ $(document).ready(function () {
             })
         })
     });
+
+    /**
+     * FLexislider
+     */
+    $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 88,
+        itemMargin: 0,
+        pausePlay: false,
+        selector: ".client-slides > li",
+        directionNav: false,
+        start: function(slider){
+        }
+    });
+    
 });

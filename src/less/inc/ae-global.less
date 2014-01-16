@@ -352,12 +352,45 @@ p {
 /* [Home Client List]
 ============================================================*/
 .client.list {
+    .clearfix();
+    width: 62%;
+    margin: 0 auto;
     a {
-        margin-left: 20px;
-        margin-right: 20px;
+        // .clearfix();
+        display: block;
+        float: left;
+
+        // height: 48px;
+        // width: 48px;
+        
+        padding-left: 20px;
+        padding-right: 20px;
 
         &:hover {
             .opacity(0.2, 20);
+        }
+
+        img {
+            height: 48px;
+            width: 48px;
+        }
+    }
+    ul {
+        zoom: 1;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: block;
+            float: left;
+        }
+        &:after {
+            content: "\0020";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
         }
     }
 }

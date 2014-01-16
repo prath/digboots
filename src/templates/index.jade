@@ -111,7 +111,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TESTIMONIAL & SERVICES ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    .section(style='background: url("dummy-images/bgs/service-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+    div(style='background: url("dummy-images/bgs/service-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
         //- .cover.overlay
             
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -251,7 +251,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ VIDEO ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    .section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/bgs/video-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/bgs/video-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
         h2.section.heading Watch Our Creative Process
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -438,21 +438,50 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     section.content.flatted-up.flatted-down
         h2.section.heading Our Clients
-        .client.list.centered
-            a(href="").appear.fade-in
-                img(src="dummy-images/clients/1.png", alt="")
-            a(href="").appear.fade-in
-                img(src="dummy-images/clients/2.png", alt="")
-            a(href="").appear.fade-in
-                img(src="dummy-images/clients/3.png", alt="")
-            a(href="").appear.fade-in
-                img(src="dummy-images/clients/4.png", alt="")
-            a(href="").appear.fade-in
-                img(src="dummy-images/clients/5.png", alt="")
-            a(href="").appear.fade-in
-                img(src="dummy-images/clients/6.png", alt="")
-            a(href="").appear.fade-in
-                img(src="dummy-images/clients/7.png", alt="")
+        .client.list.centered.flexslider.appear.fade-in
+            ul.client-slides
+                li
+                    a(href="")
+                        img(src="dummy-images/clients/1.png", alt="1")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/2.png", alt="2")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/3.png", alt="3")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/4.png", alt="4")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/5.png", alt="5")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/6.png", alt="6")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/7.png", alt="7")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/1.png", alt="8")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/2.png", alt="9")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/3.png", alt="10")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/4.png", alt="11")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/5.png", alt="12")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/6.png", alt="13")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/7.png", alt="14")
 
     .separator-2
         

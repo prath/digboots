@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>DigBoots - Premium Boostrap Theme</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0">
 		<meta name="description" content="DigBoots Business Bootstrap Theme">
 		<meta name="author" content="">
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -23,6 +23,10 @@
 		<!-- [ FONTAWESOME ]-->
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<!-- [ FLEXSLIDER ]-->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<link href="assets/css/flexslider.css" rel="stylesheet">
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 		<!-- [ DIGBOOTS STYLES ]-->
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -403,7 +407,7 @@
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<!-- [ TESTIMONIAL & SERVICES ]-->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-			<div style="background: url(&quot;dummy-images/bgs/service-bg.jpg&quot;) no-repeat center center; background-size: cover; background-attachment: fixed;" class="section">
+			<div style="background: url(&quot;dummy-images/bgs/service-bg.jpg&quot;) no-repeat center center; background-size: cover; background-attachment: fixed;">
 				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 				<!-- [ TESTIMONIAL ]-->
 				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -536,7 +540,7 @@
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<!-- [ VIDEO ]-->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-			<div style="background: url(&quot;dummy-images/bgs/video-bg.jpg&quot;) no-repeat center center; background-size: cover; background-attachment: fixed;" class="section content w-background shrunk-up shrunk-down">
+			<section style="background: url(&quot;dummy-images/bgs/video-bg.jpg&quot;) no-repeat center center; background-size: cover; background-attachment: fixed;" class="content w-background shrunk-up shrunk-down">
 				<h2 class="section heading">Watch Our Creative Process</h2>
 				<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 				<!-- [ VIDEO POST ]-->
@@ -554,7 +558,7 @@
 						<a href="" class="btn btn-link btn-sm">Read more</a>
 					</p>
 				</article>
-			</div>
+			</section>
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<!-- [ WORKPLACE GALLERY ]-->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -740,28 +744,79 @@
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<section class="content flatted-up flatted-down">
 				<h2 class="section heading">Our Clients</h2>
-				<div class="client list centered">
-					<a href="" class="appear fade-in">
-						<img src="dummy-images/clients/1.png" alt="">
-					</a>
-					<a href="" class="appear fade-in">
-						<img src="dummy-images/clients/2.png" alt="">
-					</a>
-					<a href="" class="appear fade-in">
-						<img src="dummy-images/clients/3.png" alt="">
-					</a>
-					<a href="" class="appear fade-in">
-						<img src="dummy-images/clients/4.png" alt="">
-					</a>
-					<a href="" class="appear fade-in">
-						<img src="dummy-images/clients/5.png" alt="">
-					</a>
-					<a href="" class="appear fade-in">
-						<img src="dummy-images/clients/6.png" alt="">
-					</a>
-					<a href="" class="appear fade-in">
-						<img src="dummy-images/clients/7.png" alt="">
-					</a>
+				<div class="client list centered flexslider appear fade-in">
+					<ul class="client-slides">
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/1.png" alt="1">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/2.png" alt="2">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/3.png" alt="3">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/4.png" alt="4">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/5.png" alt="5">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/6.png" alt="6">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/7.png" alt="7">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/1.png" alt="8">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/2.png" alt="9">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/3.png" alt="10">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/4.png" alt="11">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/5.png" alt="12">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/6.png" alt="13">
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<img src="dummy-images/clients/7.png" alt="14">
+							</a>
+						</li>
+					</ul>
 				</div>
 			</section>
 			<div class="separator-2"></div>
@@ -1364,6 +1419,10 @@
 		<!-- [ FITVIDS JS ]-->
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 		<script src="assets/js/vendor/jquery.fitvids.js"></script>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<!-- [ FLEXSLIDER ]-->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+		<script src="assets/js/vendor/jquery.flexslider-min.js"></script>
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 		<!-- [ JQUERY APPEAR ]-->
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

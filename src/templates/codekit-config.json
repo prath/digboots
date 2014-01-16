@@ -90,17 +90,6 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single.html",
       "fileType" : 512
     },
-    "\/inc\/footer.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/footer.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/inc\/footer.html",
-      "fileType" : 512
-    },
     "\/inc\/collapsible-content.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -110,6 +99,17 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/inc\/collapsible-content.html",
+      "fileType" : 512
+    },
+    "\/inc\/footer.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/footer.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/inc\/footer.html",
       "fileType" : 512
     },
     "\/shop.jade" : {
@@ -123,17 +123,6 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/shop.html",
       "fileType" : 512
     },
-    "\/inc\/widget.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/widget.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/inc\/widget.html",
-      "fileType" : 512
-    },
     "\/author.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -143,6 +132,17 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/author.html",
+      "fileType" : 512
+    },
+    "\/inc\/widget.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/widget.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/inc\/widget.html",
       "fileType" : 512
     },
     "\/layouts\/master.jade" : {
@@ -167,17 +167,6 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/search-none.html",
       "fileType" : 512
     },
-    "\/single-porto.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/single-porto.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single-porto.html",
-      "fileType" : 512
-    },
     "\/index.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -187,6 +176,17 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/index.html",
+      "fileType" : 512
+    },
+    "\/single-porto.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/single-porto.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single-porto.html",
       "fileType" : 512
     },
     "\/inc\/nav.jade" : {
@@ -222,17 +222,6 @@
       "outputAbbreviatedPath" : "\/mixins\/widget.html",
       "fileType" : 512
     },
-    "\/inc\/footer-widget.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/footer-widget.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/inc\/footer-widget.html",
-      "fileType" : 512
-    },
     "\/blog.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -242,6 +231,17 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/blog.html",
+      "fileType" : 512
+    },
+    "\/inc\/footer-widget.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/footer-widget.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/inc\/footer-widget.html",
       "fileType" : 512
     },
     "\/portfolio-ii.jade" : {
