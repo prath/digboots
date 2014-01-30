@@ -13,10 +13,12 @@
  * slider, hero and marketing copy
 ============================================================*/
 .jumbotron {
-    background: url('../../dummy-images/hero-image2.jpg') center center;
+    background-attachment: fixed;
     background-color: transparent;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
     border: 0;
 
     width: 100%;
@@ -82,6 +84,14 @@
             font-size: 100px;
             letter-spacing: -7.0px;
             line-height: 90px;
+        }
+        &.smaller {
+            font-size: 60px;
+            letter-spacing: -3.0px;
+            line-height: 60px;
+            strong {
+                font-weight: 400;
+            }
         }
     }
 

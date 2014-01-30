@@ -58,8 +58,8 @@ $(document).ready(function() {
 
 	$(document.body).on('appear', '.appear', function(e, $affected) {
 		$affected.each(function(i) {
-			var $current = $(this);
-			var $delay = i * 50;
+			var $current = $(this),
+				$delay = i * 50;
 			$current.delay($delay).queue(function() {
 				$current.addClass('animate');
 			})
