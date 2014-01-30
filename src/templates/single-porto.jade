@@ -24,52 +24,41 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ BLOG POST ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.shrunk-up
+    article.content.flatted-up.flatted-down
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ BREADCRUMBS & HEADING ]
+        // [ COVER & TITLE ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        .post.narrow
+        .post.jumbotron(style="background-image: url('dummy-images/portfolio/13.jpg');")
+            //- .cover.overlay.blue
 
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ BREADCRUMBS ]
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            ol.breadcrumb
-                li 
-                    a(href='') Home
-                li.active 
-                    a(href='') Portfolio
+            .container
+                p 
+                    | Illustration
+                h1
+                    | <strong>Cheers!</strong> Illustration and Design.
+
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ POST ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        .post.medium
+        .content.post.medium
 
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ THE POST ]
+            // [ POST CONTENT ]
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article
-                header
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ POST FORMAT ICON ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    .post.format.centered
-                        i.fa.fa-bookmark-o
-
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ POST TITLE ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    h1.centered Cheers!
-
-                .separator.in-post.centered
-                
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ POST CONTENT ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                img(src='dummy-images/portfolio/13.jpg')
-                img(src='dummy-images/portfolio/14.jpg')
-                img(src='dummy-images/portfolio/15.jpg')
-                span.caption Dynamically procrastinate B2C users after installed base benefits.
-                p.lead 
-                    | Proactively envisioned <strong>multimedia based expertise</strong>&nbsp; and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.
-                p 
-                    | 3 wolf moon food truck pour-over, plaid Banksy organic pug Godard distillery seitan bitters actually kogi occupy slow-carb.  Meh bitters flexitarian forage, Vice literally iPhone hella Portland.  Sustainable four loko lomo Blue Bottle craft beer fap Odd Future, hashtag jean shorts quinoa.  Mustache craft beer.
+            h2.centered The Illustration
+            hr
+            p.lead 
+                | Proactively envisioned <strong>multimedia based expertise</strong>&nbsp; and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.
+            img(src='dummy-images/portfolio/13.jpg')
+            h2.centered Behind The Work
+            hr
+            p 
+                | 3 wolf moon food truck pour-over, plaid Banksy organic pug Godard distillery seitan bitters actually kogi occupy slow-carb.  Meh bitters flexitarian forage, Vice literally iPhone hella Portland.  Sustainable four loko lomo Blue Bottle craft beer fap Odd Future, hashtag jean shorts quinoa.  Mustache craft 
+            img(src='dummy-images/portfolio/14.jpg')
+            p 
+                | 3 wolf moon food truck pour-over, plaid Banksy organic pug Godard distillery seitan bitters actually kogi occupy slow-carb.  Meh bitters flexitarian forage, Vice literally iPhone hella Portland.  Sustainable four loko lomo Blue Bottle craft beer fap Odd Future, hashtag jean shorts quinoa.  Mustache craft beer.
+            img(src='dummy-images/portfolio/15.jpg')
+            span.caption Dynamically procrastinate B2C users after installed base benefits.
+            p 
+                | 3 wolf moon food truck pour-over, plaid Banksy organic pug Godard distillery seitan bitters actually kogi occupy slow-carb.  Meh bitters flexitarian forage, Vice literally iPhone hella Portland.  Sustainable four loko lomo Blue Bottle craft beer fap Odd Future, hashtag jean shorts quinoa.  Mustache craft beer.

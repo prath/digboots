@@ -2,17 +2,6 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8376",
   "files" : {
-    "\/portfolio-i.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/portfolio-i.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/portfolio-i.html",
-      "fileType" : 512
-    },
     "\/inc\/masthead.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -22,6 +11,17 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/inc\/masthead.html",
+      "fileType" : 512
+    },
+    "\/portfolio-i.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/portfolio-i.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/portfolio-i.html",
       "fileType" : 512
     },
     "\/404.jade" : {
@@ -101,17 +101,6 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single.html",
       "fileType" : 512
     },
-    "\/inc\/footer.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/inc\/footer.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/inc\/footer.html",
-      "fileType" : 512
-    },
     "\/inc\/collapsible-content.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -121,6 +110,17 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/inc\/collapsible-content.html",
+      "fileType" : 512
+    },
+    "\/inc\/footer.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/inc\/footer.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/inc\/footer.html",
       "fileType" : 512
     },
     "\/shop.jade" : {
