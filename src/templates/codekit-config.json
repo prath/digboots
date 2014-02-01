@@ -57,6 +57,17 @@
       "outputAbbreviatedPath" : "\/inc\/related-posts.html",
       "fileType" : 512
     },
+    "\/about.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/about.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/about.html",
+      "fileType" : 512
+    },
     "\/portfolio.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -156,15 +167,15 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/author.html",
       "fileType" : 512
     },
-    "\/layouts\/master.jade" : {
+    "\/single-porto.jade" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/layouts\/master.jade",
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/single-porto.jade",
       "outputStyle" : 0,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/layouts\/master.html",
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single-porto.html",
       "fileType" : 512
     },
     "\/search-none.jade" : {
@@ -178,6 +189,17 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/search-none.html",
       "fileType" : 512
     },
+    "\/layouts\/master.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/layouts\/master.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/layouts\/master.html",
+      "fileType" : 512
+    },
     "\/index.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -187,17 +209,6 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/index.html",
-      "fileType" : 512
-    },
-    "\/single-porto.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/single-porto.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single-porto.html",
       "fileType" : 512
     },
     "\/inc\/nav.jade" : {
@@ -343,8 +354,8 @@
       "trailing" : 1,
       "nonew" : 1,
       "es3" : 0,
-      "freeze" : 1,
       "yui" : 0,
+      "freeze" : 1,
       "mootools" : 0,
       "proto" : 0,
       "boss" : 0,

@@ -21,3 +21,58 @@
     border-radius: @base-radius;
     box-shadow: none;
 }
+
+/* [Progress Bar - used in skill]
+==================================================*/
+.bars {
+
+}
+
+.bar {
+    position: relative;
+
+    height: 30px;
+    width: 100%;
+
+    margin-bottom: 2px;
+
+    font-size: @body-fz-sm;
+
+    border-radius: @base-radius;
+    &.holder {
+        background-color: @secondary-text;
+        border: 0;
+        border-bottom: 1px solid lighten(@muted-text-color, 25%);
+
+        overflow: hidden;
+    }
+
+    .label {
+        position: relative;
+        z-index: 3;
+
+        padding: 0 0 0 20px;
+
+        color: @secondary-text;
+        font-size: @body-fz-sm;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+
+        border-radius: 0;
+    }
+
+    .progress {
+        background-color: @default-accent;
+
+        left: 0;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+
+        height: 100%;
+
+        border-radius: @base-radius;
+        box-shadow: none;
+    }
+}

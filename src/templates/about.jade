@@ -1,0 +1,387 @@
+//- 
+    =====================================================================
+    * Blog Page
+    * 
+    * @author Pratama H. Salahudin <pratama@aestik.com>
+    =====================================================================
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extends layouts/content-container
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ TITLE - used to define html <title> ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block title
+    title About Page - Premium Boostrap Theme
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ CONTENT ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block content
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ BLOG POST ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.flatted-up.flatted-down
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ COVER & TITLE ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .post.jumbotron(style="background-image: url('dummy-images/about/cover.jpg');")
+            //- .cover.overlay.blue
+
+            .container
+                h1
+                    | We are a <strong>friendly</strong> and <strong>warm</strong> team.
+                p.normal 
+                    | We work professionally, we think our partner's business above all else.
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ NAV ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        //- nav.gallery.filter.light.centered
+            a(href="") All
+            a(href="") Web Design
+            a(href="") Illustration
+            a(href="") UI Design
+
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ ABOUT POST ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .content.post.narrow
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ POST CONTENT ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            p.lead.centered 
+                | Proactively envisioned <strong>multimedia based expertise</strong>&nbsp; and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.
+            p
+                | European minnow priapumfish mosshead warbonnet shrimpfish bigscale. Cutlassfish priapumfish mosshead warbonnet. Efficiently unleash cross-media information without cross-media value european <a href=''>minnow priapumfish</a>&nbsp; mosshead collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence revolutionary ROI.
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ SKILL ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    article.content.post.covered.shrunk-up.shrunk-down
+        .narrow
+            h2.section.heading Our Skill
+            p
+                | Our skill are vary, from web development to brand consulting. we confident with high skill and standard we have could help you easily. We are a team of designers, communicators, storytellers and strategists, passionate about social change. Sound like you?
+            .skill.bars
+                .bar.holder.appear.fade-in
+                    .label Web Development
+                    .progress.appear.move-right(style='width: 90%;')
+                .bar.holder.appear.fade-in
+                    .label Illustration
+                    .progress.appear.move-right(style='width: 97%;')
+                .bar.holder.appear.fade-in
+                    .label App Design
+                    .progress.appear.move-right(style='width: 80%;')
+                .bar.holder.appear.fade-in
+                    .label Brand Consulting
+                    .progress.appear.move-right(style='width: 75%;')
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ SERVICES ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.post.narrow.shrunk-up.shrunk-down
+        h2.section.heading What We Do
+        .container
+            .row
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-6.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.med.centered
+                        i.fa.fa-file-o
+                    h3.related.title.centered Illustration
+                    p
+                        | We transform your wish into clear ideas and hand-sketched illustrations. We transform your wish into clear ideas and hand-sketched illustrations.
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-6.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.med.centered
+                        i.fa.fa-html5
+                    h3.related.title.centered Web Design
+                    p
+                        | High quality pixel-perfect hand-coded web page design will be delivered to you. High quality pixel-perfect hand-coded web page design will be delivered to you.
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-6.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-xs-12.col-ul-offset-3.col-xl-offset-3.col-xl-offset-3.col-md-offset-3.centered.appear.move-top
+                    .diamond.icon.med.centered
+                        i.fa.fa-mobile
+                    h3.related.title.centered App Design
+                    p
+                        | Pixel-perfect app design is one of our obsession, we always keep that in mind. Pixel-perfect app design is one of our obsession, we always keep that in mind.
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ TEAM ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.post.covered.shrunk-up.shrunk-down
+        .medium
+            h2.section.heading Our Team
+            p
+                | We are a team of designers, communicators, storytellers and strategists, passionate about social change. Sound like you? <a href="">Join Us</a>
+
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ TEAM PHOTOs ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            .team.photos
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Johnatan Doe
+                            span.subtitle CEO
+                            span.separator
+                    img(src='dummy-images/team/1.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Jane Doe
+                            span.subtitle COO
+                            span.separator
+                    img(src='dummy-images/team/2.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Will Smith
+                            span.subtitle CTO
+                            span.separator
+                    img(src='dummy-images/team/3.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Dave Roe
+                            span.subtitle Lead Developer
+                            span.separator
+                    img(src='dummy-images/team/4.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Maxi Rachel
+                            span.subtitle Lead Designer
+                            span.separator
+                    img(src='dummy-images/team/5.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Jake Arch
+                            span.subtitle Designer
+                            span.separator
+                    img(src='dummy-images/team/6.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ CLients ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.post.narrow.shrunk-up.shrunk-down
+        h2.section.heading Our Clients &amp; Partners
+        p
+            | We're lucky enough to work with some amazing organisations. Here are a few of our favourites:
+        .client.list.centered.appear.fade-in
+            ul.client-slides
+                li
+                    a(href="")
+                        img(src="dummy-images/clients/1.png", alt="1")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/2.png", alt="2")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/3.png", alt="3")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/4.png", alt="4")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/5.png", alt="5")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/6.png", alt="6")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/7.png", alt="7")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/1.png", alt="8")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/2.png", alt="9")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/3.png", alt="10")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/4.png", alt="11")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/5.png", alt="12")
+                    
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ WORKPLACE GALLERY ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.workspace.gallery
+        header
+            h2.gallery.post.title
+                a(href='') our workspace
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.gallery.item.one-third.appear.fade-in
+            header.caption
+                h3.title
+                    a(href="") Meeting Spot
+                    span.separator
+            img(src='dummy-images/workspace/1.jpg', alt='portfolio 1')
+            a(href="").goto 
+                i.fa.fa-link
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.gallery.item.one-third.appear.fade-in
+            header.caption
+                h3.title
+                    a(href="") CEO Desk
+                    span.separator
+            img(src='dummy-images/workspace/2.jpg', alt='portfolio 1')
+            a(href="").goto 
+                i.fa.fa-link
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.gallery.item.one-third.appear.fade-in
+            header.caption
+                h3.title
+                    a(href="") Outdoor Spot
+                    span.separator
+            img(src='dummy-images/workspace/3.jpg', alt='portfolio 1')
+            a(href="").goto 
+                i.fa.fa-link
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.gallery.item.one-third.appear.fade-in
+            header.caption
+                h3.title
+                    a(href="") Jake's Favorite Spot
+                    span.separator
+            img(src='dummy-images/workspace/4.jpg', alt='portfolio 1')
+            a(href="").goto 
+                i.fa.fa-link
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.gallery.item.one-third.appear.fade-in
+            header.caption
+                h3.title
+                    a(href="") John's Favorite Spot
+                    span.separator
+            img(src='dummy-images/workspace/5.jpg', alt='portfolio 1')
+            a(href="").goto 
+                i.fa.fa-link
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ WORKPLACE ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.gallery.item.one-third.appear.fade-in
+            header.caption
+                h3.title
+                    a(href="") Our Lovely Office
+                    span.separator
+            img(src='dummy-images/workspace/6.jpg', alt='portfolio 1')
+            a(href="").goto 
+                i.fa.fa-link
+
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ CONTACT ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.shrunk-up.shrunk-down
+        .post.narrow
+            h2.section.heading
+                | Want to work with us?
+            p.centered
+                | Are you working on something great? We'd love to help make it happen. <a href="">Get in touch</a> now.
+        .separator-2.centered

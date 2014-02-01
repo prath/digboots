@@ -20,9 +20,10 @@ img {
  * portfolio, workspace, and product list
  * uses this classes
 ==================================================*/
-.gallery {
+.gallery,
+.photos {
     .clearfix();
-    background: @secondary-text;
+    background: @secondary-background;
 
     position: relative;
     backface-visibility: hidden;
@@ -44,6 +45,9 @@ img {
             display: block;
             height:auto;
             width: 100%;
+
+            margin-bottom: 0;
+
             backface-visibility: hidden;
             transition: .5s all ease;
         }
@@ -61,6 +65,7 @@ img {
             padding: 0;
 
             color: @secondary-text;
+            font-style: normal;
             line-height: @line-height-base;
 
             .opacity(0,0);
@@ -110,6 +115,7 @@ img {
                 bottom: -50px;
 
                 color: lighten(@default-accent, 30%);
+                font-family: @font-1;
                 font-size: @body-fz-sm;
 
                 .opacity(0,0);
@@ -128,6 +134,26 @@ img {
                 color: @secondary-text;
                 font-size: 18px;
             }  
+        }
+
+        .social {
+            position: absolute;
+            bottom: 20px;
+
+            width: 100%;
+
+            text-align: center;
+
+            .opacity(0,0);
+            transition: opacity .2s ease;
+            a {
+                .inlineDisplay();
+
+                margin-left: 5px;
+                margin-right: 5px;
+
+                color: @secondary-text;
+            }
         }
 
         &.one-half {
@@ -199,6 +225,10 @@ img {
                 z-index: 3;
                 .opacity(1, 100);
             }
+            .social {
+                z-index: 3;
+                .opacity(1, 100);
+            }
         }
     }
     
@@ -253,6 +283,77 @@ img {
                 &:hover {
                     color: @link-color;
                 }
+            }
+        }
+    }
+}
+
+.photos {
+    background: transparent;
+    &.item {
+        &.one-half {
+            height: auto;
+            width: 47.5%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-lg-phone) {
+                // width: 50%;
+            }
+
+            //*-----[Responsive 768++]-----*/
+            @media (min-width: @screen-tablet) {
+                // width: 50%;
+            }
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+        &.one-third {
+            height: auto;
+            width: 45%;
+            margin-bottom: 5%;
+            margin-right: 5%;
+
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-tablet) {
+                width: 30%;
+                margin-bottom: 5%;
+                margin-right: 5%;
+                &:nth-child(3n+1) {
+                    width: 30%;
+                }
+            }
+            
+            .caption {
+                .separator {
+                    margin: 10px auto;
+                }
+            }
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+
+        &.one-fourth {
+            height: auto;
+            width: 20%%;
+
+            margin-right: 5%;
+
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-lg-phone) {
+                // width: 25%;
+            }
+
+            //*-----[Responsive 768++]-----*/
+            @media (min-width: @screen-tablet) {
+                // width: 25%;
+            }
+            &:nth-child(4n) {
+                margin-right: 0;
             }
         }
     }
