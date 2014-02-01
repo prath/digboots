@@ -1,0 +1,187 @@
+//- 
+    =====================================================================
+    * Blog Page
+    * 
+    * @author Pratama H. Salahudin <pratama@aestik.com>
+    =====================================================================
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extends layouts/content-container
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ TITLE - used to define html <title> ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block title
+    title Service Page - Premium Boostrap Theme
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ CONTENT ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block content
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ BLOG POST ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.flatted-up.flatted-down
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ COVER & TITLE ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .post.jumbotron(style="background-image: url('dummy-images/team/cover.jpg');")
+            //- .cover.overlay.blue
+
+            .container
+                h1
+                    | We <strong>Work</strong> As Fun As We <strong>Play.</strong>
+                p.normal 
+                    | We work, we play. We form the best team and work environment you'd ever known.
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ NAV ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        //- nav.gallery.filter.light.centered
+            a(href="") All
+            a(href="") Web Design
+            a(href="") Illustration
+            a(href="") UI Design
+
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ TEAM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .content.post.medium.shrunk-down
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ POST CONTENT ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            p.lead.centered 
+                | Proactively envisioned <strong>multimedia based expertise</strong>&nbsp; and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing.
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ TEAM PHOTOs ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            .team.photos
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Johnatan Doe
+                            span.subtitle CEO
+                            span.separator
+                    img(src='dummy-images/team/1.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Jane Doe
+                            span.subtitle COO
+                            span.separator
+                    img(src='dummy-images/team/2.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Will Smith
+                            span.subtitle CTO
+                            span.separator
+                    img(src='dummy-images/team/3.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Dave Roe
+                            span.subtitle Lead Developer
+                            span.separator
+                    img(src='dummy-images/team/4.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Maxi Rachel
+                            span.subtitle Lead Designer
+                            span.separator
+                    img(src='dummy-images/team/5.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.photos.item.one-third.appear.fade-in
+                    header.caption
+                        h3.title
+                            a(href="") Jake Arch
+                            span.subtitle Designer
+                            span.separator
+                    img(src='dummy-images/team/6.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ CONTACT ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.shrunk-up.shrunk-down
+        .post.narrow
+            h2.section.heading
+                | Want to work with us?
+            p.centered
+                | We are a team of designers, communicators, storytellers and strategists, passionate about social change. Sound like you? <a href="">Join Us</a>
+        .separator-2.centered

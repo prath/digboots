@@ -51,7 +51,7 @@ block content
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ ABOUT POST ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        .content.post.narrow
+        .content.post.narrow.shrunk-down
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ POST CONTENT ]
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +63,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ SKILL ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    article.content.post.covered.shrunk-up.shrunk-down
+    article.content.post.covered.shrunk-up
         .narrow
             h2.section.heading Our Skill
             p
@@ -83,9 +83,21 @@ block content
                     .progress.appear.move-right(style='width: 75%;')
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ TESTIMONIAL ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b2.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+        .medium
+            h2.section.heading What People Say About Us
+            blockquote 
+                p
+                    | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
+                    cite.name
+                        | John William Smith - <strong>Company.co</strong> 
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ CLients ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.post.narrow.shrunk-up.shrunk-down
+    section.content.post.narrow
         h2.section.heading Our Clients &amp; Partners
         p
             | We're lucky enough to work with some amazing organisations. Here are a few of our favourites:
@@ -209,14 +221,12 @@ block content
             a(href="").goto 
                 i.fa.fa-link
 
-
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // [ CONTACT ]
+    // [ BANNER ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.shrunk-up.shrunk-down
+    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b1.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
         .post.narrow
-            h2.section.heading
-                | Want to work with us?
+            h2.centered.appear.move-bottom Work With Us and Let Us Help You.
             p.centered
-                | Are you working on something great? We'd love to help make it happen. <a href="">Get in touch</a> now.
-        .separator-2.centered
+                a(href='').btn.btn-primary.btn-lg.btn-cta.appear.move-top
+                    | Get in Touch

@@ -14,7 +14,7 @@ extends layouts/content-container
 //- [ TITLE - used to define html <title> ]
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 block title
-    title About Page - Premium Boostrap Theme
+    title Company Page - Premium Boostrap Theme
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ CONTENT ]
@@ -51,7 +51,7 @@ block content
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ ABOUT POST ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        .content.post.narrow
+        .content.post.narrow.shrunk-down
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ POST CONTENT ]
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -63,7 +63,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ SKILL ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    article.content.post.covered.shrunk-up.shrunk-down
+    article.content.post.covered.shrunk-up
         .narrow
             h2.section.heading Our Skill
             p
@@ -83,9 +83,19 @@ block content
                     .progress.appear.move-right(style='width: 75%;')
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ BANNER ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b1.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+        .post.narrow
+            h2.centered.appear.move-bottom Work With Us and Let Us Help You.
+            p.centered
+                a(href='').btn.btn-primary.btn-lg.btn-cta.appear.move-top
+                    | Get in Touch
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ SERVICES ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.post.narrow.shrunk-up.shrunk-down
+    section.content.post.narrow
         h2.section.heading What We Do
         .container
             .row
@@ -118,11 +128,22 @@ block content
                     h3.related.title.centered App Design
                     p
                         | Pixel-perfect app design is one of our obsession, we always keep that in mind. Pixel-perfect app design is one of our obsession, we always keep that in mind.
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ TESTIMONIAL ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b2.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+        .medium
+            h2.section.heading What People Say About Us
+            blockquote 
+                p
+                    | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
+                    cite.name
+                        | John William Smith - <strong>Company.co</strong> 
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TEAM ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.post.covered.shrunk-up.shrunk-down
+    section.content.post.covered.shrunk-down
         .medium
             h2.section.heading Our Team
             p
@@ -250,7 +271,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ CLients ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.post.narrow.shrunk-up.shrunk-down
+    section.content.post.narrow.shrunk-up
         h2.section.heading Our Clients &amp; Partners
         p
             | We're lucky enough to work with some amazing organisations. Here are a few of our favourites:

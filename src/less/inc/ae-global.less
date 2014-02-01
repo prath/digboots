@@ -325,6 +325,7 @@ hr {
 /* [Home Testimonial Styles]
 ============================================================*/
 .w-background{
+    overflow: hidden;
     &,
     .section.heading,
     blockquote p,
@@ -357,6 +358,14 @@ hr {
     .separator.in-post,
     .separator {
         border-color: @secondary-text;
+    }
+    .btn-cta {
+        background-color: #000000;
+        letter-spacing: 10px;
+        &:hover {
+            background-color: @secondary-text;
+            color: #000000;
+        }
     }
 }
 
