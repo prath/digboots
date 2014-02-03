@@ -8,7 +8,7 @@
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-extends layouts/content-container
+extends layouts/master
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ TITLE - used to define html <title> ]
@@ -45,7 +45,7 @@ block content
         p
             | <strong>DigBoots</strong>&nbsp; is a fast-growing company, we started as a simple <a href="">two-man team</a>. Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables. Drop in axle roll-in rail slide noseblunt. 
         p
-            a(href='').btn.btn-link.btn-sm
+            a(href='').btn.btn-sm.btn-primary
                 | More About Us
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -109,67 +109,63 @@ block content
                 i.fa.fa-link
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // [ TESTIMONIAL & SERVICES ]
+    // [ TESTIMONIAL ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     div(style='background: url("dummy-images/bgs/service-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
-        //- .cover.overlay
             
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ TESTIMONIAL ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        article.content.w-background.narrow.shrunk-down.shrunk-up
+        article.content.invert-background.no-color.wide.shrunk-down.shrunk-up
             h2.section.heading What People Say About Us
             blockquote 
-                p
+                p.centered
                     | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
                     cite.name
                         | John William Smith - <strong>Company.co</strong> 
-            //- p
-                | That's what some of our friends, colleagues and partners says about us. Come visit us to know more about us. in a meantime here are some works <strong>we can do for you</strong> : 
 
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ SERVICES ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        section.cover.overlay
-            .container.services.content.wide.shrunk-down.shrunk-up
-                .row
-                    h2.section.heading Our Services
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ SERVICES ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.white-background(style='background: url("dummy-images/services/cover-2.jpg") no-repeat bottom center; background-size: cover;')
+        .container.services.wide
+            h2.section.heading Our Services
+            .row
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    //- .diamond.icon.med.centered
+                    i.fa.fa-file-o.fa-3x
+                    h3.related.title.centered Illustration
+                    p
+                        | We transform your wish into clear ideas and hand-sketched illustrations.
+                    a(href='').btn.btn-xs.btn-primary
+                        | learn more
 
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ SERVICES ITEM ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                        .diamond.icon.white.med.centered
-                            i.fa.fa-file-o
-                        h3.related.title.centered Illustration
-                        p
-                            | We transform your wish into clear ideas and hand-sketched illustrations.
-                        a(href='').btn.btn-link.btn-sm
-                            | learn more
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    //- .diamond.icon.med.centered
+                    i.fa.fa-html5.fa-3x
+                    h3.related.title.centered Web Design
+                    p
+                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                    a(href='').btn.btn-xs.btn-primary
+                        | learn more
 
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ SERVICES ITEM ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                        .diamond.icon.white.med.centered
-                            i.fa.fa-html5
-                        h3.related.title.centered Web Design
-                        p
-                            | High quality pixel-perfect hand-coded web page design will be delivered to you.
-                        a(href='').btn.btn-link.btn-sm
-                            | learn more
-
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ SERVICES ITEM ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                        .diamond.icon.white.med.centered
-                            i.fa.fa-mobile
-                        h3.related.title.centered App Design
-                        p
-                            | Pixel-perfect app design is one of our obsession, we always keep that in mind.
-                        a(href='').btn.btn-link.btn-sm
-                            | learn more
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    //- .diamond.icon.med.centered
+                    i.fa.fa-mobile.fa-3x
+                    h3.related.title.centered App Design
+                    p
+                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                    a(href='').btn.btn-xs.btn-primary
+                        | learn more
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ LATEST POSTS ]
@@ -192,7 +188,7 @@ block content
             p
                 | European minnow priapumfish mosshead warbonnet shrimpfish bigscale. Cutlassfish priapumfish mosshead warbonnet. Efficiently unleash cross-media information without cross-media value european minnow priapumfish mosshead.
             p
-                a(href='').btn.btn-link.btn-sm
+                a(href='').btn.btn-primary.btn-sm
                     | Read more
             //- .separator.centered
             .separator-2
@@ -216,7 +212,7 @@ block content
                                 | 12 January 2013
                         p
                             | Efficiently unleash cross-media information without cross-media value.
-                        a(href='').btn.btn-link.btn-sm
+                        a(href='').btn.btn-primary.btn-xs
                             | read more
 
                     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -230,8 +226,8 @@ block content
                             span.post.date
                                 | 12 January 2013
                         p
-                            | European minnow priapumfish mosshead warbonnet shrimpfish.
-                        a(href='').btn.btn-link.btn-sm
+                            | European minnow priapumfish mosshead warbonnet shrimpfish priapumfish.
+                        a(href='').btn.btn-primary.btn-xs
                             | read more
 
                     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -246,12 +242,12 @@ block content
                                 | 12 January 2013
                         p
                             | Drop in axle roll-in rail slide noseblunt slide Steve Severin impossible.
-                        a(href='').btn.btn-link.btn-sm
+                        a(href='').btn.btn-primary.btn-xs
                             | read more
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ VIDEO ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/bgs/video-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+    section.content.invert-background.shrunk-up.shrunk-down(style='background: url("dummy-images/bgs/video-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
         h2.section.heading Watch Our Creative Process
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -267,8 +263,89 @@ block content
             p
                 | European minnow priapumfish mosshead warbonnet shrimpfish bigscale. Cutlassfish priapumfish mosshead warbonnet. Efficiently unleash cross-media information without cross-media value european minnow priapumfish mosshead.
             p
-                a(href='').btn.btn-link.btn-sm
+                a(href='').btn.btn-primary.btn-sm
                     | Read more
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ MORE ABOUT DIGBOOTS ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.wide
+        h2.section.heading More About Digboots
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ SERVICES ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .container
+            .row
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.med.centered
+                        i.fa.fa-inbox
+                    h3.related.title.centered High Quality Deliverables
+                    p
+                        | We transform your wish into clear ideas and hand-sketched illustrations.
+                    a(href='').btn.btn-primary.btn-xs
+                        | learn more
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.med.centered
+                        i.fa.fa-comments-o
+                    h3.related.title.centered Intensive Consultations
+                    p
+                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                    a(href='').btn.btn-primary.btn-xs
+                        | learn more
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.med.centered
+                        i.fa.fa-check-square-o
+                    h3.related.title.centered Great Project Management
+                    p
+                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                    a(href='').btn.btn-primary.btn-xs
+                        | learn more
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.med.centered
+                        i.fa.fa-laptop
+                    h3.related.title.centered Well-illustrated Process
+                    p
+                        | We transform your wish into clear ideas and hand-sketched illustrations.
+                    a(href='').btn.btn-primary.btn-xs
+                        | learn more
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.med.centered
+                        i.fa.fa-calendar-o
+                    h3.related.title.centered On-time Scheduling 
+                    p
+                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                    a(href='').btn.btn-primary.btn-xs
+                        | learn more
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.med.centered
+                        i.fa.fa-angle-double-right
+                    h3.related.title.centered Fast Execution
+                    p
+                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                    a(href='').btn.btn-primary.btn-xs
+                        | learn more
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ WORKPLACE GALLERY ]
@@ -351,92 +428,9 @@ block content
                 i.fa.fa-link
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // [ MORE ABOUT DIGBOOTS ]
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.wide.flatted-down
-        h2.section.heading More About Digboots
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ SERVICES ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        .container
-            .row
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-inbox
-                    h3.related.title.centered High Quality Deliverables
-                    p
-                        | We transform your wish into clear ideas and hand-sketched illustrations.
-                    a(href='').btn.btn-link.btn-sm
-                        | learn more
-
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-comments-o
-                    h3.related.title.centered Intensive Consultations
-                    p
-                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
-                    a(href='').btn.btn-link.btn-sm
-                        | learn more
-
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-check-square-o
-                    h3.related.title.centered Great Project Management
-                    p
-                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
-                    a(href='').btn.btn-link.btn-sm
-                        | learn more
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-laptop
-                    h3.related.title.centered Well-illustrated Process
-                    p
-                        | We transform your wish into clear ideas and hand-sketched illustrations.
-                    a(href='').btn.btn-link.btn-sm
-                        | learn more
-
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-calendar-o
-                    h3.related.title.centered On-time Scheduling 
-                    p
-                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
-                    a(href='').btn.btn-link.btn-sm
-                        | learn more
-
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-angle-double-right
-                    h3.related.title.centered Fast Execution
-                    p
-                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
-                    a(href='').btn.btn-link.btn-sm
-                        | learn more
-
-    .separator-2
-
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ ClIENTS ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.flatted-up.flatted-down
+    section.content.white-background.shrunk-down.shrunk-up
         h2.section.heading Our Clients
         .client.list.centered.flexslider.appear.fade-in
             ul.client-slides
@@ -483,12 +477,10 @@ block content
                     a(href="")
                         img(src="dummy-images/clients/7.png", alt="14")
 
-    .separator-2
-        
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ EMAIL SUBSCRIPTION ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.narrow.flatted-up
+    section.content.narrow.shrunk-down.shrunk-up
         h2.section.heading email newsletter
         p.small-text.centered 
             | Sign up to receive our monthly email newsletter below. We will not spam your email account, ever. 

@@ -238,8 +238,11 @@ article .small {
     @media (min-width: @screen-tablet) {
         // margin-bottom: 50px;
     }
-    a.btn {
+    a.btn-link {
         margin-left: -10px;
+    }
+    a.btn {
+        margin-left: 0;
     }
     p {
         margin-bottom: 20px;
@@ -248,6 +251,7 @@ article .small {
 
 /* [Post Formats]
 ============================================================*/
+
 /*-----[Post Format Link]-----*/
 .format-link {
     .entry-content {
@@ -280,6 +284,9 @@ article .small {
             }
             &:nth-child(even) {
                 background-color: fade(@secondary-text, 30%);
+            }
+            &:last-child {
+                margin-bottom: 50px;
             }
         }
     }

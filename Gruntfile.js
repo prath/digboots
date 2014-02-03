@@ -7,23 +7,16 @@ path = require('path');
  */
 module.exports = function(grunt) {
 
-	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-jade');
-	grunt.loadNpmTasks('grunt-contrib-requirejs');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-open');
 	grunt.loadNpmTasks('grunt-dom-munger');
 	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-prettify');
-	grunt.loadNpmTasks('grunt-cssbeautifier');
 	grunt.loadNpmTasks('grunt-jsbeautifier');
-	grunt.loadNpmTasks('grunt-newer');
 
 	grunt.initConfig({
 
@@ -93,23 +86,6 @@ module.exports = function(grunt) {
 					ext: '.css',
 				}]
 			},
-		},
-
-		/**
-		 * minimize css files into *.min.css
-		 *
-		 * @type {css}
-		 */
-		cssmin: {
-			minify: {
-				files: [{
-					expand: true,
-					cwd: './',
-					src: ['style.css'],
-					dest: 'dist/assets/css',
-					ext: '.min.css',
-				}]
-			}
 		},
 		/**
 		 * autoprefix css
@@ -270,37 +246,6 @@ module.exports = function(grunt) {
 			},
 		},
 		/**
-		 * uglify js tasks
-		 * @type {Object}
-		 */
-		uglify: {
-			compress: {
-				files: [{
-					expand: true,
-					src: '*.js',
-					dest: 'dist/js',
-					cwd: 'dist/js',
-					ext: '.min.js'
-				}]
-			},
-			concat: {
-				src: ['<%= dom_munger.data.myJsRefs %>'],
-				dest: 'dist/assets/js/all/all.min.js'
-			}
-		},
-		/**
-		 * concat files task
-		 *
-		 * @type {Object}
-		 * @todo concat JS Files
-		 */
-		concat: {
-			files: {
-				src: ['<%= dom_munger.data.myCssRefs %>'],
-				dest: 'dist/assets/css/mixed.css'
-			}
-		},
-		/**
 		 * Jade tasks
 		 *
 		 * @type {Object}
@@ -310,11 +255,7 @@ module.exports = function(grunt) {
 			compile: {
 				options: {
 					data: {
-						debug: true,
-						title: 'Suave WordPress',
-						css_dir: 'css',
-						js_dir: 'js',
-						img_dir: 'images',
+						debug: false
 					},
 					pretty: true
 				},
@@ -327,47 +268,6 @@ module.exports = function(grunt) {
 				}]
 			}
 		},
-
-		/**
-		 * Prettify HTML Outputs
-		 * 
-		 * @type {Object}
-		 */
-		prettify: {
-			options: {
-				indent_char: '	',
-				indent: 1,
-				condense: true,
-				brace_style: "expand",
-				padcomments: true,
-				indent_scripts: 'separate',
-				preserve_newlines: true,
-				unformatted: [
-					"pre"
-				]
-			},
-			all: {
-				expand: true, 
-				cwd: 'dist/', 
-				ext: '.html',
-				src: ['*.html'],
-				dest: 'dist/'
-			}
-		},
-
-		/**
-		 * Change CSS Indentation
-		 *
-		 * @type {Object}
-		 * @todo other regarde tasks for js, image etc.
-		 */
-		cssbeautifier : {
-			files : ['dist/assets/css/*.css', 'dist/*.css'],
-			options : {
-				indent: '	'
-			}
-		},
-
 		/**
 		 * Beautify HTML, CSS and JS
 		 *

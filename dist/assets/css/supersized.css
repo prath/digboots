@@ -159,7 +159,7 @@ img {
 	border-right: 1px solid #333;
 	background: url('../img/bg-hover.png') repeat-x 0 44px;
 }
-#play-button:hover {
+#play-button: hover {
 	background-position: 0 1px;
 	cursor: pointer;
 }
@@ -180,12 +180,10 @@ img {
 	right: 10px;
 	background: url('../img/forward.png');
 }
-#prevslide:active,
-#nextslide:active {
+#prevslide: active, #nextslide: active {
 	margin-top: -19px;
 }
-#prevslide:hover,
-#nextslide:hover {
+#prevslide: hover, #nextslide: hover {
 	cursor: pointer;
 }
 ul#slide-list {
@@ -202,7 +200,7 @@ ul#slide-list li {
 	margin: 0 5px 0 0;
 }
 ul#slide-list li.current-slide a,
-ul#slide-list li.current-slide a:hover {
+ul#slide-list li.current-slide a: hover {
 	background-position: 0 0px;
 }
 ul#slide-list li a {
@@ -211,7 +209,7 @@ ul#slide-list li a {
 	height: 12px;
 	background: url('../img/nav-dot.png') no-repeat 0 -24px;
 }
-ul#slide-list li a:hover {
+ul#slide-list li a: hover {
 	background-position: 0 -12px;
 	cursor: pointer;
 }
@@ -221,7 +219,7 @@ ul#slide-list li a:hover {
 	border-left: 1px solid #333;
 	background: url('../img/bg-hover.png') repeat-x 0 44px;
 }
-#tray-button:hover {
+#tray-button: hover {
 	background-position: 0 1px;
 	cursor: pointer;
 }
@@ -270,12 +268,10 @@ ul#slide-list li a:hover {
 	width: 150px;
 	height: auto;
 }
-#nextthumb:active,
-#prevthumb:active {
+#nextthumb: active, #prevthumb: active {
 	bottom: 59px;
 }
-#nextthumb:hover,
-#prevthumb:hover {
+#nextthumb: hover, #prevthumb: hover {
 	cursor: pointer;
 }
 /* Thumbnail Tray
@@ -310,15 +306,14 @@ ul#slide-list li a:hover {
 	right: 0;
 	background: url('../img/thumb-forward.png') no-repeat center center;
 }
-#thumb-back:hover,
-#thumb-forward:hover {
+#thumb-back: hover, #thumb-forward: hover {
 	cursor: pointer;
 	background-color: rgba(256, 256, 256, 0.1);
 }
-#thumb-back:hover {
+#thumb-back: hover {
 	border-right: 1px solid rgba(256, 256, 256, 0.2);
 }
-#thumb-forward:hover {
+#thumb-forward: hover {
 	border-left: 1px solid rgba(256, 256, 256, 0.2);
 }
 ul#thumb-list {
@@ -348,12 +343,12 @@ ul#thumb-list li img {
 	transition: all 100ms ease-in-out;
 }
 ul#thumb-list li.current-thumb img,
-ul#thumb-list li:hover img {
+ul#thumb-list li: hover img {
 	opacity: 1;
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	filter: alpha(opacity=100);
 }
-ul#thumb-list li:hover {
+ul#thumb-list li: hover {
 	cursor: pointer;
 }
 /*# sourceMappingURL=data:application/json,%7B%22version%22%3A3%2C%22sources%22%3A%5B%22http%3A%2F%2F0.0.0.0%3A3001%2Fsrc%2Fless%2Fsupersized.shutter.less%22%5D%2C%22names%22%3A%5B%5D%2C%22mappings%22%3A%22%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3B%3BAAemB%3BEAAE%2CcAAA%3BEAAe%2CYAAA%3BEAAa%2CWAAA%3BEAAY%2CWAAA%3BEAAY%2COAAA%3BEAAQ%2CUAAA%3BEAAW%2C2CAAA%3BEAA4C%2CeAAA%3B%3BAAC5H%3BEAAE%2CgBAAA%3BEAAiB%2CYAAA%3BEAAa%2CkBAAA%3BEAAmB%2CgBAAA%3BEAAiB%2CUAAA%3B%3BAAC%2FD%3BEAAE%2CWAAA%3BEAAY%2CWAAA%3BEAAY%2CWAAU%2C8CAAV%3BEAA0D%2C6BAAA%3BEAA2B%2CuBAAA%3BEAAwB%2CiBAAA%3B%3BAACvI%3BEAAE%2CgBAAA%3BEAAiB%2CWAAA%3BEAAY%2CWAAA%3BEAAY%2CeAAc%2C8CAAd%3BEAA8D%2C6BAAA%3BEAA8B%2CkBAAA%3BEAAmB%2CiBAAA%3B%3BAAE5J%3BEAAE%2CYAAA%3BEAAa%2CoBAAA%3B%3BAACd%3BEAAE%2CWAAA%3BEAAY%2CeAAA%3BEAAe%2C4BAAA%3BEAA6B%2CgBAAe%2CsCAAf%3B%3BAACzD%2CYAAM%3BEAAE%2C0BAAA%3BEAA2B%2CeAAA%3B%3BAAEtC%3BAAAY%3BEAAE%2CkBAAA%3BEAAmB%2CYAAA%3BEAAa%2CWAAA%3BEAAY%2CQAAA%3BEAAS%2CiBAAA%3BEAAkB%2CYAAA%3B%3BAACpF%3BEAAE%2CUAAA%3BEAAW%2CgBAAe%2CkBAAf%3B%3BAACb%3BEAAE%2CWAAA%3BEAAY%2CgBAAe%2CqBAAf%3B%3BAACb%2CUAAO%3BAAAY%2CUAAO%3BEAAE%2CiBAAA%3B%3BAAC5B%2CUAAM%3BAAAY%2CUAAM%3BEAAE%2CeAAA%3B%3BAAEpC%2CEAAW%3BEAAE%2CeAAA%3BEAAgB%2CWAAA%3BEAAY%2CkBAAA%3BEAAmB%2CSAAA%3B%3BAAC3D%2CEAAY%2CWAAE%3BEAAE%2CgBAAA%3BEAAiB%2CWAAA%3BEAAY%2CYAAA%3BEAAa%2CWAAA%3BEAAY%2CiBAAA%3B%3BAACrE%2CEAAY%2CWAAE%2CGAAe%2CcAAC%3BAAAI%2CEAAY%2CWAAE%2CGAAe%2CcAAC%2CEAAM%3BEAAE%2C0BAAA%3B%3BAACxE%2CEAAY%2CWAAG%2CGAAC%3BEAAE%2CcAAA%3BEAAe%2CWAAA%3BEAAY%2CYAAA%3BEAAa%2CgBAAe%2CuCAAf%3B%3BAACzD%2CEAAY%2CWAAG%2CGAAC%2CEAAM%3BEAAE%2C4BAAA%3BEAA6B%2CeAAA%3B%3BAAE9C%3BEAAE%2CYAAA%3BEAAa%2CeAAA%3BEAAgB%2C2BAAA%3BEAA4B%2CgBAAe%2CsCAAf%3B%3BAAC1D%2CYAAM%3BEAAE%2C0BAAA%3BEAA2B%2CeAAA%3B%3B%3B%3BAAKrC%3BEAAE%2CUAAA%3BEAAW%2CeAAA%3BEAAgB%2CYAAA%3BEAAa%2COAAA%3BEAAQ%2CWAAA%3BEAAY%2CWAAA%3BEAAY%2CgBAAe%2CoCAAf%3B%3BAAC1E%3BEAAE%2CkBAAA%3BEAAmB%2CWAAA%3BEAAY%2CWAAA%3BEAAY%2CgBAAe%2CmCAAf%3B%3B%3B%3BAAKjD%3BAAAY%3BEAAE%2CUAAA%3BEAAW%2CaAAA%3BEAAc%2CeAAA%3BEAAgB%2CYAAA%3BEAAa%2CYAAA%3BEAAa%2CYAAA%3BEAAa%2CgBAAA%3BEAAiB%2CgBAAA%3BEAAiB%2CsBAAA%3BEAAuB%2CgCAAA%3B%3BAACrJ%3BEAAE%2CWAAA%3B%3BAACF%3BEAAE%2CUAAA%3B%3BAACD%2CUAAG%3BAAAa%2CUAAI%3BEAAE%2CYAAA%3BEAAa%2CYAAA%3B%3BAACpC%2CUAAO%3BAAAY%2CUAAQ%3BEAAE%2CYAAA%3B%3BAAC7B%2CUAAM%3BAAAY%2CUAAO%3BEAAE%2CeAAA%3B%3B%3B%3BAAK5B%3BEAAE%2CeAAA%3BEAAgB%2CUAAA%3BEAAW%2CSAAA%3BEAAU%2COAAA%3BEAAQ%2CoCAAA%3BEAAqC%2CaAAA%3BEAAc%2CWAAA%3BEAAY%2CgBAAA%3BEAAiB%2CkBAAA%3BEAAmB%2CiCAAA%3BEAAmC%2CoCAAA%3BEAAsC%2C4BAAA%3B%3BAAE1N%3BAAAgB%3BEAAE%2CkBAAA%3BEAAmB%2CUAAA%3BEAAW%2CYAAA%3BEAAa%2CaAAA%3BEAAc%2CWAAA%3B%3BAAC1E%3BEAAE%2COAAA%3BEAAQ%2CgBAAgB%2CgDAAhB%3B%3BAACP%3BEAAE%2CQAAA%3BEAAS%2CgBAAe%2CmDAAf%3B%3BAACb%2CWAAM%3BAAAgB%2CcAAM%3BEAAE%2CeAAA%3BEAAgB%2C0CAAA%3B%3BAAC7C%2CWAAM%3BEAAE%2CgDAAA%3B%3BAACL%2CcAAM%3BEAAE%2C%2BCAAA%3B%3BAAGvB%2CEAAW%3BEAAE%2CqBAAA%3BEAAsB%2CgBAAA%3BEAAiB%2CkBAAA%3BEAAmB%2CSAAA%3BEAAU%2CcAAA%3B%3BAAChF%2CEAAY%2CWAAE%3BEAAE%2CgBAAA%3BEAAiB%2CgBAAA%3BEAAiB%2CeAAA%3BEAAgB%2CYAAA%3BEAAa%2CaAAA%3BEAAc%2CgBAAA%3BEAAiB%2CWAAA%3BEAAY%2CSAAA%3B%3BAACzH%2CEAAY%2CWAAG%2CGAAI%3BEAAE%2CYAAA%3BEAAa%2CYAAA%3BEAAa%2CYAAA%3BEAAa%2CYAAY%2CqDAAZ%3BEAAmE%2CyBAAA%3BEAA0B%2CyCAAA%3BEAA2C%2CsCAAA%3BEAAwC%2CoCAAA%3BEAAsC%2CqCAAA%3BEAAuC%2CiCAAA%3B%3BAACzT%2CEAAY%2CWAAE%2CGAAe%2CcAAG%3BAAAI%2CEAAY%2CWAAE%2CGAAO%2CMAAG%3BEAAE%2CUAAA%3BEAAW%2CYAAY%2CsDAAZ%3BEAAoE%2C0BAAA%3B%3BAAC7I%2CEAAY%2CWAAE%2CGAAM%3BEAAE%2CeAAA%22%7D */

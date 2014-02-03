@@ -25,8 +25,12 @@
 /* [Booststrap (Extended) - Primary Button]
 ==================================================*/
 .btn-primary {
-  .button-variant(@secondary-text; @default-accent; @default-accent);
-}
+    .button-variant(@secondary-text; @heading-color; @heading-color);
+    &:hover {
+        background-color: @secondary-text;
+        color: @heading-color;
+    }
+}  
 
 /* [Booststrap (Extended) - Link Button]
 ==================================================*/
@@ -63,5 +67,15 @@
     &:hover {
         background-color: #000000;
         color: @secondary-text;
+    }
+
+    &.dark {
+        background-color: #000000;
+
+        color: @secondary-text;
+        &:hover {
+            background-color: @secondary-text;
+            color: @heading-color;
+        }
     }
 }

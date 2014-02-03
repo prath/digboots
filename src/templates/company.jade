@@ -1,6 +1,6 @@
 //- 
     =====================================================================
-    * Blog Page
+    * Company Page
     * 
     * @author Pratama H. Salahudin <pratama@aestik.com>
     =====================================================================
@@ -8,7 +8,7 @@
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-extends layouts/content-container
+extends layouts/master
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ TITLE - used to define html <title> ]
@@ -22,7 +22,7 @@ block title
 block content
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // [ BLOG POST ]
+    // [ COMPANY POST ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     section.content.flatted-up.flatted-down
 
@@ -37,16 +37,6 @@ block content
                     | We are a <strong>friendly</strong> and <strong>warm</strong> company.
                 p.normal 
                     | We work professionally, we think our partner's business above all else.
-
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ NAV ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        //- nav.gallery.filter.light.centered
-            a(href="") All
-            a(href="") Web Design
-            a(href="") Illustration
-            a(href="") UI Design
-
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ ABOUT POST ]
@@ -85,11 +75,11 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ BANNER ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b1.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+    section.content.invert-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b1.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
         .post.narrow
             h2.centered.appear.move-bottom Work With Us and Let Us Help You.
             p.centered
-                a(href='').btn.btn-primary.btn-lg.btn-cta.appear.move-top
+                a(href='').btn.btn-primary.appear.move-top
                     | Get in Touch
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -131,11 +121,11 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TESTIMONIAL ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b2.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
-        .medium
+    section.content.invert-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b2.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+        .wide
             h2.section.heading What People Say About Us
             blockquote 
-                p
+                p.centered
                     | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
                     cite.name
                         | John William Smith - <strong>Company.co</strong> 
@@ -404,5 +394,6 @@ block content
             h2.section.heading
                 | Want to work with us?
             p.centered
-                | Are you working on something great? We'd love to help make it happen. <a href="">Get in touch</a> now.
-        .separator-2.centered
+                | Are you working on something great? We'd love to help make it happen.
+                a(href='').btn.btn-link.btn-cta.dark.btn-sm
+                        | Get in touch now

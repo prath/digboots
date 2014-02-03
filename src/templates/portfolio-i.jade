@@ -8,7 +8,7 @@
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-extends layouts/content-container
+extends layouts/master
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ TITLE - used to define html <title> ]
@@ -215,5 +215,6 @@ block content
             h2.section.heading
                 | Want to work with us?
             p.centered
-                | Are you working on something great? We'd love to help make it happen. <a href="">Get in touch</a> now.
-        .separator-2.centered
+                | Are you working on something great? We'd love to help make it happen.
+                a(href='').btn.btn-link.btn-cta.dark.btn-sm
+                        | Get in touch now

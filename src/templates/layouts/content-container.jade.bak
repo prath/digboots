@@ -1,0 +1,288 @@
+//- 
+    =====================================================================
+    * Content Container
+    * Extends Master
+    * Extended by Content Page. i.e. Index page
+    * 
+    * @author Pratama H. Salahudin <pratama@aestik.com>
+    =====================================================================
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING MASTER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extends master
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ HERE IS THE CONTENT WILL BE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block page
+    
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ NAVIGATION ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    //- include ../inc/nav
+    .top.container
+    
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ TOP STICKY NAV ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        nav.top.sticky.nav
+            a(href='', data-content='search', data-toggle='tooltip', data-placement="bottom", title='Search').toggle.search.iconic
+                img(src='assets/images/search.png', alt='nav')
+            //- a(href='', data-content='cartbar', data-toggle='tooltip', data-placement="bottom", title='Shopping Cart').toggle.cart.iconic
+                img(src='assets/images/cart.png', alt='nav')
+                span.badge 12
+            a(href='', data-content='sidebar', data-toggle='tooltip', data-placement="bottom", title='Sidebar').toggle.widget.iconic
+                img(src='assets/images/sidebar.png', alt='nav')
+            a(href='', data-content='menu', data-toggle='tooltip', data-placement="bottom", title='Menu').toggle.nav.iconic
+                img(src='assets/images/nav.png', alt='nav')
+
+        //- include ../inc/collapsible-content
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ COLLAPSIBLE NAVBAR ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        nav.right.positioned.navbar.navbar-default(role="navigation")
+            .collapse.navbar-collapse
+                ul.nav.navbar-nav
+                    li.dropdown
+                        a.dropdown-toggle(href='index.html', data-toggle='dropdown', role="button") Home Pages
+                            i.icon-angle-down
+                        ul.dropdown-menu(role="menu")
+                            li(role="presentation")
+                                a(href='index.html', role="menuitem") Home Page 1
+                            li(role="presentation")
+                                a(href='index-i.html', role="menuitem") Home Page 2
+                            li.divider(role="presentation")
+                            li
+                                a(href='index-ii.html', role="menuitem") Home Page 3
+                    li.dropdown
+                        a.dropdown-toggle(href='#', data-toggle='dropdown', role="button") Sample Pages
+                            i.icon-angle-down
+                        ul.dropdown-menu(role="menu")
+                            li(role="presentation")
+                                a(href='company.html', role="menuitem") Company
+                            li(role="presentation")
+                                a(href='about.html', role="menuitem") About Us
+                            li(role="presentation")
+                                a(href='services.html', role="menuitem") Services
+                            li(role="presentation")
+                                a(href='team.html', role="menuitem") Our Team
+                            li(role="presentation")
+                                a(href='vacancy.html', role="menuitem") Vacancy
+                            li(role="presentation")
+                                a(href='404.html', role="menuitem") Error 404
+                            li(role="presentation")
+                                a(href='search.html', role="menuitem") Search
+                            li(role="presentation")
+                                a(href='search-none.html', role="menuitem") Search None
+                    li 
+                        a.dropdown-toggle(href='portfolio.html', data-toggle='dropdown', role="button") Portfolio
+                            i.icon-angle-down
+                        ul.dropdown-menu(role="menu")
+                            li(role="presentation")
+                                a(href='portfolio-i.html', role="menuitem") Portfolio One (Full)
+                            li(role="presentation")
+                                a(href='portfolio-ii.html', role="menuitem") Portfolio Two (Full)
+                            li(role="presentation")
+                                a(href='portfolio-iii.html', role="menuitem") Portfolio Three
+                            li(role="presentation")
+                                a(href='portfolio-iv.html', role="menuitem") Portfolio Four
+                            li(role="presentation")
+                                a(href='single-porto.html', role="menuitem") Single Portfolio One
+                    li 
+                        a.dropdown-toggle(href='#', data-toggle='dropdown', role="button") Blog
+                            i.icon-angle-down
+                        ul.dropdown-menu(role="menu")
+                            li(role="presentation")
+                                a(href='blog.html', role="menuitem") Blog
+                            li(role="presentation")
+                                a(href='single.html', role="menuitem") Single Blog
+                            li(role="presentation")
+                                a(href='tag.html', role="menuitem") Tag Archive
+                            li(role="presentation")
+                                a(href='category.html', role="menuitem") Category Archive
+                            li(role="presentation")
+                                a(href='author.html', role="menuitem") Author Archive
+                    li 
+                        a(href='shortcodes.html') Shortcodes
+                    li 
+                        a(href='contact.html') Contact
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ COLLAPSIBLE SEARCH BOX ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .search.box
+            form(action='', method='', role='form')
+                label.sr-only(for='#searchinput') Email address
+                input#searchinput.searchinput(type='search', placeholder='Type Query Here...')
+                button(type='submit').searchsubmit
+                    i.fa.fa-search
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ COLLAPSIBLE CART ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        aside.right.positioned.cartbar
+            .cart.content 
+            
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET SHOPPING CART ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-woo-cart()
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ LEAD AND LOGO ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    //- include ../inc/masthead
+    header#left
+        .masthead
+            .content
+                h1.sr-only Digboots
+                .logo
+                    a(href="")
+                        img(src="dummy-images/logo.png", alt="")
+                    //- span.tagline
+                        | Boostrap Digital Company
+                p.lead Clarity, Simplicity and Curiousity.
+                p 
+                    | We define every job as <strong>clarity</strong>, <strong>simplicity</strong>&nbsp;and <strong>curiousity</strong>.
+                section.panel.panel-default.widget.widget_social
+                    header.panel-heading
+                        h3.widget.heading Connect With Us
+                    .panel-body
+                        .social.icons
+                            a.social.icon(href='')
+                                .diamond.icon
+                                    i.fa.fa-facebook
+                            a.social.icon(href='')
+                                .diamond.icon    
+                                    i.fa.fa-twitter
+                            a.social.icon(href='')
+                                .diamond.icon
+                                    i.fa.fa-google-plus
+                            a.social.icon(href='')
+                                .diamond.icon
+                                    i.fa.fa-linkedin
+                            a.social.icon(href='')
+                                .diamond.icon
+                                    i.fa.fa-github
+    
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ MAIN CONTENT ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    main#right(role="main")
+        block content
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ COLLAPSIBLE SIDEBAR ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        aside.right.positioned.sidebar
+            .widget.content 
+                //- include ../inc/widget
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET ARCHIVE ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-archive()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET ARCHIVE DROPDOWN ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-archive-dropdown()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET CATEGORIES ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-categories()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET CATEGORIES DROPDOWN ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-categories-dropdown()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET NAV ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-link()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET NAV WITH ICONS ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-link-icons()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET PAGES ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-pages()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET SEARCH ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-search()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET TAGS ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-tags()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET POPULAR POSTS ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-popular-post()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET RECENT POSTS ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-recent-post()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET ABOUT ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-about()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET NEWSLETTER ]       
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-newsletter()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET META ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-meta()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET RECENT COMMENTS ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-recent-comments()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET RSS ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-rss()
+                .separator
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ WIDGET TEXT ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                +widget-text()
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // FOOTER
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        //- include ../inc/footer
+        footer.content.bottom.centered.shrunk-down.shrunk-up
+            .watermark
+                | Copyright <strong>DigBoots</strong>&nbsp;&copy; 2013.

@@ -8,7 +8,7 @@
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-extends layouts/content-container
+extends layouts/master
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ TITLE - used to define html <title> ]
@@ -85,17 +85,17 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TESTIMONIAL ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b2.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
-        .medium
+    section.content.invert-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b2.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+        .wide
             h2.section.heading What People Say About Us
             blockquote 
-                p
+                p.centered
                     | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
                     cite.name
                         | John William Smith - <strong>Company.co</strong> 
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    // [ CLients ]
+    // [ CLIENTS ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     section.content.post.narrow
         h2.section.heading Our Clients &amp; Partners
@@ -224,9 +224,9 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ BANNER ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.w-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b1.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+    section.content.invert-background.shrunk-up.shrunk-down(style='background: url("dummy-images/about/w-b1.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
         .post.narrow
             h2.centered.appear.move-bottom Work With Us and Let Us Help You.
             p.centered
-                a(href='').btn.btn-primary.btn-lg.btn-cta.appear.move-top
+                a(href='').btn.btn-primary.appear.move-top
                     | Get in Touch

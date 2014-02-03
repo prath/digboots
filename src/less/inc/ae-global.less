@@ -160,7 +160,7 @@ small {
     h5, 
     h6,
     .btn {
-        color: darken(@secondary-text, 20%);
+        color: @secondary-text;
     }
     p,
     cite {
@@ -175,7 +175,34 @@ small {
         }
     }
     &.blue {
-        background-color: rgba(13,147,217,0.7);
+        background-color: rgba(13,147,217,0.8);
+        h1,
+        h2,
+        h3,
+        h4,
+        h5, 
+        h6,
+        .btn {
+            color: @secondary-text;
+        }
+        p,
+        cite {
+            color: @secondary-text;
+        }
+        blockquote {
+            border-left-color: lighten(@default-accent, 30%);
+        }
+        .btn-cta {
+            color: @heading-color;
+            &:hover {
+                color: @secondary-text;
+            }
+            &.dark {
+                &:hover {
+                    color: @heading-color;
+                }
+            }
+        }
     }
 
     .breadcrumb {
@@ -187,6 +214,7 @@ small {
 ============================================================*/
 .content {
     .clearfix();
+
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -227,7 +255,7 @@ small {
             margin-left: auto;
             margin-right: auto;
             &:last-child {
-                margin-bottom: 0;
+                // margin-bottom: 0;
             }
             //*-----[Responsive 768++]-----*/
             @media (min-width: @screen-tablet) {
@@ -244,6 +272,85 @@ small {
     .covered {
         background-color: fade(@secondary-text, 50%);
     }
+}
+
+.caret-down {
+    position: relative;
+
+    color: @default-background;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        border-top: 20px solid @default-background;
+        border-top-color: inherit;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        z-index: 1;
+        right: 0;
+        margin: auto;
+        width: 0;
+    }
+}
+
+/* [Inverted Background]
+============================================================*/
+.invert-background {
+    background-color: @secondary-background;
+
+    .section.heading,
+    blockquote p,
+    cite,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+        color: @secondary-text;
+    }
+    .post {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        a {
+            color: @secondary-text;
+        }
+    }
+
+    blockquote {
+        border-left-color: darken(@secondary-text, 20%);
+    }
+    .separator.in-post,
+    .separator {
+        border-color: @secondary-text;
+    }
+    a.btn-cta {
+        color: @heading-color;
+        &:hover {
+            color: @secondary-text;
+        }
+        &.dark {
+            color: @secondary-text;
+            &:hover {
+                color: @heading-color;
+            }
+        }
+    }
+}
+
+.white-background {
+    background-color: @secondary-text;
+}
+
+.no-color {
+    background-color: transparent;
 }
 
 
@@ -326,53 +433,6 @@ small {
     }
 }
 
-/* [Home Testimonial Styles]
-============================================================*/
-.w-background{
-    overflow: hidden;
-    &,
-    .section.heading,
-    blockquote p,
-    cite,
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    a {
-        color: @secondary-text;
-    }
-    .post {
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        a {
-            color: @secondary-text;
-        }
-    }
-
-    blockquote {
-        border-left-color: darken(@secondary-text, 20%);
-    }
-    .separator.in-post,
-    .separator {
-        border-color: @secondary-text;
-    }
-    .btn-cta {
-        background-color: #000000;
-        letter-spacing: 10px;
-        &:hover {
-            background-color: @secondary-text;
-            color: #000000;
-        }
-    }
-}
-
 /* [Home Client List]
 ============================================================*/
 .client.list {
@@ -399,6 +459,13 @@ small {
             width: 48px;
         }
     }
+    &.flexslider {
+        a {
+            img {
+                margin-bottom: 0;
+            }
+        }
+    }
     ul {
         zoom: 1;
         margin: 0;
@@ -416,6 +483,12 @@ small {
             line-height: 0;
             height: 0;
         }
+    }
+    .flex-control-nav {
+        bottom: 0;
+        position: relative;
+
+        margin-top: 20px;
     }
 }
 

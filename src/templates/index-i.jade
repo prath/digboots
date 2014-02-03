@@ -1,0 +1,206 @@
+//- 
+    =====================================================================
+    * Index Page
+    * 
+    * @author Pratama H. Salahudin <pratama@aestik.com>
+    =====================================================================
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extends layouts/master
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ TITLE - used to define html <title> ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block title
+    title DigBoots - Premium Boostrap Theme
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ CONTENT ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block content
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ JUMBOTRON ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.jumbotron(style="background-image: url('dummy-images/hero-image2.jpg');")
+        .container
+            p Case Study
+            h1
+                | Fun Work at <strong>Company.co</strong>
+            p
+                a(href='').btn.btn-primary.btn-lg.btn-cta
+                    | Learn more
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ ABOUT US ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.caret-down.shrunk-down.shrunk-up
+        .narrow.centered
+            h2.appear.move-top
+                | We design something meaningful and enrich human interactions.
+            a(href='').btn.btn-primary.btn-sm.appear.move-bottom
+                | More About Us
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ SERVICES ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.shrunk-up.shrunk-down.white-background(style='background: url("dummy-images/services/cover-2.jpg") no-repeat bottom center; background-size: cover; background-attachment: fixed;')
+        .container.services.wide
+            .row
+                h2.section.heading Our Services
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    //- .diamond.icon.med.centered
+                    i.fa.fa-file-o.fa-3x
+                    h3.related.title.centered Illustration
+                    p
+                        | We transform your wish into clear ideas and hand-sketched illustrations.
+                    a(href='').btn.btn-xs.btn-primary
+                        | learn more
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    //- .diamond.icon.med.centered
+                    i.fa.fa-html5.fa-3x
+                    h3.related.title.centered Web Design
+                    p
+                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                    a(href='').btn.btn-xs.btn-primary
+                        | learn more
+
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    //- .diamond.icon.med.centered
+                    i.fa.fa-mobile.fa-3x
+                    h3.related.title.centered App Design
+                    p
+                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                    a(href='').btn.btn-xs.btn-primary
+                        | learn more
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ PORTFOLIO ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.portfolio.gallery
+        header
+            h2.gallery.post.title
+                a(href='') Recent Works
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ PORTFOLIO ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.gallery.item.one-half.appear.fade-in
+            header.caption
+                h3.title
+                    a(href="") Cheers!
+                    span.separator
+                    span.subtitle Personal Project
+            img(src='dummy-images/portfolio/thumbs/20.jpg', alt='portfolio 1')
+            a(href="").goto 
+                i.fa.fa-link
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ PORTFOLIO ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.gallery.item.one-half.appear.fade-in
+            header.caption
+                h3.title
+                    a(href="") Little Flash
+                    span.separator
+                    span.subtitle Personal Project
+            img(src='dummy-images/portfolio/thumbs/17.jpg', alt='portfolio 1')
+            a(href="").goto 
+                i.fa.fa-link
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ TESTIMONIAL ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.wide.shrunk-down.shrunk-up
+        h2.section.heading What People Say About Us
+        blockquote
+            p.centered 
+                | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
+                cite.name
+                    | John William Smith - <strong>Company.co</strong> 
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ WHO WE ARE ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section(style='background: url("dummy-images/team/cover.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+            .content
+                h2.section.heading.appear.move-top Who We Are
+                article.narrow
+                    h2.centered.appear.move-bottom A Small, Growing and Passionate Company Who Dreams Big.
+                    p.centered
+                        a(href='').btn.btn-primary.btn-sm.appear.fade-in
+                            | Meet The Team
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ ClIENTS ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.white-background.shrunk-up.shrunk-down
+        h2.section.heading Our Clients
+        .client.list.centered.flexslider.appear.fade-in
+            ul.client-slides
+                li
+                    a(href="")
+                        img(src="dummy-images/clients/1.png", alt="1")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/2.png", alt="2")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/3.png", alt="3")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/4.png", alt="4")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/5.png", alt="5")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/6.png", alt="6")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/7.png", alt="7")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/1.png", alt="8")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/2.png", alt="9")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/3.png", alt="10")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/4.png", alt="11")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/5.png", alt="12")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/6.png", alt="13")
+                li 
+                    a(href="")
+                        img(src="dummy-images/clients/7.png", alt="14")
+                            
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ CONTACT ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.shrunk-up.shrunk-down
+        .post.narrow
+            h2.section.heading
+                | Want to work with us?
+            p.centered
+                | Are you working on something great? We'd love to help make it happen.
+                a(href='').btn.btn-link.btn-cta.dark.btn-sm
+                        | Get in touch now

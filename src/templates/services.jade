@@ -8,7 +8,7 @@
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-extends layouts/content-container
+extends layouts/master
 
 //-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //- [ TITLE - used to define html <title> ]
@@ -141,8 +141,6 @@ block content
                         h3.related.title.centered High Quality Deliverables
                         p
                             | We transform your wish into clear ideas and hand-sketched illustrations.
-                        a(href='').btn.btn-link.btn-sm
-                            | learn more
 
                     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                     // [ SERVICES ITEM ]
@@ -153,8 +151,6 @@ block content
                         h3.related.title.centered Intensive Consultations
                         p
                             | High quality pixel-perfect hand-coded web page design will be delivered to you.
-                        a(href='').btn.btn-link.btn-sm
-                            | learn more
 
                     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                     // [ SERVICES ITEM ]
@@ -165,8 +161,6 @@ block content
                         h3.related.title.centered Great Project Management
                         p
                             | Pixel-perfect app design is one of our obsession, we always keep that in mind.
-                        a(href='').btn.btn-link.btn-sm
-                            | learn more
                     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                     // [ SERVICES ITEM ]
                     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -176,8 +170,6 @@ block content
                         h3.related.title.centered Well-illustrated Process
                         p
                             | We transform your wish into clear ideas and hand-sketched illustrations.
-                        a(href='').btn.btn-link.btn-sm
-                            | learn more
 
                     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                     // [ SERVICES ITEM ]
@@ -188,8 +180,6 @@ block content
                         h3.related.title.centered On-time Scheduling 
                         p
                             | High quality pixel-perfect hand-coded web page design will be delivered to you.
-                        a(href='').btn.btn-link.btn-sm
-                            | learn more
 
                     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                     // [ SERVICES ITEM ]
@@ -200,8 +190,6 @@ block content
                         h3.related.title.centered Fast Execution
                         p
                             | Pixel-perfect app design is one of our obsession, we always keep that in mind.
-                        a(href='').btn.btn-link.btn-sm
-                            | learn more
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ CONTACT ]
@@ -211,5 +199,6 @@ block content
             h2.section.heading
                 | Want to work with us?
             p.centered
-                | Are you working on something great? We'd love to help make it happen. <a href="">Get in touch</a> now.
-        .separator-2.centered
+                | Are you working on something great? We'd love to help make it happen.
+                a(href='').btn.btn-link.btn-cta.dark.btn-sm
+                        | Get in touch now

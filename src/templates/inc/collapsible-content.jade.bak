@@ -1,4 +1,4 @@
-include ../mixins/widget
+//- include ../mixins/widget
 //- 
     =====================================================================
     * Collapsible Contents Partials
@@ -19,10 +19,10 @@ nav.right.positioned.navbar.navbar-default(role="navigation")
                     li(role="presentation")
                         a(href='index.html', role="menuitem") Home Page 1
                     li(role="presentation")
-                        a(href='index.html', role="menuitem") Home Page 2
+                        a(href='index-i.html', role="menuitem") Home Page 2
                     li.divider(role="presentation")
                     li
-                        a(href='index.html', role="menuitem") Home Page 3
+                        a(href='index-ii.html', role="menuitem") Home Page 3
             li.dropdown
                 a.dropdown-toggle(href='#', data-toggle='dropdown', role="button") Sample Pages
                     i.icon-angle-down
@@ -36,15 +36,13 @@ nav.right.positioned.navbar.navbar-default(role="navigation")
                     li(role="presentation")
                         a(href='team.html', role="menuitem") Our Team
                     li(role="presentation")
-                        a(href='faq.html', role="menuitem") FAQ
-                    li(role="presentation")
-                        a(href='coming-soon.html', role="menuitem") Coming Soon Page
+                        a(href='vacancy.html', role="menuitem") Vacancy
                     li(role="presentation")
                         a(href='404.html', role="menuitem") Error 404
                     li(role="presentation")
-                        a(href='vacancy.html', role="menuitem") Vacancy
+                        a(href='search.html', role="menuitem") Search
                     li(role="presentation")
-                        a(href='pricing.html', role="menuitem") Pricing Tables
+                        a(href='search-none.html', role="menuitem") Search None
             li 
                 a.dropdown-toggle(href='portfolio.html', data-toggle='dropdown', role="button") Portfolio
                     i.icon-angle-down
@@ -67,6 +65,12 @@ nav.right.positioned.navbar.navbar-default(role="navigation")
                         a(href='blog.html', role="menuitem") Blog
                     li(role="presentation")
                         a(href='single.html', role="menuitem") Single Blog
+                    li(role="presentation")
+                        a(href='tag.html', role="menuitem") Tag Archive
+                    li(role="presentation")
+                        a(href='category.html', role="menuitem") Category Archive
+                    li(role="presentation")
+                        a(href='author.html', role="menuitem") Author Archive
             li 
                 a(href='shortcodes.html') Shortcodes
             li 

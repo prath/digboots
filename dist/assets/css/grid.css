@@ -57,7 +57,7 @@ Text Domain: DigBoots WordPress
 }
 /*-----[Wider Desktop Screen]-----*/
 
-@media (min-width:1400px) {
+@media (min-width: 1400px) {
 	.container {
 		max-width: 1370px;
 	}
@@ -221,7 +221,7 @@ Text Domain: DigBoots WordPress
 }
 /*-----[Widest Desktop Screen]-----*/
 
-@media (min-width:1900px) {
+@media (min-width: 1900px) {
 	.container {
 		max-width: 1870px;
 	}
