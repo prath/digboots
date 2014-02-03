@@ -18,6 +18,15 @@ $(document).ready(function () {
     });
 
     /**
+     * Map Container Resize
+     */
+    $('#map-canvas').css('height', $wh);
+    $(window).on('resize', function () {
+        var $wh = $(window).outerHeight();
+        $('#map-canvas').css('height', $wh);
+    });
+
+    /**
      * Toggle Collapsible Content.
      * searchbox, navbar, cartbar, and sidebar expand-collapse
      */
@@ -80,5 +89,28 @@ $(document).ready(function () {
         start: function(slider){
         }
     });
+
+    /**
+     * Google Map
+     */
+    var mapOptions = {
+        zoom: 15,
+        scrollwheel: false,
+        center: new google.maps.LatLng(40.64432, -74.01107),
+        // zoomControl: true,
+        zoomControlOptions: {
+            style: google.maps.ZoomControlStyle.SMALL,
+            position: google.maps.ControlPosition.LEFT_TOP
+        },
+        // scaleControl: false,
+        scaleControlOptions: {
+            position: google.maps.ControlPosition.BOTTOM_LEFT
+        },
+        streetViewControl: false,
+        panControl: false,
+        mapTypeControl: false,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
     
 });

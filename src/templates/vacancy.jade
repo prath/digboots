@@ -1,0 +1,209 @@
+//- 
+    =====================================================================
+    * Blog Page
+    * 
+    * @author Pratama H. Salahudin <pratama@aestik.com>
+    =====================================================================
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extends layouts/content-container
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ TITLE - used to define html <title> ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block title
+    title Vacancy Page - Premium Boostrap Theme
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ CONTENT ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block content
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ BLOG POST ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.flatted-up.flatted-down
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ COVER & TITLE ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .post.jumbotron(style="background-image: url('dummy-images/vacancy/cover.jpg');")
+            //- .cover.overlay.blue
+
+            .container
+                h1
+                    | Join Our <strong>Awesome</strong> Team. 
+                p.normal 
+                    | We have prepared an empty space in the best environtment for you. Work with us.
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ NAV ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        nav.gallery.filter.light.centered
+            a(href="") Web Developer
+            a(href="") Web Designer
+            a(href="") iOS Developer
+            a(href="") UX Engineer
+
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ LEAD ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .content.post.narrow.shrunk-down
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ POST CONTENT ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            p.lead.centered 
+                | We are a <strong>friendly, warm and welcoming team.</strong> Our team has been working together for the past 10 years, many come and go but we always been a solid team.
+            br
+            .centered
+                | See available positions.
+            .diamond.icon.centered
+                i.fa.fa-angle-double-down
+
+            .separator-2
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ VACANCY ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.content.post.narrow.shrunk-down.shrunk-up  
+            h2.centered Web Developer
+            hr
+            p.centered.small 
+                | <strong>Mid-Level</strong>
+            p
+                | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+            h4.centered You are:
+            p
+                ul
+                    li Strong skills in HTML5 and CSS.
+                    li Strong understanding of LESS and SCSS.
+                    li Strong skills in Javascript, with experience in jQuery.
+                    li Experience with CSS frameworks, and a willingness to use our own (https://github.com/agency/base).
+                    li A love for great design, interfaces that work, and a passion for quality.
+
+            h4.centered The Work:
+            p
+                ul
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit dapibus.
+                    li Duis congue semper ligula eu venenatis. Sed mattis ornare odio ac eleifend.
+                    li Nunc sollicitudin Sed mattis ornare odio ac eleifend.
+            h4.centered Compensation:
+            p
+                ul
+                    li Sed mattis ornare odio ac eleifend.
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit dapibud.
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit mattis ornare odio ac eleifend.
+            .separator-2
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ VACANCY ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.content.post.narrow.shrunk-down.shrunk-up  
+            h2.centered Web Designer
+            hr
+            p.centered.small 
+                | <strong>Mid-Level</strong>
+            p
+                | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+            h4.centered You are:
+            p
+                ul
+                    li Strong skills in HTML5 and CSS.
+                    li Strong understanding of LESS and SCSS.
+                    li Strong skills in Javascript, with experience in jQuery.
+                    li Experience with CSS frameworks, and a willingness to use our own (https://github.com/agency/base).
+                    li A love for great design, interfaces that work, and a passion for quality.
+
+            h4.centered The Work:
+            p
+                ul
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit dapibus.
+                    li Duis congue semper ligula eu venenatis. Sed mattis ornare odio ac eleifend.
+                    li Nunc sollicitudin Sed mattis ornare odio ac eleifend.
+            h4.centered Compensation:
+            p
+                ul
+                    li Sed mattis ornare odio ac eleifend.
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit dapibud.
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit mattis ornare odio ac eleifend.
+            .separator-2
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ VACANCY ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.content.post.narrow.shrunk-down.shrunk-up  
+            h2.centered iOS Developer
+            hr
+            p.centered.small 
+                | <strong>Mid-Level</strong>
+            p
+                | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+            h4.centered You are:
+            p
+                ul
+                    li Strong skills in HTML5 and CSS.
+                    li Strong understanding of LESS and SCSS.
+                    li Strong skills in Javascript, with experience in jQuery.
+                    li Experience with CSS frameworks, and a willingness to use our own (https://github.com/agency/base).
+                    li A love for great design, interfaces that work, and a passion for quality.
+
+            h4.centered The Work:
+            p
+                ul
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit dapibus.
+                    li Duis congue semper ligula eu venenatis. Sed mattis ornare odio ac eleifend.
+                    li Nunc sollicitudin Sed mattis ornare odio ac eleifend.
+            h4.centered Compensation:
+            p
+                ul
+                    li Sed mattis ornare odio ac eleifend.
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit dapibud.
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit mattis ornare odio ac eleifend.
+            .separator-2
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ VACANCY ITEM ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.content.post.narrow.shrunk-down.shrunk-up  
+            h2.centered UX Engineer
+            hr
+            p.centered.small 
+                | <strong>Mid-Level</strong>
+            p
+                | Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia
+            h4.centered You are:
+            p
+                ul
+                    li Strong skills in HTML5 and CSS.
+                    li Strong understanding of LESS and SCSS.
+                    li Strong skills in Javascript, with experience in jQuery.
+                    li Experience with CSS frameworks, and a willingness to use our own (https://github.com/agency/base).
+                    li A love for great design, interfaces that work, and a passion for quality.
+
+            h4.centered The Work:
+            p
+                ul
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit dapibus.
+                    li Duis congue semper ligula eu venenatis. Sed mattis ornare odio ac eleifend.
+                    li Nunc sollicitudin Sed mattis ornare odio ac eleifend.
+            h4.centered Compensation:
+            p
+                ul
+                    li Sed mattis ornare odio ac eleifend.
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit dapibud.
+                    li Nunc sollicitudin libero adipiscing sapien porta, vitae luctus velit mattis ornare odio ac eleifend.
+            .separator-2
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ CONTACT ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.shrunk-up.shrunk-down
+        .post.narrow
+            h2.section.heading
+                | Interested?
+            p.centered
+                | We’d love to hear from you! Please send your CV and some examples of your best work to <a href>jobs@digboots.com</a>, using the subject line: Web Developer/Designer application.
+        .separator-2.centered

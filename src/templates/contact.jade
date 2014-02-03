@@ -1,0 +1,83 @@
+//- 
+    =====================================================================
+    * Blog Page
+    * 
+    * @author Pratama H. Salahudin <pratama@aestik.com>
+    =====================================================================
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extends layouts/content-container
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ TITLE - used to define html <title> ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block title
+    title Contact Page - Premium Boostrap Theme
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ CONTENT ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block content
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ BLOG POST ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    section.content.flatted-up.flatted-down
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ COVER & TITLE ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        h1.sr-only Contact
+        .post#map-canvas.google-map
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ LEAD ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        article.content.post.narrow
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ POST CONTENT ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            h2.centered Get In Touch
+            p.lead.centered 
+                | If you're a business, a non-profit or a social enterprise with creative projects in mind, we'd love to hear from you, get in touch with us.
+            .separator-2
+            h3.section.heading Contact us now
+            .row 
+                .col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12
+                    address
+                        strong Digboots, inc.
+                        br
+                        small 795 Folsom Ave, Suite 600
+                        br
+                        small San Francisco, CA 94107
+                        br 
+                        small USA
+
+                    address.small
+                        | Email:&nbsp;
+                        a(href="mailto:hello@digboots.com") hello@digboots.com
+                        br
+                        | Twitter:&nbsp;
+                        a(href="http://twitter.com") @digboots
+                        br
+                        abbr(title="Phone") Ph:&nbsp;
+                        a(href="tel:1234567789") +123481762347
+                    
+                .col-ul-8.col-xl-8.col-lg-8.col-md-8.col-sm-12.col-xs-12
+                    form(action='', role='form')
+                        .form-group
+                            label.sr-only(for='contactname')
+                            input.form-control(type='text', id='contactname', placeholder='Name')
+                        .form-group
+                            label.sr-only(for='contactemail')
+                            input.form-control(type='text', id='contactemail', placeholder='Email')
+                        .form-group
+                            label.sr-only(for='contactweb')
+                            input.form-control(type='text', id='contactweb', placeholder='Website')
+                        .form-group
+                            label.sr-only(for='contactmsg')
+                            textarea.form-control(id='contactmsg', cols="50", rows="10", placeholder='Message')
+                        button.btn.btn-primary.pull-right
+                            | Send Message 

@@ -21,7 +21,7 @@ img {
  * uses this classes
 ==================================================*/
 .gallery,
-.photos {
+.gallery-boxed {
     .clearfix();
     background: @secondary-background;
 
@@ -157,33 +157,45 @@ img {
         }
 
         &.one-half {
-            max-height: 390px;
+            height: auto;
             width: 100%;
 
             //*-----[Responsive 600++]-----*/
             @media (min-width: @screen-lg-phone) {
-                height: 340px;
                 width: 50%;
             }
 
             //*-----[Responsive 768++]-----*/
             @media (min-width: @screen-tablet) {
-                height: 340px;
                 width: 50%;
             }
         }
 
         &.one-third {
-            height: 240px;
+            height: auto;
             width: 50%;
 
             //*-----[Responsive 600++]-----*/
             @media (min-width: @screen-tablet) {
-                height: 220px;
                 width: 33.33%;
                 &:nth-child(3n+1) {
                     width: 33.34%;
                 }
+            }
+            .caption {
+                .separator {
+                    margin: 10px auto;
+                }
+            }
+        }
+
+        &.one-fourth {
+            height: auto;
+            width: 50%;
+
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-tablet) {
+                width: 25%;
             }
             .caption {
                 .separator {
@@ -288,7 +300,7 @@ img {
     }
 }
 
-.photos {
+.gallery-boxed {
     background: transparent;
     &.item {
         &.one-half {
