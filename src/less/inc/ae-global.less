@@ -296,6 +296,20 @@ small {
     &.caret-white {
         color: @secondary-text;
     }
+
+    &.caret-blue {
+        color: @default-accent;
+    }
+
+    &.caret-invert {
+        color: @secondary-background;
+    }
+
+    p, 
+    i, 
+    h1 {
+        color: @body-text-color;
+    }
 }
 
 /* [Inverted Background]
@@ -313,7 +327,9 @@ small {
     h4,
     h5,
     h6,
-    a {
+    a,
+    i,
+    .diamond.icon i {
         color: @secondary-text;
     }
     .post {
@@ -332,7 +348,8 @@ small {
         border-left-color: darken(@secondary-text, 20%);
     }
     .separator.in-post,
-    .separator {
+    .separator,
+    .diamond.icon {
         border-color: @secondary-text;
     }
     a.btn-cta {
@@ -345,6 +362,16 @@ small {
             &:hover {
                 color: @heading-color;
             }
+        }
+    }
+    &.accent {
+        background-color: @default-accent;
+        i,
+        .diamond.icon i {
+            color: @secondary-text;
+        }
+        .diamond.icon {
+            border-color: @secondary-text;
         }
     }
 }

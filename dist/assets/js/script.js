@@ -20,11 +20,13 @@ $(document).ready(function() {
 	/**
 	 * Map Container Resize
 	 */
-	$('#map-canvas').css('height', $wh);
-	$(window).on('resize', function() {
-		var $wh = $(window).outerHeight();
+	if ($('#map-canvas').length) {
 		$('#map-canvas').css('height', $wh);
-	});
+		$(window).on('resize', function() {
+			var $wh = $(window).outerHeight();
+			$('#map-canvas').css('height', $wh);
+		});
+	}
 
 	/**
 	 * Toggle Collapsible Content.
@@ -58,7 +60,9 @@ $(document).ready(function() {
 	/**
 	 * FitVids
 	 */
-	$(".fitvids").fitVids();
+	if ($('.fitvids').length) {
+		$(".fitvids").fitVids();
+	}
 
 	/**
 	 * Appear
@@ -78,38 +82,59 @@ $(document).ready(function() {
 	/**
 	 * FLexislider
 	 */
-	$('.flexslider').flexslider({
-		animation: "slide",
-		animationLoop: false,
-		itemWidth: 88,
-		itemMargin: 0,
-		pausePlay: false,
-		selector: ".client-slides > li",
-		directionNav: false,
-		start: function(slider) {}
-	});
+	if ($('.flexslider').length) {
+		$('.flexslider').flexslider({
+			animation: "slide",
+			animationLoop: false,
+			itemWidth: 88,
+			itemMargin: 0,
+			pausePlay: false,
+			selector: ".client-slides > li",
+			directionNav: false,
+			start: function(slider) {}
+		});
+	}
+
+	/**
+	 * Smooth Scroll
+	 */
+	if ($('.scroll-to').length) {
+		$('.scroll-to ul li a').on('click', function(e) {
+			e.preventDefault();
+			var link = this;
+			console.log(link.hash);
+			$.smoothScroll({
+				offset: -40,
+				scrollTarget: link.hash
+			});
+			$(this).parent().addClass('active');
+			$(this).parent().siblings('li').removeClass('active');
+		});
+	}
 
 	/**
 	 * Google Map
 	 */
-	var mapOptions = {
-		zoom: 15,
-		scrollwheel: false,
-		center: new google.maps.LatLng(40.64432, -74.01107),
-		// zoomControl: true,
-		zoomControlOptions: {
-			style: google.maps.ZoomControlStyle.SMALL,
-			position: google.maps.ControlPosition.LEFT_TOP
-		},
-		// scaleControl: false,
-		scaleControlOptions: {
-			position: google.maps.ControlPosition.BOTTOM_LEFT
-		},
-		streetViewControl: false,
-		panControl: false,
-		mapTypeControl: false,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
+	if ($('#map-canvas').length) {
+		var mapOptions = {
+			zoom: 15,
+			scrollwheel: false,
+			center: new google.maps.LatLng(40.64432, -74.01107),
+			// zoomControl: true,
+			zoomControlOptions: {
+				style: google.maps.ZoomControlStyle.SMALL,
+				position: google.maps.ControlPosition.LEFT_TOP
+			},
+			// scaleControl: false,
+			scaleControlOptions: {
+				position: google.maps.ControlPosition.BOTTOM_LEFT
+			},
+			streetViewControl: false,
+			panControl: false,
+			mapTypeControl: false,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		}
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 	}
-	var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
 
 });
