@@ -112,6 +112,7 @@
 
     position: fixed;
     overflow-y: auto;
+    z-index: 2;
 
     padding-bottom: 50px;
     padding-top: 50px;
@@ -121,12 +122,12 @@
         right: -25%;
     }
 
-    &.cartbar {
-        width: 25%;
-        right: -25%;
+    // &.cartbar {
+    //     width: 25%;
+    //     right: -25%;
 
-        transition: all .2s ease;
-    }
+    //     transition: all .2s ease;
+    // }
 
     &.sidebar {
         width: 25%;
@@ -167,21 +168,21 @@
  * sidebar nav
 ==================================================*/
 
-/*-----[Toggle Shopping Cart]-----*/
-.togglecartbar {
-    .right.positioned {
-        &.cartbar {
-            right: 0;
-            z-index: 1000;
-        }
-    }
-    .top.nav {
-        right: 25%;
-        .cart.iconic {
-            .opacity(0.3, 30);
-        }
-    }
-}
+//*-----[Toggle Shopping Cart]-----*/
+// .togglecartbar {
+//     .right.positioned {
+//         &.cartbar {
+//             right: 0;
+//             z-index: 1000;
+//         }
+//     }
+//     .top.nav {
+//         right: 25%;
+//         .cart.iconic {
+//             .opacity(0.3, 30);
+//         }
+//     }
+// }
 
 /*-----[Toggle Sidebar Widget]-----*/
 .togglesidebar {
@@ -231,7 +232,7 @@
 
 /*-----[Inject Toggle Class into Body to be used in js]-----*/
 body {
-    &.togglecartbar,
+    // &.togglecartbar,
     &.togglemenu,
     &.togglesidebar {
         height: 100%;
@@ -274,6 +275,7 @@ body {
 
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
+        background-color: @default-accent;
         background-color: fade(@default-accent, 30%);
         width: auto;
 
@@ -307,16 +309,20 @@ body {
         //*-----[Responsive 600++]-----*/
         @media (min-width: @screen-lg-phone) {
         }
-        &.cart {
-            background-color: fade(darken(@default-accent, 30%), 20%);
-        }
+        // &.cart {
+        //     background-color: @default-accent;
+        //     background-color: fade(darken(@default-accent, 30%), 20%);
+        // }
         &.search {
+            background-color: @default-accent;
             background-color: fade(@default-accent, 30%);
         }
         &.nav {
+            background-color: @default-accent;
             background-color: fade(darken(@default-accent, 30%), 60%);
         }
         &.widget {
+            background-color: @default-accent;
             background-color: fade(darken(@default-accent, 30%), 40%);
         }
     }
@@ -455,15 +461,15 @@ body {
     }
 }
 
-/* [Cart Sidebar Content]
-==================================================*/
-.cart {
-    &.content {
-        padding: 0 50px 0 60px;
+//* [Cart Sidebar Content]
+//==================================================*/
+// .cart {
+//     &.content {
+//         padding: 0 50px 0 60px;
 
-        font-size: @body-fz-xs;
-    }
-}
+//         font-size: @body-fz-xs;
+//     }
+// }
 
 /* [Inner Page Nav]
 ==================================================*/

@@ -70,11 +70,11 @@ small {
     font-size: @body-fz-df;
 }
 
-/* [Global Wrapper]
-============================================================*/
-#wrapper {
-    .clearfix();
-}
+//* [Global Wrapper]
+//============================================================*/
+// #wrapper {
+//     .clearfix();
+// }
 
 /* [Global Container]
 ============================================================*/
@@ -93,7 +93,7 @@ small {
 /* [Left Side Container]
 ============================================================*/
 
-#left {
+.left {
     background-color: @secondary-background;
     
     z-index: 2;
@@ -127,7 +127,7 @@ small {
 
 /* [Right Side Container]
 ============================================================*/
-#right {
+.right {
     width: 100%;
     margin-left: 0;
     z-index: 1;
@@ -140,75 +140,75 @@ small {
     }
 }
 
-/* [Blue-ish Cover Overlay]
- -
- * used for covering images/content with 
- * transparent blue cover
-============================================================*/
-.cover.overlay {
-    background-color: rgba(0,0,0,0.4);
+//* [Blue-ish Cover Overlay]
+//  -
+//  * used for covering images/content with 
+//  * transparent blue cover
+// ============================================================*/
+// .cover.overlay {
+//     background-color: rgba(0,0,0,0.4);
 
-    height: 100%;
-    width: auto;
-    &.lighter {
-        background-color: rgba(13,147,217,0.3);
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5, 
-    h6,
-    .btn {
-        color: @secondary-text;
-    }
-    p,
-    cite {
-        color: @secondary-text;
-    }
-    blockquote {
-        border-left-color: lighten(@default-accent, 30%);
-    }
-    .btn-cta {
-        &:hover {
-            color: @secondary-text;
-        }
-    }
-    &.blue {
-        background-color: rgba(13,147,217,0.8);
-        h1,
-        h2,
-        h3,
-        h4,
-        h5, 
-        h6,
-        .btn {
-            color: @secondary-text;
-        }
-        p,
-        cite {
-            color: @secondary-text;
-        }
-        blockquote {
-            border-left-color: lighten(@default-accent, 30%);
-        }
-        .btn-cta {
-            color: @heading-color;
-            &:hover {
-                color: @secondary-text;
-            }
-            &.dark {
-                &:hover {
-                    color: @heading-color;
-                }
-            }
-        }
-    }
+//     height: 100%;
+//     width: auto;
+//     &.lighter {
+//         background-color: rgba(13,147,217,0.3);
+//     }
+//     h1,
+//     h2,
+//     h3,
+//     h4,
+//     h5, 
+//     h6,
+//     .btn {
+//         color: @secondary-text;
+//     }
+//     p,
+//     cite {
+//         color: @secondary-text;
+//     }
+//     blockquote {
+//         border-left-color: lighten(@default-accent, 30%);
+//     }
+//     .btn-cta {
+//         &:hover {
+//             color: @secondary-text;
+//         }
+//     }
+//     &.blue {
+//         background-color: rgba(13,147,217,0.8);
+//         h1,
+//         h2,
+//         h3,
+//         h4,
+//         h5, 
+//         h6,
+//         .btn {
+//             color: @secondary-text;
+//         }
+//         p,
+//         cite {
+//             color: @secondary-text;
+//         }
+//         blockquote {
+//             border-left-color: lighten(@default-accent, 30%);
+//         }
+//         .btn-cta {
+//             color: @heading-color;
+//             &:hover {
+//                 color: @secondary-text;
+//             }
+//             &.dark {
+//                 &:hover {
+//                     color: @heading-color;
+//                 }
+//             }
+//         }
+//     }
 
-    .breadcrumb {
-        margin-top: 0;
-    }
-}
+//     .breadcrumb {
+//         margin-top: 0;
+//     }
+// }
 
 /* [Global Content Styles]
 ============================================================*/
@@ -270,6 +270,7 @@ small {
     }
     &.covered,
     .covered {
+        background-color: @secondary-text;
         background-color: fade(@secondary-text, 50%);
     }
 }
@@ -317,28 +318,17 @@ small {
 .invert-background {
     background-color: @secondary-background;
 
-    .section.heading,
     blockquote p,
     cite,
     p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
     a,
     i,
-    .diamond.icon i {
+    .diamond.icon i,
+    .heading {
         color: @secondary-text;
     }
     .post {
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
+        .heading,
         a {
             color: @secondary-text;
         }

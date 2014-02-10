@@ -8,38 +8,38 @@
 // * @author Pratama H. Salahudin <pratama@aestik.com>
 // -----------------------------------------------------------------
 
-/* [Booststrap (Extended) - Breadcrumbs]
-============================================================*/
-.breadcrumb {
-    background-color: transparent;
+//* [Booststrap (Extended) - Breadcrumbs]
+//============================================================*/
+// .breadcrumb {
+//     background-color: transparent;
 
-    padding: 0;
-    margin-bottom: 30px;
-    margin-top: 10px;
+//     padding: 0;
+//     margin-bottom: 30px;
+//     margin-top: 10px;
 
-    font-size: @body-fz-sm;
-    text-align: center;
+//     font-size: @body-fz-sm;
+//     text-align: center;
     
-    border-radius: 0;
-    > li {
-        display: inline-block;
-        &+li:before {
-            content: "/\00a0"; // Unicode space added since inline-block means non-collapsing white-space
-            padding: 0 5px;
-            color: @breadcrumb-color;
-        }
-    }
-    > .active {
-        color: @muted-text-color;
-        a,
-        a:hover,
-        a:focus,
-        a:visited,
-        a:active, {
-             color: @muted-text-color;
-        }
-    }
-}
+//     border-radius: 0;
+//     > li {
+//         display: inline-block;
+//         &+li:before {
+//             content: "/\00a0"; // Unicode space added since inline-block means non-collapsing white-space
+//             padding: 0 5px;
+//             color: @breadcrumb-color;
+//         }
+//     }
+//     > .active {
+//         color: @muted-text-color;
+//         a,
+//         a:hover,
+//         a:focus,
+//         a:visited,
+//         a:active, {
+//              color: @muted-text-color;
+//         }
+//     }
+// }
 
 /* [Post Classes]
 ============================================================*/
@@ -62,6 +62,7 @@
     }
 
     blockquote {
+        background-color: @secondary-text;
         background-color: fade(@secondary-text, 50%);
         margin-left: -50px;
         p {
@@ -268,6 +269,7 @@ article .small {
 /*-----[Post Format aside]-----*/
 .format-aside {
     .entry-content {
+        background-color: @secondary-text;
         background-color: fade(@secondary-text, 50%);
         border-left: 1px solid @default-accent;
         padding: 20px 20px 20px 50px;
@@ -282,9 +284,11 @@ article .small {
             margin-bottom: 0;
             padding: 10px 20px;
             &:nth-child(odd) {
+                background-color: @secondary-text;
                 background-color: fade(@secondary-text, 50%);
             }
             &:nth-child(even) {
+                background-color: @secondary-text;
                 background-color: fade(@secondary-text, 30%);
             }
             &:last-child {

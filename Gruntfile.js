@@ -13,6 +13,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-jade');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-csslint');
 	grunt.loadNpmTasks('grunt-open');
 	grunt.loadNpmTasks('grunt-dom-munger');
 	grunt.loadNpmTasks('grunt-autoprefixer');
@@ -94,7 +95,7 @@ module.exports = function(grunt) {
 		autoprefixer: {
 			dist: {
 				options: {
-					browsers: ['last 4 version', '> 1%', 'ie 8', 'ie 7']
+					browsers: ['last 8 version', '> 1%', 'ie 8', 'ie 7']
 				},
 				files: [{
 					expand: true,
@@ -315,6 +316,21 @@ module.exports = function(grunt) {
 		},
 
 		/**
+		 * Lint CSS
+		 *
+		 * @type {Object}
+		 */
+		
+		csslint: {
+			lint: {
+				options: {
+					csslintrc: '.csslintrc'
+				},
+				src: ['dist/assets/css/digboots.css']
+			}
+		},
+
+		/**
 		 * watch and guard tasks
 		 *
 		 * @type {Object}
@@ -396,4 +412,5 @@ module.exports = function(grunt) {
 	 */
 
 	grunt.registerTask('beautify', ['jsbeautifier']);
+	grunt.registerTask('cl', ['csslint']);
 };

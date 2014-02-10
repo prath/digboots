@@ -340,6 +340,7 @@ ul#thumb-list li img {
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
 	filter: alpha(opacity=60);
 	-webkit-transition: all 100ms ease-in-out;
+	-o-transition: all 100ms ease-in-out;
 	transition: all 100ms ease-in-out;
 }
 ul#thumb-list li.current-thumb img,

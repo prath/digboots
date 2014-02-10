@@ -20,20 +20,6 @@
 
     border-radius: 0;
     box-shadow: none;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-        font-size: @body-fz-md;
-        font-weight: 600;
-        letter-spacing: 0;
-        line-height: @line-height-med;
-    }
 }
 /*-----[Panel Default]-----*/
 .panel-default {
@@ -54,12 +40,6 @@
     padding: 0;
 
     border-radius: 0;
-    > h1,
-    > h2,
-    > h3,
-    > h4,
-    > h5,
-    > h6,
     > .widget.heading {
         margin-bottom: 20px;
         margin-top: 10px;
@@ -199,136 +179,136 @@
     }
 
     //*-----[Woo Widgets]-----*/
-    .product_list_widget {
-        a {
-            display: block;
+    // .product_list_widget {
+    //     a {
+    //         display: block;
 
-            position: relative;
+    //         position: relative;
 
-            padding-left: 0;
-            img {
-                left: -40px;
-            }
-        }
-        > li {
-            padding-left: 40px;
-            > .from, 
-            > del,
-            > ins,
-            > .amount {
-                // position: relative;
-                // top: -20px;
-            }
+    //         padding-left: 0;
+    //         img {
+    //             left: -40px;
+    //         }
+    //     }
+    //     > li {
+    //         padding-left: 40px;
+    //         > .from, 
+    //         > del,
+    //         > ins,
+    //         > .amount {
+    //             // position: relative;
+    //             // top: -20px;
+    //         }
 
-            > .from,
-            > del,
-            > .amount {
-                // margin-left: 40px;
-            }
+    //         > .from,
+    //         > del,
+    //         > .amount {
+    //             // margin-left: 40px;
+    //         }
 
-            > .from + del {
-                // margin-left: 0px;
-            }
-            .from,
-            del {
-                color: @muted-text-color;
-            }
-            del {
-                margin-right: 5px;
-            }
+    //         > .from + del {
+    //             // margin-left: 0px;
+    //         }
+    //         .from,
+    //         del {
+    //             color: @muted-text-color;
+    //         }
+    //         del {
+    //             margin-right: 5px;
+    //         }
 
-            ins {
-                text-decoration: none;
-            }
+    //         ins {
+    //             text-decoration: none;
+    //         }
 
-            > .amount,
-            ins > .amount,
-            .quantity > .amount {
-                background-color: @default-accent;
+    //         > .amount,
+    //         ins > .amount,
+    //         .quantity > .amount {
+    //             background-color: @default-accent;
 
-                padding-left: 5px;
-                padding-right: 5px;
+    //             padding-left: 5px;
+    //             padding-right: 5px;
 
-                color: @secondary-text;
+    //             color: @secondary-text;
 
-                border-radius: @base-radius;
-            }
-        }
-        dl {
-            margin-bottom: 0;
-            margin-top: 0;
-            dd,
-            dt {
-                .inlineDisplay();
-            }
-        }
-    }
-
-    //*-----[Woo Widgets]-----*/
-    .star-rating {
-        float:none;
-        overflow: hidden;
-        position: relative;
-        height: @line-height-narrow;
-        line-height: @line-height-narrow;
-        font-size: @body-fz-us;
-        width: 50px;
-        font-family: 'FontAwesome';
-        &:before {
-            content: "\f006\f006\f006\f006\f006";
-            color: #e0dadf;
-            float: left;
-            top: 0;
-            left: 0;
-            position: absolute;
-        }
-        span {
-            overflow: hidden;
-            float: left;
-            top: 0;
-            left: 0;
-            position: absolute;
-            padding-top: 1.5em;
-            color: @default-accent;
-            font-size: @body-fz-us;
-            &:before {
-                content: "\f005\f005\f005\f005\f005";
-                top: 0;
-                position: absolute;
-                left: 0;
-            }
-        }
-    }
+    //             border-radius: @base-radius;
+    //         }
+    //     }
+    //     dl {
+    //         margin-bottom: 0;
+    //         margin-top: 0;
+    //         dd,
+    //         dt {
+    //             .inlineDisplay();
+    //         }
+    //     }
+    // }
 
     //*-----[Woo Widgets]-----*/
-    .total {
-        background-color: @default-background;
-
-        padding: 10px 20px;
-        margin-top: 10px;
-
-        text-transform: uppercase;
-
-        border-radius: @base-radius;
-    }
+    // .star-rating {
+    //     float:none;
+    //     overflow: hidden;
+    //     position: relative;
+    //     height: @line-height-narrow;
+    //     line-height: @line-height-narrow;
+    //     font-size: @body-fz-us;
+    //     width: 50px;
+    //     font-family: 'FontAwesome';
+    //     &:before {
+    //         content: "\f006\f006\f006\f006\f006";
+    //         color: #e0dadf;
+    //         float: left;
+    //         top: 0;
+    //         left: 0;
+    //         position: absolute;
+    //     }
+    //     span {
+    //         overflow: hidden;
+    //         float: left;
+    //         top: 0;
+    //         left: 0;
+    //         position: absolute;
+    //         padding-top: 1.5em;
+    //         color: @default-accent;
+    //         font-size: @body-fz-us;
+    //         &:before {
+    //             content: "\f005\f005\f005\f005\f005";
+    //             top: 0;
+    //             position: absolute;
+    //             left: 0;
+    //         }
+    //     }
+    // }
 
     //*-----[Woo Widgets]-----*/
-    .chosen {
-        a {
-            padding: 2px 5px;
-            margin: 0;
+    // .total {
+    //     background-color: @default-background;
 
-            color: @default-accent;
+    //     padding: 10px 20px;
+    //     margin-top: 10px;
 
-            border-radius: @base-radius;
-            &:before {
-                content: "\f00d";
-                color: @default-accent;
-                font-family: 'FontAwesome';
-                margin-right: 0;
-            }
-        }
-    }
+    //     text-transform: uppercase;
+
+    //     border-radius: @base-radius;
+    // }
+
+    //*-----[Woo Widgets]-----*/
+    // .chosen {
+    //     a {
+    //         padding: 2px 5px;
+    //         margin: 0;
+
+    //         color: @default-accent;
+
+    //         border-radius: @base-radius;
+    //         &:before {
+    //             content: "\f00d";
+    //             color: @default-accent;
+    //             font-family: 'FontAwesome';
+    //             margin-right: 0;
+    //         }
+    //     }
+    // }
 }
 
 /*-----[Icon Widget Heading]-----*/
@@ -345,12 +325,6 @@
 ============================================================*/
 .footer.widget {
     .panel-heading {
-        > h1,
-        > h2,
-        > h3,
-        > h4,
-        > h5,
-        > h6,
         > .widget.heading {
             margin-left: 20px;
         }

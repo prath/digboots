@@ -66,7 +66,7 @@
         }
     }
 
-    h1 {
+    .heading {
         margin-bottom: 20px;
 
         font-family: @font-4;
@@ -121,18 +121,18 @@
         }
     }
 
-    .cover.overlay {
-        h1 {
-            color: @secondary-text;
-        }
-        a {
-            color: @body-text-color;
-        }
-    }
+    // .cover.overlay {
+    //     .heading {
+    //         color: @secondary-text;
+    //     }
+    //     a {
+    //         color: @body-text-color;
+    //     }
+    // }
 
     &.white {
         &,
-        h1, 
+        .heading, 
         p {
             color: @secondary-text;
         } 
@@ -141,7 +141,7 @@
     &.left-aligned {
         text-align: center;
         .container, 
-        h1, 
+        .heading, 
         p {
             margin-left: 5%;
             text-align: left;

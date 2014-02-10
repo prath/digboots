@@ -1,0 +1,8 @@
+{
+    "box-sizing": false,
+    "overqualified-elements": false,
+    "qualified-headings": false,
+    "universal-selector": false,
+    "compatible-vendor-prefixes": false,
+    "vendor-prefix": false
+}
