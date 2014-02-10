@@ -189,26 +189,26 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/about.html",
       "fileType" : 512
     },
-    "\/widgets\/widget-categories.jade" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/widgets\/widget-categories.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/widgets\/widget-categories.html",
-      "fileType" : 512
-    },
-    "\/company.jade" : {
+    "\/single.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/company.jade",
+      "inputAbbreviatedPath" : "\/single.jade",
       "outputStyle" : 0,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/company.html",
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single.html",
+      "fileType" : 512
+    },
+    "\/widgets\/widget-rss.jade" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/widgets\/widget-rss.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/widgets\/widget-rss.html",
       "fileType" : 512
     },
     "\/category.jade" : {
@@ -233,6 +233,17 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/vacancy.html",
       "fileType" : 512
     },
+    "\/404.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/404.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/404.html",
+      "fileType" : 512
+    },
     "\/services.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -242,17 +253,6 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/services.html",
-      "fileType" : 512
-    },
-    "\/widgets\/widget-rss.jade" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/widgets\/widget-rss.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/widgets\/widget-rss.html",
       "fileType" : 512
     },
     "\/portfolio-i.jade" : {
@@ -277,15 +277,15 @@
       "outputAbbreviatedPath" : "\/widgets\/widget-link-icons.html",
       "fileType" : 512
     },
-    "\/widgets\/widget-pages.jade" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/author.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/widgets\/widget-pages.jade",
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/author.jade",
       "outputStyle" : 0,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/widgets\/widget-pages.html",
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/author.html",
       "fileType" : 512
     },
     "\/widgets\/widget-recent-post.jade" : {
@@ -299,26 +299,26 @@
       "outputAbbreviatedPath" : "\/widgets\/widget-recent-post.html",
       "fileType" : 512
     },
-    "\/author.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/widgets\/widget-about.jade" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/author.jade",
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/widgets\/widget-about.jade",
       "outputStyle" : 0,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/author.html",
+      "outputAbbreviatedPath" : "\/widgets\/widget-about.html",
       "fileType" : 512
     },
-    "\/404.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/widgets\/widget-pages.jade" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/404.jade",
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/widgets\/widget-pages.jade",
       "outputStyle" : 0,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/404.html",
+      "outputAbbreviatedPath" : "\/widgets\/widget-pages.html",
       "fileType" : 512
     },
     "\/portfolio-ii.jade" : {
@@ -343,15 +343,26 @@
       "outputAbbreviatedPath" : "\/widgets\/widget-categories-dropdown.html",
       "fileType" : 512
     },
-    "\/single.jade" : {
+    "\/company.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/single.jade",
+      "inputAbbreviatedPath" : "\/company.jade",
       "outputStyle" : 0,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single.html",
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/company.html",
+      "fileType" : 512
+    },
+    "\/single-porto.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/single-porto.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single-porto.html",
       "fileType" : 512
     },
     "\/shop.jade" : {
@@ -365,26 +376,15 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/shop.html",
       "fileType" : 512
     },
-    "\/widgets\/widget-about.jade" : {
+    "\/widgets\/widget-categories.jade" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/widgets\/widget-about.jade",
+      "inputAbbreviatedPath" : "\/widgets\/widget-categories.jade",
       "outputStyle" : 0,
       "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/widgets\/widget-about.html",
-      "fileType" : 512
-    },
-    "\/single-porto.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/single-porto.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/single-porto.html",
+      "outputAbbreviatedPath" : "\/widgets\/widget-categories.html",
       "fileType" : 512
     },
     "\/widgets\/widget-tags.jade" : {
@@ -409,17 +409,6 @@
       "outputAbbreviatedPath" : "\/widgets\/widget-link.html",
       "fileType" : 512
     },
-    "\/index.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/index.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/index.html",
-      "fileType" : 512
-    },
     "\/contact.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -429,6 +418,17 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/contact.html",
+      "fileType" : 512
+    },
+    "\/index.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/index.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/index.html",
       "fileType" : 512
     },
     "\/mixins\/widget.jade" : {
@@ -453,17 +453,6 @@
       "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/search.html",
       "fileType" : 512
     },
-    "\/blog.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
-      "inputAbbreviatedPath" : "\/blog.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/blog.html",
-      "fileType" : 512
-    },
     "\/layouts\/master.jade" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -473,6 +462,17 @@
       "outputStyle" : 0,
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/layouts\/master.html",
+      "fileType" : 512
+    },
+    "\/blog.jade" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/blog.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "~\/Sites\/Aestik\/digboots\/dist\/blog.html",
       "fileType" : 512
     },
     "\/portfolio-iv.jade" : {
