@@ -152,7 +152,7 @@
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<!-- [ JUMBOTRON ]-->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-			<section style="background-image: url('dummy-images/hero-image5.jpg');" id="home" class="jumbotron white">
+			<section style="background-image: url('dummy-images/hero-image7.jpg');" id="home" class="jumbotron white">
 				<div class="container">
 					<p>Case Study</p>
 					<h1>New
@@ -387,16 +387,13 @@
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<!-- [ WHO WE ARE ]-->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-			<section style="background: url(&quot;dummy-images/team/cover.jpg&quot;) no-repeat center center; background-size: cover; background-attachment: fixed;" id="team">
-				<div class="content shrunk-down shrunk-up">
-					<h2 class="section heading appear move-top">Who We Are</h2>
-					<article class="narrow">
-						<h2 class="centered appear move-bottom">A Small, Growing and Passionate Company Who Dreams Big.</h2>
-						<div class="diamond icon centered appear fade-in">
-							<i class="fa fa-angle-double-down"></i>
-						</div>
-					</article>
-				</div>
+			<section id="team" class="content white-background shrunk-down shrunk-up">
+				<article class="narrow">
+					<h2 class="centered appear move-bottom">A Small, Growing and Passionate Company Who Dreams Big.</h2>
+					<div class="diamond icon centered appear fade-in">
+						<i class="fa fa-angle-double-down"></i>
+					</div>
+				</article>
 			</section>
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<!-- [ TEAM ]-->
@@ -702,26 +699,44 @@
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<!-- [ TESTIMONIAL ]-->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-			<section class="content wide flatted-down shrunk-up">
-				<h2 class="section heading">What People Say About Us</h2>
-				<blockquote>
-					<p class="centered">"DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
-						<cite class="name">John William Smith -
-							<strong>Company.co</strong>
-						</cite>
-					</p>
-				</blockquote>
+			<section style="background-image: url('dummy-images/bgs/city.jpg'); background-position: bottom center; background-repeat: no-repeat; background-attachment:fixed;" class="content shrunk-down shrunk-up invert-background">
+				<div class="wide">
+					<h2 class="section heading">What People Say About Us</h2>
+					<blockquote>
+						<p class="centered">"DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
+							<cite class="name">John William Smith -
+								<strong>Company.co</strong>
+							</cite>
+						</p>
+					</blockquote>
+				</div>
 			</section>
-			<div class="separator-2"></div>
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<!-- [ CONTACT ]-->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-			<section id="contact" class="content flatted-up shrunk-down">
+			<section id="contact" class="content shrunk-up shrunk-down">
 				<div class="narrow">
 					<h2 class="section heading">Want to work with us?</h2>
-					<p class="centered">Are you working on something great? We'd love to help make it happen.
-						<a href="" class="btn btn-link btn-cta dark btn-sm">Get in touch now</a>
-					</p>
+					<p class="centered">Are you working on something great? We'd love to help make it happen.</p>
+					<form action="" role="form">
+						<div class="form-group">
+							<label for="contactname" class="sr-only"></label>
+							<input type="text" id="contactname" placeholder="Name" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="contactemail" class="sr-only"></label>
+							<input type="text" id="contactemail" placeholder="Email" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="contactweb" class="sr-only"></label>
+							<input type="text" id="contactweb" placeholder="Website" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="contactmsg" class="sr-only"></label>
+							<textarea id="contactmsg" cols="50" rows="10" placeholder="Message" class="form-control"></textarea>
+						</div>
+						<button class="btn btn-primary pull-right">Send Message</button>
+					</form>
 				</div>
 			</section>
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

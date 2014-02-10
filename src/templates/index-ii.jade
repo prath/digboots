@@ -24,7 +24,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ JUMBOTRON ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.jumbotron.white(style="background-image: url('dummy-images/hero-image5.jpg');")#home
+    section.jumbotron.white(style="background-image: url('dummy-images/hero-image7.jpg');")#home
         .container
             p Case Study
             h1
@@ -241,16 +241,15 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ WHO WE ARE ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section(style='background: url("dummy-images/team/cover.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')#team
-            .content.shrunk-down.shrunk-up
-                h2.section.heading.appear.move-top Who We Are
-                article.narrow
-                    h2.centered.appear.move-bottom A Small, Growing and Passionate Company Who Dreams Big.
-                    //- p.centered
-                        a(href='').btn.btn-primary.btn-sm.appear.fade-in
-                            | Meet The Team
-                    .diamond.icon.centered.appear.fade-in
-                        i.fa.fa-angle-double-down
+    //- section(style='background: url("dummy-images/team/cover.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')#team
+    section#team.content.white-background.shrunk-down.shrunk-up
+        article.narrow
+            h2.centered.appear.move-bottom A Small, Growing and Passionate Company Who Dreams Big.
+            //- p.centered
+                a(href='').btn.btn-primary.btn-sm.appear.fade-in
+                    | Meet The Team
+            .diamond.icon.centered.appear.fade-in
+                i.fa.fa-angle-double-down
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TEAM ]
@@ -464,22 +463,35 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TESTIMONIAL ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.wide.flatted-down.shrunk-up
-        h2.section.heading What People Say About Us
-        blockquote
-            p.centered 
-                | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
-                cite.name
-                    | John William Smith - <strong>Company.co</strong>
-    .separator-2
+    section.content.shrunk-down.shrunk-up.invert-background(style="background-image: url('dummy-images/bgs/city.jpg'); background-position: bottom center; background-repeat: no-repeat; background-attachment:fixed;")
+        .wide
+            h2.section.heading What People Say About Us
+            blockquote
+                p.centered 
+                    | "DigBoots really stand-out among our partners. They work excelently, their work is top-notch. One of the best we've worked with in the past 10 years."
+                    cite.name
+                        | John William Smith - <strong>Company.co</strong>
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ CONTACT ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.flatted-up.shrunk-down#contact
+    section.content.shrunk-up.shrunk-down#contact
         .narrow
             h2.section.heading
                 | Want to work with us?
             p.centered
                 | Are you working on something great? We'd love to help make it happen.
-                a(href='').btn.btn-link.btn-cta.dark.btn-sm
-                        | Get in touch now
+            form(action='', role='form')
+                .form-group
+                    label.sr-only(for='contactname')
+                    input.form-control(type='text', id='contactname', placeholder='Name')
+                .form-group
+                    label.sr-only(for='contactemail')
+                    input.form-control(type='text', id='contactemail', placeholder='Email')
+                .form-group
+                    label.sr-only(for='contactweb')
+                    input.form-control(type='text', id='contactweb', placeholder='Website')
+                .form-group
+                    label.sr-only(for='contactmsg')
+                    textarea.form-control(id='contactmsg', cols="50", rows="10", placeholder='Message')
+                button.btn.btn-primary.pull-right
+                    | Send Message 
