@@ -6,8 +6,6 @@
 // * 
 // * @author Dwi A. Hambali <dwi@aestik.com>
 // * @author Pratama H. Salahudin <pratama@aestik.com>
-// * @TODO : change class name for image to gallery, 
-// *         thumbnail to item
 // -----------------------------------------------------------------
 
 img {
@@ -37,6 +35,9 @@ img {
         overflow: hidden;
 
         position: relative;
+
+        height: auto;
+        width: 100%;
 
         padding: 0;
 
@@ -206,6 +207,27 @@ img {
             }
         }
 
+        &.one-fifth {
+            height: auto;
+            width: 50%;
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-tablet) {
+                width: 20%;
+            }
+        }
+
+        &.one-sixth {
+            height: auto;
+            width: 50%;
+            //*-----[Responsive 600++]-----*/
+            @media (min-width: @screen-tablet) {
+                width: 16.66%;
+                &:nth-child(6n) {
+                    width: 16.7%;
+                }
+            }
+        }
+
         a { 
             display: block;
             &:hover {
@@ -315,6 +337,7 @@ img {
             height: auto;
             width: 20%;
 
+            margin-bottom: 5%;
             margin-right: 5%;
 
             //*-----[Responsive 600++]-----*/

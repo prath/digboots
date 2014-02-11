@@ -37,7 +37,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ ABOUT US ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    article.content.post.about.featured.narrow
+    section.content.post.featured.narrow
         img.appear.fade-in(src='dummy-images/about/2.png')
         h2.featured.title
             | We Work and Play. We Love This Job.
@@ -111,12 +111,12 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TESTIMONIAL ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    div(style='background: url("dummy-images/bgs/service-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+    div.invert-background(style='background: url("dummy-images/bgs/service-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
             
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ TESTIMONIAL ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        article.content.invert-background.no-color.wide.shrunk-down.shrunk-up
+        article.content.wide.shrunk-all
             h2.section.heading What People Say About Us
             blockquote 
                 p.centered
@@ -247,7 +247,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ VIDEO ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.invert-background.shrunk-up.shrunk-down(style='background: url("dummy-images/bgs/video-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+    section.content.invert-background.shrunk-all(style='background: url("dummy-images/bgs/video-bg.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
         h2.section.heading Watch Our Creative Process
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -274,78 +274,77 @@ block content
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ SERVICES ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        .container
-            .row
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-inbox
-                    h3.related.title.centered High Quality Deliverables
-                    p
-                        | We transform your wish into clear ideas and hand-sketched illustrations.
-                    a(href='').btn.btn-primary.btn-xs
-                        | learn more
+        .row
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ SERVICES ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                .diamond.icon.med.centered
+                    i.fa.fa-inbox
+                h3.related.title.centered High Quality Deliverables
+                p
+                    | We transform your wish into clear ideas and hand-sketched illustrations.
+                a(href='').btn.btn-primary.btn-xs
+                    | learn more
 
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-comments-o
-                    h3.related.title.centered Intensive Consultations
-                    p
-                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
-                    a(href='').btn.btn-primary.btn-xs
-                        | learn more
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ SERVICES ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                .diamond.icon.med.centered
+                    i.fa.fa-comments-o
+                h3.related.title.centered Intensive Consultations
+                p
+                    | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                a(href='').btn.btn-primary.btn-xs
+                    | learn more
 
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-check-square-o
-                    h3.related.title.centered Great Project Management
-                    p
-                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
-                    a(href='').btn.btn-primary.btn-xs
-                        | learn more
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-laptop
-                    h3.related.title.centered Well-illustrated Process
-                    p
-                        | We transform your wish into clear ideas and hand-sketched illustrations.
-                    a(href='').btn.btn-primary.btn-xs
-                        | learn more
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ SERVICES ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                .diamond.icon.med.centered
+                    i.fa.fa-check-square-o
+                h3.related.title.centered Great Project Management
+                p
+                    | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                a(href='').btn.btn-primary.btn-xs
+                    | learn more
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ SERVICES ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                .diamond.icon.med.centered
+                    i.fa.fa-laptop
+                h3.related.title.centered Well-illustrated Process
+                p
+                    | We transform your wish into clear ideas and hand-sketched illustrations.
+                a(href='').btn.btn-primary.btn-xs
+                    | learn more
 
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-calendar-o
-                    h3.related.title.centered On-time Scheduling 
-                    p
-                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
-                    a(href='').btn.btn-primary.btn-xs
-                        | learn more
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ SERVICES ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                .diamond.icon.med.centered
+                    i.fa.fa-calendar-o
+                h3.related.title.centered On-time Scheduling 
+                p
+                    | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                a(href='').btn.btn-primary.btn-xs
+                    | learn more
 
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                // [ SERVICES ITEM ]
-                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                    .diamond.icon.med.centered
-                        i.fa.fa-angle-double-right
-                    h3.related.title.centered Fast Execution
-                    p
-                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
-                    a(href='').btn.btn-primary.btn-xs
-                        | learn more
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ SERVICES ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                .diamond.icon.med.centered
+                    i.fa.fa-angle-double-right
+                h3.related.title.centered Fast Execution
+                p
+                    | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                a(href='').btn.btn-primary.btn-xs
+                    | learn more
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ WORKPLACE GALLERY ]
@@ -430,7 +429,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ ClIENTS ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.white-background.shrunk-down.shrunk-up
+    section.content.white-background.shrunk-all
         h2.section.heading Our Clients
         .client.list.centered.flexslider.appear.fade-in
             ul.client-slides
@@ -480,7 +479,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ EMAIL SUBSCRIPTION ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.narrow.shrunk-down.shrunk-up
+    section.content.narrow.shrunk-all
         h2.section.heading email newsletter
         p.small-text.centered 
             | Sign up to receive our monthly email newsletter below. We will not spam your email account, ever. 

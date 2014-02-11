@@ -24,33 +24,22 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ BLOG POST ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.flatted-up.flatted-down
+    section.content.flatted-all
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ COVER & TITLE ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .post.jumbotron(style="background-image: url('dummy-images/services/cover.jpg');")
-            //- .cover.overlay.blue
-
             .container
                 h1.heading
                     | <strong>Creative</strong> Jack of All Trades 
                 p.normal 
                     | With the vast knowledges and skills, we could work on almost everything.
 
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ NAV ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        //- nav.gallery.filter.light.centered
-            a(href="") All
-            a(href="") Web Design
-            a(href="") Illustration
-            a(href="") UI Design
-
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ ABOUT POST ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    .content.white-background.caret-down.caret-white.shrunk-down.shrunk-up
+    .content.white-background.caret-down.caret-white.shrunk-all
         .narrow
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ POST CONTENT ]
@@ -61,38 +50,44 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ SERVICES ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    .content.narrow.container
-        h2.section.heading Our Services
+    section.content.wide.container
         .row
+            h2.section.heading Our Services
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ SERVICES ITEM ]
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.small.col-ul-6.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-xs-12.centered.appear.move-top
-                .diamond.icon.med.centered
-                    i.fa.fa-file-o
+            article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                //- .diamond.icon.med.centered
+                i.fa.fa-file-o.fa-3x
                 h3.related.title.centered Illustration
                 p
-                    | We transform your wish into clear ideas and hand-sketched illustrations. We transform your wish into clear ideas and hand-sketched illustrations.
+                    | We transform your wish into clear ideas and hand-sketched illustrations.
+                a(href='').btn.btn-xs.btn-primary
+                    | learn more
 
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ SERVICES ITEM ]
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.small.col-ul-6.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-xs-12.centered.appear.move-top
-                .diamond.icon.med.centered
-                    i.fa.fa-html5
+            article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                //- .diamond.icon.med.centered
+                i.fa.fa-html5.fa-3x
                 h3.related.title.centered Web Design
                 p
-                    | High quality pixel-perfect hand-coded web page design will be delivered to you. High quality pixel-perfect hand-coded web page design will be delivered to you.
+                    | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                a(href='').btn.btn-xs.btn-primary
+                    | learn more
 
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ SERVICES ITEM ]
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.small.col-ul-6.col-xl-6.col-lg-6.col-md-6.col-sm-12.col-xs-12.col-ul-offset-3.col-xl-offset-3.col-xl-offset-3.col-md-offset-3.centered.appear.move-top
-                .diamond.icon.med.centered
-                    i.fa.fa-mobile
+            article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                //- .diamond.icon.med.centered
+                i.fa.fa-mobile.fa-3x
                 h3.related.title.centered App Design
                 p
-                    | Pixel-perfect app design is one of our obsession, we always keep that in mind. Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                    | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                a(href='').btn.btn-xs.btn-primary
+                    | learn more
 
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -132,74 +127,73 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TESTIMONIAL ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.shrunk-up.shrunk-down.invert-background(style='background: url("dummy-images/about/w-b2.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
-        .cover.overlay
-            .container.services.content.wide.shrunk-down.shrunk-up
-                .row
-                    h2.section.heading More About Our Services
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ SERVICES ITEM ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                        .diamond.icon.white.med.centered
-                            i.fa.fa-inbox
-                        h3.heading.related.title.centered High Quality Deliverables
-                        p
-                            | We transform your wish into clear ideas and hand-sketched illustrations.
+    section.content.shrunk-all.invert-background(style='background: url("dummy-images/about/w-b2.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+        .services.wide
+            .row
+                h2.section.heading More About Our Services
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.white.med.centered
+                        i.fa.fa-inbox
+                    h3.heading.related.title.centered High Quality Deliverables
+                    p
+                        | We transform your wish into clear ideas and hand-sketched illustrations.
 
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ SERVICES ITEM ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                        .diamond.icon.white.med.centered
-                            i.fa.fa-comments-o
-                        h3.heading.related.title.centered Intensive Consultations
-                        p
-                            | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.white.med.centered
+                        i.fa.fa-comments-o
+                    h3.heading.related.title.centered Intensive Consultations
+                    p
+                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
 
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ SERVICES ITEM ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                        .diamond.icon.white.med.centered
-                            i.fa.fa-check-square-o
-                        h3.heading.related.title.centered Great Project Management
-                        p
-                            | Pixel-perfect app design is one of our obsession, we always keep that in mind.
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ SERVICES ITEM ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                        .diamond.icon.white.med.centered
-                            i.fa.fa-laptop
-                        h3.heading.related.title.centered Well-illustrated Process
-                        p
-                            | We transform your wish into clear ideas and hand-sketched illustrations.
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.white.med.centered
+                        i.fa.fa-check-square-o
+                    h3.heading.related.title.centered Great Project Management
+                    p
+                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.white.med.centered
+                        i.fa.fa-laptop
+                    h3.heading.related.title.centered Well-illustrated Process
+                    p
+                        | We transform your wish into clear ideas and hand-sketched illustrations.
 
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ SERVICES ITEM ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                        .diamond.icon.white.med.centered
-                            i.fa.fa-calendar-o
-                        h3.heading.related.title.centered On-time Scheduling 
-                        p
-                            | High quality pixel-perfect hand-coded web page design will be delivered to you.
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.white.med.centered
+                        i.fa.fa-calendar-o
+                    h3.heading.related.title.centered On-time Scheduling 
+                    p
+                        | High quality pixel-perfect hand-coded web page design will be delivered to you.
 
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    // [ SERVICES ITEM ]
-                    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                    article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
-                        .diamond.icon.white.med.centered
-                            i.fa.fa-angle-double-right
-                        h3.heading.related.title.centered Fast Execution
-                        p
-                            | Pixel-perfect app design is one of our obsession, we always keep that in mind.
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ SERVICES ITEM ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-12.col-xs-12.centered.appear.move-top
+                    .diamond.icon.white.med.centered
+                        i.fa.fa-angle-double-right
+                    h3.heading.related.title.centered Fast Execution
+                    p
+                        | Pixel-perfect app design is one of our obsession, we always keep that in mind.
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ CONTACT ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.shrunk-up.shrunk-down
+    section.content.shrunk-all
         .narrow
             h2.section.heading
                 | Want to work with us?
