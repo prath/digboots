@@ -100,11 +100,24 @@ h6 {
 ============================================================*/
 blockquote {
     border-left: 0;
-    padding: 0 20px 20px 50px;
+    padding: 0 0 20px 0;
     margin: 0 0 30px;
     p {
-        .quotes(@default-text, @default-text, @font-4, @font-1, @body-fz-ul, @body-fz-df, @line-height-wide, @line-height-base, 20px, italic);
-        // font-weight: 100;
+        .quotes(@default-text, @default-text, @font-4, @font-1, @body-fz-xl, @body-fz-xs, @line-height-med, @line-height-narrow, 20px, italic);
+        @media (min-width: @screen-tablet) {
+            font-size: @body-fz-ul;
+            line-height: @line-height-wide;
+        }
+        span, 
+        cite {
+            @media (min-width: @screen-tablet) {
+                font-size: @body-fz-df;
+                line-height: @line-height-base;
+            }
+        }
+    }
+    @media (min-width: @screen-tablet) {
+        padding: 0 20px 20px 50px;
     }
 }
 
@@ -144,22 +157,18 @@ header {
 /* [Section Heading]
 ============================================================*/
 .section.heading {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-left: 10px;
     margin-top: 10px;
 
     font-family: @font-4;
     font-size: @body-fz-xs;
     font-weight: 700; 
-    letter-spacing: 10px;
-    line-height: @line-height-med;
+    letter-spacing: 5px;
+    line-height: @line-height-base;
     text-transform: uppercase;
     text-align: center;
 
-    //*-----[Responsive 768++]-----*/
-    @media (min-width: @screen-tablet) {
-        margin-bottom: 50px;
-    }
     &.left-aligned {
         margin-left: 0;
         text-align: left;
@@ -185,6 +194,12 @@ header {
         line-height: @heading-1-fz;
         text-align: center;
         text-transform: capitalize;
+    }
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-tablet) {
+        margin-bottom: 50px;
+        letter-spacing: 10px;
+        line-height: @line-height-med;
     }
 }
 
@@ -244,13 +259,16 @@ header {
 
     color: @secondary-text;
     font-family: @font-4;
-    font-size: 42px;
+    font-size: @body-fz-ul;
     font-weight: 300;
     a {
         color: @secondary-text;
         &:hover {
             color: @default-accent;
         }
+    }
+    @media (min-width: @screen-tablet) {
+        font-size: 42px
     }
 }
 

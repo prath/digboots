@@ -215,12 +215,19 @@
     }
 }
 
+/*-----[Toggle Hidden Menu]-----*/
+.togglemenuonepage {
+    .innernav.main-nav {
+        display: block;
+    }
+}
+
 /*-----[Toggle Search Form]-----*/
 .togglesearch {
     .search {
         &.box {
             .opacity(1, 100);
-            top: 0;
+            top: -10px;
         }
     }
     .top.nav {
@@ -256,7 +263,7 @@ body {
 
     background-color: @default-accent;
 
-    height: 43px;
+    height: 39px;
     width: 100%;
 
     padding: 0;
@@ -277,6 +284,8 @@ body {
     @media (min-width: @screen-tablet) {
         background-color: @default-accent;
         background-color: fade(@default-accent, 30%);
+
+        height: 43px;
         width: auto;
 
         text-align: right;
@@ -324,6 +333,9 @@ body {
         &.widget {
             background-color: @default-accent;
             background-color: fade(darken(@default-accent, 30%), 40%);
+        }
+        &[data-content="menuonepage"] {
+            float: right;
         }
     }
     .iconic {
@@ -379,7 +391,7 @@ body {
         position: fixed;
         right: 0;
         top: -100%;
-        z-index: 2;
+        z-index: 3;
 
         margin-top: 50px;
         padding: 20px;
@@ -390,7 +402,7 @@ body {
 
         //*-----[Responsive 768++]-----*/
         @media (min-width: @screen-tablet) {
-            left: 20%;
+            left: 260px;
 
             margin-top: 0;
             padding: 100px;
@@ -484,15 +496,20 @@ body {
     ul {
         .clearfix();
         margin: 0;
-        padding: 0;
+        padding: 40px 0 30px;
         list-style: none;
+        @media (min-width: @screen-tablet) {
+            padding: 0px;
+        }
     }
 
     li {
-        float: left;
+        float: none;
         &:after {
-            content: ".";
-            margin-left: 30px;
+            @media (min-width: @screen-tablet) {
+                content: ".";
+                margin-left: 30px;
+            }
         }
         &:last-child {
             &:after {
@@ -505,18 +522,19 @@ body {
                 padding-right: 0;
             }
         }
+        @media (min-width: @screen-tablet) {
+            float: left;
+        }
     }
 
     a {
         .inlineDisplay();
-        padding-left: 30px;
-        // padding-right: 20px;
 
         color: lighten(@body-text-color, 20%);
         font-family: @font-4;
         font-size: @body-fz-xs;
         font-weight: 600;
-        line-height: 43px;
+        line-height: @line-height-base;
         text-transform: uppercase;
         &:hover {
             color: @default-accent;
@@ -533,6 +551,10 @@ body {
                 margin-left: 0;
             } 
         }
+        @media (min-width: @screen-tablet) {
+            padding-left: 30px;
+            line-height: 43px;
+        }
     }
     &.light {
         background-color: @secondary-text;
@@ -544,10 +566,19 @@ body {
         }
     }
     &.main-nav {
+        display: none;
         position: fixed;
-        z-index: 2;
-        width: 100%;
+        right: 0;
+        z-index: 3;
+        height: 100%;
+        width: 40%;
 
-        margin-left: 260px;
+        @media (min-width: @screen-tablet) {
+            display: block;
+            right: auto;
+            height: auto;
+            width: 100%;
+            margin-left: 260px;
+        }
     }
 }

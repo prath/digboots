@@ -48,14 +48,23 @@ $(document).ready(function () {
         $('body').removeAttr('class');
     });
 
+    $('.collapse-header a').on('click', function (e) {
+        e.preventDefault();
+        if( !$('.masthead').hasClass('expanded') ) {
+            $('.masthead').addClass('expanded');
+        } else {
+            $('.masthead').removeClass('expanded');
+        }
+    })
+
     
     /**
      * Toggle Tooltip
      */
-    $('.sticky.nav').tooltip({
-        selector: "[data-toggle=tooltip]",
-        container: "body"
-    });
+    // $('.sticky.nav').tooltip({
+    //     selector: "[data-toggle=tooltip]",
+    //     container: "body"
+    // });
 
     /**
      * FitVids

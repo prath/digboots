@@ -53,7 +53,7 @@ block content
     // [ SERVICES ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     section.content.shrunk-all#services
-        .container.services.wide
+        .wide
             .row
                 h2.section.heading Our Services
                 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -401,9 +401,9 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     section.content.white-background.shrunk-all#clients
         .narrow
-        h2.section.heading Our Clients
-        p.centered
-            | We're lucky enough to work with some amazing organisations. Here are a few of our favourites:
+            h2.section.heading Our Clients
+            p.centered
+                | We're lucky enough to work with some amazing organisations. Here are a few of our favourites:
         .client.list.centered.flexslider.appear.fade-in
             ul.client-slides
                 li
@@ -472,15 +472,15 @@ block content
             form(action='', role='form')
                 .form-group
                     label.sr-only(for='contactname')
-                    input.form-control(type='text', id='contactname', placeholder='Name')
+                    input.form-control(type='text', id='contactname', placeholder='Name', tabindex='1')
                 .form-group
                     label.sr-only(for='contactemail')
-                    input.form-control(type='text', id='contactemail', placeholder='Email')
+                    input.form-control(type='text', id='contactemail', placeholder='Email', tabindex='2')
                 .form-group
                     label.sr-only(for='contactweb')
-                    input.form-control(type='text', id='contactweb', placeholder='Website')
+                    input.form-control(type='text', id='contactweb', placeholder='Website', tabindex='3')
                 .form-group
                     label.sr-only(for='contactmsg')
-                    textarea.form-control(id='contactmsg', cols="50", rows="10", placeholder='Message')
+                    textarea.form-control(id='contactmsg', cols="50", rows="10", placeholder='Message', tabindex='4')
                 button.btn.btn-primary.pull-right
                     | Send Message 

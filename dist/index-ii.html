@@ -52,6 +52,9 @@
 				<a href="" data-content="search" data-toggle="tooltip" data-placement="bottom" title="Search" class="toggle search iconic">
 					<img src="assets/images/search.png" alt="nav">
 				</a>
+				<a href="" data-content="menuonepage" data-placement="bottom" title="Menu" class="toggle nav iconic">
+					<img src="assets/images/nav.png" alt="nav">
+				</a>
 			</nav>
 			<nav class="innernav light main-nav sticky centered scroll-to">
 				<ul>
@@ -101,6 +104,11 @@
 					<div class="logo">
 						<a href="">
 							<img src="dummy-images/logo.png" alt="">
+						</a>
+					</div>
+					<div class="collapse-header">
+						<a href="">
+							<i class="fa fa-angle-double-down"></i>
 						</a>
 					</div>
 					<p class="lead">Clarity, Simplicity and Curiousity.</p>
@@ -181,7 +189,7 @@
 			<!-- [ SERVICES ]-->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<section id="services" class="content shrunk-all">
-				<div class="container services wide">
+				<div class="wide">
 					<div class="row">
 						<h2 class="section heading">Our Services</h2>
 						<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -620,9 +628,10 @@
 			<!-- [ ClIENTS ]-->
 			<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 			<section id="clients" class="content white-background shrunk-all">
-				<div class="narrow"></div>
-				<h2 class="section heading">Our Clients</h2>
-				<p class="centered">We're lucky enough to work with some amazing organisations. Here are a few of our favourites:</p>
+				<div class="narrow">
+					<h2 class="section heading">Our Clients</h2>
+					<p class="centered">We're lucky enough to work with some amazing organisations. Here are a few of our favourites:</p>
+				</div>
 				<div class="client list centered flexslider appear fade-in">
 					<ul class="client-slides">
 						<li>
@@ -723,19 +732,19 @@
 					<form action="" role="form">
 						<div class="form-group">
 							<label for="contactname" class="sr-only"></label>
-							<input type="text" id="contactname" placeholder="Name" class="form-control">
+							<input type="text" id="contactname" placeholder="Name" tabindex="1" class="form-control">
 						</div>
 						<div class="form-group">
 							<label for="contactemail" class="sr-only"></label>
-							<input type="text" id="contactemail" placeholder="Email" class="form-control">
+							<input type="text" id="contactemail" placeholder="Email" tabindex="2" class="form-control">
 						</div>
 						<div class="form-group">
 							<label for="contactweb" class="sr-only"></label>
-							<input type="text" id="contactweb" placeholder="Website" class="form-control">
+							<input type="text" id="contactweb" placeholder="Website" tabindex="3" class="form-control">
 						</div>
 						<div class="form-group">
 							<label for="contactmsg" class="sr-only"></label>
-							<textarea id="contactmsg" cols="50" rows="10" placeholder="Message" class="form-control"></textarea>
+							<textarea id="contactmsg" cols="50" rows="10" placeholder="Message" tabindex="4" class="form-control"></textarea>
 						</div>
 						<button class="btn btn-primary pull-right">Send Message</button>
 					</form>

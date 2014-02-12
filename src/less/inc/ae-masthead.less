@@ -15,14 +15,20 @@
 .masthead {
     background: #fff;
 
-    height: auto;
+    height: 100px;
     width: auto;
+    overflow: hidden;
 
     margin: 0;
+    transition: height 0.5s ease;
 
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
         height: 100%;
+    }
+
+    &.expanded {
+        height: auto;
     }
 
     .content {
@@ -30,16 +36,29 @@
         width: 80%;
 
         margin: 0 auto;
-        padding: 50px 0;
+        padding: 30px 0;
 
         @media (min-width: @screen-lg-phone) {
             width: 70%;
+            padding: 50px 0;
+        }
+    }
+
+    .collapse-header {
+        position: absolute;
+        right: 20px;
+        top: 35px;
+        a {
+            color: lighten(@muted-text-color,20%);
+        }
+        @media (min-width: @screen-tablet) {
+            display: none;
         }
     }
 
     .logo {
         background-color: @secondary-text;
-        margin-bottom: 30px;
+        margin-bottom: 40px;
 
         position: relative;
 
@@ -82,7 +101,7 @@
         margin-bottom: 10px;
 
         font-family: @font-4;
-        font-size: 30px;
+        font-size: @body-fz-ul;
         font-weight: 200;
         letter-spacing: -2.0px;
         line-height: 30px;
@@ -151,14 +170,25 @@
     }
 
     .widget_social {
+        margin-bottom: 0;
+        text-align: center;
         @media (min-width: @screen-tablet) and (min-height: 500px) {
             bottom: 0;
             position: fixed;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        @media (min-width: @screen-tablet) {
+            margin-bottom: 30px;
+            text-align: center;
         }
     }
 
     .social.icons {
-        margin-bottom: 20px;
+        margin-bottom: 0;
+        @media (min-width: @screen-tablet) {
+            margin-bottom: 20px;
+        }
     }
 
     .social.icon {
