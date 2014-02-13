@@ -23,7 +23,7 @@
     transition: height 0.5s ease;
 
     //*-----[Responsive 768++]-----*/
-    @media (min-width: @screen-tablet) {
+    @media (min-width: @screen-desktop) {
         height: 100%;
     }
 
@@ -38,7 +38,7 @@
         margin: 0 auto;
         padding: 30px 0;
 
-        @media (min-width: @screen-lg-phone) {
+        @media (min-width: @screen-desktop) {
             width: 70%;
             padding: 50px 0;
         }
@@ -51,7 +51,7 @@
         a {
             color: lighten(@muted-text-color,20%);
         }
-        @media (min-width: @screen-tablet) {
+        @media (min-width: @screen-desktop) {
             display: none;
         }
     }
@@ -66,7 +66,7 @@
         transition: all ease 0.8s;
 
         //*-----[Responsive 768++]-----*/
-        @media (min-width: @screen-tablet) {
+        @media (min-width: @screen-desktop) {
             margin-bottom: 100px;
 
             text-align: left;
@@ -90,7 +90,7 @@
         text-align: center;
 
         //*-----[Responsive 768++]-----*/
-        @media (min-width: @screen-tablet) {
+        @media (min-width: @screen-desktop) {
             margin-bottom: 50px;
 
             text-align: left;
@@ -109,7 +109,7 @@
         text-transform: uppercase;
 
         //*-----[Responsive 768++]-----*/
-        @media (min-width: @screen-tablet) {
+        @media (min-width: @screen-desktop) {
             margin-bottom: 20px;
 
             text-align: left;
@@ -120,8 +120,8 @@
         }
 
         @media (min-width: @screen-tablet) {
-            font-size: @heading-1-fz;
-            line-height: @heading-1-fz;
+            font-size: 36px;
+            line-height: 30px;
         }
 
         @media (min-width: @screen-desktop) {
@@ -172,13 +172,13 @@
     .widget_social {
         margin-bottom: 0;
         text-align: center;
-        @media (min-width: @screen-tablet) and (min-height: 500px) {
+        @media (min-width: @screen-desktop) and (min-height: 500px) {
             bottom: 0;
             position: fixed;
             margin-bottom: 30px;
             text-align: left;
         }
-        @media (min-width: @screen-tablet) {
+        @media (min-width: @screen-desktop) {
             margin-bottom: 30px;
             text-align: center;
         }
@@ -186,7 +186,7 @@
 
     .social.icons {
         margin-bottom: 0;
-        @media (min-width: @screen-tablet) {
+        @media (min-width: @screen-desktop) {
             margin-bottom: 20px;
         }
     }

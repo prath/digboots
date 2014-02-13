@@ -36,9 +36,12 @@ $(document).ready(function () {
         e.preventDefault();
         if(!$('body').hasClass('toggle' + $(this).attr('data-content'))) {
             $('body').removeAttr('class');
+            $('.searchinput').blur();
         }
         $('body').toggleClass('toggle' + $(this).attr('data-content'));
-        $('.searchinput').focus();
+        if( $(this).attr('data-content') === 'search' ) {
+            $('.searchinput').focus();
+        }
     })
 
     /**
@@ -55,6 +58,11 @@ $(document).ready(function () {
         } else {
             $('.masthead').removeClass('expanded');
         }
+    })
+
+    $('.main-nav ul li a').on('click', function (e) {
+        e.preventDefault();
+        $('body').removeAttr('class');
     })
 
     

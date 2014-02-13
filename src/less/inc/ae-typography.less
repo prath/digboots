@@ -141,10 +141,14 @@ p {
 
     color: @body-text-color;
     font-family: @font-4;
-    font-size: 24px;
-    line-height: 42px;
+    font-size: 20px;
+    line-height: 30px;
     strong {
         font-weight: 500;
+    }
+    @media (min-width: @screen-tablet) {
+        font-size: 24px;
+        line-height: 42px;
     }
 }
 
@@ -240,13 +244,16 @@ header {
     margin: -80px auto 70px;
     margin-bottom: 70px !important;
 
-    width: 80%;
+    width: 100%;
     color: @muted-text-color;
     font-size: @body-fz-df;
     font-style: italic;
     line-height: @line-height-base;
     p {
         margin-left: 60px;
+    }
+    @media (min-width: @screen-tablet) {
+        width: 80%;
     }
 }
 
