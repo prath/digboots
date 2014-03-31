@@ -6,14 +6,14 @@
     =====================================================================
     
 doctype
-html(lang='en')
+html(lang='en').no-js
     
     head
         meta(charset='utf-8')
         meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
         block title
 
-        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1')
         meta(name='description', content='DigBoots Business Bootstrap Theme')
         meta(name='author', content='')
 
@@ -32,14 +32,14 @@ html(lang='en')
         link(href='assets/css/bootstrap.css', rel='stylesheet')
         
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ FONTAWESOME ]
+        // [ FONTAWESOME STYLES ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         link(href='//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css', rel="stylesheet")
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ FLEXSLIDER ]
+        // [ ANIMATE ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        link(href='assets/css/flexslider.css', rel='stylesheet')
+        link(href='assets/css/animate.css', rel='stylesheet')
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ DIGBOOTS STYLES ]
@@ -52,47 +52,78 @@ html(lang='en')
         script(src='assets/js/vendor/modernizr2.js')
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ FASTCLICK ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        script(type='application/javascript', src='assets/js/vendor/fastclick.js')
+        script(type='application/javascript').
+            window.addEventListener('load', function() {
+                var el1, 
+                    el2;
+                el1 = document.getElementById('top');
+                el2 = document.getElementById('left');
+                FastClick.attach(el1);
+                FastClick.attach(el2);
+            }, false);
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ JQUERY ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        script(src='assets/js/vendor/jquery-1.10.1.min.js')
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ JPRELOADER ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        script(src='assets/js/vendor/jpreloader.min.js')
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ IE SCRIPTS ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         //if lt IE 9
-            script(src='assets/js/vendor/html5shiv.js')
             script(src='assets/js/vendor/respond.min.js')
     body
         //- block page
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ NAVIGATION ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        .top
+        .top#top
         
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ TOP STICKY NAV ]
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             nav.top.sticky.nav
-                //- a(href='', data-content='search', data-toggle='tooltip', data-placement="bottom", title='Search').toggle.search.iconic
-                    img(src='assets/images/search.png', alt='nav')
-                a(href='', data-content='menuonepage', data-placement="bottom", title='Menu').toggle.nav.iconic
+                a(href='', data-content='menu', data-placement="bottom", title='Menu').toggle.nav.iconic
                     img(src='assets/images/nav.png', alt='nav')
-            nav.innernav.light.main-nav.sticky.centered.scroll-to
-                ul
-                    li
-                        a(href="#home") Home
-                    li 
-                        a(href="#about") About
-                    li 
-                        a(href="#services") Services
-                    li 
-                        a(href="#works") Works
-                    li 
-                        a(href="#team") Team
-                    li 
-                        a(href="#clients") Clients 
-                    li 
-                        a(href="#contact") Contact 
+
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ COLLAPSIBLE NAVBAR ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            nav.right.positioned.navbar.navbar-default.animated(role="navigation")
+                .collapse.navbar-collapse.scroll-to
+                    ul.nav.navbar-nav
+                        li(role="presentation")
+                            a(href="#home") Home
+                        li(role="presentation") 
+                            a(href="#about") About
+                        li(role="presentation") 
+                            a(href="#services") Services
+                        li(role="presentation") 
+                            a(href="#works") Works
+                        li(role="presentation") 
+                            a(href="#team") Team
+                        li(role="presentation") 
+                            a(href="#clients") Clients 
+                        li(role="presentation") 
+                            a(href="#contact") Contact
+                        li.divider(role="presentation")
+                        li(role="presentation")
+                            a(href='index.html', role="menuitem") Home Page 1
+                        li(role="presentation")
+                            a(href='index-i.html', role="menuitem") Home Page 2
 
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
             // [ COLLAPSIBLE SEARCH BOX ]
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            .search.box
+            //- .search.box
                 form(action='', method='', role='form')
                     label.sr-only(for='#searchinput') Email address
                     input#searchinput.searchinput(type='search', placeholder='Type Query Here...')
@@ -104,13 +135,13 @@ html(lang='en')
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         //- include ../inc/masthead
         header#left.left
-            .masthead
+            .masthead.animated
                 .content
                     h1.sr-only Digboots
                     .logo
                         a(href="")
                             img(src="dummy-images/logo.png", alt="")
-                    div.collapse-header
+                    //- div.collapse-header
                         a(href="")
                             i.fa.fa-angle-double-down
                     p.lead Clarity, Simplicity and Curiousity.
@@ -136,6 +167,13 @@ html(lang='en')
                                 a.social.icon(href='')
                                     .diamond.icon
                                         i.fa.fa-github
+            .masthead-collapsed
+                .logo
+                    a(href="")
+                        img(src="dummy-images/logo.png", alt="")
+                .collapse-header
+                    a(href="").toggle
+                        i.fa.fa-angle-double-down
         
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ MAIN CONTENT ]
@@ -159,11 +197,6 @@ html(lang='en')
                     | Copyright <strong>DigBoots</strong>&nbsp;&copy; 2013.
         
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ JQUERY ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        script(src='assets/js/vendor/jquery-1.10.1.min.js')
-        
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ JQUERY EASING ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         script(src='assets/js/vendor/jquery.easing.js')
@@ -176,7 +209,7 @@ html(lang='en')
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ RETINA JS ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        script(src='assets/js/vendor/retina.min.js')
+        //- script(src='assets/js/vendor/retina.min.js')
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ FITVIDS JS ]
@@ -194,9 +227,9 @@ html(lang='en')
         script(src='assets/js/vendor/jquery.smooth-scroll.min.js')
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ JQUERY APPEAR ]
+        // [ WOW ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        script(src='assets/js/vendor/jquery.appear.js')
+        script(src='assets/js/vendor/wow.min.js')
 
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         // [ GOOGLE MAP ]

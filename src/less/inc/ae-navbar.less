@@ -12,8 +12,11 @@
 ==================================================*/
 .navbar {
     border-radius: 0;
+    // transition: all .2s ease;
+}
 
-    transition: all .2s ease;
+.touch .navbar {
+    transition: none;
 }
 
 /* [Booststrap (Extended) - Navbar Default]
@@ -117,25 +120,36 @@
     padding-bottom: 50px;
     padding-top: 50px;
 
+    -webkit-overflow-scrolling: touch;
+
     &.navbar {
         width: 25%;
         right: -25%;
+        &.animated {
+            -webkit-animation-duration: .4s;
+            animation-duration: .4s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
     }
-
-    // &.cartbar {
-    //     width: 25%;
-    //     right: -25%;
-
-    //     transition: all .2s ease;
-    // }
 
     &.sidebar {
         width: 25%;
         right: -25%;
         top: 0;
+        &.animated {
+            -webkit-animation-duration: .4s;
+            animation-duration: .4s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+        }
 
-        transition: all .2s ease;
+        // transition: all .2s ease;
     }
+}
+
+.touch .right.positioned.sidebar {
+    transition: none;
 }
 
 /*-----[Right Positioned navbar nav]-----*/
@@ -168,22 +182,6 @@
  * sidebar nav
 ==================================================*/
 
-//*-----[Toggle Shopping Cart]-----*/
-// .togglecartbar {
-//     .right.positioned {
-//         &.cartbar {
-//             right: 0;
-//             z-index: 1000;
-//         }
-//     }
-//     .top.nav {
-//         right: 25%;
-//         .cart.iconic {
-//             .opacity(0.3, 30);
-//         }
-//     }
-// }
-
 /*-----[Toggle Sidebar Widget]-----*/
 .togglesidebar {
     .right.positioned {
@@ -192,17 +190,36 @@
             z-index: 1000;
             width: 100%;
             @media (min-width: @screen-tablet) {
+                width: 40%;
+            }
+            @media (min-width: @screen-desktop) {
+                width: 30%;
+            }
+            @media (min-width: @screen-lg-desktop) {
                 width: 25%;
             }
             .collapse {
                 display: block;
             }
+            &.animated {
+                -webkit-animation-name: fadeInRight;
+                animation-name: fadeInRight;
+            }
         }
     }
     .top.nav {
-        right: 25%;
+        right: 0;
         .widget.iconic {
             .opacity(0.3, 30);
+        }
+        @media (min-width: @screen-tablet) {
+            right: 40%;
+        }
+        @media (min-width: @screen-desktop) {
+            right: 30%;
+        }
+        @media (min-width: @screen-lg-desktop) {
+            right: 25%;
         }
     }
 }
@@ -214,17 +231,36 @@
             right: 0;
             width: 100%;
             @media (min-width: @screen-tablet) {
+                width: 40%;
+            }
+            @media (min-width: @screen-desktop) {
+                width: 30%;
+            }
+            @media (min-width: @screen-lg-desktop) {
                 width: 25%;
             }
             .collapse {
                 display: block;
             }
+            &.animated {
+                -webkit-animation-name: fadeInRight;
+                animation-name: fadeInRight;
+            }
         }
     }
     .top.nav {
-        right: 25%;
+        right: 0;
         .nav.iconic {
             .opacity(0.3, 30);
+        }
+        @media (min-width: @screen-tablet) {
+            right: 40%;
+        }
+        @media (min-width: @screen-desktop) {
+            right: 30%;
+        }
+        @media (min-width: @screen-lg-desktop) {
+            right: 25%;
         }
     }
 }
@@ -242,6 +278,10 @@
         &.box {
             .opacity(1, 100);
             top: -10px;
+            &.animated {
+                -webkit-animation-name: fadeInDown;
+                animation-name: fadeInDown;
+            }
         }
     }
     .top.nav {
@@ -275,10 +315,10 @@ body {
 .top.nav {
     .clearfix();
 
-    background-color: @default-accent;
+    background-color: transparent;
 
     height: 39px;
-    width: 100%;
+    width: auto;
 
     padding: 0;
 
@@ -288,22 +328,12 @@ body {
     letter-spacing: @ls-xw;
     line-height: 23px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: right;
     vertical-align: middle;
     white-space: nowrap;
 
     transition: .2s all ease;
 
-    //*-----[Responsive 768++]-----*/
-    @media (min-width: @screen-desktop) {
-        background-color: @default-accent;
-        background-color: fade(@default-accent, 30%);
-
-        height: 43px;
-        width: auto;
-
-        text-align: right;
-    }
     .item {
         float: left;
         padding: 10px;
@@ -329,10 +359,6 @@ body {
         &:hover {
             color: @default-accent;
         }
-        // &.cart {
-        //     background-color: @default-accent;
-        //     background-color: fade(darken(@default-accent, 30%), 20%);
-        // }
         &.search {
             background-color: @default-accent;
             background-color: fade(@default-accent, 30%);
@@ -344,19 +370,6 @@ body {
         &.widget {
             background-color: @default-accent;
             background-color: fade(darken(@default-accent, 30%), 40%);
-        }
-        &[data-content="menuonepage"] {
-            float: right;
-            @media (min-width: @screen-tablet) {
-                display: none;
-            }
-        }
-        &[data-content="sidebar"],
-        &[data-content="menu"] {
-            float: right;
-            @media (min-width: @screen-desktop) {
-                float: left;
-            }
         }
     }
     .iconic {
@@ -401,7 +414,18 @@ body {
     @media (min-width: @screen-lg-phone) {
         height: 43px;
     }
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-desktop) {
+        background-color: @default-accent;
+        background-color: fade(@default-accent, 30%);
+
+        height: 43px;
+        // width: auto;
+
+        // text-align: right;
+    }
 }
+
 
 /* [Search Box]
 ==================================================*/
@@ -409,7 +433,7 @@ body {
     &.box {
         background-color: @default-accent;
         background-color: rgba(13,147,217,0.9);
-        .opacity(0, 3);
+        .opacity(0, 0);
 
         left: 0;
         position: fixed;
@@ -422,16 +446,23 @@ body {
 
         color: @secondary-text;
 
-        transition: all .2s ease;
+        // transition: all .2s ease;
+        @media (min-width: @screen-lg-phone) {
+            margin-top: 55px;
+        }
 
         //*-----[Responsive 768++]-----*/
-        @media (min-width: @screen-tablet) {
+        @media (min-width: @screen-desktop) {
             left: 260px;
 
             margin-top: 0;
             padding: 100px;
-
-            transition: all .2s ease;
+        }
+        &.animated {
+            -webkit-animation-duration: .4s;
+            animation-duration: .4s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
         }
     }
     form {
@@ -498,23 +529,15 @@ body {
     }
 }
 
-//* [Cart Sidebar Content]
-//==================================================*/
-// .cart {
-//     &.content {
-//         padding: 0 50px 0 60px;
-
-//         font-size: @body-fz-xs;
-//     }
-// }
+.touch .seach.box {
+    transition: none;
+}
 
 /* [Inner Page Nav]
 ==================================================*/
 .innernav {
     background-color: @secondary-background;
 
-    // height: 43px;
-    // width: 100%;
     padding: 0 20px;
 
     ul {
@@ -551,7 +574,7 @@ body {
             }
         }
         @media (min-width: @screen-tablet) {
-            float: left;
+            .inlineDisplay();
         }
     }
 
@@ -581,7 +604,7 @@ body {
             padding-left: 20px;
             line-height: 43px;
         }
-        @media (min-width: @screen-desktop) {
+        @media (min-width: @screen-lg-desktop) {
             padding-left: 30px;
         }
     }
@@ -602,15 +625,13 @@ body {
         height: 100%;
         width: 100%;
 
-        @media (min-width: @screen-tablet) {
-            display: block;
-            right: auto;
-            height: auto;
-            margin-left: 0;
-            margin-top: -43px;
-        }
         @media (min-width: @screen-desktop) {
-            margin-left: 260px;
+            display: block;
+            left: 260px;
+            right: 0;
+            height: auto;
+            width: auto;
+            margin-left: 0;
             margin-top: 0;
         }
     }

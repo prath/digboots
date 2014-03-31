@@ -3,6 +3,9 @@
  * doc ready
  * ==============================================================================
  */
+$(function ($) { 
+    $('body').jpreLoader({loaderVPos: '50%'});
+});
 $(document).ready(function () {
     'use strict';
 
@@ -42,13 +45,14 @@ $(document).ready(function () {
         if( $(this).attr('data-content') === 'search' ) {
             $('.searchinput').focus();
         }
-    })
+    });
 
     /**
      * collapse all collapsible content
      */
     $('#left, #right').children(':not(".sidebar")').on('click', function (e) {
         $('body').removeAttr('class');
+        $('.searchinput').blur();
     });
 
     $('.collapse-header a').on('click', function (e) {
@@ -58,11 +62,6 @@ $(document).ready(function () {
         } else {
             $('.masthead').removeClass('expanded');
         }
-    })
-
-    $('.main-nav ul li a').on('click', function (e) {
-        e.preventDefault();
-        $('body').removeAttr('class');
     })
 
     
@@ -84,17 +83,18 @@ $(document).ready(function () {
     /**
      * Appear
      */
-    $('.appear').appear();
+    new WOW().init();
+    // $('.appear').appear();
 
-    $(document.body).on('appear', '.appear', function(e, $affected) {
-        $affected.each(function(i) {
-            var $current = $(this),
-                $delay = i*50;
-            $current.delay($delay).queue(function(){
-                $current.addClass('animate');
-            })
-        })
-    });
+    // $(document.body).on('appear', '.appear', function(e, $affected) {
+    //     $affected.each(function(i) {
+    //         var $current = $(this),
+    //             $delay = i*50;
+    //         $current.delay($delay).queue(function(){
+    //             $current.addClass('animate');
+    //         })
+    //     })
+    // });
 
     /**
      * FLexislider
@@ -122,37 +122,62 @@ $(document).ready(function () {
             var link = this;
             console.log(link.hash);
             $.smoothScroll({
-                offset: -40,
                 scrollTarget: link.hash
             });
-            $(this).parent().addClass('active');
-            $(this).parent().siblings('li').removeClass('active');
         });
     }
+    $('.scroll-to li a').on('click', function (e) {
+        e.preventDefault();
+        $('body').removeAttr('class');
+    })
 
     /**
      * Google Map
      */
     if ($('#map-canvas').length) {
-        var mapOptions = {
-            zoom: 15,
-            scrollwheel: false,
-            center: new google.maps.LatLng(40.64432, -74.01107),
-            // zoomControl: true,
-            zoomControlOptions: {
-                style: google.maps.ZoomControlStyle.SMALL,
-                position: google.maps.ControlPosition.LEFT_TOP
-            },
-            // scaleControl: false,
-            scaleControlOptions: {
-                position: google.maps.ControlPosition.BOTTOM_LEFT
-            },
-            streetViewControl: false,
-            panControl: false,
-            mapTypeControl: false,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+        var mapOptions,
+            map;
+        if( Modernizr.touch ) {
+            mapOptions = {
+                zoom: 15,
+                scrollwheel: false,
+                draggable: false,
+                center: new google.maps.LatLng(40.64432, -74.01107),
+                // zoomControl: true,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.SMALL,
+                    position: google.maps.ControlPosition.LEFT_TOP
+                },
+                // scaleControl: false,
+                scaleControlOptions: {
+                    position: google.maps.ControlPosition.BOTTOM_LEFT
+                },
+                streetViewControl: false,
+                panControl: false,
+                mapTypeControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+        } else {
+            mapOptions = {
+                zoom: 15,
+                scrollwheel: false,
+                center: new google.maps.LatLng(40.64432, -74.01107),
+                // zoomControl: true,
+                zoomControlOptions: {
+                    style: google.maps.ZoomControlStyle.SMALL,
+                    position: google.maps.ControlPosition.LEFT_TOP
+                },
+                // scaleControl: false,
+                scaleControlOptions: {
+                    position: google.maps.ControlPosition.BOTTOM_LEFT
+                },
+                streetViewControl: false,
+                panControl: false,
+                mapTypeControl: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
         }
-        var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+        map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
     }
     
 });

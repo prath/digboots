@@ -1,0 +1,99 @@
+//- 
+    =====================================================================
+    * Blog Page
+    * 
+    * @author Pratama H. Salahudin <pratama@aestik.com>
+    =====================================================================
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ EXTENDING CONTENT-CONTAINER LAYOUT PAGE ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+extends layouts/master-i
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ TITLE - used to define html <title> ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block title
+    title Visual Composer
+
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//- [ CONTENT ]
+//-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+block content
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    // [ JUDUL ]
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    .content.flatted-all
+        .jumbotron.white(style="background-image: url('dummy-images/hero-image7.jpg');")#home
+            .container
+                p Case Study
+                h1.heading
+                    | New <strong>Admin</strong> Dashboard.
+    
+    //- content full screen/ no pad no margin
+    div 
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ ABOUT US ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .holder
+            .col-md-12
+                .wrapper
+                    .invert-background.caret-down.caret-invert
+                        .content.narrow
+                            h2.heading.wow.bounceInDown.centered
+                                | World's Number One Creative and Design Studio.
+                            .diamond.icon.centered
+                                i.fa.fa-angle-double-down
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ ABOUT US ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .holder
+            .col-md-12
+                .wrapper
+                    .white-background
+                        .content.narrow.centered 
+                            image.wow.bounceInUp(src='dummy-images/about/ip.png', alt='logo digboots')
+                            p.wow.fadeInDown
+                                | Nulla a nunc at orci euismod ornare. Aenean lacinia est interdum, vestibulum mauris a, lobortis lacus. Cras in sapien ac tortor egestas lobortis non placerat sapien. Curabitur facilisis, quam quis mattis iaculis.
+                            a(href='#contact').btn.btn-sm.btn-primary.wow.fadeInUp
+                                | Work With Us
+                    //- conten
+        
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        // [ SERVICES ]
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        .holder
+            .col-md-12
+                .wrapper
+                    h2.section.heading Our Services
+                    .holder
+                        .col-md-4
+                            .wrapper
+                                article.small.centered
+                                    i.fa.fa-file-o.fa-3x
+                                    h3.related.title.centered Illustration
+                                    p
+                                        | We transform your wish into clear ideas and hand-sketched illustrations.
+                                    a(href='').btn.btn-xs.btn-primary
+                                        | learn more
+                        .col-md-4
+                            .wrapper
+                                article.small.centered
+                                    i.fa.fa-file-o.fa-3x
+                                    h3.related.title.centered Illustration
+                                    p
+                                        | We transform your wish into clear ideas and hand-sketched illustrations.
+                                    a(href='').btn.btn-xs.btn-primary
+                                        | learn more
+                        .col-md-4
+                            .wrapper
+                                article.small.centered
+                                    i.fa.fa-file-o.fa-3x
+                                    h3.related.title.centered Illustration
+                                    p
+                                        | We transform your wish into clear ideas and hand-sketched illustrations.
+                                    a(href='').btn.btn-xs.btn-primary
+                                        | learn more
+                    

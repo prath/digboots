@@ -77,9 +77,6 @@ small {
     background-color: @secondary-background;
     
     z-index: 2;
-
-    margin-top: 40px;
-
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-desktop) {
         height: 100%;
@@ -200,6 +197,11 @@ small {
 
     //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-tablet) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-lg-desktop) {
         padding-top: 100px;
         padding-bottom: 100px;
     }
@@ -210,6 +212,9 @@ small {
         margin-left: auto;
         margin-right: auto;
         @media (min-width: @screen-tablet) {
+            width: 82%;
+        }
+        @media (min-width: @screen-lg-desktop) {
             width: 80%;
         }
     }
@@ -219,6 +224,9 @@ small {
         margin-left: auto;
         margin-right: auto;
         @media (min-width: @screen-tablet) {
+            width: 76%;
+        }
+        @media (min-width: @screen-lg-desktop) {
             width: 70%;
         }
     }
@@ -233,6 +241,10 @@ small {
             margin-right: auto;
             //*-----[Responsive 768++]-----*/
             @media (min-width: @screen-tablet) {
+                width: 90%;
+            }
+            //*-----[Responsive 768++]-----*/
+            @media (min-width: @screen-lg-desktop) {
                 width: 80%;
             }
         }
@@ -251,6 +263,10 @@ small {
 
         //*-----[Responsive 768++]-----*/
         @media (min-width: @screen-tablet) {
+            width: 70%;
+        }
+        //*-----[Responsive 768++]-----*/
+        @media (min-width: @screen-lg-desktop) {
             width: 60%;
         }
     }
@@ -299,8 +315,9 @@ small {
     }
 }
 
-/* [Inverted Background]
+/* [Background styles]
 ============================================================*/
+/*-----[Dark Background]-----*/
 .invert-background {
     background-color: @secondary-background;
 
@@ -348,8 +365,28 @@ small {
     }
 }
 
+/*-----[White Background]-----*/
 .white-background {
     background-color: @secondary-text;
+}
+
+/*-----[Image Covered Background]-----*/
+.image-covered {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &.bottom-positioned {
+        background-position: bottom center;
+    }
+    &.top-positioned {
+        background-position: top center;
+    }
+}
+
+/*-----[Image Covered Background on touch devices]-----*/
+.touch .image-covered {
+    background-attachment: scroll !important;
 }
 
 /* [Iconic type of button or anchor]
@@ -493,6 +530,9 @@ small {
         margin-top: 20px;
     }
     @media (min-width: @screen-tablet) {
+        width: 80%;
+    }
+    @media (min-width: @screen-lg-desktop) {
         width: 62%;
     }
 }

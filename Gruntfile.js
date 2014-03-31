@@ -44,7 +44,7 @@ module.exports = function(grunt) {
 		connect: {
 			con: {
 				options: {
-					port: 3001,
+					port: 8000,
 					base: './'
 				}
 			}
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 		 */
 		open: {
 			dev: {
-				path: 'http://0.0.0.0:3001/dist'
+				path: 'http://0.0.0.0:8000/dist'
 			}
 		},
 		/**
@@ -71,7 +71,7 @@ module.exports = function(grunt) {
 					dumpLineNumbers: true,
 					sourceMap: true,
 					// sourceMapFilename: 'sourceMap.css.map',
-					sourceMapRootpath: 'http://0.0.0.0:3001/'
+					sourceMapRootpath: 'http://0.0.0.0:8000/'
 				},
 				files: [{
 					expand: true,

@@ -12,23 +12,40 @@
  -
  * everything inside the left side container
 ============================================================*/
+
 .masthead {
     background: #fff;
+    display: none;
 
-    height: 100px;
+    height: 100%;
     width: auto;
     overflow: hidden;
 
     margin: 0;
     transition: height 0.5s ease;
 
-    //*-----[Responsive 768++]-----*/
     @media (min-width: @screen-desktop) {
-        height: 100%;
+        display: block;
+    }
+
+    &.animated {
+        -webkit-animation-duration: .4s;
+        animation-duration: .4s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
     }
 
     &.expanded {
+        display: block;
+
+        position: fixed;
+
         height: auto;
+        width: 100%;
+        &.animated {
+            -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+        }
     }
 
     .content {
@@ -44,20 +61,10 @@
         }
     }
 
-    .collapse-header {
-        position: absolute;
-        right: 20px;
-        top: 35px;
-        a {
-            color: lighten(@muted-text-color,20%);
-        }
-        @media (min-width: @screen-desktop) {
-            display: none;
-        }
-    }
-
     .logo {
         background-color: @secondary-text;
+        display: none;
+
         margin-bottom: 40px;
 
         position: relative;
@@ -67,6 +74,7 @@
 
         //*-----[Responsive 768++]-----*/
         @media (min-width: @screen-desktop) {
+            display: block;
             margin-bottom: 100px;
 
             text-align: left;
@@ -120,13 +128,8 @@
         }
 
         @media (min-width: @screen-tablet) {
-            font-size: 36px;
+            font-size: 30px;
             line-height: 30px;
-        }
-
-        @media (min-width: @screen-desktop) {
-            font-size: 60px;
-            line-height: 50px;
         }
 
         @media (min-width: @screen-lg-desktop) {
@@ -199,5 +202,46 @@
         &:last-child {
             margin-right: 0;
         }
+    }
+}
+
+.masthead-collapsed {
+    background-color: @secondary-text;
+
+    left: 0;
+    position: fixed;
+    top: 0;
+
+    height: 39px;
+    width: 100%;
+
+    padding: 8px 5px 8px 10px;
+
+    .logo {
+        .inlineDisplay();
+    }
+
+    img {
+        height: 23px;
+        width: auto;
+        @media (min-width: @screen-lg-phone) {
+            height: 27px;
+        }
+    }
+
+    .collapse-header {
+        .inlineDisplay();
+        a {
+            display: block;
+            width: 50px;
+            text-align: center;
+        }
+    }
+
+    @media (min-width: @screen-lg-phone) {
+        height: 43px;
+    }
+    @media (min-width: @screen-desktop) {
+        display: none;
     }
 }

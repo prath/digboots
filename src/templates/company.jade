@@ -65,27 +65,27 @@ block content
             p
                 | Our skill are vary, from web development to brand consulting. we confident with high skill and standard we have could help you easily. We are a team of designers, communicators, storytellers and strategists, passionate about social change. Sound like you?
             .skill.bars
-                .bar.holder.appear.fade-in
+                .bar.holder.wow.fadeInUp
                     .label Web Development
-                    .progress.appear.move-right(style='width: 90%;')
-                .bar.holder.appear.fade-in
+                    .progress(style='width: 90%;')
+                .bar.holder.wow.fadeInUp
                     .label Illustration
-                    .progress.appear.move-right(style='width: 97%;')
-                .bar.holder.appear.fade-in
+                    .progress(style='width: 97%;')
+                .bar.holder.wow.fadeInUp
                     .label App Design
-                    .progress.appear.move-right(style='width: 80%;')
-                .bar.holder.appear.fade-in
+                    .progress(style='width: 80%;')
+                .bar.holder.wow.fadeInUp
                     .label Brand Consulting
-                    .progress.appear.move-right(style='width: 75%;')
+                    .progress(style='width: 75%;')
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ BANNER ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.invert-background.shrunk-all(style='background: url("dummy-images/about/w-b1.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+    section.content.invert-background.image-covered.shrunk-all(style='background-image: url("dummy-images/about/w-b1.jpg");')
         .post.narrow
-            h2.heading.centered.appear.move-bottom Work With Us and Let Us Help You.
+            h2.heading.centered.wow.bounceInDown Work With Us and Let Us Help You.
             p.centered
-                a(href='').btn.btn-primary.appear.move-top
+                a(href='').btn.btn-primary.wow.bounceInUp
                     | Get in Touch
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -98,7 +98,7 @@ block content
                 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 // [ SERVICES ITEM ]
                 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-sl-6.col-xs-12.centered.appear.move-top
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-sl-6.col-xs-12.centered.wow.bounceInUp
                     //- .diamond.icon.med.centered
                     i.fa.fa-file-o.fa-3x
                     h3.related.title.centered Illustration
@@ -110,7 +110,7 @@ block content
                 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 // [ SERVICES ITEM ]
                 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-sl-6.col-xs-12.centered.appear.move-top
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-sl-6.col-xs-12.centered.wow.bounceInUp
                     //- .diamond.icon.med.centered
                     i.fa.fa-html5.fa-3x
                     h3.related.title.centered Web Design
@@ -122,7 +122,7 @@ block content
                 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                 // [ SERVICES ITEM ]
                 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-sl-6.col-xs-12.centered.appear.move-top
+                article.small.col-ul-4.col-xl-4.col-lg-4.col-md-4.col-sm-6.col-sl-6.col-xs-12.centered.wow.bounceInUp
                     //- .diamond.icon.med.centered
                     i.fa.fa-mobile.fa-3x
                     h3.related.title.centered App Design
@@ -134,7 +134,7 @@ block content
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ TESTIMONIAL ]
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    section.content.invert-background.shrunk-all(style='background: url("dummy-images/about/w-b2.jpg") no-repeat center center; background-size: cover; background-attachment: fixed;')
+    section.content.invert-background.image-covered.shrunk-all(style='background-image: url("dummy-images/about/w-b2.jpg");')
         .wide
             h2.section.heading What People Say About Us
             blockquote 
@@ -155,120 +155,121 @@ block content
         // [ TEAM PHOTOs ]
         // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         .team.gallery-boxed
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ TEAM PHOTO ]
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.gallery-boxed.item.one-third.appear.fade-in
-                header.caption
-                    h3.title
-                        a(href="") Johnatan Doe
-                        span.subtitle CEO
-                        span.separator
-                img(src='dummy-images/team/1.jpg', alt='team 1')
-                .social
-                    a(href='')
-                        i.fa.fa-twitter
-                    a(href='')
-                        i.fa.fa-linkedin
-                    a(href='')
-                        i.fa.fa-github
-                a(href="").goto 
-                    i.fa.fa-link
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ TEAM PHOTO ]
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.gallery-boxed.item.one-third.appear.fade-in
-                header.caption
-                    h3.title
-                        a(href="") Jane Doe
-                        span.subtitle COO
-                        span.separator
-                img(src='dummy-images/team/2.jpg', alt='team 1')
-                .social
-                    a(href='')
-                        i.fa.fa-twitter
-                    a(href='')
-                        i.fa.fa-linkedin
-                    a(href='')
-                        i.fa.fa-github
-                a(href="").goto 
-                    i.fa.fa-link
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ TEAM PHOTO ]
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.gallery-boxed.item.one-third.appear.fade-in
-                header.caption
-                    h3.title
-                        a(href="") Will Smith
-                        span.subtitle CTO
-                        span.separator
-                img(src='dummy-images/team/3.jpg', alt='team 1')
-                .social
-                    a(href='')
-                        i.fa.fa-twitter
-                    a(href='')
-                        i.fa.fa-linkedin
-                    a(href='')
-                        i.fa.fa-github
-                a(href="").goto 
-                    i.fa.fa-link
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ TEAM PHOTO ]
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.gallery-boxed.item.one-third.appear.fade-in
-                header.caption
-                    h3.title
-                        a(href="") Dave Roe
-                        span.subtitle Lead Developer
-                        span.separator
-                img(src='dummy-images/team/4.jpg', alt='team 1')
-                .social
-                    a(href='')
-                        i.fa.fa-twitter
-                    a(href='')
-                        i.fa.fa-linkedin
-                    a(href='')
-                        i.fa.fa-github
-                a(href="").goto 
-                    i.fa.fa-link
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ TEAM PHOTO ]
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.gallery-boxed.item.one-third.appear.fade-in
-                header.caption
-                    h3.title
-                        a(href="") Maxi Rachel
-                        span.subtitle Lead Designer
-                        span.separator
-                img(src='dummy-images/team/5.jpg', alt='team 1')
-                .social
-                    a(href='')
-                        i.fa.fa-twitter
-                    a(href='')
-                        i.fa.fa-linkedin
-                    a(href='')
-                        i.fa.fa-github
-                a(href="").goto 
-                    i.fa.fa-link
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            // [ TEAM PHOTO ]
-            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-            article.gallery-boxed.item.one-third.appear.fade-in
-                header.caption
-                    h3.title
-                        a(href="") Jake Arch
-                        span.subtitle Designer
-                        span.separator
-                img(src='dummy-images/team/6.jpg', alt='team 1')
-                .social
-                    a(href='')
-                        i.fa.fa-twitter
-                    a(href='')
-                        i.fa.fa-linkedin
-                    a(href='')
-                        i.fa.fa-github
-                a(href="").goto 
-                    i.fa.fa-link
+            .items
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.gallery-boxed.item.one-third.wow.fadeInUp
+                    header.caption
+                        h3.title
+                            a(href="") Johnatan Doe
+                            span.subtitle CEO
+                            span.separator
+                    img(src='dummy-images/team/1.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.gallery-boxed.item.one-third.wow.fadeInUp
+                    header.caption
+                        h3.title
+                            a(href="") Jane Doe
+                            span.subtitle COO
+                            span.separator
+                    img(src='dummy-images/team/2.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.gallery-boxed.item.one-third.wow.fadeInUp
+                    header.caption
+                        h3.title
+                            a(href="") Will Smith
+                            span.subtitle CTO
+                            span.separator
+                    img(src='dummy-images/team/3.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.gallery-boxed.item.one-third.wow.fadeInUp
+                    header.caption
+                        h3.title
+                            a(href="") Dave Roe
+                            span.subtitle Lead Developer
+                            span.separator
+                    img(src='dummy-images/team/4.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.gallery-boxed.item.one-third.wow.fadeInUp
+                    header.caption
+                        h3.title
+                            a(href="") Maxi Rachel
+                            span.subtitle Lead Designer
+                            span.separator
+                    img(src='dummy-images/team/5.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                // [ TEAM PHOTO ]
+                // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                article.gallery-boxed.item.one-third.wow.fadeInUp
+                    header.caption
+                        h3.title
+                            a(href="") Jake Arch
+                            span.subtitle Designer
+                            span.separator
+                    img(src='dummy-images/team/6.jpg', alt='team 1')
+                    .social
+                        a(href='')
+                            i.fa.fa-twitter
+                        a(href='')
+                            i.fa.fa-linkedin
+                        a(href='')
+                            i.fa.fa-github
+                    a(href="").goto 
+                        i.fa.fa-link
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     // [ CLIENTS ]
@@ -278,7 +279,7 @@ block content
             h2.section.heading Our Clients &amp; Partners
             p
                 | We're lucky enough to work with some amazing organisations. Here are a few of our favourites:
-            .client.list.centered.appear.fade-in
+            .client.list.centered.wow.fadeInUp
                 ul.client-slides
                     li
                         a(href="")
@@ -325,78 +326,78 @@ block content
         header
             h2.gallery.post.title
                 a(href='') our workspace
+        .items
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ WORKPLACE ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.gallery.item.one-third.wow.fadeInUp
+                header.caption
+                    h3.title
+                        a(href="") Meeting Spot
+                        span.separator
+                img(src='dummy-images/workspace/1.jpg', alt='portfolio 1')
+                a(href="").goto 
+                    i.fa.fa-link
 
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ WORKPLACE ITEM ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        article.gallery.item.one-third.appear.fade-in
-            header.caption
-                h3.title
-                    a(href="") Meeting Spot
-                    span.separator
-            img(src='dummy-images/workspace/1.jpg', alt='portfolio 1')
-            a(href="").goto 
-                i.fa.fa-link
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ WORKPLACE ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.gallery.item.one-third.wow.fadeInUp
+                header.caption
+                    h3.title
+                        a(href="") CEO Desk
+                        span.separator
+                img(src='dummy-images/workspace/2.jpg', alt='portfolio 1')
+                a(href="").goto 
+                    i.fa.fa-link
 
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ WORKPLACE ITEM ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        article.gallery.item.one-third.appear.fade-in
-            header.caption
-                h3.title
-                    a(href="") CEO Desk
-                    span.separator
-            img(src='dummy-images/workspace/2.jpg', alt='portfolio 1')
-            a(href="").goto 
-                i.fa.fa-link
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ WORKPLACE ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.gallery.item.one-third.wow.fadeInUp
+                header.caption
+                    h3.title
+                        a(href="") Outdoor Spot
+                        span.separator
+                img(src='dummy-images/workspace/3.jpg', alt='portfolio 1')
+                a(href="").goto 
+                    i.fa.fa-link
 
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ WORKPLACE ITEM ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        article.gallery.item.one-third.appear.fade-in
-            header.caption
-                h3.title
-                    a(href="") Outdoor Spot
-                    span.separator
-            img(src='dummy-images/workspace/3.jpg', alt='portfolio 1')
-            a(href="").goto 
-                i.fa.fa-link
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ WORKPLACE ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.gallery.item.one-third.wow.fadeInUp
+                header.caption
+                    h3.title
+                        a(href="") Jake's Favorite Spot
+                        span.separator
+                img(src='dummy-images/workspace/4.jpg', alt='portfolio 1')
+                a(href="").goto 
+                    i.fa.fa-link
 
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ WORKPLACE ITEM ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        article.gallery.item.one-third.appear.fade-in
-            header.caption
-                h3.title
-                    a(href="") Jake's Favorite Spot
-                    span.separator
-            img(src='dummy-images/workspace/4.jpg', alt='portfolio 1')
-            a(href="").goto 
-                i.fa.fa-link
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ WORKPLACE ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.gallery.item.one-third.wow.fadeInUp
+                header.caption
+                    h3.title
+                        a(href="") John's Favorite Spot
+                        span.separator
+                img(src='dummy-images/workspace/5.jpg', alt='portfolio 1')
+                a(href="").goto 
+                    i.fa.fa-link
 
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ WORKPLACE ITEM ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        article.gallery.item.one-third.appear.fade-in
-            header.caption
-                h3.title
-                    a(href="") John's Favorite Spot
-                    span.separator
-            img(src='dummy-images/workspace/5.jpg', alt='portfolio 1')
-            a(href="").goto 
-                i.fa.fa-link
-
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        // [ WORKPLACE ITEM ]
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        article.gallery.item.one-third.appear.fade-in
-            header.caption
-                h3.title
-                    a(href="") Our Lovely Office
-                    span.separator
-            img(src='dummy-images/workspace/6.jpg', alt='portfolio 1')
-            a(href="").goto 
-                i.fa.fa-link
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            // [ WORKPLACE ITEM ]
+            // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            article.gallery.item.one-third.wow.fadeInUp
+                header.caption
+                    h3.title
+                        a(href="") Our Lovely Office
+                        span.separator
+                img(src='dummy-images/workspace/6.jpg', alt='portfolio 1')
+                a(href="").goto 
+                    i.fa.fa-link
 
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

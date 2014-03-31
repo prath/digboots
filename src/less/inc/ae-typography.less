@@ -41,8 +41,15 @@ h1,
     @media (min-width: @screen-tablet) {
         margin-bottom: 50px;
 
+        font-size: @heading-hero-fz;
+    }
+    //*-----[Responsive 768++]-----*/
+    @media (min-width: @screen-lg-desktop) {
+        // margin-bottom: 50px;
+
         font-size: @heading-1-fz;
     }
+
 }
 
 /*-----[Second Heading]-----*/
@@ -299,9 +306,12 @@ header {
     margin-bottom: 20px;
 
     font-family: @font-1;
-    font-size: 40px;
+    font-size: @heading-3-fz;
     font-weight: 700;
     letter-spacing: -2px;
+    @media (min-width: @screen-lg-desktop) {
+        font-size: 40px
+    }
 }
 
 /* [Comment Section Heading]
